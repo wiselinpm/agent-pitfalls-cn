@@ -1,0 +1,33 @@
+{
+  "name": "agent-pitfalls",
+  "version": "0.1.0",
+  "description": "Gemini CLI extension — 即时查询 AI agent 避坑知识",
+  "homepage": "https://github.com/wiselinpm/agent-pitfalls-cn",
+  "license": "MIT",
+  "mcpServers": {
+    "agent-pitfalls": {
+      "type": "stdio",
+      "command": "agent-pitfalls",
+      "args": ["serve", "--port", "8765"],
+      "env": {}
+    }
+  },
+  "commands": {
+    "pitfall": {
+      "description": "智能查询避坑知识",
+      "prompt": "Run: agent-pitfalls search \"$ARGUMENTS\" --no-color — return top 3 most relevant pitfalls as: title, severity, symptoms, root_causes, fixes, references."
+    },
+    "pitfall-check": {
+      "description": "对项目做避坑扫描",
+      "prompt": "Run: agent-pitfalls check ${ARGUMENTS:-.} --no-color — list each issue with rule_id, file:line, snippet, and the related pitfall from the knowledge base."
+    },
+    "pitfall-platforms": {
+      "description": "列出所有平台",
+      "prompt": "Run: agent-pitfalls platforms --no-color"
+    },
+    "pitfall-categories": {
+      "description": "列出所有类别",
+      "prompt": "Run: agent-pitfalls categories --no-color"
+    }
+  }
+}

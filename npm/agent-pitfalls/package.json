@@ -1,0 +1,37 @@
+{
+  "name": "agent-pitfalls",
+  "version": "0.1.0",
+  "private": false,
+  "description": "npx 入口 — 透明调用 agent-pitfalls Python CLI；安装后获得 agent-pitfalls / apf 命令。",
+  "bin": {
+    "agent-pitfalls": "agent-pitfalls.js",
+    "apf": "agent-pitfalls.js"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "test": "node agent-pitfalls.js --version"
+  },
+  "files": [
+    "agent-pitfalls.js",
+    "postinstall.js",
+    "README.md"
+  ],
+  "keywords": [
+    "agent",
+    "llm",
+    "pitfalls",
+    "claude-code",
+    "openai-agents",
+    "langchain",
+    "mcp",
+    "cli-plugin",
+    "npx"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "which": "^4.0.0"
+  }
+}

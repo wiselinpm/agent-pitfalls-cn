@@ -1,0 +1,66 @@
+# Codex (OpenAI Codex CLI) plugin manifest
+# File location: plugin/codex/prompts.toml
+# Install: copy this directory to ~/.codex/prompts/agent-pitfalls/
+
+[plugin]
+name = "agent-pitfalls"
+version = "0.1.0"
+description = "即时查询 AI agent 避坑知识 — 5,561+ pitfalls，跨 12+ 平台。"
+homepage = "https://github.com/wiselinpm/agent-pitfalls-cn"
+license = "MIT"
+
+# —— 自定义 slash 命令 ——
+
+[prompts.pitfall]
+description = "智能查询避坑知识"
+template = """
+请把以下查询交给 agent-pitfalls CLI，并把返回结果整理为可操作的避坑建议。
+
+查询：{{query}}
+
+执行：
+```bash
+agent-pitfalls search "{{query}}" --no-color
+```
+
+如果 agent-pitfalls 没安装，提示用户先运行 `pip install agent-pitfalls` 或 `npm i -g agent-pitfalls`。
+
+返回的 pitfalls 按以下结构整理：
+1. **<标题>** — <严重度>
+   - 症状：…
+   - 根因：…
+   - 修复：…
+   - 来源：<url>
+
+只保留与当前任务直接相关的前 3 条；其它作为参考链接列出。
+"""
+
+[prompts.pitfall-check]
+description = "对项目做避坑体检"
+template = """
+对当前项目目录（默认 `.`）执行避坑体检。
+
+执行：
+```bash
+agent-pitfalls check {{path:-.}}
+```
+
+把每个 issue 按以下结构整理：
+- **规则**：<rule_id> — <title>
+- **位置**：<file>:<line>
+- **代码**：<snippet>
+- **关联 pitfall**：<title> (<slug>, <severity>)
+- **建议**：让用户立刻修复 / 纳入下个 sprint
+"""
+
+[prompts.pitfall-platforms]
+description = "列出所有平台"
+template = """
+执行 `agent-pitfalls platforms --no-color`，按数量降序列出平台。
+"""
+
+[prompts.pitfall-categories]
+description = "列出所有类别"
+template = """
+执行 `agent-pitfalls categories --no-color`，按数量降序列出类别。
+"""

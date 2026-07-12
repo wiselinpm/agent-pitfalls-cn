@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.schema.json",
+  "plugin": "agent-pitfalls",
+  "version": "0.1.0",
+  "description": "OpenCode plugin — 查询 AI agent 避坑知识",
+  "homepage": "https://github.com/wiselinpm/agent-pitfalls-cn",
+  "license": "MIT",
+  "commands": {
+    "pitfall": {
+      "description": "智能查询避坑知识",
+      "template": "/pitfall {{args}}",
+      "exec": "agent-pitfalls",
+      "args": ["search", "{{args}}", "--no-color"]
+    },
+    "pitfall-check": {
+      "description": "对项目做避坑扫描",
+      "template": "/pitfall-check {{args}}",
+      "exec": "agent-pitfalls",
+      "args": ["check", "{{args:.}}", "--no-color"]
+    },
+    "pitfall-platforms": {
+      "description": "列出所有平台",
+      "exec": "agent-pitfalls",
+      "args": ["platforms", "--no-color"]
+    },
+    "pitfall-categories": {
+      "description": "列出所有类别",
+      "exec": "agent-pitfalls",
+      "args": ["categories", "--no-color"]
+    }
+  },
+  "mcpServers": {
+    "agent-pitfalls": {
+      "type": "stdio",
+      "command": "agent-pitfalls",
+      "args": ["serve", "--port", "8765"],
+      "env": {}
+    }
+  }
+}

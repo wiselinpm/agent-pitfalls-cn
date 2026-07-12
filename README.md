@@ -319,6 +319,100 @@ class MySourceCollector:
 
 ---
 
+## 🖥️ CLI 工具 — 在开发期即时查询
+
+**Agent Pitfalls CLI** 让你在 Claude Code / Codex / OpenCode / Gemini CLI 里直接查询避坑知识，不用离开终端。
+
+### 安装
+
+```bash
+# 方式 1 — pip（推荐）
+pip install agent-pitfalls
+
+# 方式 2 — npx（自动找 Python）
+npx agent-pitfalls search "context window overflow"
+
+# 方式 3 — 一键脚本
+curl -fsSL https://raw.githubusercontent.com/wiselinpm/agent-pitfalls-cn/main/install.sh | bash
+```
+
+### 子命令速览
+
+```bash
+agent-pitfalls build                              # 首次构建索引（秒级）
+agent-pitfalls search "claude code context overflow"  # 智能查询
+agent-pitfalls search "tool call" --platform openai-agents --severity high
+agent-pitfalls list --category cost --limit 10    # 列表 + 过滤
+agent-pitfalls show <slug>                        # 查看详情
+agent-pitfalls check .                            # 项目避坑体检
+agent-pitfalls platforms                          # 平台统计
+agent-pitfalls categories                         # 类别统计
+agent-pitfalls serve                              # 本地 HTTP 服务（MCP 通道）
+```
+
+### 智能查询逻辑
+
+不是关键词匹配，而是 **多字段加权 BM25 + 语义扩展**：
+
+| 字段 | 权重 | 说明 |
+|------|------|------|
+| `title` | 4.0 | 标题是用户最常匹配的目标 |
+| `symptoms` | 3.0 | 用户报现象时常描述症状 |
+| `summary` | 2.0 | 摘要点出主题 |
+| `root_causes` / `fixes` | 1.5 | 解决方案 |
+| 全文 | 1.0 | 兜底 |
+
+加上：**平台匹配加成 ×1.5** · **类别匹配加成 ×1.3** · **中英文同义词扩展**（`token limit` ⇄ `上下文` ⇄ `context window`） · **严重度 + verified 加成**。
+
+### 项目避坑体检
+
+```bash
+agent-pitfalls check .               # 扫描当前项目
+agent-pitfalls check src/ --json     # CI 用 JSON 输出
+```
+
+每条 issue 自动关联知识库里的相关 pitfall，附 slug / severity / URL：
+
+```
+● verbose 日志可能泄漏密钥/PII
+  src/main.py:42
+  > verbose=True
+    → Agent 调试日志意外打印 API Key
+      api-key-leaked-in-logs  [critical]
+```
+
+### 在主流 AI CLI 里使用
+
+| CLI | 安装方式 | 使用 |
+|-----|---------|------|
+| **Claude Code** | `ln -s plugin ~/.claude/plugins/agent-pitfalls` | `/pitfall <query>` · `/pitfall-check .` |
+| **Codex** | `cp -r plugin/codex/* ~/.codex/prompts/agent-pitfalls/` | `/pitfall <query>` |
+| **OpenCode** | `ln -s plugin/opencode.json ~/.opencode/plugins/` | `/pitfall <query>` |
+| **Gemini CLI** | `cp plugin/gemini-extension.json ~/.gemini/extensions/` | `/pitfall <query>` |
+
+详见 [`plugin/README.md`](./plugin/README.md)。
+
+### JSON 输出（给 LLM 调）
+
+```bash
+agent-pitfalls search "prompt injection" --json | jq '.hits[0].fixes'
+agent-pitfalls check . --json | jq '.issues[] | {file, title}'
+```
+
+### Python API
+
+```python
+from agent_pitfalls_cli.search import search, scan_project
+from agent_pitfalls_cli.index import load_records
+
+records = load_records()
+result = search(records, "context window overflow", top_k=5)
+for hit in result.hits:
+    print(f"{hit.score:.1f} | {hit.record.title} | {hit.record.severity}")
+```
+
+---
+
 ## 🗺️ Roadmap
 
 - [x] Round 1: 基础采集（21 个 collector · 3,486 pitfalls）
