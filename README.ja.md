@@ -22,6 +22,27 @@
 
 ---
 
+### 🎯 一言で言うと
+
+AIエージェント開発で遭遇するすべての落とし穴 — **5,561件の実世界の失敗事例**、それぞれに**症状/根本原因/修正/ソース**付き。Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aiderなど14の主要プラットフォームをカバー。
+
+### 🚀 3つの使い方
+
+| 用途 | 対象者 | 使い方 |
+|------|--------|--------|
+| **🌐 ウェブサイト** | 学習/研修/閲覧 | [agent-pitfalls.dev](https://github.com/wiselinpm/agent-pitfalls-cn) にアクセス |
+| **🔍 CLI** | 開発者 | `agent-pitfalls search "claude code context overflow"` |
+| **🤖 プラグイン** | Claude Code / Codex ユーザー | `/pitfall <query>` をセッション内で直接実行 |
+
+### 💡 コアバリュー
+
+- **時間を節約** — 問題発生時に即座に診断。GitHub Issues、StackOverflow、Reddit を探り回す必要なし
+- **コストを節約** — トークンコスト爆発、レートリミットカスケード、コンテキストウィンドウドリフトなどの予算食いの罠を事前に回避
+- **頭脳を節約** — すべての落とし穴に構造化された**症状→根本原因→修正**。自分で分析する必要なし
+- **事故を防止** — プロンプトインジェクション、秘密鍵リーク、サンドボックス脱出などのセキュリティ問題を事前に予防
+
+---
+
 ## 📸 サイトプレビュー
 
 ![Agent Pitfalls ホームページ — Heroコードブロック + 統計 + 人気カテゴリ + 最新エントリ](./docs/screenshots/home.png)

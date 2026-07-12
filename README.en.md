@@ -22,6 +22,27 @@
 
 ---
 
+### 🎯 One sentence
+
+Every pitfall you'll encounter while building AI Agents — **5,561 real-world failure cases**, each with **symptoms / root causes / fixes / sources**, covering 14 major platforms including Claude Code, OpenAI Agents SDK, LangChain, Cursor, and Aider.
+
+### 🚀 Three ways to use
+
+| Usage | For | How |
+|-------|-----|-----|
+| **🌐 Website** | Learning / training / browsing | Visit [agent-pitfalls.dev](https://github.com/wiselinpm/agent-pitfalls-cn) |
+| **🔍 CLI** | Developers | `agent-pitfalls search "claude code context overflow"` |
+| **🤖 Plugin** | Claude Code / Codex users | `/pitfall <query>` directly in your session |
+
+### 💡 Core value
+
+- **Save time** — Instant diagnosis when you hit a problem — no more digging through GitHub Issues, StackOverflow, and Reddit
+- **Save money** — Avoid token cost explosions, rate limit cascades, context window drift, and other budget-burning traps
+- **Save brainpower** — Structured **symptom → root cause → fix** for every pitfall — no need to analyze yourself
+- **Save incidents** — Prevent prompt injection, secret leaks, sandbox escapes, and other security disasters before they happen
+
+---
+
 ## 📸 Site Preview
 
 ![Agent Pitfalls Homepage — Hero code block + Stats + Popular categories + Latest entries](./docs/screenshots/home.png)
