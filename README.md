@@ -20,6 +20,27 @@
 
 ---
 
+### 🎯 一句话说清楚
+
+你在开发 AI Agent 时遇到的每一个坑，这里都收录过 — **5,561 个真实踩坑案例**，每个都有 **症状 / 根因 / 修复 / 来源**，覆盖 Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个主流平台。
+
+### 🚀 三种用法
+
+| 用法 | 适合谁 | 怎么用 |
+|------|--------|--------|
+| **🌐 网站浏览** | 学习/培训/查阅 | 直接访问 [agent-pitfalls.dev](https://github.com/wiselinpm/agent-pitfalls-cn) |
+| **🔍 CLI 即时查询** | 开发者 | `agent-pitfalls search "claude code context overflow"` |
+| **🤖 插件集成** | Claude Code / Codex 用户 | `/pitfall <query>` 在会话里直接查 |
+
+### 💡 核心价值
+
+- **省时间**：遇到问题秒级定位 — 不用在 GitHub Issues、StackOverflow、Reddit 里翻半天
+- **省 money**：提前规避 token 成本爆炸、rate limit 雪崩、context window 漂移等烧钱陷阱
+- **省脑子**：每个坑都有结构化的 **症状→根因→修复**，不用自己分析
+- **省事故**：prompt injection、密钥泄漏、sandbox 逃逸等安全问题提前预防
+
+---
+
 ## 📸 站点预览
 
 ![Agent Pitfalls 首页 — Hero 代码块 + Stats + 热门分类 + 最新收录](./docs/screenshots/home.png)
