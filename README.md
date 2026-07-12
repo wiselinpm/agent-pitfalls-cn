@@ -16,7 +16,7 @@
 🚨 5,561 pitfalls · 📡 72 collectors · 🌐 12+ languages · ⚡ 8s build
 ```
 
-[English](#english) · [简体中文](#简体中文) · [演示站点](https://github.com/wiselinpm/agent-pitfalls-cn) · [贡献指南](./CONTRIBUTING.md) · [Schema](./docs/SCHEMA.md)
+[English](./README.en.md) · [简体中文](./README.md) · [日本語](./README.ja.md) · [演示站点](https://github.com/wiselinpm/agent-pitfalls-cn) · [贡献指南](./CONTRIBUTING.md) · [Schema](./docs/SCHEMA.md)
 
 ---
 
