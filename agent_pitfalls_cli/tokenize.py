@@ -43,33 +43,116 @@ CATEGORY_ALIASES: dict[str, tuple[str, ...]] = {
 }
 
 # —— 症状/根因常见关键词同义词 ——
+# 只展开「agent 开发」语境下的同义词，避免 "死循环" → "loop" → ImageMagick
 SYNONYMS: dict[str, tuple[str, ...]] = {
     "context": ("上下文", "context window", "token limit", "max tokens"),
-    "loop": ("死循环", "infinite loop", "stuck", "recursion"),
-    "leak": ("泄漏", "leak", "exposed", "verbose"),
-    "injection": ("注入", "injection", "jailbreak", "bypass"),
-    "crash": ("崩溃", "crash", "panic", "oom", "hang"),
-    "timeout": ("超时", "timeout", "deadline"),
-    "rate": ("限流", "rate limit", "429", "throttle"),
-    "billing": ("账单", "cost", "billing", "expensive", "token price"),
-    "deprecated": ("弃用", "deprecated", "deprecation", "migration"),
-    "secret": ("密钥", "secret", "api key", "token", "credential"),
-    "verbose": ("冗余", "verbose", "debug log", "日志"),
-    "truncat": ("截断", "truncat", "cutoff", "cut off"),
+    "loop": ("死循环", "infinite loop", "recursion limit", "agent loop"),
+    "leak": ("泄漏", "leak", "exposed", "secret leak"),
+    "injection": ("注入", "prompt injection", "jailbreak", "indirect injection"),
+    "crash": ("崩溃", "crash", "oom", "out of memory"),
+    "timeout": ("超时", "timeout", "streaming timeout"),
+    "rate": ("限流", "rate limit", "429", "retry backoff"),
+    "billing": ("账单", "token cost", "billing", "cost runaway"),
+    "deprecated": ("弃用", "deprecated", "migration"),
+    "secret": ("密钥", "api key", "secret", "credential leak"),
+    "verbose": ("冗余", "verbose logging", "debug log"),
+    "truncat": ("截断", "truncation", "context truncation"),
+    "overflow": ("溢出", "overflow", "context overflow", "token overflow"),
+    "tool": ("工具", "tool call", "function calling", "tool use"),
+    "memory": ("记忆", "memory leak", "context memory", "rag"),
+    "prompt": ("提示词", "prompt", "system prompt", "prompt engineering"),
+    "agent": ("智能体", "agent", "multi-agent", "agent loop"),
+    "token": ("令牌", "token", "tokenization", "token limit"),
+    "embed": ("嵌入", "embedding", "vector", "vector store"),
+    "hallucinate": ("幻觉", "hallucination", "rag hallucination"),
+}
+
+# —— 中文→英文反向映射 ——
+# 当用户输入纯中文时，自动补充对应的英文术语
+CN_TO_EN: dict[str, tuple[str, ...]] = {
+    "上下文": ("context", "context window", "token limit"),
+    "溢出": ("overflow", "truncation"),
+    "截断": ("truncation", "cutoff"),
+    "泄漏": ("leak", "exposed"),
+    "密钥": ("api key", "secret", "credential"),
+    "注入": ("injection", "jailbreak"),
+    "死循环": ("infinite loop", "recursion limit", "agent loop"),
+    "崩溃": ("crash", "oom", "panic"),
+    "超时": ("timeout", "deadline"),
+    "限流": ("rate limit", "429", "throttle"),
+    "账单": ("cost", "billing", "token cost"),
+    "弃用": ("deprecated", "migration"),
+    "沙箱": ("sandbox", "docker", "permission"),
+    "幻觉": ("hallucination", "rag"),
+    "嵌入": ("embedding", "vector"),
+    "工具": ("tool call", "function calling"),
+    "智能体": ("agent", "multi-agent"),
+    "令牌": ("token", "tokenization"),
+    "记忆": ("memory", "rag", "vector store"),
+    "提示词": ("prompt", "system prompt"),
+    "冗余": ("verbose", "debug log"),
+    "安全": ("security", "vulnerability"),
+    "可靠性": ("retry", "flaky", "idempotent"),
+    "延迟": ("latency", "slow", "ttft"),
+    "状态": ("state", "checkpoint"),
 }
 
 
 _TOKEN_RE = re.compile(
-    r"[A-Za-z][A-Za-z0-9_-]{1,}|[一-鿿]{2,}|\d+",
+    r"[A-Za-z][A-Za-z0-9_-]{1,}|[一-鿿]+|\d+",
+)
+
+# 已知的中文复合词（优先匹配）
+_CN_COMPOUND_RE = re.compile(
+    "|".join(re.escape(k) for k in sorted(CN_TO_EN.keys(), key=len, reverse=True))
 )
 
 
 def tokenize(text: str) -> list[str]:
-    """中英混合分词：小写化 + 中文字符按 2-字切分 + 英文/数字按词切分。"""
+    """中英混合分词：小写化 + 中文按已知复合词切分 + 英文/数字按词切分。"""
     if not text:
         return []
     text = text.lower()
-    return [t for t in _TOKEN_RE.findall(text) if len(t) >= 2 or t.isdigit()]
+    tokens: list[str] = []
+    # 先提取英文和数字
+    en_parts = _TOKEN_RE.findall(text)
+    # 对中文部分做复合词切分
+    cn_text = re.sub(r"[A-Za-z0-9_ -]+", " ", text)
+    for seg in cn_text.split():
+        if not seg:
+            continue
+        # 尝试匹配已知复合词
+        pos = 0
+        matched = False
+        for m in _CN_COMPOUND_RE.finditer(seg):
+            if m.start() > pos:
+                # 中间未匹配的中文字符，2字一组切分
+                mid = seg[pos:m.start()]
+                for i in range(0, len(mid), 2):
+                    chunk = mid[i:i+2]
+                    if len(chunk) >= 2:
+                        tokens.append(chunk)
+            tokens.append(m.group())
+            pos = m.end()
+            matched = True
+        if pos < len(seg):
+            mid = seg[pos:]
+            for i in range(0, len(mid), 2):
+                chunk = mid[i:i+2]
+                if len(chunk) >= 2:
+                    tokens.append(chunk)
+        elif not matched:
+            # 整段未匹配，2字一组
+            for i in range(0, len(seg), 2):
+                chunk = seg[i:i+2]
+                if len(chunk) >= 2:
+                    tokens.append(chunk)
+    # 合并英文 token
+    for t in en_parts:
+        t = t.lower()
+        if len(t) >= 2 or t.isdigit():
+            tokens.append(t)
+    return tokens
 
 
 def expand_query(tokens: Iterable[str]) -> list[str]:
@@ -77,6 +160,10 @@ def expand_query(tokens: Iterable[str]) -> list[str]:
     expanded: list[str] = []
     for tok in tokens:
         expanded.append(tok)
+        # 中文→英文反向映射（优先，解决纯中文查询问题）
+        for cn, en_terms in CN_TO_EN.items():
+            if tok == cn:
+                expanded.extend(en_terms)
         # 平台别名
         for canon, aliases in PLATFORM_ALIASES.items():
             if tok in aliases or tok == canon:

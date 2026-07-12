@@ -52,6 +52,21 @@ PLATFORM_MATCH_BOOST = 1.5
 CATEGORY_MATCH_BOOST = 1.3
 SEVERITY_BOOST = {"critical": 1.4, "high": 1.2, "medium": 1.0, "low": 0.9}
 VERIFIED_BOOST = 1.05
+QUALITY_BOOST = 1.3  # 有 symptoms+fixes 的条目加分
+DOMAIN_BOOST = 1.2   # 匹配 agent 开发领域的条目加分
+
+# 领域相关性：title/summary 里出现这些词才算「agent 开发」相关
+# 注意："agent" 单独出现会匹配到保险 agent 等无关内容，所以用组合词
+DOMAIN_KEYWORDS = (
+    "llm", "ai ", "ai-", "gpt", "claude", "openai", "anthropic",
+    "langchain", "langgraph", "autogen", "crewai", "cursor", "aider",
+    "prompt", "rag", "embedding", "vector", "tool call", "function calling",
+    "context window", "token", "model", "inference", "fine-tun",
+    "multi-agent", "ai agent", "agent loop", "agent sdk", "agent crash",
+    "mcp", "sandbox", "jailbreak", "injection",
+    "hallucination", "retry", "rate limit", "streaming",
+    "api", "sdk", "openai", "deepseek", "gemini",
+)
 
 
 @dataclass(frozen=True)
@@ -208,6 +223,17 @@ def search(
                 final[i] *= boost
         if rec.verified:
             final[i] *= VERIFIED_BOOST
+        # 质量加成：有 symptoms+fixes 的条目更实用
+        if rec.symptoms and rec.fixes:
+            final[i] *= QUALITY_BOOST
+        # 领域相关性：title/summary 包含 agent 开发关键词的条目优先
+        title_summary = (rec.title + " " + rec.summary).lower()
+        has_domain = any(kw in title_summary for kw in DOMAIN_KEYWORDS)
+        if has_domain:
+            final[i] *= DOMAIN_BOOST
+        elif final[i] > 0 and not any(kw in title_summary for kw in DOMAIN_KEYWORDS):
+            # 非领域相关的条目降权（避免 "死循环" 匹配到传销新闻）
+            final[i] *= 0.5
 
     # 收集 hits
     indexed = list(zip(final, records, matched_fields_per_doc))
@@ -369,7 +395,7 @@ def scan_project(
         return []
 
     issues: list[ScanIssue] = []
-    skip_dirs = {".git", "node_modules", "__pycache__", ".venv", "venv", "dist", "build", ".astro", "vue", "web"}
+    skip_dirs = {".git", "node_modules", "__pycache__", ".venv", "venv", "dist", "build", ".astro", "vue", "web", "agent_pitfalls_cli"}
     target_exts = {".py", ".ts", ".js", ".tsx", ".jsx", ".go", ".rs", ".java", ".rb"}
 
     for path in root.rglob("*"):
