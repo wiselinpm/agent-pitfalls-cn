@@ -20,6 +20,16 @@
 
 ---
 
+## 📸 站点预览
+
+![Agent Pitfalls 首页 — Hero 代码块 + Stats + 热门分类 + 最新收录](./docs/screenshots/home.png)
+
+*[点击查看完整截图 →](./docs/screenshots/home.png)*
+
+> 上图：首页一次截图 — Hero 区用真实 pitfall 的 YAML 语法高亮做"艺术字"、4 列统计、热门分类 chip、最新收录卡片（双列）、CTA 链接组。零 JS 框架、零 hydration、构建产物纯静态。
+
+---
+
 ## 💡 为什么做这个？
 
 每个做 AI Agent 的团队都会反复踩同一批坑：
