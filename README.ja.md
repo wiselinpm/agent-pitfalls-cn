@@ -319,6 +319,100 @@ class MySourceCollector:
 
 ---
 
+## 🖥️ CLI ツール — リアルタイムで落とし穴をクエリ
+
+**Agent Pitfalls CLI** により、Claude Code / Codex / OpenCode / Gemini CLI からターミナルを離れることなく落とし穴知識を直接クエリできます。
+
+### インストール
+
+```bash
+# 方法 1 — pip（推奨）
+pip install agent-pitfalls
+
+# 方法 2 — npx（Python を自動検出）
+npx agent-pitfalls search "context window overflow"
+
+# 方法 3 — ワンクリックスクリプト
+curl -fsSL https://raw.githubusercontent.com/wiselinpm/agent-pitfalls-cn/main/install.sh | bash
+```
+
+### サブコマンド
+
+```bash
+agent-pitfalls build                                     # インデックス構築（秒単位）
+agent-pitfalls search "claude code context overflow"     # スマート検索
+agent-pitfalls search "tool call" --platform openai-agents --severity high
+agent-pitfalls list --category cost --limit 10           # リスト + フィルタ
+agent-pitfalls show <slug>                               # 詳細表示
+agent-pitfalls check .                                   # プロジェクトの落とし穴スキャン
+agent-pitfalls platforms                                 # プラットフォーム統計
+agent-pitfalls categories                                # カテゴリ統計
+agent-pitfalls serve                                     # ローカル HTTP サーバー（MCP）
+```
+
+### スマート検索ロジック
+
+キーワードマッチングではなく **マルチフィールド加重 BM25 + 意味拡張**：
+
+| フィールド | 重み | 理由 |
+|-----------|------|------|
+| `title` | 4.0 | ユーザーはタイトルで最もマッチする |
+| `symptoms` | 3.0 | ユーザーは症状を記述する |
+| `summary` | 2.0 | 概要がトピックを捉える |
+| `root_causes` / `fixes` | 1.5 | 解決策が重要 |
+| 全文 | 1.0 | フォールバック |
+
+さらに：**プラットフォームマッチブースト ×1.5** · **カテゴリマッチブースト ×1.3** · **EN/CN 同義語拡張**（`token limit` ⇄ `上下文` ⇄ `context window`）· **重大度 + verified ブースト**。
+
+### プロジェクト落とし穴スキャン
+
+```bash
+agent-pitfalls check .               # 現在のプロジェクトをスキャン
+agent-pitfalls check src/ --json     # CI 用 JSON 出力
+```
+
+各 issue はナレッジベースの関連落とし穴に自動リンク：
+
+```
+● Verbose ログが秘密情報を漏洩する可能性
+  src/main.py:42
+  > verbose=True
+    → エージェントデバッグログが API Key を誤出力
+      api-key-leaked-in-logs  [critical]
+```
+
+### マルチCLI プラグイン統合
+
+| CLI | インストール | 使い方 |
+|-----|------------|--------|
+| **Claude Code** | `ln -s plugin ~/.claude/plugins/agent-pitfalls` | `/pitfall <query>` · `/pitfall-check .` |
+| **Codex** | `cp -r plugin/codex/* ~/.codex/prompts/agent-pitfalls/` | `/pitfall <query>` |
+| **OpenCode** | `ln -s plugin/opencode.json ~/.opencode/plugins/` | `/pitfall <query>` |
+| **Gemini CLI** | `cp plugin/gemini-extension.json ~/.gemini/extensions/` | `/pitfall <query>` |
+
+詳細は [`plugin/README.md`](./plugin/README.md) を参照。
+
+### JSON 出力（LLM 用）
+
+```bash
+agent-pitfalls search "prompt injection" --json | jq '.hits[0].fixes'
+agent-pitfalls check . --json | jq '.issues[] | {file, title}'
+```
+
+### Python API
+
+```python
+from agent_pitfalls_cli.search import search, scan_project
+from agent_pitfalls_cli.index import load_records
+
+records = load_records()
+result = search(records, "context window overflow", top_k=5)
+for hit in result.hits:
+    print(f"{hit.score:.1f} | {hit.record.title} | {hit.record.severity}")
+```
+
+---
+
 ## 🗺️ ロードマップ
 
 - [x] Round 1: 基本収集（21 コレクター · 3,486 pitfalls）

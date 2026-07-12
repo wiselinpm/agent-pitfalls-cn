@@ -319,6 +319,100 @@ Content error / broken link / wrong category — open an issue with `correction`
 
 ---
 
+## 🖥️ CLI Tool — Query Pitfalls in Real-Time
+
+**Agent Pitfalls CLI** lets you query pitfall knowledge directly from Claude Code / Codex / OpenCode / Gemini CLI without leaving your terminal.
+
+### Install
+
+```bash
+# Option 1 — pip (recommended)
+pip install agent-pitfalls
+
+# Option 2 — npx (auto-finds Python)
+npx agent-pitfalls search "context window overflow"
+
+# Option 3 — one-click script
+curl -fsSL https://raw.githubusercontent.com/wiselinpm/agent-pitfalls-cn/main/install.sh | bash
+```
+
+### Subcommands
+
+```bash
+agent-pitfalls build                                     # Build index (seconds)
+agent-pitfalls search "claude code context overflow"     # Smart search
+agent-pitfalls search "tool call" --platform openai-agents --severity high
+agent-pitfalls list --category cost --limit 10           # List + filter
+agent-pitfalls show <slug>                               # Show details
+agent-pitfalls check .                                   # Scan project for pitfalls
+agent-pitfalls platforms                                 # Platform stats
+agent-pitfalls categories                                # Category stats
+agent-pitfalls serve                                     # Local HTTP server (MCP)
+```
+
+### Smart Search Logic
+
+Not keyword matching — **multi-field weighted BM25 + semantic expansion**:
+
+| Field | Weight | Why |
+|-------|--------|-----|
+| `title` | 4.0 | Users match on titles most |
+| `symptoms` | 3.0 | Users describe symptoms |
+| `summary` | 2.0 | Summaries capture topic |
+| `root_causes` / `fixes` | 1.5 | Solutions matter |
+| full text | 1.0 | Fallback |
+
+Plus: **platform match boost ×1.5** · **category match boost ×1.3** · **EN/CN synonym expansion** (`token limit` ⇄ `上下文` ⇄ `context window`) · **severity + verified boost**.
+
+### Project Pitfall Scan
+
+```bash
+agent-pitfalls check .               # Scan current project
+agent-pitfalls check src/ --json     # CI JSON output
+```
+
+Each issue auto-links to related pitfalls from the knowledge base:
+
+```
+● Verbose logging may leak secrets/PII
+  src/main.py:42
+  > verbose=True
+    → Agent debug logs accidentally print API Key
+      api-key-leaked-in-logs  [critical]
+```
+
+### Multi-CLI Plugin Integration
+
+| CLI | Install | Use |
+|-----|---------|-----|
+| **Claude Code** | `ln -s plugin ~/.claude/plugins/agent-pitfalls` | `/pitfall <query>` · `/pitfall-check .` |
+| **Codex** | `cp -r plugin/codex/* ~/.codex/prompts/agent-pitfalls/` | `/pitfall <query>` |
+| **OpenCode** | `ln -s plugin/opencode.json ~/.opencode/plugins/` | `/pitfall <query>` |
+| **Gemini CLI** | `cp plugin/gemini-extension.json ~/.gemini/extensions/` | `/pitfall <query>` |
+
+See [`plugin/README.md`](./plugin/README.md).
+
+### JSON Output (for LLM consumption)
+
+```bash
+agent-pitfalls search "prompt injection" --json | jq '.hits[0].fixes'
+agent-pitfalls check . --json | jq '.issues[] | {file, title}'
+```
+
+### Python API
+
+```python
+from agent_pitfalls_cli.search import search, scan_project
+from agent_pitfalls_cli.index import load_records
+
+records = load_records()
+result = search(records, "context window overflow", top_k=5)
+for hit in result.hits:
+    print(f"{hit.score:.1f} | {hit.record.title} | {hit.record.severity}")
+```
+
+---
+
 ## 🗺️ Roadmap
 
 - [x] Round 1: Base collection (21 collectors · 3,486 pitfalls)
