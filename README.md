@@ -336,6 +336,57 @@ npx agent-pitfalls search "context window overflow"
 curl -fsSL https://raw.githubusercontent.com/wiselinpm/agent-pitfalls-cn/main/install.sh | bash
 ```
 
+### 实战场景：4 个真实案例
+
+**场景 1：Claude Code 长会话行为漂移**
+
+```bash
+$ agent-pitfalls search "claude code 上下文漂移"
+
+🔍 1/5561 matches for 'claude code 上下文漂移'
+
+1. Claude Code 长会话中上下文被静默截断，模型「忘记」早期指令  [critical]
+   症状：agent 在第 N 轮突然忽略最初设定的输出格式约束
+   根因：客户端 SDK 默认在到达上限时丢弃最早的消息而非报错
+   修复：每轮结束时显式计算 usage.input_tokens，设置 80% 警戒线
+```
+
+**场景 2：Tool call 空参数导致 JSON 解析崩溃**
+
+```bash
+$ agent-pitfalls search "tool call arguments empty"
+
+🔍 1/5561 matches for 'tool call arguments empty'
+
+1. OpenAI Chat Completions 工具调用 arguments 偶发返回空字符串  [high]
+   症状：tool_calls[i].function.arguments 返回 ""，JSON 解析崩溃
+   修复：累计 arguments += delta 直到 finish_reason=tool_calls
+```
+
+**场景 3：LangChain token 成本爆炸**
+
+```bash
+$ agent-pitfalls search "langchain token cost"
+
+🔍 1/5561 matches for 'langchain token cost'
+
+1. LangChain AgentExecutor 隐性 token 成本爆炸  [high]
+   根因：每一步都把全部中间历史塞进 LLM 调用，O(n²) 增长
+   修复：用 ConversationSummaryBufferMemory + max_iterations=10
+```
+
+**场景 4：Prompt injection 防护**
+
+```bash
+$ agent-pitfalls search "prompt injection 防护"
+
+🔍 1/5561 matches for 'prompt injection 防护'
+
+1. 工具返回内容里的 Prompt 注入可劫持 Agent 主流程  [critical]
+   根因：工具结果与系统提示在同一个 prompt 拼接，没有边界
+   修复：输入消毒 + 权限隔离 + 工具结果标记边界
+```
+
 ### 子命令速览
 
 ```bash
@@ -362,7 +413,7 @@ agent-pitfalls serve                              # 本地 HTTP 服务（MCP 通
 | `root_causes` / `fixes` | 1.5 | 解决方案 |
 | 全文 | 1.0 | 兜底 |
 
-加上：**平台匹配加成 ×1.5** · **类别匹配加成 ×1.3** · **中英文同义词扩展**（`token limit` ⇄ `上下文` ⇄ `context window`） · **严重度 + verified 加成**。
+加上：**平台匹配加成 ×1.5** · **类别匹配加成 ×1.3** · **中英文同义词扩展**（`token limit` ⇄ `上下文` ⇄ `context window`） · **严重度 + verified 加成** · **领域相关性过滤**（排除保险 agent、传销新闻等无关内容）。
 
 ### 项目避坑体检
 
