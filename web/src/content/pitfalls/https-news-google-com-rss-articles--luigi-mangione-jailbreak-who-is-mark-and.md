@@ -1,0 +1,30 @@
+---
+title: "Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora - Time..."
+summary: 'Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora &nbsp;&nbsp; Times Now'
+severity: medium
+platforms:
+- generic
+categories:
+- prompt-injection
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: 'Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora - Times Now'
+  url: https://news.google.com/rss/articles/CBMiigJBVV95cUxQYWpBYmZPX0NYV2RPMHUwdTBDeXItOUVjVzhDUHV0R0xDamdTdV9PUEZDT2hFcDBHZDljaVZMaDhocGNBMDJzd1o0c2JndFdkV3hMM0gyOUVjQ04zbjlQQkJVQmJGY21kQXVUbkIxOUxEbEJVRHV5d210T1AzN2JYeVowYVBVYUJsYnliM21aVUlVZnVLUXk3VXhLYjlWbzBhRkdXc2ltdC1hUzhjREdXdHlOZlF3QWhMNDZTOWtzZGlLT0Rla1I0aXZ5eUM0SmRoUk1PRzRFQjR1MXdxR1hnUGVMbFFZUURTb2dvY0hwSFhrblF0Y3ljVDFUdTZOd09ObGlBUmhKcmNLQdIBjwJBVV95cUxQbVBub0MxZ2pReVdIMlVSc0VuRE9MZy12VEdpTklYMXIzbVZQd3lLYTFfbjMwN2dHVUR5ZDNfNmh0bDVIX1BIdVNET1ZPVlEzUWJVTTZnMmhiLXh1dUpSZmZYMzNnUVFsNDdoMVJyS3FPOF81dGhBRXM3VUx6OXVTeHh4SERvUGtaX19YMVhZbTMyREJyY1luUWJQcDVtNGhsc1RBb2lEVDBYakhYa0VrV3ZiUzZJbkl0ZDhXWV83NFNfVW91WU9mUVBGTTQ3VXdQV29JellCTFRlb3otSGNWY0JxVGJTSHRrczNPRnJFdmc5Sk9zMDFLRGZ1UmVWYmxOa1o3WEN3Q3JuellNd1ZR?oc=5
+  source: google-news:Times Now
+tags:
+- google-news
+- q:agent jailbreak
+- src:Times Now
+discovered_at: '2026-01-30'
+verified: false
+---
+
+- [Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora - Times Now](https://news.google.com/rss/articles/CBMiigJBVV95cUxQYWpBYmZPX0NYV2RPMHUwdTBDeXItOUVjVzhDUHV0R0xDamdTdV9PUEZDT2hFcDBHZDljaVZMaDhocGNBMDJzd1o0c2JndFdkV3hMM0gyOUVjQ04zbjlQQkJVQmJGY21kQXVUbkIxOUxEbEJVRHV5d210T1AzN2JYeVowYVBVYUJsYnliM21aVUlVZnVLUXk3VXhLYjlWbzBhRkdXc2ltdC1hUzhjREdXdHlOZlF3QWhMNDZTOWtzZGlLT0Rla1I0aXZ5eUM0SmRoUk1PRzRFQjR1MXdxR1hnUGVMbFFZUURTb2dvY0hwSFhrblF0Y3ljVDFUdTZOd09ObGlBUmhKcmNLQdIBjwJBVV95cUxQbVBub0MxZ2pReVdIMlVSc0VuRE9MZy12VEdpTklYMXIzbVZQd3lLYTFfbjMwN2dHVUR5ZDNfNmh0bDVIX1BIdVNET1ZPVlEzUWJVTTZnMmhiLXh1dUpSZmZYMzNnUVFsNDdoMVJyS3FPOF81dGhBRXM3VUx6OXVTeHh4SERvUGtaX19YMVhZbTMyREJyY1luUWJQcDVtNGhsc1RBb2lEVDBYakhYa0VrV3ZiUzZJbkl0ZDhXWV83NFNfVW91WU9mUVBGTTQ3VXdQV29JellCTFRlb3otSGNWY0JxVGJTSHRrczNPRnJFdmc5Sk9zMDFLRGZ1UmVWYmxOa1o3WEN3Q3JuellNd1ZR?oc=5) — google-news:Times Now
+
+## 摘要
+
+Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora &nbsp;&nbsp; Times Now
+
+_来源热度：2_

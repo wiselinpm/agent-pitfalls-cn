@@ -1,0 +1,36 @@
+{
+  "name": "agent-pitfalls",
+  "version": "0.1.0",
+  "private": false,
+  "description": "全网 agent 开发避坑信息整合 — 采集 / 整理 / 开源",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "echo 'lint placeholder'",
+    "collect": "python -m collectors.run_all",
+    "collect:github": "python -m collectors.sources.github_issues",
+    "collect:rss": "python -m collectors.sources.rss",
+    "test": "python -m pytest collectors/tests -q"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.0",
+    "@astrojs/rss": "^4.0.0",
+    "@astrojs/sitemap": "^3.2.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "astro": "^5.0.0",
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.17",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}

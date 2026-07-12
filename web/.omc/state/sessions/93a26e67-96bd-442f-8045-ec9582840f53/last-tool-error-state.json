@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd web && timeout 120 npm run build 2>&1 | grep -B2 -A15 \\\"InvalidContentEntry\\\" | head -30\",\"description\":\"查找 schema 违反细节\"}",
+  "error": "Exit code 1\n(eval):cd:1: no such file or directory: web",
+  "timestamp": "2026-07-12T11:38:06.006Z",
+  "retry_count": 1
+}

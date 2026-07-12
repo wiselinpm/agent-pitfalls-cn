@@ -1,0 +1,29 @@
+---
+title: "Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working - The Economic"
+summary: Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working &nbsp;&nbsp; The Economic Times
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working - The Economic Times
+  url: https://news.google.com/rss/articles/CBMizAJBVV95cUxNOE55UVJhRVRLR1ZjYVhKWmpVb0xxX2xXdFJoNmtfYmo0VWx6MkhTZV9ENUlPSmpDVm0xelZDMUM1YWhOVmZNbFJTQlpMeFk4VG0tWHg1ZkwxMzJMeWdhampQQVk2S1RWd01wQlZRRldDeUNrQXNxQTBQdXNYQ2Q2bTBjZ3lkTEhaNVpyRnJNWU1lc2hiWXowVjJFUDdtMERyUzVPS0dqY29WQmRjRXJlUWlRTUNnLTUwZzZuX25rU3I5T2tsZnVQWUtQVWNVbWJkRFFSMzZKTzNWMUhEQ3RJLVNGdW9kdlJpbmxLV3dZTFhOSEtsaEVYSkI0QTZaTkRXekd3c3VPTGQ0a09XVDg0ZVNGNGpoRjNleDZ1R1M5a2d4ZHVvX1YzdTNYeW9maTh4OFIzVFZRMFd4azROcEVnbm9iNUczd1ljX0JFatIB0gJBVV95cUxNYWVkWlcwNkoyX1l4TjRiaVpSelFwQ0M5T1BWdXFUeTRxX3hRNF9FY0pXU1Z2RUJpZTdaWUZUS1NCc3p2RXdUZU13dEdCNUZsQ1N1ZFI5cXhTXzcteW1pUnRja1VFcjdfX29OVXF1dERXNDgzYVAtTkg5b2FuTVlob2ZYRmhjZkRFbGVfSkJYeVBFT1ZYTFItMjQ5SGJRYlBnZUhrRnZvRUp0cmNTMFRsaUFmMkpxM1RyRkFVLWRuMEcwY3VTaks1V0c3Um45VDZVZGEzdGxCLVVmYkVKNzBvWlBuSFBQM3lJVmxYRHp1VlhNNWx2cS1ibzFYLUYtWTVtSWFFR2ZnMkV0TXlGZERrUzNGYVZvazdOel9EcmE4OEF6T2doMVllOEhqV0FsZ3puS0o0Rzh4SU11ZmJDa1BSODd6bWQ3eU9hN1JoRkVIUjZsdw?oc=5
+  source: google-news:The Economic Times
+tags:
+- google-news
+- q:Claude Code outage
+- src:The Economic Times
+discovered_at: '2026-03-25'
+verified: false
+---
+
+- [Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working - The Economic Times](https://news.google.com/rss/articles/CBMizAJBVV95cUxNOE55UVJhRVRLR1ZjYVhKWmpVb0xxX2xXdFJoNmtfYmo0VWx6MkhTZV9ENUlPSmpDVm0xelZDMUM1YWhOVmZNbFJTQlpMeFk4VG0tWHg1ZkwxMzJMeWdhampQQVk2S1RWd01wQlZRRldDeUNrQXNxQTBQdXNYQ2Q2bTBjZ3lkTEhaNVpyRnJNWU1lc2hiWXowVjJFUDdtMERyUzVPS0dqY29WQmRjRXJlUWlRTUNnLTUwZzZuX25rU3I5T2tsZnVQWUtQVWNVbWJkRFFSMzZKTzNWMUhEQ3RJLVNGdW9kdlJpbmxLV3dZTFhOSEtsaEVYSkI0QTZaTkRXekd3c3VPTGQ0a09XVDg0ZVNGNGpoRjNleDZ1R1M5a2d4ZHVvX1YzdTNYeW9maTh4OFIzVFZRMFd4azROcEVnbm9iNUczd1ljX0JFatIB0gJBVV95cUxNYWVkWlcwNkoyX1l4TjRiaVpSelFwQ0M5T1BWdXFUeTRxX3hRNF9FY0pXU1Z2RUJpZTdaWUZUS1NCc3p2RXdUZU13dEdCNUZsQ1N1ZFI5cXhTXzcteW1pUnRja1VFcjdfX29OVXF1dERXNDgzYVAtTkg5b2FuTVlob2ZYRmhjZkRFbGVfSkJYeVBFT1ZYTFItMjQ5SGJRYlBnZUhrRnZvRUp0cmNTMFRsaUFmMkpxM1RyRkFVLWRuMEcwY3VTaks1V0c3Um45VDZVZGEzdGxCLVVmYkVKNzBvWlBuSFBQM3lJVmxYRHp1VlhNNWx2cS1ibzFYLUYtWTVtSWFFR2ZnMkV0TXlGZERrUzNGYVZvazdOel9EcmE4OEF6T2doMVllOEhqV0FsZ3puS0o0Rzh4SU11ZmJDa1BSODd6bWQ3eU9hN1JoRkVIUjZsdw?oc=5) — google-news:The Economic Times
+
+## 摘要
+
+Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working &nbsp;&nbsp; The Economic Times
+
+_来源热度：2_

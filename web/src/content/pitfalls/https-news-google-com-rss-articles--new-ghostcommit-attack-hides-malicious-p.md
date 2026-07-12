@@ -1,0 +1,30 @@
+---
+title: New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI Agents - CyberSecurityNews
+summary: New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI Agents &nbsp;&nbsp; CyberSecurityNews
+severity: critical
+platforms:
+- generic
+categories:
+- security
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI Agents - CyberSecurityNews
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1mcXBSQlU4dFpheUQtVmNCeUNaX3VTVmZIaDI3QklxYTlHU2RTSjJtVjZoWkRpQWpSdmJYelllNi0xVVNjZkFCSlF4UG5LODd0RjBBdEZjb3EtODl1MGl2X0x2a0NxN3VHMVVqTWtaX2PSAbsCQVVfeXFMT2ctQ0tfU2JmQU54NHVZMnlENE1kZHBMeEQ3dF9RRVhlYzN2SHZrSnpJSUxneVJkbnUwM3dzYU8zbGJ5MmJJcEVTQTVzTXFRS0VLekNFM3ROTFZOMXhuZ3REdDI0bHBJRkpwdEtySjFvUVIwVnFuS2FoOS1wVENXdmhvTlcwdjVMQ1Q4eDJWNHBKbkxSamtaSVJzTTRQVHhaYkVpRlNMNkN2SG80cl90ZG9zejNVNGdTdWJUenVDR3Q4MXZycGcwRHVkRi0zRnNOTnZwUHpjeWs3ejM4MWdMc3JwSkV3Ni03OHBHR0RlRmZld3ZuZTZMTVlzeUtrekVWeWluYTM3cFRjTVRwOTVzQVJkZUhKQ0VZYmloaTNxX1Fpd2lQYjBCcHFFY0JZZjZNNHAtUkxGWGFmZVVV?oc=5
+  source: google-news:CyberSecurityNews
+tags:
+- google-news
+- q:AI agent supply chain attack
+- src:CyberSecurityNews
+discovered_at: '2026-07-11'
+verified: false
+---
+
+- [New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI Agents - CyberSecurityNews](https://news.google.com/rss/articles/CBMicEFVX3lxTE1mcXBSQlU4dFpheUQtVmNCeUNaX3VTVmZIaDI3QklxYTlHU2RTSjJtVjZoWkRpQWpSdmJYelllNi0xVVNjZkFCSlF4UG5LODd0RjBBdEZjb3EtODl1MGl2X0x2a0NxN3VHMVVqTWtaX2PSAbsCQVVfeXFMT2ctQ0tfU2JmQU54NHVZMnlENE1kZHBMeEQ3dF9RRVhlYzN2SHZrSnpJSUxneVJkbnUwM3dzYU8zbGJ5MmJJcEVTQTVzTXFRS0VLekNFM3ROTFZOMXhuZ3REdDI0bHBJRkpwdEtySjFvUVIwVnFuS2FoOS1wVENXdmhvTlcwdjVMQ1Q4eDJWNHBKbkxSamtaSVJzTTRQVHhaYkVpRlNMNkN2SG80cl90ZG9zejNVNGdTdWJUenVDR3Q4MXZycGcwRHVkRi0zRnNOTnZwUHpjeWs3ejM4MWdMc3JwSkV3Ni03OHBHR0RlRmZld3ZuZTZMTVlzeUtrekVWeWluYTM3cFRjTVRwOTVzQVJkZUhKQ0VZYmloaTNxX1Fpd2lQYjBCcHFFY0JZZjZNNHAtUkxGWGFmZVVV?oc=5) — google-news:CyberSecurityNews
+
+## 摘要
+
+New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI Agents &nbsp;&nbsp; CyberSecurityNews
+
+_来源热度：2_

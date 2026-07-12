@@ -1,0 +1,29 @@
+---
+title: Anthropic acknowledges Claude Opus 4.6 disruption, details hours-long service outage - Storyboard18
+summary: Anthropic acknowledges Claude Opus 4.6 disruption, details hours-long service outage &nbsp;&nbsp; Storyboard18
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Anthropic acknowledges Claude Opus 4.6 disruption, details hours-long service outage - Storyboard18
+  url: https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcVNMWVVNLU95NmJSVzlFMkxZYm1pdUJ6WGhwaEZZZGx4WkVZZWxsRVZTS3pvYXJsa3VzaFp1WlVXQ3d4b2d5NlAzZ3J5R0N2cWF1OUo0WGhfanhNRFZTTS1FY2I3aC0zNXFrWHNGdWFVdzUxLWk0WFdJekRVYS1zdDJRY3V6WVlwQnJmXzdzajJxMzE5dE9UWjJQdG9jSnV4ek1RVk0wOXo4Z0toZmpMWHpYckhPN3FUS05MQTRQOW0wZXdueVFuOWJOLTdIVllDZGNneFdB0gHbAUFVX3lxTE1vOUhpUzlRLTFNZ3E0MUlORTFUdUVMYkZSMGNXZ2p1LVF6QmZudGkyTFFWZFpxdjNRWWg2cDhQbVpOenR6VDVfMnZ4bEpTc3hWX3pGOTBZc2l1UGZ5WEpkdFhWcEo0VHlZTks1aEF5dWJOdW9rci1ocGZTMElodmpSQ0lhWnMyTDB5c3JvdDA2UXQwQXVFMm05N2NnRDRmZXFzR1lFVHdVU2V2d2xSbUhwM3J6SEZMYkpzWjFyOFc4d2pUdjNUVjEyTjcxRFRFdnVoV3I1VzVCSms0RQ?oc=5
+  source: google-news:Storyboard18
+tags:
+- google-news
+- q:Claude Code outage
+- src:Storyboard18
+discovered_at: '2026-06-03'
+verified: false
+---
+
+- [Anthropic acknowledges Claude Opus 4.6 disruption, details hours-long service outage - Storyboard18](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcVNMWVVNLU95NmJSVzlFMkxZYm1pdUJ6WGhwaEZZZGx4WkVZZWxsRVZTS3pvYXJsa3VzaFp1WlVXQ3d4b2d5NlAzZ3J5R0N2cWF1OUo0WGhfanhNRFZTTS1FY2I3aC0zNXFrWHNGdWFVdzUxLWk0WFdJekRVYS1zdDJRY3V6WVlwQnJmXzdzajJxMzE5dE9UWjJQdG9jSnV4ek1RVk0wOXo4Z0toZmpMWHpYckhPN3FUS05MQTRQOW0wZXdueVFuOWJOLTdIVllDZGNneFdB0gHbAUFVX3lxTE1vOUhpUzlRLTFNZ3E0MUlORTFUdUVMYkZSMGNXZ2p1LVF6QmZudGkyTFFWZFpxdjNRWWg2cDhQbVpOenR6VDVfMnZ4bEpTc3hWX3pGOTBZc2l1UGZ5WEpkdFhWcEo0VHlZTks1aEF5dWJOdW9rci1ocGZTMElodmpSQ0lhWnMyTDB5c3JvdDA2UXQwQXVFMm05N2NnRDRmZXFzR1lFVHdVU2V2d2xSbUhwM3J6SEZMYkpzWjFyOFc4d2pUdjNUVjEyTjcxRFRFdnVoV3I1VzVCSms0RQ?oc=5) — google-news:Storyboard18
+
+## 摘要
+
+Anthropic acknowledges Claude Opus 4.6 disruption, details hours-long service outage &nbsp;&nbsp; Storyboard18
+
+_来源热度：2_

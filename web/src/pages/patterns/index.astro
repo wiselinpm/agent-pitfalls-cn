@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const all = await getCollection('patterns');
+---
+<BaseLayout title="应对模式 · Agent Pitfalls" description="可复用的 agent 设计模式，附优缺点与适用场景">
+  <header class="mb-8">
+    <span class="eyebrow">PATTERNS</span>
+    <h1 class="mt-3 text-[32px] font-semibold leading-tight text-ink">应对模式</h1>
+    <p class="mt-2 text-[14px] text-slate">
+      踩过坑之后沉淀下来的设计模式 — 每条都附带适用场景与代价
+    </p>
+  </header>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    {all.map((p) => (
+      <article class="card">
+        <h2 class="text-[16px] font-semibold leading-snug text-ink">{p.data.title}</h2>
+        <p class="mt-2 text-[13px] leading-relaxed text-slate">{p.data.summary}</p>
+
+        {p.data.use_when && (
+          <div class="mt-4 rounded-md border border-lavender-mist bg-lavender-mist/30 p-3 text-[13px] text-slate">
+            <span class="eyebrow mr-2">适用</span>
+            <span class="text-ink">{p.data.use_when}</span>
+          </div>
+        )}
+
+        {p.data.pros?.length > 0 && (
+          <div class="mt-4">
+            <p class="eyebrow flex items-center gap-1.5">
+              <span class="font-mono text-teal">+</span> 优点
+            </p>
+            <ul class="mt-2 space-y-1.5 text-[13px] leading-relaxed text-slate">
+              {p.data.pros.map((s) => <li class="flex gap-2"><span class="font-mono text-teal">+</span><span>{s}</span></li>)}
+            </ul>
+          </div>
+        )}
+        {p.data.cons?.length > 0 && (
+          <div class="mt-4">
+            <p class="eyebrow flex items-center gap-1.5">
+              <span class="font-mono text-rust">−</span> 代价
+            </p>
+            <ul class="mt-2 space-y-1.5 text-[13px] leading-relaxed text-slate">
+              {p.data.cons.map((s) => <li class="flex gap-2"><span class="font-mono text-rust">−</span><span>{s}</span></li>)}
+            </ul>
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</BaseLayout>

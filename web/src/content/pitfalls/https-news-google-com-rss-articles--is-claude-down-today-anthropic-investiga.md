@@ -1,0 +1,29 @@
+---
+title: "Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he - The Economi"
+summary: Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he &nbsp;&nbsp; The Economic Times
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he - The Economic Times
+  url: https://news.google.com/rss/articles/CBMiywJBVV95cUxQYkZHeWcxZ3dmWFlhYmRNYjItN1psMkgzQ3NQbTBBWThYUkZPSGxicGVZN1RfR3lIek9rQ05RVVRIbXU4OTl6ZHJPSzZVTVI2MkVWUFNWbFRLdzZEbFVWVUNmcnR6N3hLeE9MMUR5djYyWUtNTmJxQzNqNXcyTGpKMDBhUkVHWWJxNzVkUGdzTTd0WU1VQUIxZzQybHNGUEVZMWt1WVExdnFySEhrZm5hN2NZcE9WY2RpOFhiVUhiRUxxeEUzQ3MyQWFyakxydGJ3cHkydFZJSUI2NGltM1ZpY05pVWRWRWpaQ3AxTTZKR1U5c2RTVWJCS2l6RTRIVC15OHk3NlZCTXdyTUxoV1h1aXJxa3ZPd0ZUM28xbHIzMkdpUVlmSHpoYk92WTR5eVBBenlHQlRiekxCR1NfQ1dlYXNiU3p5aWxJRGY40gHQAkFVX3lxTE0xLVoxZ0lSVmN5VHR0QnBsZmNvRTNENW5JRkxjbXJJaWZ6SWR2YU1rSlJYd3UySmRJR25fbEpHa2tzMjRJbm9SQ29WcTlnX1NGWEpOM25aQUR3dk9fQzd0VWt5Y3Y0S2RpVGFNU2phMFI2QnVOcE5lOWdMVGdkdG0zM3BzZ2l3R2phQklSd1dFYzZ6QWNETG43bFltYkcyWC1Ia2FiMXJ3ZUVDcGdYRjBfdzNhLUFSOS1KQlNlQnlaVlRZdGJZRnJnTGRCWnBYNmlXdzlRcHc5b3A5ZFltQldMSV90OFBLUXFTNEdxMlVOODBPMnM3anVjVW1HU1dZdGh4NTVVaEE0MDJUZGt4MmRuSDVCSElnWnB6WndyZVVvcnA3dWlZR210cHJ5el9OSzd2M3l0NlJuMjVyaEg0UFBkVE8xa2lmQlJ0MVJDVVU4dA?oc=5
+  source: google-news:The Economic Times
+tags:
+- google-news
+- q:Claude Code outage
+- src:The Economic Times
+discovered_at: '2026-03-11'
+verified: false
+---
+
+- [Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he - The Economic Times](https://news.google.com/rss/articles/CBMiywJBVV95cUxQYkZHeWcxZ3dmWFlhYmRNYjItN1psMkgzQ3NQbTBBWThYUkZPSGxicGVZN1RfR3lIek9rQ05RVVRIbXU4OTl6ZHJPSzZVTVI2MkVWUFNWbFRLdzZEbFVWVUNmcnR6N3hLeE9MMUR5djYyWUtNTmJxQzNqNXcyTGpKMDBhUkVHWWJxNzVkUGdzTTd0WU1VQUIxZzQybHNGUEVZMWt1WVExdnFySEhrZm5hN2NZcE9WY2RpOFhiVUhiRUxxeEUzQ3MyQWFyakxydGJ3cHkydFZJSUI2NGltM1ZpY05pVWRWRWpaQ3AxTTZKR1U5c2RTVWJCS2l6RTRIVC15OHk3NlZCTXdyTUxoV1h1aXJxa3ZPd0ZUM28xbHIzMkdpUVlmSHpoYk92WTR5eVBBenlHQlRiekxCR1NfQ1dlYXNiU3p5aWxJRGY40gHQAkFVX3lxTE0xLVoxZ0lSVmN5VHR0QnBsZmNvRTNENW5JRkxjbXJJaWZ6SWR2YU1rSlJYd3UySmRJR25fbEpHa2tzMjRJbm9SQ29WcTlnX1NGWEpOM25aQUR3dk9fQzd0VWt5Y3Y0S2RpVGFNU2phMFI2QnVOcE5lOWdMVGdkdG0zM3BzZ2l3R2phQklSd1dFYzZ6QWNETG43bFltYkcyWC1Ia2FiMXJ3ZUVDcGdYRjBfdzNhLUFSOS1KQlNlQnlaVlRZdGJZRnJnTGRCWnBYNmlXdzlRcHc5b3A5ZFltQldMSV90OFBLUXFTNEdxMlVOODBPMnM3anVjVW1HU1dZdGh4NTVVaEE0MDJUZGt4MmRuSDVCSElnWnB6WndyZVVvcnA3dWlZR210cHJ5el9OSzd2M3l0NlJuMjVyaEg0UFBkVE8xa2lmQlJ0MVJDVVU4dA?oc=5) — google-news:The Economic Times
+
+## 摘要
+
+Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he &nbsp;&nbsp; The Economic Times
+
+_来源热度：2_

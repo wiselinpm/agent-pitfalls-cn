@@ -1,0 +1,257 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categoryLabel, platformLabel, severityLabel } from '../../utils/labels';
+
+export async function getStaticPaths() {
+  const all = (await getCollection('pitfalls')).sort(
+    (a, b) => +new Date(b.data.discovered_at ?? 0) - +new Date(a.data.discovered_at ?? 0),
+  );
+  return all.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: {
+      entry,
+      prev: i > 0 ? all[i - 1] : null,
+      next: i < all.length - 1 ? all[i + 1] : null,
+      related: all
+        .filter(
+          (e) =>
+            e.id !== entry.id &&
+            (e.data.categories.some((c) => entry.data.categories.includes(c)) ||
+              e.data.platforms.some((p) => entry.data.platforms.includes(p))),
+        )
+        .slice(0, 4),
+    },
+  }));
+}
+
+const { entry, prev, next, related } = Astro.props;
+const { Content } = await render(entry);
+
+const severityBadge = {
+  critical: 'badge-critical',
+  high: 'badge-high',
+  medium: 'badge-medium',
+  low: 'badge-low',
+} as const;
+---
+<BaseLayout title={`${entry.data.title} · Agent Pitfalls`} description={entry.data.summary}>
+  <!-- Reading progress — hairline at top -->
+  <div class="fixed inset-x-0 top-14 z-30 h-px bg-lavender-mist">
+    <div id="reading-progress" class="h-full origin-left bg-ink transition-transform" style="transform: scaleX(0);"></div>
+  </div>
+
+  <nav class="mb-6 flex items-center gap-2 font-mono text-[12px] text-fog">
+    <a href="/pitfalls" class="hover:text-ink">pitfalls/</a>
+    <span class="text-mist">/</span>
+    <span class="truncate text-ink">{entry.id}</span>
+  </nav>
+
+  <div class="grid gap-10 lg:grid-cols-[1fr_280px]">
+    <article class="prose-tight min-w-0">
+      <header>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class={`badge ${severityBadge[entry.data.severity]}`}>{severityLabel(entry.data.severity)}</span>
+          {entry.data.platforms.map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
+          {entry.data.verified && <span class="badge badge-low">已验证</span>}
+        </div>
+        <h1 class="mt-4 text-[32px] font-semibold leading-tight text-ink">{entry.data.title}</h1>
+        <p class="mt-3 text-[16px] leading-relaxed text-slate">{entry.data.summary}</p>
+      </header>
+
+      {entry.data.symptoms.length > 0 && (
+        <section class="mt-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-[12px] text-mist">01</span>
+            <h2>症状</h2>
+            <span class="text-[12px] text-fog">怎么识别自己撞上了这个坑</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {entry.data.symptoms.map((s) => (
+              <li class="flex gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] leading-relaxed text-slate">
+                <span aria-hidden="true" class="mt-0.5 font-mono text-rust">·</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {entry.data.root_causes.length > 0 && (
+        <section class="mt-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-[12px] text-mist">02</span>
+            <h2>根因</h2>
+            <span class="text-[12px] text-fog">为什么会发生</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {entry.data.root_causes.map((s) => (
+              <li class="flex gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] leading-relaxed text-slate">
+                <span aria-hidden="true" class="mt-0.5 font-mono text-cobalt">·</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {entry.data.fixes.length > 0 && (
+        <section class="mt-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-[12px] text-mist">03</span>
+            <h2>修复 / 缓解</h2>
+            <span class="text-[12px] text-fog">推荐方案</span>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {entry.data.fixes.map((s) => (
+              <li class="flex gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] leading-relaxed text-slate">
+                <span aria-hidden="true" class="mt-0.5 font-mono text-teal">✓</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section class="mt-10">
+        <Content />
+      </section>
+
+      {entry.data.references.length > 0 && (
+        <section class="mt-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-[12px] text-mist">04</span>
+            <h2>参考来源</h2>
+          </div>
+          <ul class="mt-4 space-y-2">
+            {entry.data.references.map((r) => (
+              <li class="flex items-start gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] hover:border-mist">
+                <span aria-hidden="true" class="mt-0.5 font-mono text-fog">↗</span>
+                <a href={r.url} target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 font-medium text-ink underline-offset-2 hover:underline">
+                  {r.title}
+                </a>
+                {r.source && <span class="badge flex-shrink-0">{r.source}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <!-- Prev / Next -->
+      <nav class="mt-14 grid gap-3 border-t border-lavender-mist pt-8 sm:grid-cols-2">
+        {prev ? (
+          <a href={`/pitfalls/${prev.id}`} class="card card-hover group">
+            <p class="font-mono text-[11px] uppercase tracking-[0.056em] text-mist">← prev</p>
+            <p class="mt-2 line-clamp-2 text-[14px] font-medium leading-snug text-ink">{prev.data.title}</p>
+          </a>
+        ) : (
+          <div></div>
+        )}
+        {next ? (
+          <a href={`/pitfalls/${next.id}`} class="card card-hover group sm:text-right">
+            <p class="font-mono text-[11px] uppercase tracking-[0.056em] text-mist">next →</p>
+            <p class="mt-2 line-clamp-2 text-[14px] font-medium leading-snug text-ink">{next.data.title}</p>
+          </a>
+        ) : (
+          <div></div>
+        )}
+      </nav>
+
+      <footer class="mt-10 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-lavender-mist pt-6 text-[12px] text-fog">
+        <span>收录于 <span class="font-mono text-ink">{entry.data.discovered_at ?? '未注明'}</span></span>
+        <span class="text-mist">·</span>
+        <span>贡献者 <span class="font-mono text-ink">{entry.data.contributor ?? '匿名'}</span></span>
+        <a href={`https://github.com/agent-pitfalls/agent-pitfalls/edit/main/web/src/content/pitfalls/${entry.id}.md`}
+           target="_blank" rel="noopener noreferrer"
+           class="ml-auto link-cta text-[12px]">
+          在 GitHub 上编辑
+        </a>
+      </footer>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block">
+      <div class="sticky top-20 space-y-4">
+        <div class="card">
+          <p class="eyebrow">TL;DR</p>
+          <p class="mt-3 text-[13px] leading-relaxed text-slate">{entry.data.summary}</p>
+
+          <dl class="mt-5 space-y-4 text-[13px]">
+            <div>
+              <dt class="eyebrow">严重程度</dt>
+              <dd class="mt-1.5"><span class={`badge ${severityBadge[entry.data.severity]}`}>{severityLabel(entry.data.severity)}</span></dd>
+            </div>
+            <div>
+              <dt class="eyebrow">涉及平台</dt>
+              <dd class="mt-1.5 flex flex-wrap gap-1">
+                {entry.data.platforms.map((p) => <span class="badge">{platformLabel(p)}</span>)}
+              </dd>
+            </div>
+            {entry.data.categories.length > 0 && (
+              <div>
+                <dt class="eyebrow">分类</dt>
+                <dd class="mt-1.5 flex flex-wrap gap-1">
+                  {entry.data.categories.map((c) => <span class="badge">#{categoryLabel(c)}</span>)}
+                </dd>
+              </div>
+            )}
+            <hr class="hairline" />
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <dt class="eyebrow">症状</dt>
+                <dd class="mt-1 font-mono text-[18px] font-semibold tabular-nums text-ink">{entry.data.symptoms.length}</dd>
+              </div>
+              <div>
+                <dt class="eyebrow">修复</dt>
+                <dd class="mt-1 font-mono text-[18px] font-semibold tabular-nums text-ink">{entry.data.fixes.length}</dd>
+              </div>
+            </div>
+            {entry.data.verified && (
+              <div class="flex items-center gap-2 rounded-md border border-lavender-mist bg-lavender-mist/50 px-3 py-2 text-[12px] font-medium text-ink">
+                <span class="font-mono text-teal">✓</span>
+                已通过社区验证
+              </div>
+            )}
+          </dl>
+        </div>
+
+        {related.length > 0 && (
+          <div class="card">
+            <p class="eyebrow">相关条目</p>
+            <ul class="mt-3 space-y-3">
+              {related.map((r) => (
+                <li>
+                  <a href={`/pitfalls/${r.id}`} class="group block">
+                    <div class="flex items-center gap-1.5">
+                      <span class={`badge ${severityBadge[r.data.severity]}`}>{severityLabel(r.data.severity)}</span>
+                    </div>
+                    <p class="mt-1 line-clamp-2 text-[13px] font-medium leading-snug text-ink group-hover:underline">
+                      {r.data.title}
+                    </p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </aside>
+  </div>
+
+  <script is:inline>
+    (function () {
+      const bar = document.getElementById('reading-progress');
+      const article = document.querySelector('article');
+      if (!bar || !article) return;
+      function update() {
+        const rect = article.getBoundingClientRect();
+        const total = article.scrollHeight;
+        const scrolled = -rect.top + window.innerHeight * 0.2;
+        const pct = Math.max(0, Math.min(1, scrolled / total));
+        bar.style.transform = `scaleX(${pct})`;
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
+</BaseLayout>

@@ -1,0 +1,268 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1783840379492,
+  "projectRoot": "/Users/linxiaobin/Downloads/agent避坑/vue",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vue",
+        "version": "3.5.13",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "6.0.7",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview --host"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1783840379485,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1783840379485,
+      "keyFiles": [
+        "App.vue",
+        "main.js"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 4,
+      "lastAccessed": 1783840379487,
+      "keyFiles": [
+        "index-CqtDYmNK.css",
+        "index-Doe8KX9w.js",
+        "markdown-D6LFbU2s.js"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 3,
+      "lastAccessed": 1783840379487,
+      "keyFiles": [
+        "PitfallCard.vue",
+        "SiteFooter.vue",
+        "SiteHeader.vue"
+      ]
+    },
+    "src/data": {
+      "path": "src/data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1783840379488,
+      "keyFiles": [
+        "manifest.json"
+      ]
+    },
+    "src/pages": {
+      "path": "src/pages",
+      "purpose": "Page components",
+      "fileCount": 9,
+      "lastAccessed": 1783840379488,
+      "keyFiles": [
+        "About.vue",
+        "Advisories.vue",
+        "Contributing.vue"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 0,
+      "lastAccessed": 1783840379488,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/styles/global.css",
+      "accessCount": 9,
+      "lastAccessed": 1783841562081,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Contributing.vue",
+      "accessCount": 8,
+      "lastAccessed": 1783841658250,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Schema.vue",
+      "accessCount": 8,
+      "lastAccessed": 1783841682347,
+      "type": "file"
+    },
+    {
+      "path": "src/components/PitfallCard.vue",
+      "accessCount": 7,
+      "lastAccessed": 1783841649532,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Home.vue",
+      "accessCount": 7,
+      "lastAccessed": 1783841760386,
+      "type": "file"
+    },
+    {
+      "path": "src/components/SiteFooter.vue",
+      "accessCount": 6,
+      "lastAccessed": 1783841622448,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/About.vue",
+      "accessCount": 5,
+      "lastAccessed": 1783841653001,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Advisories.vue",
+      "accessCount": 5,
+      "lastAccessed": 1783841664044,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Patterns.vue",
+      "accessCount": 5,
+      "lastAccessed": 1783841672096,
+      "type": "file"
+    },
+    {
+      "path": "src/components/SiteHeader.vue",
+      "accessCount": 5,
+      "lastAccessed": 1783842051760,
+      "type": "file"
+    },
+    {
+      "path": "index.html",
+      "accessCount": 4,
+      "lastAccessed": 1783841508172,
+      "type": "file"
+    },
+    {
+      "path": "src/styles/tailwind-tokens.css",
+      "accessCount": 4,
+      "lastAccessed": 1783841521785,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Pitfalls.vue",
+      "accessCount": 4,
+      "lastAccessed": 1783841728402,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/NotFound.vue",
+      "accessCount": 3,
+      "lastAccessed": 1783841659041,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/PitfallDetail.vue",
+      "accessCount": 3,
+      "lastAccessed": 1783841708933,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Stickers.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841578181,
+      "type": "file"
+    },
+    {
+      "path": "src/components/StickerHeart.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841581072,
+      "type": "file"
+    },
+    {
+      "path": "src/components/StickerLightning.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841582304,
+      "type": "file"
+    },
+    {
+      "path": "src/components/StickerGhost.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841584645,
+      "type": "file"
+    },
+    {
+      "path": "src/components/StickerSparkle.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841586032,
+      "type": "file"
+    },
+    {
+      "path": "src/components/HandDrawnArrow.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841589091,
+      "type": "file"
+    },
+    {
+      "path": "src/components/NotebookProduct.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841598429,
+      "type": "file"
+    },
+    {
+      "path": "src/App.vue",
+      "accessCount": 1,
+      "lastAccessed": 1783841608908,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

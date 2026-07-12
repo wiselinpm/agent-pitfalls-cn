@@ -1,0 +1,25 @@
+---
+title: 'AI agents are a confused deputy with the keys to your...'
+summary: 'How attackers took twenty thousand Instagram accounts by asking Meta&#x27;s AI politely, and why that failure is about to become...'
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: "AI agents are a confused deputy with the keys to your kingdom​​​​‌\uFEFF‍\uFEFF​‍​‍‌‍\uFEFF\uFEFF‌\uFEFF​‍‌‍‍‌‌‍‌\uFEFF‌‍‍‌‌‍\uFEFF‍​‍​‍​\uFEFF‍‍​‍​‍‌\uFEFF​\uFEFF‌‍​‌‌‍\uFEFF‍‌‍‍‌‌\uFEFF‌​‌\uFEFF‍‌​‍\uFEFF‍‌‍‍‌‌‍\uFEFF\uFEFF​‍​‍​‍\uFEFF​​‍​‍‌‍‍​‌\uFEFF​‍‌‍‌‌‌‍‌‍​‍​‍​\uFEFF‍‍​‍​‍‌‍‍​‌\uFEFF‌​‌\uFEFF‌​‌\uFEFF​​‌\uFEFF​\uFEFF​\uFEFF‍‍​‍\uFEFF\uFEFF​‍\uFEFF\uFEFF‌‍​\uFEFF‌‍\uFEFF‌‌\uFEFF​\uFEFF​‍\uFEFF‍‌\uFEFF​\uFEFF‌\uFEFF‌​‌‍​‌‌‍​\uFEFF‌‍‍\uFEFF‌‍\uFEFF\uFEFF‌\uFEFF‌‍‌‍‌‌‌\uFEFF​‍‌‍‌‍‌‍\uFEFF​‌‍\uFEFF\uFEFF‌\uFEFF‌\uFEFF​‍\uFEFF‍‌‍​\uFEFF‌‍\uFEFF\uFEFF​‍\uFEFF\uFEFF‌‍‍‌‌‍\uFEFF‍‌\uFEFF‌​‌‍‌‌‌‍\uFEFF‍‌\uFEFF‌​​‍\uFEFF\uFEFF‌‍‌‌‌‍‌​‌‍‍‌‌\uFEFF‌​​‍\uFEFF\uFEFF‌‍\uFEFF‌‌‍\uFEFF\uFEFF‌‍‌​‌‍‌‌​\uFEFF\uFEFF‌‌\uFEFF​​‌\uFEFF​‍‌‍‌‌‌\uFEFF​\uFEFF‌‍‌‌‌‍\uFEFF‍‌\uFEFF‌​‌‍​‌‌\uFEFF‌​‌‍‍‌‌‍\uFEFF\uFEFF‌‍\uFEFF‍​\uFEFF‍\uFEFF‌‍‍‌‌‍‌​​\uFEFF\uFEFF‌​\uFEFF‌‍​\uFEFF​‍‌‍​‌‌‍​‌‌‍​‍​\uFEFF​‌​\uFEFF‌‌‌‍​‌​‍\uFEFF‌​\uFEFF​​​\uFEFF​‌​\uFEFF‌‌‌‍​‌​‍\uFEFF‌​\uFEFF‌​‌‍​‍‌‍‌‍​\uFEFF​‍​‍\uFEFF‌​\uFEFF‍​‌‍​‍​\uFEFF​\uFEFF‌‍‌‌​‍\uFEFF‌‌‍​‍​\uFEFF‍‌​\uFEFF‌​‌‍​\uFEFF‌‍​\uFEFF​\uFEFF​\uFEFF​\uFEFF‌‌​\uFEFF‌‍​\uFEFF‍‌​\uFEFF‌\uFEFF​\uFEFF‌\uFEFF​\uFEFF​​​\uFEFF‍\uFEFF‌\uFEFF‌​‌\uFEFF‍‌‌\uFEFF​​‌‍‌‌​\uFEFF\uFEFF‌‌‍​‍‌‍\uFEFF​‌‍\uFEFF\uFEFF‌‍‌\uFEFF‌‌​​‌‍\uFEFF\uFEFF‌\uFEFF​\uFEFF‌\uFEFF‌​​\uFEFF‍\uFEFF‌\uFEFF​​‌‍​‌‌\uFEFF‌​‌‍‍​​\uFEFF\uFEFF‌‌\uFEFF‌​‌‍‍‌‌\uFEFF‌​‌‍\uFEFF​‌‍‌‌​\uFEFF\uFEFF\uFEFF‌‍​‍‌‍​‌‌\uFEFF​\uFEFF‌‍‌‌‌‌‌‌‌\uFEFF​‍‌‍\uFEFF​​\uFEFF\uFEFF‌‌‍‍​‌\uFEFF‌​‌\uFEFF‌​‌\uFEFF​​‌\uFEFF​\uFEFF​‍‌‌​\uFEFF​\uFEFF‌​​‌​‍‌‌​\uFEFF​‍‌​‌‍​‍‌‌​\uFEFF​‍‌​‌‍‌‍​\uFEFF‌‍\uFEFF‌‌\uFEFF​\uFEFF​‍\uFEFF‍‌\uFEFF​\uFEFF‌\uFEFF‌​‌‍​‌‌‍​\uFEFF‌‍‍\uFEFF‌‍\uFEFF\uFEFF‌\uFEFF‌‍‌‍‌‌‌\uFEFF​‍‌‍‌‍‌‍\uFEFF​‌‍\uFEFF\uFEFF‌\uFEFF‌\uFEFF​‍\uFEFF‍‌‍​\uFEFF‌‍\uFEFF\uFEFF​‍‌‍‌‍‍‌‌‍‌​​\uFEFF\uFEFF‌​\uFEFF‌‍​\uFEFF​‍‌‍​‌‌‍​‌‌‍​‍​\uFEFF​‌​\uFEFF‌‌‌‍​‌​‍\uFEFF‌​\uFEFF​​​\uFEFF​‌​\uFEFF‌‌‌‍​‌​‍\uFEFF‌​\uFEFF‌​‌‍​‍‌‍‌‍​\uFEFF​‍​‍\uFEFF‌​\uFEFF‍​‌‍​‍​\uFEFF​\uFEFF‌‍‌‌​‍\uFEFF‌‌‍​‍​\uFEFF‍‌​\uFEFF‌​‌‍​\uFEFF‌‍​\uFEFF​\uFEFF​\uFEFF​\uFEFF‌‌​\uFEFF‌‍​\uFEFF‍‌​\uFEFF‌\uFEFF​\uFEFF‌\uFEFF​\uFEFF​​​‍‌‍‌\uFEFF‌​‌\uFEFF‍‌‌\uFEFF​​‌‍‌‌​\uFEFF\uFEFF‌‌‍​‍‌‍\uFEFF​‌‍\uFEFF\uFEFF‌‍‌\uFEFF‌‌​​‌‍\uFEFF\uFEFF‌\uFEFF​\uFEFF‌\uFEFF‌​​‍‌‍‌\uFEFF​​‌‍​‌‌\uFEFF‌​‌‍‍​​\uFEFF\uFEFF‌‌\uFEFF‌​‌‍‍‌‌\uFEFF‌​‌‍\uFEFF​‌‍‌‌​‍‌‍‌\uFEFF​​‌‍‌‌‌\uFEFF​‍‌\uFEFF​\uFEFF‌\uFEFF​​‌‍‌‌‌‍​\uFEFF‌\uFEFF‌​‌‍‍‌‌\uFEFF‌‍‌‍‌‌​\uFEFF\uFEFF‌‌\uFEFF​​‌\uFEFF‌‌‌‍​‍‌‍\uFEFF​‌‍‍‌‌\uFEFF​\uFEFF‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌\uFEFF\uFEFF‌"
+  url: https://stackoverflow.blog/2026/06/17/ai-agents-expose-the-security-checks-you-never-actually-wrote/
+  source: stackoverflow-blog
+tags:
+- stackoverflow-blog
+contributor: Fabio Salvadori
+discovered_at: '2026-06-17'
+verified: false
+---
+- [AI agents are a confused deputy with the keys to your kingdom​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿​‍‌‍​‌‌‍​‌‌‍​‍​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿​​​﻿​‌​﻿‌‌‌‍​‌​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​‍​‍﻿‌​﻿‍​‌‍​‍​﻿​﻿‌‍‌‌​‍﻿‌‌‍​‍​﻿‍‌​﻿‌​‌‍​﻿‌‍​﻿​﻿​﻿​﻿‌‌​﻿‌‍​﻿‍‌​﻿‌﻿​﻿‌﻿​﻿​​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌](https://stackoverflow.blog/2026/06/17/ai-agents-expose-the-security-checks-you-never-actually-wrote/) — stackoverflow-blog
+
+## 摘要
+
+How attackers took twenty thousand Instagram accounts by asking Meta&#x27;s AI politely, and why that failure is about to become common.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿

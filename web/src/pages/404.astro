@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="404 · Agent Pitfalls">
+  <div class="py-16">
+    <div class="mx-auto max-w-xl">
+      <div class="code-block">
+<pre class="m-0 border-0 p-0 font-mono text-[14px] leading-relaxed shadow-none" style="background: transparent;"><span class="tok-prompt">$</span> <span class="tok-cmd">curl</span> <span class="tok-key">-I</span> <span class="tok-string">{Astro.url.pathname}</span>
+<span class="tok-comment">HTTP/1.1 404 Not Found</span>
+<span class="tok-comment">x-powered-by: agent-pitfalls</span>
+<span class="tok-comment">x-reason: 这一页的坑还没人踩过</span></pre>
+      </div>
+
+      <h1 class="mt-8 text-[32px] font-semibold leading-tight text-ink">404 · 这一页的坑还没人踩过</h1>
+      <p class="mt-3 text-[14px] leading-relaxed text-slate">
+        也许你想看的是避坑库、采集管线、或者直接到 GitHub 提交一个新坑。
+      </p>
+
+      <div class="mt-6 flex flex-wrap items-center gap-x-7 gap-y-3">
+        <a href="/" class="link-cta">回首页</a>
+        <a href="/pitfalls" class="link-cta">浏览避坑库</a>
+        <a href="/contributing" class="link-cta">提交新坑</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

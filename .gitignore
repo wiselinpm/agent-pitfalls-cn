@@ -1,0 +1,38 @@
+# 构建产物
+node_modules/
+dist/
+.astro/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# 本地配置
+.env
+.env.local
+*.local
+
+# 采集器输出（通常不提交）
+data/raw/
+data/raw*/
+data/cache/
+
+# OMC 状态
+.omc/
+
+# 中间报告
+dedup_report*.json
+
+# 临时构建
+web/.dev.tmp

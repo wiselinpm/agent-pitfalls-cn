@@ -1,0 +1,508 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === SST Design Tokens — Style Reference === */
+@layer base {
+  :root {
+    /* Colors */
+    --color-sst-ink: #303055;
+    --color-slate: #403f53;
+    --color-fog: #767682;
+    --color-mist: #a8a8b0;
+    --color-obsidian: #111111;
+    --color-paper: #ffffff;
+    --color-lavender-mist: #e8e8f2;
+
+    /* Code syntax — only inside code blocks */
+    --color-code-plum: #8844ae;
+    --color-code-cobalt: #3b61b0;
+    --color-code-teal: #096e72;
+    --color-code-rust: #984e4d;
+
+    /* Severity — semantic */
+    --sev-critical: #984e4d; /* rust — red-brown */
+    --sev-high: #b56a1a;
+    --sev-medium: #8a7a30;
+    --sev-low: #096e72; /* teal */
+
+    /* Layout */
+    --page-max-width: 1200px;
+    --section-gap: 64px;
+
+    /* Radii — 4px / 8px only */
+    --radius-tags: 4px;
+    --radius-buttons: 4px;
+    --radius-inputs: 4px;
+    --radius-cards: 8px;
+    --radius-code: 8px;
+
+    /* Elevation — only on code blocks */
+    --shadow-code: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04);
+    --shadow-hairline: 0 0 0 1px rgba(0, 0, 0, 0.04);
+  }
+
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-sst-ink);
+    font-family: 'Rubik Variable', 'Rubik', 'Inter', 'PingFang SC', 'Microsoft YaHei',
+      system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--color-paper);
+  }
+
+  /* Default text rhythm */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-sst-ink);
+    font-weight: 600;
+    letter-spacing: -0.021em;
+  }
+
+  p {
+    color: var(--color-slate);
+  }
+
+  a {
+    color: var(--color-sst-ink);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-sst-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  code {
+    font-family: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo,
+      Monaco, Consolas, monospace;
+    font-size: 0.92em;
+    background: var(--color-lavender-mist);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    color: var(--color-sst-ink);
+    font-weight: 500;
+  }
+
+  pre {
+    font-family: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo,
+      Monaco, Consolas, monospace;
+    background: var(--color-lavender-mist);
+    border: 1px solid var(--color-lavender-mist);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.65;
+    box-shadow: var(--shadow-code);
+  }
+  pre code {
+    background: transparent;
+    padding: 0;
+    font-weight: 400;
+    border-radius: 0;
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--color-lavender-mist);
+    color: var(--color-sst-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sst-ink);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Tinted scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-lavender-mist);
+    border-radius: 999px;
+    border: 2px solid var(--color-paper);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-mist);
+  }
+}
+
+/* === Component primitives === */
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-6;
+  }
+
+  /* Severity badges — outlined pills using lavender-mist surface */
+  .badge {
+    @apply inline-flex items-center gap-1 whitespace-nowrap;
+    border: 1px solid var(--color-lavender-mist);
+    background: transparent;
+    color: var(--color-fog);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.056em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+
+  .badge-critical { color: var(--sev-critical); border-color: rgba(152, 78, 77, 0.3); background: rgba(152, 78, 77, 0.06); }
+  .badge-high { color: var(--sev-high); border-color: rgba(181, 106, 26, 0.3); background: rgba(181, 106, 26, 0.06); }
+  .badge-medium { color: var(--sev-medium); border-color: rgba(138, 122, 48, 0.3); background: rgba(138, 122, 48, 0.06); }
+  .badge-low { color: var(--sev-low); border-color: rgba(9, 110, 114, 0.3); background: rgba(9, 110, 114, 0.06); }
+
+  /* Card — flat, 8px radius, hairline border */
+  .card {
+    @apply relative;
+    background: var(--color-paper);
+    border: 1px solid var(--color-lavender-mist);
+    border-radius: 8px;
+    padding: 16px;
+    transition: border-color 150ms ease;
+  }
+  .card-hover:hover {
+    border-color: var(--color-mist);
+  }
+
+  /* Text-link CTA — the SST way; no filled backgrounds */
+  .link-cta {
+    @apply inline-flex items-center gap-1.5;
+    color: var(--color-sst-ink);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 150ms ease;
+  }
+  .link-cta:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  .link-cta::after {
+    content: '>';
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+  }
+
+  /* Console button — pill outline, used in header */
+  .btn-console {
+    @apply inline-flex items-center gap-2 whitespace-nowrap;
+    border: 1px solid var(--color-lavender-mist);
+    background: transparent;
+    color: var(--color-sst-ink);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    transition: border-color 150ms ease, background 150ms ease;
+  }
+  .btn-console:hover {
+    border-color: var(--color-mist);
+    background: var(--color-lavender-mist);
+  }
+
+  /* Ghost nav button */
+  .nav-link {
+    @apply inline-flex items-center;
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-fog);
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: color 150ms ease, background 150ms ease;
+  }
+  .nav-link:hover {
+    color: var(--color-sst-ink);
+    background: var(--color-lavender-mist);
+    text-decoration: none;
+  }
+  .nav-link[aria-current='page'] {
+    color: var(--color-sst-ink);
+  }
+
+  /* Search bar — pill, lavender-mist fill, no border */
+  .search-bar {
+    @apply inline-flex items-center gap-2;
+    background: var(--color-lavender-mist);
+    color: var(--color-fog);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    border: 0;
+    min-width: 180px;
+    transition: background 150ms ease;
+  }
+  .search-bar:hover { background: #dadaea; }
+  .search-bar .placeholder { flex: 1; }
+  .search-bar .kbd {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--color-mist);
+    padding: 2px 6px;
+    background: var(--color-paper);
+    border-radius: 4px;
+  }
+
+  /* Code block surface — the centerpiece */
+  .code-block {
+    @apply relative;
+    background: var(--color-lavender-mist);
+    border: 1px solid var(--color-lavender-mist);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow-code);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    line-height: 1.65;
+    overflow-x: auto;
+  }
+
+  /* Syntax tokens inside code blocks */
+  .tok-string { color: var(--color-code-plum); }
+  .tok-key { color: var(--color-code-cobalt); }
+  .tok-type { color: var(--color-code-teal); }
+  .tok-punct { color: var(--color-sst-ink); }
+  .tok-comment { color: var(--color-mist); font-style: italic; }
+  .tok-bool { color: var(--color-code-rust); }
+  .tok-cmd { color: var(--color-sst-ink); font-weight: 600; }
+  .tok-prompt { color: var(--color-mist); }
+
+  /* Filter chip — outlined, ghost-like */
+  .chip {
+    @apply inline-flex items-center gap-1.5 whitespace-nowrap;
+    border: 1px solid var(--color-lavender-mist);
+    background: transparent;
+    color: var(--color-fog);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+  }
+  .chip:hover {
+    border-color: var(--color-sst-ink);
+    color: var(--color-sst-ink);
+  }
+  .chip[aria-pressed='true'],
+  .chip.is-active {
+    border-color: var(--color-sst-ink);
+    background: var(--color-lavender-mist);
+    color: var(--color-sst-ink);
+  }
+
+  /* Section eyebrow — uppercase tracking label */
+  .eyebrow {
+    @apply inline-flex items-center;
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.056em;
+    color: var(--color-mist);
+  }
+
+  /* Section title */
+  .section-title {
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-sst-ink);
+    letter-spacing: -0.021em;
+    line-height: 1.5;
+  }
+
+  /* Display headline — 48px on hero */
+  .display {
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.1;
+    color: var(--color-sst-ink);
+    letter-spacing: -0.021em;
+  }
+
+  /* Subtle dotted divider */
+  .hairline {
+    height: 1px;
+    background: var(--color-lavender-mist);
+    border: 0;
+  }
+
+  /* NEW badge pill */
+  .pill-new {
+    @apply inline-flex items-center;
+    border: 1px solid var(--color-lavender-mist);
+    background: transparent;
+    color: var(--color-sst-ink);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.056em;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  /* Plain text input — outlined */
+  .input-plain {
+    @apply w-full;
+    background: var(--color-paper);
+    border: 1px solid var(--color-lavender-mist);
+    color: var(--color-sst-ink);
+    font-family: 'Rubik Variable', system-ui, sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: border-color 150ms ease;
+  }
+  .input-plain:focus {
+    outline: none;
+    border-color: var(--color-sst-ink);
+  }
+
+  /* Pulse dot — used for "live" indicators */
+  .pulse-dot {
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background: var(--sev-low);
+  }
+  .pulse-dot::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 9999px;
+    background: var(--sev-low);
+    opacity: 0.5;
+    animation: pulse 2s ease-out infinite;
+  }
+
+  /* Stagger animation */
+  .stagger > * {
+    animation: fade-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stagger > *:nth-child(1)  { animation-delay: 0ms; }
+  .stagger > *:nth-child(2)  { animation-delay: 30ms; }
+  .stagger > *:nth-child(3)  { animation-delay: 60ms; }
+  .stagger > *:nth-child(4)  { animation-delay: 90ms; }
+  .stagger > *:nth-child(5)  { animation-delay: 120ms; }
+  .stagger > *:nth-child(6)  { animation-delay: 150ms; }
+  .stagger > *:nth-child(7)  { animation-delay: 180ms; }
+  .stagger > *:nth-child(8)  { animation-delay: 210ms; }
+  .stagger > *:nth-child(9)  { animation-delay: 240ms; }
+  .stagger > *:nth-child(10) { animation-delay: 270ms; }
+  .stagger > *:nth-child(11) { animation-delay: 300ms; }
+  .stagger > *:nth-child(12) { animation-delay: 330ms; }
+}
+
+/* === Animations === */
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .pulse-dot::before { animation: none; }
+}
+
+/* === Article prose — for markdown body === */
+.prose-tight {
+  color: var(--color-slate);
+  line-height: 1.8;
+}
+.prose-tight h1,
+.prose-tight h2,
+.prose-tight h3 {
+  color: var(--color-sst-ink);
+  font-weight: 600;
+  letter-spacing: -0.021em;
+}
+.prose-tight h2 {
+  font-size: 20px;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.5;
+}
+.prose-tight h3 {
+  font-size: 18px;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+.prose-tight p { margin-top: 0.85em; margin-bottom: 0.85em; }
+.prose-tight ul { padding-left: 0; list-style: none; }
+.prose-tight ul li {
+  position: relative;
+  padding-left: 1.4em;
+  margin: 0.4em 0;
+}
+.prose-tight ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: var(--color-sst-ink);
+  opacity: 0.5;
+}
+.prose-tight a {
+  color: var(--color-sst-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.prose-tight a:hover {
+  text-decoration-thickness: 2px;
+}
+.prose-tight code {
+  background: var(--color-lavender-mist);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--color-sst-ink);
+}
+.prose-tight pre {
+  background: var(--color-lavender-mist);
+  border: 1px solid var(--color-lavender-mist);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  box-shadow: var(--shadow-code);
+}
+.prose-tight pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+.prose-tight strong { color: var(--color-sst-ink); font-weight: 600; }

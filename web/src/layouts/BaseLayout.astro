@@ -1,0 +1,139 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  pathname?: string;
+}
+
+const { title, description = '全网 agent 开发避坑信息整合 — 采集自 GitHub / 博客 / HN / Reddit / 知乎，开源协作。', pathname = Astro.url.pathname } = Astro.props;
+const canonical = new URL(pathname, Astro.site ?? 'https://agent-pitfalls.dev').toString();
+
+const navItems = [
+  { href: '/', label: '首页', match: (p: string) => p === '/' },
+  { href: '/pitfalls', label: '避坑库', match: (p: string) => p.startsWith('/pitfalls') },
+  { href: '/advisories', label: '安全公告', match: (p: string) => p.startsWith('/advisories') },
+  { href: '/patterns', label: '应对模式', match: (p: string) => p.startsWith('/patterns') },
+  { href: '/about', label: '关于', match: (p: string) => p === '/about' || p === '/contributing' },
+];
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts: Rubik Variable (prose) + IBM Plex Mono (code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Rubik:wght@400;500;600&display=swap"
+    />
+  </head>
+  <body class="bg-paper text-ink">
+    <!-- Header — sticky single row, brand left, nav center, search + console right -->
+    <header class="sticky top-0 z-40 border-b border-lavender-mist bg-paper/85 backdrop-blur-sm">
+      <div class="container-page flex h-14 items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-2 font-semibold text-ink">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-md border border-lavender-mist text-[12px] font-bold">⚠</span>
+          <span class="hidden text-[14px] font-semibold tracking-tight sm:inline">Agent Pitfalls</span>
+        </a>
+
+        <nav class="hidden items-center gap-1 md:flex">
+          {navItems.map((item) => {
+            const isActive = item.match(pathname);
+            return (
+              <a
+                href={item.href}
+                aria-current={isActive ? 'page' : undefined}
+                class="nav-link"
+              >
+                {item.label}
+              </a>
+            );
+          })}
+          <a
+            href="https://github.com/agent-pitfalls/agent-pitfalls"
+            rel="noopener"
+            class="nav-link"
+          >
+            GitHub ↗
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <button id="search-shortcut" type="button" aria-label="搜索" class="search-bar">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <span class="placeholder hidden sm:inline">搜索…</span>
+            <span class="kbd">⌘K</span>
+          </button>
+          <a href="/rss.xml" class="btn-console hidden md:inline-flex" aria-label="订阅 RSS">RSS</a>
+          <button id="mobile-menu-toggle" type="button" aria-label="菜单" class="btn-console md:hidden">☰</button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden border-t border-lavender-mist md:hidden">
+        <nav class="container-page flex flex-col gap-1 py-3">
+          {navItems.map((item) => (
+            <a href={item.href} class="nav-link justify-start">{item.label}</a>
+          ))}
+          <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="nav-link justify-start">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-page py-10">
+      <slot />
+    </main>
+
+    <!-- Footer — single row, copyright left, links + social right -->
+    <footer class="mt-20 border-t border-lavender-mist py-8">
+      <div class="container-page flex flex-col items-center justify-between gap-4 text-[12px] text-fog md:flex-row">
+        <p>© {new Date().getFullYear()} Agent Pitfalls · 内容采用 <a href="/LICENSE" class="underline underline-offset-2">MIT</a> 协议</p>
+        <div class="flex items-center gap-5">
+          <a href="/about" class="hover:text-ink">关于</a>
+          <a href="/contributing" class="hover:text-ink">贡献</a>
+          <a href="/schema" class="hover:text-ink">Schema</a>
+          <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="hover:text-ink">GitHub ↗</a>
+          <a href="/rss.xml" class="hover:text-ink">RSS ↗</a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Mobile menu
+      document.getElementById('mobile-menu-toggle')?.addEventListener('click', () => {
+        document.getElementById('mobile-menu')?.classList.toggle('hidden');
+      });
+
+      // Search shortcut — focus search box on /pitfalls, otherwise go there
+      document.getElementById('search-shortcut')?.addEventListener('click', () => {
+        if (window.location.pathname.startsWith('/pitfalls')) {
+          const s = document.getElementById('search');
+          if (s) { s.focus(); s.select(); }
+        } else {
+          window.location.href = '/pitfalls';
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          const s = document.getElementById('search');
+          if (s) { s.focus(); s.select(); }
+          else { window.location.href = '/pitfalls'; }
+        }
+      });
+    </script>
+  </body>
+</html>

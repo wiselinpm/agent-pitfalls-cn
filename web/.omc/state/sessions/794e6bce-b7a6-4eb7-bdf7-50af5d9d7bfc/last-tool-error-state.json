@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"PYTHONPATH=. python3 -c \\\"\\nimport yaml\\ntext = open('web/src/content/pitfalls/https-infoq-cn-article-q-uq71-xi-5-m-百万上下文下的-deepseek-v4-sglang-推理优化实战-aicon深.md').read()\\nend = text.find('\\...",
+  "error": "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 3, in <module>\nFileNotFoundError: [Errno 2] No such file or directory: 'web/src/content/pitfalls/https-infoq-cn-article-q-uq71-xi-5-m-百万上下文下的-deepseek-v4-sglang-推理优化实战-aicon深.md'",
+  "timestamp": "2026-07-12T05:50:08.406Z",
+  "retry_count": 1
+}

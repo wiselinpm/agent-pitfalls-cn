@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { severityLabel } from '../../utils/labels';
+
+const all = (await getCollection('advisories')).sort(
+  (a, b) => +new Date(b.data.published_at) - +new Date(a.data.published_at),
+);
+
+const severityBadge = {
+  critical: 'badge-critical',
+  high: 'badge-high',
+  medium: 'badge-medium',
+  low: 'badge-low',
+} as const;
+---
+<BaseLayout title="安全公告 · Agent Pitfalls" description="主流 agent 平台的安全公告与已知漏洞汇总">
+  <header class="mb-8">
+    <span class="eyebrow">ADVISORIES</span>
+    <h1 class="mt-3 text-[32px] font-semibold leading-tight text-ink">安全公告</h1>
+    <p class="mt-2 text-[14px] text-slate">
+      按发布时间倒序 · 来源覆盖官方 changelog / GitHub Security Advisories
+    </p>
+  </header>
+
+  <ul class="grid gap-3">
+    {all.map((a) => (
+      <li class="card card-hover">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class={`badge ${severityBadge[a.data.severity]}`}>{severityLabel(a.data.severity)}</span>
+          <span class="font-mono text-[12px] text-fog">{a.data.published_at}</span>
+        </div>
+        <h2 class="mt-3 text-[16px] font-semibold leading-snug text-ink">{a.data.title}</h2>
+        <p class="mt-2 text-[13px] leading-relaxed text-slate">{a.data.summary}</p>
+        {a.data.affected?.length > 0 && (
+          <p class="mt-3 text-[12px] text-fog">
+            受影响：{a.data.affected.join('、')}
+          </p>
+        )}
+        {a.data.references?.length > 0 && (
+          <ul class="mt-3 space-y-1.5">
+            {a.data.references.map((r) => (
+              <li class="text-[13px]">
+                <a href={r.url} target="_blank" rel="noopener" class="text-ink hover:underline">
+                  ↗ {r.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

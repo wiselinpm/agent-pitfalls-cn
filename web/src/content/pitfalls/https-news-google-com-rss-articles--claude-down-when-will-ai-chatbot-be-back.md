@@ -1,0 +1,29 @@
+---
+title: "Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected - The Economi"
+summary: Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected &nbsp;&nbsp; The Economic Times
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected - The Economic Times
+  url: https://news.google.com/rss/articles/CBMi6gJBVV95cUxPVmticWJQWVFkZ2Rqb1hUTTdwczJidGlpNEVOWU9ZUmRrNGprWVdhZUZFcTViTVd5YXdWOVVmdmk3QW9sZzVmNXVTVU4tQUFpOTVVNENQWEJydU1kWEZDMEZ6dXpmQWYxVlJlNXlvVVZLS0F1bHhKdWt2T29HVHhwVGxZeVpMcUFYdjB3MzRRMmgwNHcyQy1ENDcwQXJpMElkN2F0Y1I1RV9PTzY5VzB3UzNJRXhKRTltd1R3WHlqZ2pOZF9CYTFVZHhUalFsS1YxR3I3SXI5MkFXT0NDRTR6T2JiY0dyb1ZLdnhibHYzckIzLUNJZ3VCVkdWcXVsWmxGRzg3QmJlUjZOaU1xTXFSbXR4S3h4V2pPTGtxVGhud2Q0QW1lWG50YXRzc19EVl9GSnhHcDloUWh1T2dsLU1aQ2k3NVJNUnBCYlZ1a0FnblZaUVMzVGM0QnIxYlBnR2tlR1pENVN3RXVMd9IB7wJBVV95cUxNNTlzRkVoMnRKaFJ5X01vZ0NMcmw5NUNYMklzTEozZHM1QldBX0xqWmZMWTJYcnd0MEhYQ1FKVTRVWEktdTNSUmxBMnRhLXlMR2lCa3k5dnVQclhZVGloSHZYT2FxZ3VHWXRmaDNINjdvNHFIMTR4UTExSmowZzlidVFtbFVBTjFWaHYxai0tRmJGNkJOYUNCcGNqaEpYV3BWYkhFN0tKbTBQM1AxMXBaQnM2REtlZ25LZDA4MzRDenZDYkhyQXBOekktdDF3bnNKdDl3OC1RNzF2MHpfTXh5d0FwNllIQ1pXMGpzRUxCX0RlRXV0dDE3MjNwZmpSNzRFeXRJOTNWMFdTcFo1bU5YSGZLd3oxS1BjTjhnb2czcnptblJES2VxMDNtMWtvOFRxSHJkQUNrZ0FBREduTlk3Vk04QlQ3RzNxdGwzZ0puYXpVVWRaU3Z2ZnFPLVc3cFdMVHRucFVXbWxHaFYtR2M4?oc=5
+  source: google-news:The Economic Times
+tags:
+- google-news
+- q:Claude Code outage
+- src:The Economic Times
+discovered_at: '2026-03-18'
+verified: false
+---
+
+- [Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected - The Economic Times](https://news.google.com/rss/articles/CBMi6gJBVV95cUxPVmticWJQWVFkZ2Rqb1hUTTdwczJidGlpNEVOWU9ZUmRrNGprWVdhZUZFcTViTVd5YXdWOVVmdmk3QW9sZzVmNXVTVU4tQUFpOTVVNENQWEJydU1kWEZDMEZ6dXpmQWYxVlJlNXlvVVZLS0F1bHhKdWt2T29HVHhwVGxZeVpMcUFYdjB3MzRRMmgwNHcyQy1ENDcwQXJpMElkN2F0Y1I1RV9PTzY5VzB3UzNJRXhKRTltd1R3WHlqZ2pOZF9CYTFVZHhUalFsS1YxR3I3SXI5MkFXT0NDRTR6T2JiY0dyb1ZLdnhibHYzckIzLUNJZ3VCVkdWcXVsWmxGRzg3QmJlUjZOaU1xTXFSbXR4S3h4V2pPTGtxVGhud2Q0QW1lWG50YXRzc19EVl9GSnhHcDloUWh1T2dsLU1aQ2k3NVJNUnBCYlZ1a0FnblZaUVMzVGM0QnIxYlBnR2tlR1pENVN3RXVMd9IB7wJBVV95cUxNNTlzRkVoMnRKaFJ5X01vZ0NMcmw5NUNYMklzTEozZHM1QldBX0xqWmZMWTJYcnd0MEhYQ1FKVTRVWEktdTNSUmxBMnRhLXlMR2lCa3k5dnVQclhZVGloSHZYT2FxZ3VHWXRmaDNINjdvNHFIMTR4UTExSmowZzlidVFtbFVBTjFWaHYxai0tRmJGNkJOYUNCcGNqaEpYV3BWYkhFN0tKbTBQM1AxMXBaQnM2REtlZ25LZDA4MzRDenZDYkhyQXBOekktdDF3bnNKdDl3OC1RNzF2MHpfTXh5d0FwNllIQ1pXMGpzRUxCX0RlRXV0dDE3MjNwZmpSNzRFeXRJOTNWMFdTcFo1bU5YSGZLd3oxS1BjTjhnb2czcnptblJES2VxMDNtMWtvOFRxSHJkQUNrZ0FBREduTlk3Vk04QlQ3RzNxdGwzZ0puYXpVVWRaU3Z2ZnFPLVc3cFdMVHRucFVXbWxHaFYtR2M4?oc=5) — google-news:The Economic Times
+
+## 摘要
+
+Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected &nbsp;&nbsp; The Economic Times
+
+_来源热度：2_

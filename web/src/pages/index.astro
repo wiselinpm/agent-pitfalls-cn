@@ -1,0 +1,253 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { categoryLabel, platformLabel, severityLabel } from '../utils/labels';
+
+const all = (await getCollection('pitfalls')).sort(
+  (a, b) => +new Date(b.data.discovered_at ?? 0) - +new Date(a.data.discovered_at ?? 0),
+);
+
+const severityBadge = {
+  critical: 'badge-critical',
+  high: 'badge-high',
+  medium: 'badge-medium',
+  low: 'badge-low',
+} as const;
+
+const totalCount = all.length;
+const criticalCount = all.filter((p) => p.data.severity === 'critical').length;
+const highCount = all.filter((p) => p.data.severity === 'high').length;
+const verifiedCount = all.filter((p) => p.data.verified).length;
+const withFixesCount = all.filter((p) => p.data.fixes.length > 0).length;
+const platformCount = new Set(all.flatMap((p) => p.data.platforms)).size;
+
+const now = Date.now();
+const recentCount = all.filter((p) => {
+  if (!p.data.discovered_at) return false;
+  return now - +new Date(p.data.discovered_at) < 7 * 24 * 60 * 60 * 1000;
+}).length;
+
+const categoryCount = new Map<string, number>();
+for (const p of all) for (const c of p.data.categories) categoryCount.set(c, (categoryCount.get(c) ?? 0) + 1);
+const topCategories = [...categoryCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, v]) => ({ name: k, count: v }));
+
+const featured = all.slice(0, 6);
+
+const lastDiscovered = all[0]?.data.discovered_at;
+const lastUpdatedRel = lastDiscovered
+  ? (() => {
+      const days = Math.floor((now - +new Date(lastDiscovered)) / (24 * 60 * 60 * 1000));
+      if (days < 1) return '今天';
+      if (days < 7) return `${days} 天前`;
+      if (days < 30) return `${Math.floor(days / 7)} 周前`;
+      return `${Math.floor(days / 30)} 月前`;
+    })()
+  : '—';
+
+// Hero sample — pick the most recent critical/high for the code demo
+const heroSample = featured[0];
+---
+<BaseLayout title="Agent Pitfalls — 全网 agent 开发避坑整合" description="采集全网 agent 开发避坑信息，社区维护、开源协作">
+
+  <!-- HERO — two-column: code block left, headline + CTA right -->
+  <section class="grid items-start gap-12 py-8 md:grid-cols-12">
+    <!-- Left: code block (the artwork) -->
+    <div class="md:col-span-7">
+      <div class="code-block">
+        <div class="mb-3 flex items-center gap-2 border-b border-paper/0 pb-2 text-[11px] uppercase tracking-[0.056em] text-mist" style="border-color: rgba(255,255,255,0.4);">
+          <span>pitfalls/</span><span class="font-semibold text-ink">{heroSample?.id ?? 'context-window-truncation'}.md</span>
+        </div>
+<pre class="m-0 border-0 p-0 font-mono text-[13px] leading-relaxed shadow-none" style="background: transparent;"><span class="tok-comment"># 一行描述问题</span>
+<span class="tok-key">title</span>: <span class="tok-string">"{heroSample?.data.title ?? '长上下文静默截断导致 agent 漏读最新工具结果'}"</span>
+<span class="tok-key">summary</span>: <span class="tok-string">"上下文超过窗口 80% 时，模型静默丢弃</span>
+  <span class="tok-string">最新的 tool_result，agent 继续按幻觉决策。"</span>
+
+<span class="tok-key">severity</span>: <span class="tok-bool">critical</span>
+<span class="tok-key">platforms</span>: [<span class="tok-type">claude-code</span>, <span class="tok-type">cursor</span>, <span class="tok-type">generic</span>]
+<span class="tok-key">categories</span>: [<span class="tok-type">context-window</span>, <span class="tok-type">tool-use</span>]
+
+<span class="tok-key">symptoms</span>:
+  - <span class="tok-string">agent 忽略最近一次工具返回值</span>
+  - <span class="tok-string">日志中找不到 truncation 警告</span>
+
+<span class="tok-key">fixes</span>:
+  - <span class="tok-string">显式 echo 关键返回值到 system prompt</span>
+  - <span class="tok-string">上下文使用率 > 70% 时主动压缩</span></pre>
+      </div>
+      <!-- Tiny legend under the code block -->
+      <div class="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 px-1 text-[11px] font-mono text-fog">
+        <span><span class="tok-key">键名</span></span>
+        <span><span class="tok-string">字符串</span></span>
+        <span><span class="tok-type">类型</span></span>
+        <span><span class="tok-bool">枚举</span></span>
+        <span><span class="tok-comment">注释</span></span>
+      </div>
+    </div>
+
+    <!-- Right: headline + CTA -->
+    <div class="md:col-span-5 md:pt-6">
+      <div class="mb-5 flex items-center gap-2">
+        <span class="pulse-dot"></span>
+        <span class="eyebrow">实时采集 · 上次更新 {lastUpdatedRel}</span>
+      </div>
+
+      <h1 class="display text-ink">
+        别再被同一个坑<br />绊倒两次。
+      </h1>
+
+      <p class="mt-6 max-w-xl text-[16px] leading-[1.65] text-slate">
+        我们抓取 GitHub Issues、官方博客、Hacker News、Reddit、知乎等全网关于
+        <span class="text-ink font-medium">AI Agent 开发</span> 的踩坑讨论，
+        去重、归类、给出可执行的修复方案。每一条都附公开来源，可以直接顺藤摸瓜。
+      </p>
+
+      <div class="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3">
+        <a href="/pitfalls" class="link-cta">浏览避坑库</a>
+        <a href="/contributing" class="link-cta">如何贡献</a>
+        <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="link-cta">GitHub</a>
+      </div>
+
+      <p class="mt-6 text-[12px] text-fog">
+        内容采用 <a href="/LICENSE" class="underline underline-offset-2">MIT</a> 协议开源 · 数据每周自动更新
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats strip — horizontal, hairline divider above and below -->
+  <hr class="hairline mt-12" />
+  <section class="py-8">
+    <div class="grid grid-cols-2 gap-y-6 md:grid-cols-4">
+      <div>
+        <div class="font-mono text-[28px] font-semibold tabular-nums leading-none text-ink">{totalCount.toLocaleString()}</div>
+        <div class="mt-1.5 text-[12px] text-fog">已收录条目 · {platformCount} 平台</div>
+      </div>
+      <div>
+        <div class="flex items-baseline gap-2 font-mono text-[28px] font-semibold tabular-nums leading-none text-ink">
+          {criticalCount}<span class="text-[14px] font-normal text-fog">critical</span>
+        </div>
+        <div class="mt-1.5 text-[12px] text-fog">严重等级 + 高危 {highCount} 条</div>
+      </div>
+      <div>
+        <div class="flex items-baseline gap-2 font-mono text-[28px] font-semibold tabular-nums leading-none text-ink">
+          {withFixesCount}<span class="text-[14px] font-normal text-fog">fixes</span>
+        </div>
+        <div class="mt-1.5 text-[12px] text-fog">条目附带可执行修复</div>
+      </div>
+      <div>
+        <div class="flex items-baseline gap-2 font-mono text-[28px] font-semibold tabular-nums leading-none text-ink">
+          {recentCount}<span class="text-[14px] font-normal text-fog">new</span>
+        </div>
+        <div class="mt-1.5 text-[12px] text-fog">本周新增 · {verifiedCount} 已验证</div>
+      </div>
+    </div>
+  </section>
+  <hr class="hairline" />
+
+  <!-- Trending categories -->
+  {topCategories.length > 0 && (
+    <section class="mt-16">
+      <div class="mb-5 flex items-end justify-between">
+        <h2 class="section-title">热门分类</h2>
+        <a href="/pitfalls" class="link-cta text-[13px]">全部</a>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {topCategories.map((c) => (
+          <a href={`/pitfalls?category=${c.name}`} class="chip">
+            <span>#{categoryLabel(c.name)}</span>
+            <span class="font-mono text-fog tabular-nums">{c.count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Latest featured -->
+  <section class="mt-16">
+    <div class="mb-6 flex items-end justify-between">
+      <div>
+        <h2 class="section-title">最新收录</h2>
+        <p class="mt-1 text-[13px] text-fog">按收录时间倒序 · 共 {totalCount} 条</p>
+      </div>
+      <a href="/pitfalls" class="link-cta text-[13px]">查看全部</a>
+    </div>
+    <div class="grid gap-4 md:grid-cols-2">
+      {featured.map((p) => (
+        <a href={`/pitfalls/${p.id}`} class="card card-hover group block">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class={`badge ${severityBadge[p.data.severity]}`}>{severityLabel(p.data.severity)}</span>
+            {p.data.platforms.slice(0, 2).map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
+            {p.data.verified && <span class="badge badge-low">已验证</span>}
+          </div>
+          <h3 class="mt-3 text-[16px] font-semibold leading-snug text-ink">
+            {p.data.title}
+          </h3>
+          <p class="mt-2 line-clamp-3 text-[13px] leading-relaxed text-slate">
+            {p.data.summary}
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            {p.data.categories.slice(0, 3).map((c) => <span class="badge">#{categoryLabel(c)}</span>)}
+          </div>
+          <div class="mt-4 flex items-center justify-between border-t border-lavender-mist pt-3 text-[12px] text-fog">
+            <span class="font-mono">{p.data.discovered_at ?? '—'}</span>
+            <span class="font-mono opacity-0 transition-opacity group-hover:opacity-100">read →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- How it works — terminal-style numbered -->
+  <section class="mt-20">
+    <div class="mb-6">
+      <h2 class="section-title">采集管线</h2>
+      <p class="mt-1 text-[13px] text-fog">三步走：抓全网 → 清洗去重 → 结构化抽取</p>
+    </div>
+    <div class="grid gap-4 md:grid-cols-3">
+      <div class="card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-[13px] text-fog">[01]</span>
+          <h3 class="text-[14px] font-semibold text-ink">采集</h3>
+        </div>
+        <p class="mt-3 text-[13px] leading-relaxed text-slate">
+          28 个 source 并行抓取 GitHub Issues / RSS 博客 / HN / Reddit 镜像 / 知乎替代源等。
+          项目自带的 <code>collectors/</code> 全部可重跑。
+        </p>
+      </div>
+      <div class="card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-[13px] text-fog">[02]</span>
+          <h3 class="text-[14px] font-semibold text-ink">清洗去重</h3>
+        </div>
+        <p class="mt-3 text-[13px] leading-relaxed text-slate">
+          通过 URL 指纹 + 标题相似度合并重复问题，用关键词矩阵 + 标题语义过滤掉营销噪声与无关内容。
+        </p>
+      </div>
+      <div class="card">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-[13px] text-fog">[03]</span>
+          <h3 class="text-[14px] font-semibold text-ink">结构化抽取</h3>
+        </div>
+        <p class="mt-3 text-[13px] leading-relaxed text-slate">
+          从 markdown body 自动抓 symptoms / root_causes / fixes 三段，加上 severity / platforms / categories 标签。
+          每条都附公开来源，可以直接顺藤摸瓜。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA — text-link only, no filled background -->
+  <section class="mt-20">
+    <div class="card text-center">
+      <span class="eyebrow">CONTRIBUTING</span>
+      <h2 class="mt-3 text-[24px] font-semibold leading-snug text-ink">踩过坑？贡献你的发现</h2>
+      <p class="mx-auto mt-3 max-w-xl text-[13px] leading-relaxed text-slate">
+        PR-driven 工作流 — 任何人都能在 GitHub 上提交新坑、补充修复方案、或追加来源链接。
+      </p>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
+        <a href="/contributing" class="link-cta">贡献指南</a>
+        <a href="/about" class="link-cta">关于项目</a>
+        <a href="/schema" class="link-cta">Schema</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

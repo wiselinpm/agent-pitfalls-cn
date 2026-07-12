@@ -1,0 +1,22 @@
+/* === Tailwind v4 theme — exposes ink/accent/severity scales as utility classes === */
+@theme {
+  --color-ink-50: oklch(97% 0.008 280);
+  --color-ink-100: oklch(92% 0.01 280);
+  --color-ink-200: oklch(85% 0.015 280);
+  --color-ink-300: oklch(72% 0.018 280);
+  --color-ink-400: oklch(60% 0.022 280);
+  --color-ink-500: oklch(48% 0.02 280);
+  --color-ink-600: oklch(38% 0.025 280);
+  --color-ink-700: oklch(28% 0.025 280);
+  --color-ink-800: oklch(22% 0.025 280);
+  --color-ink-900: oklch(14% 0.025 280);
+
+  --color-accent: oklch(62% 0.18 280);
+  --color-accent-soft: oklch(78% 0.12 280);
+
+  /* Severity — semantic colors (already OKLCH) */
+  --color-sev-critical: oklch(62% 0.21 25);
+  --color-sev-high: oklch(72% 0.16 60);
+  --color-sev-medium: oklch(80% 0.13 90);
+  --color-sev-low: oklch(70% 0.14 160);
+}

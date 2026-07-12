@@ -1,0 +1,33 @@
+
+> agent-pitfalls@0.1.0 dev /Users/linxiaobin/Downloads/agent避坑
+> astro dev
+
+14:39:56 [types] Generated 0ms
+14:39:57 [content] Syncing content
+14:39:57 [content] Synced content
+14:39:57 [vite] Re-optimizing dependencies because vite config has changed
+14:39:57 [vite] Port 4321 is in use, trying another one...
+
+ astro  v5.18.2 ready in 598 ms
+
+┃ Local    http://localhost:4322/
+┃ Network  use --host to expose
+
+14:39:57 watching for file changes...
+14:43:04 [watch] vue/index.html
+14:46:59 [watch] vue/dist/index.html
+14:52:43 [watch] vue/dist/index.html
+14:52:43 [watch] vue/dist/index.html
+14:52:43 [watch] vue/dist/index.html
+15:02:59 [watch] vue/dist/index.html
+15:03:00 [watch] vue/dist/index.html
+15:06:28 [watch] vue/dist/index.html
+15:06:28 [watch] vue/dist/index.html
+15:22:32 [watch] vue/index.html
+15:29:07 [watch] vue/index.html
+15:31:48 [watch] vue/index.html
+15:36:21 [watch] vue/dist/index.html
+15:36:21 [watch] vue/dist/index.html
+15:36:32 [watch] vue/dist/index.html
+15:39:51 [watch] vue/index.html
+ ELIFECYCLE  Command failed with exit code 143.

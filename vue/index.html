@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="全网 agent 开发避坑信息整合 — 采集自 GitHub / 博客 / HN / Reddit / 知乎，开源协作。" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Agent Pitfalls</title>
+    <script>
+      // 主题持久化 — 默认 dark，遵循 prefers-color-scheme
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'light' || (!stored && !prefersDark)) {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

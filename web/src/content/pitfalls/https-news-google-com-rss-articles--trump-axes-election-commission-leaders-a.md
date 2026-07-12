@@ -1,0 +1,29 @@
+---
+title: Trump Axes Election Commission Leaders; America Braces For Explosive Midterm Battle - The Times of India
+summary: Trump Axes Election Commission Leaders; America Braces For Explosive Midterm Battle &nbsp;&nbsp; The Times of India
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Trump Axes Election Commission Leaders; America Braces For Explosive Midterm Battle - The Times of India
+  url: https://news.google.com/rss/articles/CBMi9gFBVV95cUxNNExMZzNUamRhNmpMV1VJY2RoWWZuQlhPQkZETmpyN3VscEE1RmRNdDc5SVVpcjFPbGJtMlYtUHlOSkx5a2E2QkR6YkNaQkFzUVBWSGdTOGI3NlNTMVg4M25qR2hkOXpCMm11Z3pGWmNFTHRaNVlJMG5uWGUyakxfLTRQZjR1cGhudjQ3SFlHNG9yS0xQS0w5TUZfZWdLcHI0bFRUWld2U3UxRGp2dXJrTzRFQmRSVGF0N3VKMW5pTXdFeExkRXB3Y2dCTGRUbzA1ZGNzZmltUk1xaUgxdk1TLXpSY0NqTm56LWw1QVVob0ZVVGJHeFHSAfsBQVVfeXFMUE1NMm1yUHBUMVNyMndSNG5zMUlYc3IxLUJfZ1lza3NsSzB5cUVGS0V2eThBbkZwQURybVF6cVNKUlA0XzA1SXFNaUtRV2NEY0w0TElBam9zZ3lhQW9rSV9TWlRhSFJtR284YmJCVUNsTHA5TjNCTlhaRzF4VDRRYi02TmZmWUdzNk5SNnU1ZDJQY25meHlhZzRlOVN3RGRDRG16Qi1FSlZ0Rl91XzZ1YkhfREtQV1pPY2lqc3NEZm9zVkJpQU9YcDRjaVlvblZlZTg2cWZNTjg5YTlfNGxGeWp2Wk9HaFFXX2hfRG5ILXhYbjdlNHZBTGVnMVU?oc=5
+  source: google-news:The Times of India
+tags:
+- google-news
+- q:agent cost explosion
+- src:The Times of India
+discovered_at: '2026-07-10'
+verified: false
+---
+
+- [Trump Axes Election Commission Leaders; America Braces For Explosive Midterm Battle - The Times of India](https://news.google.com/rss/articles/CBMi9gFBVV95cUxNNExMZzNUamRhNmpMV1VJY2RoWWZuQlhPQkZETmpyN3VscEE1RmRNdDc5SVVpcjFPbGJtMlYtUHlOSkx5a2E2QkR6YkNaQkFzUVBWSGdTOGI3NlNTMVg4M25qR2hkOXpCMm11Z3pGWmNFTHRaNVlJMG5uWGUyakxfLTRQZjR1cGhudjQ3SFlHNG9yS0xQS0w5TUZfZWdLcHI0bFRUWld2U3UxRGp2dXJrTzRFQmRSVGF0N3VKMW5pTXdFeExkRXB3Y2dCTGRUbzA1ZGNzZmltUk1xaUgxdk1TLXpSY0NqTm56LWw1QVVob0ZVVGJHeFHSAfsBQVVfeXFMUE1NMm1yUHBUMVNyMndSNG5zMUlYc3IxLUJfZ1lza3NsSzB5cUVGS0V2eThBbkZwQURybVF6cVNKUlA0XzA1SXFNaUtRV2NEY0w0TElBam9zZ3lhQW9rSV9TWlRhSFJtR284YmJCVUNsTHA5TjNCTlhaRzF4VDRRYi02TmZmWUdzNk5SNnU1ZDJQY25meHlhZzRlOVN3RGRDRG16Qi1FSlZ0Rl91XzZ1YkhfREtQV1pPY2lqc3NEZm9zVkJpQU9YcDRjaVlvblZlZTg2cWZNTjg5YTlfNGxGeWp2Wk9HaFFXX2hfRG5ILXhYbjdlNHZBTGVnMVU?oc=5) — google-news:The Times of India
+
+## 摘要
+
+Trump Axes Election Commission Leaders; America Braces For Explosive Midterm Battle &nbsp;&nbsp; The Times of India
+
+_来源热度：2_

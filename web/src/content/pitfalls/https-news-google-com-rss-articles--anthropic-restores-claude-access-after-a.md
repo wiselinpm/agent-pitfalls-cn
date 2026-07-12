@@ -1,0 +1,29 @@
+---
+title: Anthropic restores Claude access after AI chatbot platform experiences brief outage - The Indian Express
+summary: Anthropic restores Claude access after AI chatbot platform experiences brief outage &nbsp;&nbsp; The Indian Express
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: Anthropic restores Claude access after AI chatbot platform experiences brief outage - The Indian Express
+  url: https://news.google.com/rss/articles/CBMi8AFBVV95cUxPS1BTdzg2M055VC1nWGdYXzNxRjFXeURCcEhzLWdoOGItUEsydFJkV2V2NkszVGRDTHNBZks3b1ZGR3kxaDlPVDk5aks0NFRJbHFwbGg0ekZnT2dfbE1aT0stbE5WZGtSSi1BWkVTNlppSnM2VU4xWDlXeXcyWl84dFg4QTJESTJWXzhyeW1zeWg4Y01FTk9OR0hDSTlZLU1wVEtVeXFXQnk4MzlBRmpiRU1pbS1sWEVtQlUzd0xHT2dGbm9xUkk2Qi02ckZ2Z2NFT0RSUFZpQ1VVamhOeXFHRFJCN0hrRmJuNXVPN3M5Y0nSAfcBQVVfeXFMTUo4YWVuSVRaTWNmQ0RFcmxhQmJtb1E0UU9jSlNzOU1KbGtGQmMzX0ZkV2VSTUVITHBPTjVNUlRCb2N1X1NDQ3lWNEtjVkZNWlp1NFp1VzZwdFpJc1FxWFhONHFGRWdBM0h5WVhRam5nV2FFaF90cGxJNlFsUDd5ZVFFR2xETDNzUVJfYkhrRWxGMFlxcW1PeGFselU4SktfdzRVNXJNelJKZ19uUmhVd3E1YjBGU0pTVFREaER4SnU5Ql9XcWdjV2VRSWxROFJjR0xxblBCQTd6VFhwbGR3RHdjLW9BRmJtNkotTWhJODVRaHdoMk9HNA?oc=5
+  source: google-news:The Indian Express
+tags:
+- google-news
+- q:Claude Code outage
+- src:The Indian Express
+discovered_at: '2026-06-18'
+verified: false
+---
+
+- [Anthropic restores Claude access after AI chatbot platform experiences brief outage - The Indian Express](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPS1BTdzg2M055VC1nWGdYXzNxRjFXeURCcEhzLWdoOGItUEsydFJkV2V2NkszVGRDTHNBZks3b1ZGR3kxaDlPVDk5aks0NFRJbHFwbGg0ekZnT2dfbE1aT0stbE5WZGtSSi1BWkVTNlppSnM2VU4xWDlXeXcyWl84dFg4QTJESTJWXzhyeW1zeWg4Y01FTk9OR0hDSTlZLU1wVEtVeXFXQnk4MzlBRmpiRU1pbS1sWEVtQlUzd0xHT2dGbm9xUkk2Qi02ckZ2Z2NFT0RSUFZpQ1VVamhOeXFHRFJCN0hrRmJuNXVPN3M5Y0nSAfcBQVVfeXFMTUo4YWVuSVRaTWNmQ0RFcmxhQmJtb1E0UU9jSlNzOU1KbGtGQmMzX0ZkV2VSTUVITHBPTjVNUlRCb2N1X1NDQ3lWNEtjVkZNWlp1NFp1VzZwdFpJc1FxWFhONHFGRWdBM0h5WVhRam5nV2FFaF90cGxJNlFsUDd5ZVFFR2xETDNzUVJfYkhrRWxGMFlxcW1PeGFselU4SktfdzRVNXJNelJKZ19uUmhVd3E1YjBGU0pTVFREaER4SnU5Ql9XcWdjV2VRSWxROFJjR0xxblBCQTd6VFhwbGR3RHdjLW9BRmJtNkotTWhJODVRaHdoMk9HNA?oc=5) — google-news:The Indian Express
+
+## 摘要
+
+Anthropic restores Claude access after AI chatbot platform experiences brief outage &nbsp;&nbsp; The Indian Express
+
+_来源热度：2_
