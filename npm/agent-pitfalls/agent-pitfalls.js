@@ -1,21 +1,31 @@
 #!/usr/bin/env node
 /**
- * agent-pitfalls — npx 入口
+ * agent-pitfalls — npx 入口（零依赖）
  *
  * 优先级：
- *   1. 环境变量 AGENT_PITFALLS_BIN 指定的二进制
+ *   1. 环境变量 AGENT_PITFALLS_BIN
  *   2. $PATH 里的 agent-pitfalls / apf
- *   3. python -m agent_pitfalls_cli
- *   4. pipx run agent-pitfalls
- *   5. uv tool run agent-pitfalls
- *
- * 任一可用就把 stdio 透传给真正的实现，避免 Node 端重复实现 BM25 / 索引。
+ *   3. python3 -m agent_pitfalls_cli
+ *   4. python -m agent_pitfalls_cli
+ *   5. pipx run agent-pitfalls
+ *   6. uv tool run agent-pitfalls
  */
 
 "use strict";
 
 const { spawnSync } = require("node:child_process");
-const which = require("which");
+const { existsSync } = require("node:fs");
+const { join } = require("node:path");
+
+function findInPATH(name) {
+  const ext = process.platform === "win32" ? ".cmd" : "";
+  const dirs = (process.env.PATH || "").split(process.platform === "win32" ? ";" : ":");
+  for (const dir of dirs) {
+    const p = join(dir, name + ext);
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
 
 function findPython() {
   for (const c of ["python3", "python"]) {
@@ -44,12 +54,10 @@ function main() {
     return run(process.env.AGENT_PITFALLS_BIN, args);
   }
 
-  // 2) PATH
+  // 2) PATH 里的二进制
   for (const c of ["agent-pitfalls", "apf"]) {
-    try {
-      const p = which.sync(c, { nothrow: true });
-      if (p) return run(p, args);
-    } catch (_) {}
+    const p = findInPATH(c);
+    if (p) return run(p, args);
   }
 
   // 3) python -m
@@ -63,23 +71,19 @@ function main() {
 
   // 4) pipx / uvx
   for (const c of ["pipx", "uvx"]) {
-    try {
-      const p = which.sync(c, { nothrow: true });
-      if (p) {
-        const r = spawnSync(p, ["run", "agent-pitfalls", ...args], { stdio: "inherit" });
-        if (r.status === 0) process.exit(0);
-      }
-    } catch (_) {}
+    const p = findInPATH(c);
+    if (p) {
+      const r = spawnSync(p, ["run", "agent-pitfalls", ...args], { stdio: "inherit" });
+      if (r.status === 0) process.exit(0);
+    }
   }
 
   // 5) uv tool
-  try {
-    const uv = which.sync("uv", { nothrow: true });
-    if (uv) {
-      const r = spawnSync(uv, ["tool", "run", "agent-pitfalls", ...args], { stdio: "inherit" });
-      if (r.status === 0) process.exit(0);
-    }
-  } catch (_) {}
+  const uv = findInPATH("uv");
+  if (uv) {
+    const r = spawnSync(uv, ["tool", "run", "agent-pitfalls", ...args], { stdio: "inherit" });
+    if (r.status === 0) process.exit(0);
+  }
 
   console.error(
     [

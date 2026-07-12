@@ -13,8 +13,7 @@
   },
   "files": [
     "agent-pitfalls.js",
-    "postinstall.js",
-    "README.md"
+    "postinstall.js"
   ],
   "keywords": [
     "agent",
@@ -30,8 +29,5 @@
   "license": "MIT",
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
-    "which": "^4.0.0"
   }
 }

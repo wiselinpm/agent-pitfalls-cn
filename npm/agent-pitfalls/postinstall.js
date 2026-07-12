@@ -6,7 +6,18 @@
 "use strict";
 
 const { spawnSync } = require("node:child_process");
-const which = require("which");
+const { existsSync } = require("node:fs");
+const { join } = require("node:path");
+
+function findInPATH(name) {
+  const ext = process.platform === "win32" ? ".cmd" : "";
+  const dirs = (process.env.PATH || "").split(process.platform === "win32" ? ";" : ":");
+  for (const dir of dirs) {
+    const p = join(dir, name + ext);
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
 
 function findPython() {
   for (const c of ["python3", "python"]) {
@@ -21,12 +32,10 @@ function findPython() {
 function main() {
   // 已经装了？跳过
   for (const c of ["agent-pitfalls", "apf"]) {
-    try {
-      if (which.sync(c, { nothrow: true })) {
-        console.log("[agent-pitfalls] ✓ CLI 已在 PATH 中");
-        return;
-      }
-    } catch (_) {}
+    if (findInPATH(c)) {
+      console.log("[agent-pitfalls] ✓ CLI 已在 PATH 中");
+      return;
+    }
   }
 
   const py = findPython();
