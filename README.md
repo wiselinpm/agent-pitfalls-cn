@@ -7,13 +7,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/wiselinpm/agent-pitfalls-cn?style=social)](https://github.com/wiselinpm/agent-pitfalls-cn/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/wiselinpm/agent-pitfalls-cn?style=social)](https://github.com/wiselinpm/agent-pitfalls-cn/fork)
 
-[![Pitfalls](https://img.shields.io/badge/pitfalls-5%2C561-red)](https://github.com/wiselinpm/agent-pitfalls-cn/tree/main/web/src/content/pitfalls)
-[![Collectors](https://img.shields.io/badge/collectors-72-blue)](./collectors/)
+[![Pitfalls](https://img.shields.io/badge/pitfalls-7%2C754-red)](https://github.com/wiselinpm/agent-pitfalls-cn/tree/main/web/src/content/pitfalls)
+[![Collectors](https://img.shields.io/badge/collectors-100-blue)](./collectors/)
 [![Coverage](https://img.shields.io/badge/coverage-2016--2026-green)]()
 [![Built with](https://img.shields.io/badge/built_with-Astro_5-orange)](https://astro.build)
 
 ```
-🚨 5,561 pitfalls · 📡 72 collectors · 🌐 12+ languages · ⚡ 8s build
+🚨 7,755 pitfalls · 📡 100 collectors · 🌐 12+ languages · ⚡ 13s build
 ```
 
 [English](./README.en.md) · [简体中文](./README.md) · [日本語](./README.ja.md) · [演示站点](https://github.com/wiselinpm/agent-pitfalls-cn) · [贡献指南](./CONTRIBUTING.md) · [Schema](./docs/SCHEMA.md)
@@ -22,7 +22,7 @@
 
 ### 🎯 一句话说清楚
 
-你在开发 AI Agent 时遇到的每一个坑，这里都收录过 — **5,561 个真实踩坑案例**，每个都有 **症状 / 根因 / 修复 / 来源**，覆盖 Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个主流平台。
+你在开发 AI Agent 时遇到的每一个坑，这里都收录过 — **5,601 个真实踩坑案例**，每个都有 **症状 / 根因 / 修复 / 来源**，覆盖 Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个主流平台。
 
 ### 🚀 三种用法
 
@@ -51,9 +51,82 @@
 
 ---
 
-## 💡 为什么做这个？
+## 📖 我们的故事与愿景
 
-每个做 AI Agent 的团队都会反复踩同一批坑：
+### 🕯️ 故事的起点
+
+一切起源于一个普通的凌晨三点。
+
+那天晚上，我们团队的一个 AI agent 在生产环境陷入了死循环。等值班同事发现的时候，OpenAI 的账单已经悄悄涨了 200 多美元。事后复盘，大家翻遍了 GitHub Issues、StackOverflow、Hacker News、知乎、掘金，却发现了一个尴尬的事实：
+
+**这个坑别人早就踩过了。**
+
+只是没有一个地方把它们汇总起来。坑散落在十几个平台的几十万条帖子、issue、博客、论文里，每个新团队都在用同一周时间踩同一批坑，写同一份事后报告，哭同一种「原来不止我一个人」的眼泪。
+
+于是我们做了一个内部 wiki，把团队踩过的坑都记下来：**症状 / 根因 / 修复 / 参考链接**。每周 review 时拿出来对照，团队真的不再重复犯错了。
+
+直到某一天我们意识到——
+
+> **这件事不该只服务一个团队。整个 AI agent 生态都缺这一块拼图。**
+
+### 🔥 我们看到的痛
+
+2024 年起，AI agent 开发进入了「狂热建设期」。所有人都在堆工具、调 prompt、接 MCP、跑 multi-agent 编排。但狂热背后是一个尴尬的现实：
+
+- 🩸 **Token 账单失血** — 一个未经审计的 agent，每月能悄悄烧掉几千到几万美元
+- 🧨 **线上事故频发** — context window 静默截断、tool call 空参数、sandbox 逃逸、prompt injection，每一条都可能让产品下线
+- 🤐 **知识不流通** — 别人踩过的坑，藏在某个 Discord 服务器的滚动消息里，或者三年前一条被遗忘的 HN 评论里
+- 😩 **重复劳动** — 每个新团队都在「重新发明」那份事后报告，重复同样的调试、试错、复盘
+- 📚 **学术与工业脱节** — arXiv 上有大量 agent 失败模式的研究，但没人翻译成「开发者今天就能用的知识」
+
+**坑不是问题，坑不被记录才是问题。**
+
+### 🌱 我们的愿景
+
+我们想把 **Agent Pitfalls** 做成 AI agent 生态的 **「免疫系统」**：
+
+> **当一个坑被某个人、某个团队、某篇论文踩过并解决了，它的「抗体」就应该永久沉淀下来，让下一个开发者不再踩同一个坑。**
+
+具体来说，我们希望这个项目能成为：
+
+- 📚 **最大的开放失败案例库** — 不只是堆数据，每个案例都有结构化的 **症状 → 根因 → 修复 → 来源**，让搜索、订阅、引用都成为可能
+- 🤝 **开发者互助的协作平台** — 任何人都能 PR 一条新坑，CI 自动校验 schema、字段完整性、链接可达性
+- 🛡️ **Agent 团队的「安全网」** — 上线前对照检查、新人入职培训教材、SRE 排障速查手册
+- 🌐 **跨越语言与平台的边界** — Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个平台，跨 12+ 种语言，7,000+ 真实案例，一次收录
+- 🧬 **机器可消费的知识** — JSON-LD、CLI JSON 输出、Python API、VSCode 实时提示，让 agent 自己也能查 pitfall
+
+### 🪴 我们相信的事
+
+- **失败比成功更有信息量** — 一个被修好的 bug，比十篇「如何用 LangChain」教程更值得记录
+- **结构化胜过散文** — 只有 schema 化的知识，才能被搜索、被订阅、被引用、被 LLM 高效消费
+- **开放优于闭源** — 坑是公共知识，避坑指南也应该是公共财产
+- **自动化是规模化的前提** — 100 个 collector 7×24 自动抓取 + 三维度去重 + LLM 分类 + 人工抽检，是这个项目能跑到 7,000+ 条规模的唯一原因
+- **中文社区同样值得被收录** — 知乎、掘金、CSDN、博客园里藏着大量没被英文世界看见的踩坑经验
+
+### 🛤️ 已经走过的路
+
+- ✅ **Round 1-6**：从 21 个 collector、3,486 条 pitfall 起步，一路扩到 100 个 collector、7,755 条结构化案例
+- ✅ **三位一体**：静态站点 + Python CLI + Claude Code / Codex / OpenCode / Gemini 插件
+- ✅ **严格去重**：URL fingerprint + 标题 SHA1 + 标题相似度，让同一条坑不被收录 5 遍
+- ✅ **Zod schema 强校验**：CI 自动拦截不合格的 frontmatter
+- ✅ **纯静态、零后端**：dist/ 推到 gh-pages 就是线上站点
+
+### 🛰️ 接下来要走的路
+
+- 🛰️ **采集更广** — Discord / Slack 官方频道、YouTube 字幕（开发者会议、技术分享）、微信公众号合规接入
+- 🤖 **审核更准** — LLM 自动判断严重程度、自动抽取根因，把 `verified=true` 比例从现在的 ~10% 提升到 50%+
+- 🪢 **关联更深** — 让 pitfall 之间产生因果链——「这个坑会触发那个坑」「这个修复缓解了那类问题」
+- 🔌 **集成更紧** — VSCode 插件、JetBrains 插件，写 agent 代码时实时提示
+- 📮 **触达更及时** — 周刊订阅，把每周新收录的 critical 坑推到你的邮箱
+- 🌐 **社区更广** — 本地化（日语已上线，英语持续优化）、贡献者徽章、年度避坑报告
+
+### 💌 一句话
+
+> **让每一个被踩过的坑，都成为下一个开发者的台阶。**
+
+---
+
+## 💡 为什么做这个？
 
 - 😱 Context window 静默截断，关键信息丢失
 - 💸 Tool call 空参数，token 成本爆炸 10×

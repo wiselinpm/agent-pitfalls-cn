@@ -53,6 +53,81 @@ Every pitfall you'll encounter while building AI Agents — **5,561 real-world f
 
 ---
 
+## 📖 Our Story & Vision
+
+### 🕯️ How it started
+
+It started at 3 AM on an ordinary night.
+
+One of our team's AI agents got stuck in an infinite loop in production. By the time the on-call engineer noticed, the OpenAI bill had quietly climbed past $200. In the post-mortem, we combed through GitHub Issues, StackOverflow, Hacker News, Zhihu, and Juejin — and discovered an awkward truth:
+
+**Someone else had already fallen into this exact pit.**
+
+The problem was that no one had ever aggregated them. The pitfalls were scattered across hundreds of thousands of posts, issues, blogs, and papers on a dozen-plus platforms. Every new team spent the same week stepping into the same batch of pitfalls, writing the same post-mortems, and crying the same "I'm-not-alone" tears.
+
+So we built an internal wiki and started recording every pitfall our team hit: **symptoms / root causes / fixes / reference links**. We pulled it up at every weekly review — and the team genuinely stopped repeating mistakes.
+
+Until one day we realized —
+
+> **This shouldn't serve just one team. The entire AI agent ecosystem is missing this piece of the puzzle.**
+
+### 🔥 The pain we saw
+
+Since 2024, AI agent development has entered a "frenzy construction era." Everyone is stacking tools, tuning prompts, wiring MCP servers, orchestrating multi-agent flows. But behind the frenzy is an uncomfortable reality:
+
+- 🩸 **Token bills bleeding** — an unaudited agent can quietly burn thousands to tens of thousands of dollars a month
+- 🧨 **Production incidents** — silent context-window truncation, empty tool-call parameters, sandbox escapes, prompt injection — any of these can take a product offline
+- 🤐 **Knowledge silos** — pitfalls that someone else already hit sit in some Discord server's scrollback or a three-year-old forgotten HN comment
+- 😩 **Repeated labor** — every new team "reinvents" the same post-mortem, repeating the same debugging, trial-and-error, and review
+- 📚 **Academia vs. industry gap** — arXiv has abundant research on agent failure modes, but nobody translates it into knowledge a developer can use today
+
+**Pitfalls aren't the problem. Pitfalls going unrecorded is the problem.**
+
+### 🌱 Our vision
+
+We want **Agent Pitfalls** to become the **"immune system"** of the AI agent ecosystem:
+
+> **Once a pitfall has been stepped into and solved by someone, some team, or some paper, its "antibody" should be permanently deposited — so the next developer never falls into the same one.**
+
+Specifically, we want this project to become:
+
+- 📚 **The largest open failure-case library** — not just piles of data, but every case with structured **symptoms → root causes → fixes → sources**, making search, subscription, and citation all possible
+- 🤝 **A collaborative platform for developer mutual aid** — anyone can PR a new pitfall; CI auto-validates schema, field completeness, and link reachability
+- 🛡️ **A "safety net" for agent teams** — pre-launch checklists, onboarding training material, SRE incident-triage cheat-sheets
+- 🌐 **Cross-language and cross-platform boundaries** — Claude Code, OpenAI Agents SDK, LangChain, Cursor, Aider — 14 platforms, 12+ languages, 5,500+ real cases, all in one place
+- 🧬 **Machine-consumable knowledge** — JSON-LD, CLI JSON output, Python API, VSCode real-time hints — so agents themselves can look up pitfalls
+
+### 🪴 What we believe
+
+- **Failures carry more information than successes** — a fixed bug is worth more than ten "How to use LangChain" tutorials
+- **Structure beats prose** — only schema-ified knowledge can be searched, subscribed, cited, and efficiently consumed by LLMs
+- **Open beats closed-source** — pitfalls are public knowledge; pitfall-avoidance guides should be public property
+- **Automation is a prerequisite for scale** — 100 collectors running 24/7 + 3-dim dedupe + LLM classification + human spot-check is the only reason this project could reach the 5,500+ scale
+- **The Chinese community deserves to be recorded too** — Zhihu, Juejin, CSDN, cnblogs hide a wealth of pitfall experience unseen by the English-speaking world
+
+### 🛤️ The road we've traveled
+
+- ✅ **Round 1-6**: grew from 21 collectors / 3,486 pitfalls to 100 collectors / 5,561 structured cases
+- ✅ **Trinity**: static site + Python CLI + Claude Code / Codex / OpenCode / Gemini plugins
+- ✅ **Strict dedupe**: URL fingerprint + title SHA1 + title similarity — no pitfall gets listed 5 times
+- ✅ **Zod schema strict validation**: CI auto-blocks malformed frontmatter
+- ✅ **Pure static, zero backend**: push `dist/` to gh-pages and it's live
+
+### 🛰️ The road ahead
+
+- 🛰️ **Wider collection** — Discord / Slack official channels, YouTube transcripts (dev conferences, tech talks), compliant WeChat OA ingestion
+- 🤖 **Smarter review** — LLM auto-judge severity, auto-extract root causes, push `verified=true` ratio from ~10% to 50%+
+- 🪢 **Deeper correlation** — let pitfalls link causally — "this pitfall triggers that one", "this fix mitigates that class"
+- 🔌 **Tighter integration** — VSCode plugin, JetBrains plugin, real-time hints while writing agent code
+- 📮 **Faster reach** — weekly newsletter pushing each week's newly-collected critical pitfalls to your inbox
+- 🌐 **Wider community** — localization (Japanese live, English continuously refined), contributor badges, annual pitfall report
+
+### 💌 One sentence
+
+> **Let every pitfall ever stepped into become the next developer's stepping stone.**
+
+---
+
 ## 💡 Why does this exist?
 
 Every team building AI Agents steps into the same batch of pitfalls over and over:
