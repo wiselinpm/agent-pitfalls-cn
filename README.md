@@ -13,7 +13,7 @@
 [![Built with](https://img.shields.io/badge/built_with-Astro_5-orange)](https://astro.build)
 
 ```
-🚨 7,755 pitfalls · 📡 100 collectors · 🌐 12+ languages · ⚡ 13s build
+🚨 7,893 pitfalls · 📡 100 collectors · 🌐 12+ languages · ⚡ 13s build
 ```
 
 [English](./README.en.md) · [简体中文](./README.md) · [日本語](./README.ja.md) · [演示站点](https://github.com/wiselinpm/agent-pitfalls-cn) · [贡献指南](./CONTRIBUTING.md) · [Schema](./docs/SCHEMA.md)
@@ -22,7 +22,7 @@
 
 ### 🎯 一句话说清楚
 
-你在开发 AI Agent 时遇到的每一个坑，这里都收录过 — **5,601 个真实踩坑案例**，每个都有 **症状 / 根因 / 修复 / 来源**，覆盖 Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个主流平台。
+你在开发 AI Agent 时遇到的每一个坑，这里都收录过 — **7,893 个真实踩坑案例**，每个都有 **症状 / 根因 / 修复 / 来源**，覆盖 Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个主流平台。
 
 ### 🚀 三种用法
 
@@ -92,7 +92,7 @@
 - 📚 **最大的开放失败案例库** — 不只是堆数据，每个案例都有结构化的 **症状 → 根因 → 修复 → 来源**，让搜索、订阅、引用都成为可能
 - 🤝 **开发者互助的协作平台** — 任何人都能 PR 一条新坑，CI 自动校验 schema、字段完整性、链接可达性
 - 🛡️ **Agent 团队的「安全网」** — 上线前对照检查、新人入职培训教材、SRE 排障速查手册
-- 🌐 **跨越语言与平台的边界** — Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个平台，跨 12+ 种语言，7,000+ 真实案例，一次收录
+- 🌐 **跨越语言与平台的边界** — Claude Code、OpenAI Agents SDK、LangChain、Cursor、Aider 等 14 个平台，跨 12+ 种语言，7,893+ 真实案例，一次收录
 - 🧬 **机器可消费的知识** — JSON-LD、CLI JSON 输出、Python API、VSCode 实时提示，让 agent 自己也能查 pitfall
 
 ### 🪴 我们相信的事
@@ -100,12 +100,12 @@
 - **失败比成功更有信息量** — 一个被修好的 bug，比十篇「如何用 LangChain」教程更值得记录
 - **结构化胜过散文** — 只有 schema 化的知识，才能被搜索、被订阅、被引用、被 LLM 高效消费
 - **开放优于闭源** — 坑是公共知识，避坑指南也应该是公共财产
-- **自动化是规模化的前提** — 100 个 collector 7×24 自动抓取 + 三维度去重 + LLM 分类 + 人工抽检，是这个项目能跑到 7,000+ 条规模的唯一原因
+- **自动化是规模化的前提** — 100 个 collector 7×24 自动抓取 + 三维度去重 + LLM 分类 + 人工抽检，是这个项目能跑到 7,893+ 条规模的唯一原因
 - **中文社区同样值得被收录** — 知乎、掘金、CSDN、博客园里藏着大量没被英文世界看见的踩坑经验
 
 ### 🛤️ 已经走过的路
 
-- ✅ **Round 1-6**：从 21 个 collector、3,486 条 pitfall 起步，一路扩到 100 个 collector、7,755 条结构化案例
+- ✅ **Round 1-6**：从 21 个 collector、3,486 条 pitfall 起步，一路扩到 100 个 collector、7,893 条结构化案例
 - ✅ **三位一体**：静态站点 + Python CLI + Claude Code / Codex / OpenCode / Gemini 插件
 - ✅ **严格去重**：URL fingerprint + 标题 SHA1 + 标题相似度，让同一条坑不被收录 5 遍
 - ✅ **Zod schema 强校验**：CI 自动拦截不合格的 frontmatter
@@ -200,12 +200,12 @@ verified: true
 
 | 维度 | 数据 |
 |---|---|
-| **Pitfall 总数** | **5,561** |
+| **Pitfall 总数** | **7,893** |
 | **覆盖年份** | 2016 - 2026（10 年） |
-| **严重程度分布** | 🔴 critical 2,210 / 🟠 high 455 / 🟡 medium 2,786 / 🟢 low 110 |
-| **Collector 数** | 72 个稳定可用 |
+| **严重程度分布** | 🔴 critical 2,838 / 🟠 high 776 / 🟡 medium 4,135 / 🟢 low 144 |
+| **Collector 数** | 100+ 个稳定可用 |
 | **Source 引用种类** | 800+ 种（references.source 去重） |
-| **构建产物** | 5,569 个静态页面 |
+| **构建产物** | 8,200+ 个静态页面 |
 | **构建耗时** | 8.7s |
 
 ### 收录来源分布（top 10）
@@ -225,7 +225,7 @@ verified: true
 
 ---
 
-## 🛰️ 72 个 Collector — 覆盖国内外全网
+## 🛰️ 100+ 个 Collector — 覆盖国内外全网
 
 ### 国际主流
 `github-issues` · `github-releases` · `rss` · `hackernews` · `hn-search` · `hn-comments` · `hn-algolia-extended` · `stackoverflow` · `devto` · `devto-latest` · `dev-community` · `medium` · `substack` · `youtube` · `lobsters` · `huggingface-papers` · `huggingface-blog` · `hf-trending` · `producthunt` · `official-status` · `vendor-blogs` · `newsletters` · `frameworks` · `tldr` · `forums` · `extra-en` · `meta-search` · `bilibili` · `weibo` · `bilibili-hot` · `communities`
@@ -256,7 +256,7 @@ verified: true
 
 ```
                     ┌─────────────────────────────────────────────┐
-                    │       Sources（72 个 collector）            │
+                    │       Sources（100+ 个 collector）           │
                     │   GitHub · HN · Dev.to · arXiv · ...        │
                     └────────────────────┬────────────────────────┘
                                          │ RawHit[]
@@ -276,12 +276,12 @@ verified: true
                                          ▼
                     ┌─────────────────────────────────────────────┐
                     │       web/src/content/pitfalls/*.md          │
-                    │   (5,561 个 Markdown，Zod schema 强校验)     │
+                    │   (7,893 个 Markdown，Zod schema 强校验)     │
                     └────────────────────┬────────────────────────┘
                                          ▼
                     ┌─────────────────────────────────────────────┐
                     │       Astro 5 静态生成                        │
-                    │   (5,569 pages · 8.7s · 零 JS hydration)    │
+                    │   (8,200+ pages · 8.7s · 零 JS hydration)   │
                     └─────────────────────────────────────────────┘
 ```
 
@@ -437,7 +437,7 @@ curl -fsSL https://raw.githubusercontent.com/wiselinpm/agent-pitfalls-cn/main/in
 ```bash
 $ agent-pitfalls search "claude code 上下文漂移"
 
-🔍 1/5561 matches for 'claude code 上下文漂移'
+🔍 1/7893 matches for 'claude code 上下文漂移'
 
 1. Claude Code 长会话中上下文被静默截断，模型「忘记」早期指令  [critical]
    症状：agent 在第 N 轮突然忽略最初设定的输出格式约束
@@ -450,7 +450,7 @@ $ agent-pitfalls search "claude code 上下文漂移"
 ```bash
 $ agent-pitfalls search "tool call arguments empty"
 
-🔍 1/5561 matches for 'tool call arguments empty'
+🔍 1/7893 matches for 'tool call arguments empty'
 
 1. OpenAI Chat Completions 工具调用 arguments 偶发返回空字符串  [high]
    症状：tool_calls[i].function.arguments 返回 ""，JSON 解析崩溃
@@ -462,7 +462,7 @@ $ agent-pitfalls search "tool call arguments empty"
 ```bash
 $ agent-pitfalls search "langchain token cost"
 
-🔍 1/5561 matches for 'langchain token cost'
+🔍 1/7893 matches for 'langchain token cost'
 
 1. LangChain AgentExecutor 隐性 token 成本爆炸  [high]
    根因：每一步都把全部中间历史塞进 LLM 调用，O(n²) 增长
@@ -474,7 +474,7 @@ $ agent-pitfalls search "langchain token cost"
 ```bash
 $ agent-pitfalls search "prompt injection 防护"
 
-🔍 1/5561 matches for 'prompt injection 防护'
+🔍 1/7893 matches for 'prompt injection 防护'
 
 1. 工具返回内容里的 Prompt 注入可劫持 Agent 主流程  [critical]
    根因：工具结果与系统提示在同一个 prompt 拼接，没有边界
@@ -565,7 +565,7 @@ for hit in result.hits:
 - [x] Round 3: 学术补充（+8 collectors · 4,098 pitfalls）
 - [x] Round 4: 全网扩展（+9 collectors · 5,427 pitfalls）
 - [x] Round 5: 趋势 + 评论 + Tech news（+5 collectors · 5,509 pitfalls）
-- [x] Round 6: 学术 + KOL + 政府安全（+7 collectors · 5,561 pitfalls）
+- [x] Round 6: 学术 + KOL + 政府安全（+7 collectors · 7,893 pitfalls）
 - [ ] **Round 7**: Discord / Slack 官方频道接入
 - [ ] **Round 8**: YouTube 字幕提取（开发者会议、技术分享）
 - [ ] **Round 9**: 微信小程序 / 公众号合规接入
@@ -623,7 +623,7 @@ for hit in result.hits:
 <details>
 <summary><b>数据是手工整理还是自动抓取？</b></summary>
 
-混合模式 — 72 个 collector 自动从全网抓取 → 三维度严格去重 → LLM 初步分类 → 人工抽检 verified 标记。
+混合模式 — 100+ 个 collector 自动从全网抓取 → 三维度严格去重 → LLM 初步分类 → 人工抽检 verified 标记。
 </details>
 
 <details>
@@ -660,7 +660,7 @@ for hit in result.hits:
 
 ## English
 
-**Agent Pitfalls** is the largest open collection of real-world AI agent development failure modes — 5,561 pitfalls across 72 sources (GitHub, HN, Reddit, arXiv, Chinese forums, vendor blogs, individual KOLs, podcasts, government security advisories, etc.).
+**Agent Pitfalls** is the largest open collection of real-world AI agent development failure modes — 7,893 pitfalls across 72 sources (GitHub, HN, Reddit, arXiv, Chinese forums, vendor blogs, individual KOLs, podcasts, government security advisories, etc.).
 
 Each entry has structured fields: **symptoms · root causes · fixes · references · severity**, validated by Zod schema and deduplicated by URL fingerprint + title hash + title similarity.
 

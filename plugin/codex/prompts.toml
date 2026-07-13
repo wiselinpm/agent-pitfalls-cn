@@ -5,7 +5,7 @@
 [plugin]
 name = "agent-pitfalls"
 version = "0.1.0"
-description = "即时查询 AI agent 避坑知识 — 5,561+ pitfalls，跨 12+ 平台。"
+description = "即时查询 AI agent 避坑知识 — 7,893+ pitfalls，跨 13+ 平台。"
 homepage = "https://github.com/wiselinpm/agent-pitfalls-cn"
 license = "MIT"
 

@@ -1,6 +1,6 @@
 ---
 name: agent-pitfalls-search
-description: Search a curated knowledge base of 5,500+ real-world AI agent failures (Claude Code, Codex, Cursor, LangChain, OpenAI Agents, MCP, RAG, etc.) for symptoms, root causes, and fixes. Use when debugging agent crashes, context-window overflow, tool-call loops, prompt injection, API key leaks in logs, broken retries, hallucinated function arguments, or any "why is my LLM agent doing X?" question. Triggers on phrases like "agent crashed", "context overflow", "tool use failed", "agent looping", "API key leaked", "prompt injection", "MCP server error", "RAG returns wrong", or when reviewing/refactoring agent code.
+description: Search a curated knowledge base of 7,893 real-world AI agent failures (Claude Code, Codex, Cursor, LangChain, OpenAI Agents, MCP, RAG, etc.) for symptoms, root causes, and fixes. Use when debugging agent crashes, context-window overflow, tool-call loops, prompt injection, API key leaks in logs, broken retries, hallucinated function arguments, or any "why is my LLM agent doing X?" question. Triggers on phrases like "agent crashed", "context overflow", "tool use failed", "agent looping", "API key leaked", "prompt injection", "MCP server error", "RAG returns wrong", or when reviewing/refactoring agent code.
 license: MIT
 metadata:
   author: wiselinpm
@@ -94,7 +94,7 @@ Present results as a short list, not a wall of text. Recommended layout:
 When `--platform` or `--category` were detected from the query, mention them so the user knows the corpus was filtered, e.g.:
 
 ```
-🔍 3/5561 matches for "context overflow"
+🔍 3/7893 matches for "context overflow"
    detected: platforms=[claude-code] categories=[context-window]
 ```
 
