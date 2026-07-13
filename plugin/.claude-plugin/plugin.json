@@ -1,7 +1,7 @@
 {
   "name": "agent-pitfalls",
   "version": "0.1.0",
-  "description": "在 Claude Code 会话内即时查询 AI agent 避坑知识 — 5,561+ pitfalls，跨 12+ 平台。",
+  "description": "在 Claude Code 会话内即时查询 AI agent 避坑知识 — 7,893+ pitfalls，跨 13+ 平台。",
   "author": {
     "name": "wiselinpm"
   },

@@ -13,7 +13,7 @@
 [![Built with](https://img.shields.io/badge/built_with-Astro_5-orange)](https://astro.build)
 
 ```
-🚨 5,561 pitfalls · 📡 72 collectors · 🌐 12+ languages · ⚡ 8s build
+🚨 7,893 pitfalls · 📡 100+ collectors · 🌐 12+ languages · ⚡ 8s build
 ```
 
 **Languages**: [简体中文](./README.md) · [English](./README.en.md) · [日本語](./README.ja.md)
@@ -24,7 +24,7 @@
 
 ### 🎯 One sentence
 
-Every pitfall you'll encounter while building AI Agents — **5,561 real-world failure cases**, each with **symptoms / root causes / fixes / sources**, covering 14 major platforms including Claude Code, OpenAI Agents SDK, LangChain, Cursor, and Aider.
+Every pitfall you'll encounter while building AI Agents — **7,893 real-world failure cases**, each with **symptoms / root causes / fixes / sources**, covering 14 major platforms including Claude Code, OpenAI Agents SDK, LangChain, Cursor, and Aider.
 
 ### 🚀 Three ways to use
 
@@ -94,7 +94,7 @@ Specifically, we want this project to become:
 - 📚 **The largest open failure-case library** — not just piles of data, but every case with structured **symptoms → root causes → fixes → sources**, making search, subscription, and citation all possible
 - 🤝 **A collaborative platform for developer mutual aid** — anyone can PR a new pitfall; CI auto-validates schema, field completeness, and link reachability
 - 🛡️ **A "safety net" for agent teams** — pre-launch checklists, onboarding training material, SRE incident-triage cheat-sheets
-- 🌐 **Cross-language and cross-platform boundaries** — Claude Code, OpenAI Agents SDK, LangChain, Cursor, Aider — 14 platforms, 12+ languages, 5,500+ real cases, all in one place
+- 🌐 **Cross-language and cross-platform boundaries** — Claude Code, OpenAI Agents SDK, LangChain, Cursor, Aider — 13 platforms, 12+ languages, 7,893+ real cases, all in one place
 - 🧬 **Machine-consumable knowledge** — JSON-LD, CLI JSON output, Python API, VSCode real-time hints — so agents themselves can look up pitfalls
 
 ### 🪴 What we believe
@@ -102,12 +102,12 @@ Specifically, we want this project to become:
 - **Failures carry more information than successes** — a fixed bug is worth more than ten "How to use LangChain" tutorials
 - **Structure beats prose** — only schema-ified knowledge can be searched, subscribed, cited, and efficiently consumed by LLMs
 - **Open beats closed-source** — pitfalls are public knowledge; pitfall-avoidance guides should be public property
-- **Automation is a prerequisite for scale** — 100 collectors running 24/7 + 3-dim dedupe + LLM classification + human spot-check is the only reason this project could reach the 5,500+ scale
+- **Automation is a prerequisite for scale** — 100+ collectors running 24/7 + 3-dim dedupe + LLM classification + human spot-check is the only reason this project could reach the 7,893+ scale
 - **The Chinese community deserves to be recorded too** — Zhihu, Juejin, CSDN, cnblogs hide a wealth of pitfall experience unseen by the English-speaking world
 
 ### 🛤️ The road we've traveled
 
-- ✅ **Round 1-6**: grew from 21 collectors / 3,486 pitfalls to 100 collectors / 5,561 structured cases
+- ✅ **Round 1-6**: grew from 21 collectors / 3,486 pitfalls to 100 collectors / 7,893 structured cases
 - ✅ **Trinity**: static site + Python CLI + Claude Code / Codex / OpenCode / Gemini plugins
 - ✅ **Strict dedupe**: URL fingerprint + title SHA1 + title similarity — no pitfall gets listed 5 times
 - ✅ **Zod schema strict validation**: CI auto-blocks malformed frontmatter
@@ -204,12 +204,12 @@ Full RedactingFilter implementation, reproduction steps, related issue links —
 
 | Dimension | Value |
 |---|---|
-| **Total pitfalls** | **5,561** |
+| **Total pitfalls** | **7,893** |
 | **Year coverage** | 2016 - 2026 (10 years) |
-| **Severity** | 🔴 critical 2,210 / 🟠 high 455 / 🟡 medium 2,786 / 🟢 low 110 |
+| **Severity** | 🔴 critical 2,838 / 🟠 high 776 / 🟡 medium 4,135 / 🟢 low 144 |
 | **Collectors** | 72 stable |
 | **Source citations** | 800+ unique (deduplicated) |
-| **Build output** | 5,569 static pages |
+| **Build output** | 8,200+ static pages |
 | **Build time** | 8.7s |
 
 ### Top 10 source distribution
@@ -229,7 +229,7 @@ Full RedactingFilter implementation, reproduction steps, related issue links —
 
 ---
 
-## 🛰️ 72 Collectors — Global coverage
+## 🛰️ 100+ Collectors — Global coverage
 
 ### International mainstream
 `github-issues` · `github-releases` · `rss` · `hackernews` · `hn-search` · `hn-comments` · `hn-algolia-extended` · `stackoverflow` · `devto` · `devto-latest` · `dev-community` · `medium` · `substack` · `youtube` · `lobsters` · `huggingface-papers` · `huggingface-blog` · `hf-trending` · `producthunt` · `official-status` · `vendor-blogs` · `newsletters` · `frameworks` · `tldr` · `forums` · `extra-en` · `meta-search` · `bilibili` · `weibo` · `bilibili-hot` · `communities`
@@ -260,7 +260,7 @@ See [`collectors/SOURCES.md`](./collectors/SOURCES.md).
 
 ```
                     ┌─────────────────────────────────────────────┐
-                    │       Sources (72 collectors)               │
+                    │       Sources (100+ collectors)             │
                     │   GitHub · HN · Dev.to · arXiv · ...        │
                     └────────────────────┬────────────────────────┘
                                          │ RawHit[]
@@ -280,12 +280,12 @@ See [`collectors/SOURCES.md`](./collectors/SOURCES.md).
                                          ▼
                     ┌─────────────────────────────────────────────┐
                     │       web/src/content/pitfalls/*.md          │
-                    │   (5,561 markdown, Zod schema strict)       │
+                    │   (7,893 markdown, Zod schema strict)       │
                     └────────────────────┬────────────────────────┘
                                          ▼
                     ┌─────────────────────────────────────────────┐
                     │       Astro 5 static generation              │
-                    │   (5,569 pages · 8.7s · zero JS hydration)  │
+                    │   (8,200+ pages · 8.7s · zero JS hydration) │
                     └─────────────────────────────────────────────┘
 ```
 
@@ -516,7 +516,7 @@ for hit in result.hits:
 - [x] Round 3: Academic supplement (8 more · 4,098 pitfalls)
 - [x] Round 4: Global expansion (9 more · 5,427 pitfalls)
 - [x] Round 5: Trends + comments + tech news (5 more · 5,509 pitfalls)
-- [x] Round 6: Academic + KOL + gov-sec (7 more · 5,561 pitfalls)
+- [x] Round 6: Academic + KOL + gov-sec (7 more · 7,893 pitfalls)
 - [ ] **Round 7**: Discord / Slack official channel ingest
 - [ ] **Round 8**: YouTube transcript extraction (dev conferences, tech talks)
 - [ ] **Round 9**: WeChat Mini Program / official account compliant ingest
@@ -559,7 +559,7 @@ Since 2024, both platforms' public RSS all return 403, requiring login state. Sa
 <details>
 <summary><b>Hand-curated or auto-collected?</b></summary>
 
-Hybrid — 72 collectors auto-scrape the web → 3-dim strict dedupe → LLM initial classification → human spot-check `verified` flag.
+Hybrid — 100+ collectors auto-scrape the web → 3-dim strict dedupe → LLM initial classification → human spot-check `verified` flag.
 </details>
 
 <details>

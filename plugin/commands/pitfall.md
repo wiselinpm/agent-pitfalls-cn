@@ -35,7 +35,7 @@ npx agent-pitfalls search "$ARGUMENTS"
 工具会输出形如：
 
 ```
-🔍 N/5561 matches for '...'
+🔍 N/7893 matches for '...'
   detected: platforms=[...] categories=[...]
 
 1. <标题>  [<severity>]  score=...

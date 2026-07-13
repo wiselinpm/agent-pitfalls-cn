@@ -1,6 +1,6 @@
 # agent-pitfalls CLI
 
-> **在开发期即时查询 AI agent 避坑知识** — 5,561+ pitfalls · 12+ 平台 · 4 种主流 CLI 集成
+> **在开发期即时查询 AI agent 避坑知识** — 7,893+ pitfalls · 13+ 平台 · 4 种主流 CLI 集成
 
 把全网散落的 agent 避坑经验收进一个 5 MB 不到的本地索引，让 Claude Code / Codex / OpenCode / Gemini CLI 在写代码的当下就能看到「这里有坑」。
 
