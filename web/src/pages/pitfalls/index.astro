@@ -206,7 +206,22 @@ const severityCounts = {
         ));
       }
       function withBase(p) {
-        const base = (document.querySelector('meta[name="astro-base"]')?.content) || '';
+        // Fallback chain: <meta name=astro-base> → derive from location.pathname
+        // Astro does not inject astro-base; we derive from path prefix.
+        // /agent-pitfalls-cn/...  → base = '/agent-pitfalls-cn'
+        // /...                    → base = ''
+        let base = document.querySelector('meta[name="astro-base"]')?.content || '';
+        if (!base) {
+          const path = location.pathname;
+          const m = path.match(/^(\/[A-Za-z0-9_-]+)(\/|$)/);
+          // Detect GitHub Pages project page style: single-segment prefix
+          // that's NOT a known first-level route. Known routes start with
+          // /pitfalls, /about, /schema, /rss, /contributing, /patterns,
+          // /advisories, /agent-pitfalls-cn (the project base).
+          if (m && !/^(pitfalls|about|schema|rss\.xml|contributing|patterns|advisories|logo|og|favicon|search-index)/.test(m[1])) {
+            base = m[1];
+          }
+        }
         return base + (p.startsWith('/') ? p : '/' + p);
       }
 
