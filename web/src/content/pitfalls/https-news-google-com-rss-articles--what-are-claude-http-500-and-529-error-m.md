@@ -1,0 +1,29 @@
+---
+title: What are Claude HTTP 500 and 529 error messages, and which regions are affected by Anthropic outage? Here' - The Economi
+summary: What are Claude HTTP 500 and 529 error messages, and which regions are affected by Anthropic outage? Here' &nbsp;&nbsp; The Economic Times
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: What are Claude HTTP 500 and 529 error messages, and which regions are affected by Anthropic outage? Here' - The Economic Times
+  url: https://news.google.com/rss/articles/CBMivwJBVV95cUxQalRaOXNjYjg3TF9SV2hqNmFVNkt2eU00MG9wNFR2MDFqbHIyVmZCbzY5RkJjUlV3S0R4OWY2eUdPTUkxcS1mR3hMYXR0Vkp2X2ZxLXVnMmlYYzB5UEUzMVE1VVV3VzBQcFotbk5LbG1wZnNpRVRRSHdLeVBqRjVtMXZheTNYWVVXeVJzUkhQZzZ4bTRIQUZ5RjZuTS04MEltU3hzWEVRLW5DVGZ5SlZIRFN3eGJ5LVkzMjV0WXZDMVQyelRQci1uWkk5YnFTRUVBZklxSS1xb0VneUhlcnJYd05TLTJpdnczNlBmQzVMU2xGeW1uMnJsaElTUm4zUDM5NjI2ZWtKcEV6VzhXUGU3bV8wdHJRSVlidTRPdjNkcWZoZm9ZVlJGd1JUU0VKdm40dVZramtVSGFOVU84WE1R0gHEAkFVX3lxTFBCdFVldmQtN3JpeUpFTFlGbUo0TlRpMnB3WlJwZ2JreFFnV1VzQ29nME5RYjk2WEdXUDNyZl9WdFllQ0tXbVhOVG5nTnJEZmNZbnJLZkNiOFFEMVdmNmFtZnZ2MzlNdmlyb2xZYmI2WVI1ZEw0ZzRkVnhUX2RCdTRkcVJ5aWFMa250by1CSmNfMDNGYTJYSW5ZM0tLZ0pmQXVsR2NleVQ0TzczWHg0NTNrSkFvSjZwMjRkcF9KRE1JMVlkbUw4d0hrbzdvU3Q4eFFNektVam9oQmU0dm9YX0lEV3ROWjdyQ1NaTDVxUEp5dHphVTN2TVI3QTRXRmxnaUpEVmhKSmxnNm9qOTRXYkUwcVFoTHY0SERudG5JOEZLeC1rSk9pRXFNZzdKaWFtbVR4LUNfVkt0NnhxQTY5T1YzbjFfSA?oc=5
+  source: google-news:The Economic Times
+tags:
+- google-news
+- q:Claude Code error
+- src:The Economic Times
+discovered_at: '2026-03-02'
+verified: false
+---
+
+- [What are Claude HTTP 500 and 529 error messages, and which regions are affected by Anthropic outage? Here' - The Economic Times](https://news.google.com/rss/articles/CBMivwJBVV95cUxQalRaOXNjYjg3TF9SV2hqNmFVNkt2eU00MG9wNFR2MDFqbHIyVmZCbzY5RkJjUlV3S0R4OWY2eUdPTUkxcS1mR3hMYXR0Vkp2X2ZxLXVnMmlYYzB5UEUzMVE1VVV3VzBQcFotbk5LbG1wZnNpRVRRSHdLeVBqRjVtMXZheTNYWVVXeVJzUkhQZzZ4bTRIQUZ5RjZuTS04MEltU3hzWEVRLW5DVGZ5SlZIRFN3eGJ5LVkzMjV0WXZDMVQyelRQci1uWkk5YnFTRUVBZklxSS1xb0VneUhlcnJYd05TLTJpdnczNlBmQzVMU2xGeW1uMnJsaElTUm4zUDM5NjI2ZWtKcEV6VzhXUGU3bV8wdHJRSVlidTRPdjNkcWZoZm9ZVlJGd1JUU0VKdm40dVZramtVSGFOVU84WE1R0gHEAkFVX3lxTFBCdFVldmQtN3JpeUpFTFlGbUo0TlRpMnB3WlJwZ2JreFFnV1VzQ29nME5RYjk2WEdXUDNyZl9WdFllQ0tXbVhOVG5nTnJEZmNZbnJLZkNiOFFEMVdmNmFtZnZ2MzlNdmlyb2xZYmI2WVI1ZEw0ZzRkVnhUX2RCdTRkcVJ5aWFMa250by1CSmNfMDNGYTJYSW5ZM0tLZ0pmQXVsR2NleVQ0TzczWHg0NTNrSkFvSjZwMjRkcF9KRE1JMVlkbUw4d0hrbzdvU3Q4eFFNektVam9oQmU0dm9YX0lEV3ROWjdyQ1NaTDVxUEp5dHphVTN2TVI3QTRXRmxnaUpEVmhKSmxnNm9qOTRXYkUwcVFoTHY0SERudG5JOEZLeC1rSk9pRXFNZzdKaWFtbVR4LUNfVkt0NnhxQTY5T1YzbjFfSA?oc=5) — google-news:The Economic Times
+
+## 摘要
+
+What are Claude HTTP 500 and 529 error messages, and which regions are affected by Anthropic outage? Here' &nbsp;&nbsp; The Economic Times
+
+_来源热度：2_

@@ -1,0 +1,26 @@
+---
+title: '[踩坑] A 股开盘把 Python 搞挂了，怒切 Go 重写行情网关 (附 pprof 分析 + 源码)'
+summary: '[踩坑] A 股开盘把 Python 搞挂了，怒切 Go 重写行情网关 (附 pprof 分析 + 源码)'
+severity: medium
+platforms:
+- generic
+categories: []
+symptoms: []
+root_causes: []
+fixes: []
+references:
+- title: '[踩坑] A 股开盘把 Python 搞挂了，怒切 Go 重写行情网关 (附 pprof 分析 + 源码)'
+  url: https://www.v2ex.com/t/1187370#reply51
+  source: v2ex:python
+tags:
+- v2ex
+contributor: Howiee
+discovered_at: '2026-01-21'
+verified: false
+---
+
+- [[踩坑] A 股开盘把 Python 搞挂了，怒切 Go 重写行情网关 (附 pprof 分析 + 源码)](https://www.v2ex.com/t/1187370#reply51) — v2ex:python
+
+## 摘要
+
+[踩坑] A 股开盘把 Python 搞挂了，怒切 Go 重写行情网关 (附 pprof 分析 + 源码)
