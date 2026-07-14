@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { categoryLabel, platformLabel, severityLabel } from '../utils/labels';
+import { withBase } from '../utils/path';
+import { SITE_CONFIG } from '../utils/site';
 
 const all = (await getCollection('pitfalls')).sort(
   (a, b) => +new Date(b.data.discovered_at ?? 0) - +new Date(a.data.discovered_at ?? 0),
@@ -102,13 +104,13 @@ const heroSample = featured[0];
       </p>
 
       <div class="mt-7 flex flex-wrap items-center gap-x-7 gap-y-3">
-        <a href="/pitfalls" class="link-cta">浏览避坑库</a>
-        <a href="/contributing" class="link-cta">如何贡献</a>
-        <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="link-cta">GitHub</a>
+        <a href={withBase('/pitfalls')} class="link-cta">浏览避坑库</a>
+        <a href={withBase('/contributing')} class="link-cta">如何贡献</a>
+        <a href={SITE_CONFIG.github} rel="noopener" class="link-cta">GitHub</a>
       </div>
 
       <p class="mt-6 text-[12px] text-fog">
-        内容采用 <a href="/LICENSE" class="underline underline-offset-2">MIT</a> 协议开源 · 数据每周自动更新
+        内容采用 <a href={withBase('/LICENSE')} class="underline underline-offset-2">MIT</a> 协议开源 · 数据每周自动更新
       </p>
     </div>
   </section>
@@ -148,11 +150,11 @@ const heroSample = featured[0];
     <section class="mt-16">
       <div class="mb-5 flex items-end justify-between">
         <h2 class="section-title">热门分类</h2>
-        <a href="/pitfalls" class="link-cta text-[13px]">全部</a>
+        <a href={withBase('/pitfalls')} class="link-cta text-[13px]">全部</a>
       </div>
       <div class="flex flex-wrap gap-2">
         {topCategories.map((c) => (
-          <a href={`/pitfalls?category=${c.name}`} class="chip">
+          <a href={`${withBase('/pitfalls')}?category=${encodeURIComponent(c.name)}`} class="chip">
             <span>#{categoryLabel(c.name)}</span>
             <span class="font-mono text-fog tabular-nums">{c.count}</span>
           </a>
@@ -168,11 +170,11 @@ const heroSample = featured[0];
         <h2 class="section-title">最新收录</h2>
         <p class="mt-1 text-[13px] text-fog">按收录时间倒序 · 共 {totalCount} 条</p>
       </div>
-      <a href="/pitfalls" class="link-cta text-[13px]">查看全部</a>
+      <a href={withBase('/pitfalls')} class="link-cta text-[13px]">查看全部</a>
     </div>
     <div class="grid gap-4 md:grid-cols-2">
       {featured.map((p) => (
-        <a href={`/pitfalls/${p.id}`} class="card card-hover group block">
+        <a href={withBase(`/pitfalls/${p.id}`)} class="card card-hover group block">
           <div class="flex flex-wrap items-center gap-2">
             <span class={`badge ${severityBadge[p.data.severity]}`}>{severityLabel(p.data.severity)}</span>
             {p.data.platforms.slice(0, 2).map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
@@ -244,9 +246,9 @@ const heroSample = featured[0];
         PR-driven 工作流 — 任何人都能在 GitHub 上提交新坑、补充修复方案、或追加来源链接。
       </p>
       <div class="mt-6 flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
-        <a href="/contributing" class="link-cta">贡献指南</a>
-        <a href="/about" class="link-cta">关于项目</a>
-        <a href="/schema" class="link-cta">Schema</a>
+        <a href={withBase('/contributing')} class="link-cta">贡献指南</a>
+        <a href={withBase('/about')} class="link-cta">关于项目</a>
+        <a href={withBase('/schema')} class="link-cta">Schema</a>
       </div>
     </div>
   </section>

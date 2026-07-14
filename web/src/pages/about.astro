@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/path';
 ---
 <BaseLayout title="关于 · Agent Pitfalls">
   <article class="prose-tight max-w-3xl">
@@ -56,7 +57,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2>协议</h2>
       </div>
       <p class="mt-4">
-        本项目代码采用 <a href="/LICENSE">MIT</a> 协议；
+        本项目代码采用 <a href={withBase('/LICENSE')}>MIT</a> 协议；
         收录的内容如有第三方来源，引用时遵循各自来源的协议（多数为 fair use / CC-BY 范畴）。
       </p>
     </section>
@@ -67,12 +68,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2>如何参与</h2>
       </div>
       <p class="mt-4">
-        详见 <a href="/contributing">贡献指南</a> — 哪怕只是订正一个错别字也欢迎 PR。
+        详见 <a href={withBase('/contributing')}>贡献指南</a> — 哪怕只是订正一个错别字也欢迎 PR。
       </p>
       <div class="mt-6 flex flex-wrap items-center gap-x-7 gap-y-3">
-        <a href="/contributing" class="link-cta">贡献指南</a>
-        <a href="/pitfalls" class="link-cta">浏览避坑库</a>
-        <a href="/schema" class="link-cta">Schema 文档</a>
+        <a href={withBase('/contributing')} class="link-cta">贡献指南</a>
+        <a href={withBase('/pitfalls')} class="link-cta">浏览避坑库</a>
+        <a href={withBase('/schema')} class="link-cta">Schema 文档</a>
       </div>
     </section>
   </article>

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/path';
+import { SITE_CONFIG } from '../utils/site';
 ---
 <BaseLayout title="贡献指南 · Agent Pitfalls">
   <article class="prose-tight max-w-3xl">
@@ -24,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </li>
         <li class="flex gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] leading-relaxed text-slate">
           <span class="font-mono text-mist">[02]</span>
-          <span>按 <a href="/schema">SCHEMA.md</a> 填写 frontmatter（标题、严重程度、平台、症状、根因、修复、参考）</span>
+          <span>按 <a href={withBase('/schema')}>SCHEMA.md</a> 填写 frontmatter（标题、严重程度、平台、症状、根因、修复、参考）</span>
         </li>
         <li class="flex gap-3 rounded-lg border border-lavender-mist bg-paper p-3.5 text-[13px] leading-relaxed text-slate">
           <span class="font-mono text-mist">[03]</span>
@@ -107,9 +109,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           哪怕只是订正一个错别字、补充一个参考链接，也是受欢迎的 PR。
         </p>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
-          <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="link-cta">GitHub 仓库</a>
-          <a href="/schema" class="link-cta">Schema 文档</a>
-          <a href="/pitfalls" class="link-cta">浏览避坑库</a>
+          <a href={SITE_CONFIG.github} rel="noopener" class="link-cta">GitHub 仓库</a>
+          <a href={withBase('/schema')} class="link-cta">Schema 文档</a>
+          <a href={withBase('/pitfalls')} class="link-cta">浏览避坑库</a>
         </div>
       </div>
     </section>

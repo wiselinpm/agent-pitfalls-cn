@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categoryLabel, platformLabel, severityLabel } from '../../utils/labels';
+import { withBase } from '../../utils/path';
 
 const all = (await getCollection('pitfalls')).sort(
   (a, b) => +new Date(b.data.discovered_at ?? 0) - +new Date(a.data.discovered_at ?? 0),
@@ -97,7 +98,7 @@ const severityCounts = {
         data-date={String(+new Date(p.data.discovered_at ?? 0))}
         class="card card-hover group"
       >
-        <a href={`/pitfalls/${p.id}`} class="block">
+        <a href={withBase(`/pitfalls/${p.id}`)} class="block">
           <div class="flex flex-wrap items-start gap-4">
             <div class="min-w-0 flex-1">
               <div class="flex flex-wrap items-center gap-2">

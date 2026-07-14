@@ -10,7 +10,8 @@ const WEB = path.resolve(__dirname, 'web');
 
 // 站点静态化配置：纯静态导出，可托管到 GitHub Pages / Vercel / Netlify / 自建 Nginx
 export default defineConfig({
-  site: 'https://agent-pitfalls.dev',
+  site: 'https://wiselinpm.github.io',
+  base: '/agent-pitfalls-cn',
   srcDir: path.join(WEB, 'src'),
   publicDir: path.join(WEB, 'public'),
   output: 'static',

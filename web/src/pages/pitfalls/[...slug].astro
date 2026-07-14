@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categoryLabel, platformLabel, severityLabel } from '../../utils/labels';
+import { withBase } from '../../utils/path';
+import { SITE_CONFIG } from '../../utils/site';
 
 export async function getStaticPaths() {
   const all = (await getCollection('pitfalls')).sort(
@@ -42,7 +44,7 @@ const severityBadge = {
   </div>
 
   <nav class="mb-6 flex items-center gap-2 font-mono text-[12px] text-fog">
-    <a href="/pitfalls" class="hover:text-ink">pitfalls/</a>
+    <a href={withBase('/pitfalls')} class="hover:text-ink">pitfalls/</a>
     <span class="text-mist">/</span>
     <span class="truncate text-ink">{entry.id}</span>
   </nav>
@@ -140,7 +142,7 @@ const severityBadge = {
       <!-- Prev / Next -->
       <nav class="mt-14 grid gap-3 border-t border-lavender-mist pt-8 sm:grid-cols-2">
         {prev ? (
-          <a href={`/pitfalls/${prev.id}`} class="card card-hover group">
+          <a href={withBase(`/pitfalls/${prev.id}`)} class="card card-hover group">
             <p class="font-mono text-[11px] uppercase tracking-[0.056em] text-mist">← prev</p>
             <p class="mt-2 line-clamp-2 text-[14px] font-medium leading-snug text-ink">{prev.data.title}</p>
           </a>
@@ -148,7 +150,7 @@ const severityBadge = {
           <div></div>
         )}
         {next ? (
-          <a href={`/pitfalls/${next.id}`} class="card card-hover group sm:text-right">
+          <a href={withBase(`/pitfalls/${next.id}`)} class="card card-hover group sm:text-right">
             <p class="font-mono text-[11px] uppercase tracking-[0.056em] text-mist">next →</p>
             <p class="mt-2 line-clamp-2 text-[14px] font-medium leading-snug text-ink">{next.data.title}</p>
           </a>
@@ -161,7 +163,7 @@ const severityBadge = {
         <span>收录于 <span class="font-mono text-ink">{entry.data.discovered_at ?? '未注明'}</span></span>
         <span class="text-mist">·</span>
         <span>贡献者 <span class="font-mono text-ink">{entry.data.contributor ?? '匿名'}</span></span>
-        <a href={`https://github.com/agent-pitfalls/agent-pitfalls/edit/main/web/src/content/pitfalls/${entry.id}.md`}
+        <a href={`${SITE_CONFIG.github}/edit/${SITE_CONFIG.githubBranch}/web/src/content/pitfalls/${entry.id}.md`}
            target="_blank" rel="noopener noreferrer"
            class="ml-auto link-cta text-[12px]">
           在 GitHub 上编辑
@@ -221,7 +223,7 @@ const severityBadge = {
             <ul class="mt-3 space-y-3">
               {related.map((r) => (
                 <li>
-                  <a href={`/pitfalls/${r.id}`} class="group block">
+                  <a href={withBase(`/pitfalls/${r.id}`)} class="group block">
                     <div class="flex items-center gap-1.5">
                       <span class={`badge ${severityBadge[r.data.severity]}`}>{severityLabel(r.data.severity)}</span>
                     </div>

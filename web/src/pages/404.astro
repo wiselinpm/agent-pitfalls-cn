@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/path';
 ---
 <BaseLayout title="404 · Agent Pitfalls">
   <div class="py-16">
@@ -17,9 +18,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
 
       <div class="mt-6 flex flex-wrap items-center gap-x-7 gap-y-3">
-        <a href="/" class="link-cta">回首页</a>
-        <a href="/pitfalls" class="link-cta">浏览避坑库</a>
-        <a href="/contributing" class="link-cta">提交新坑</a>
+        <a href={withBase('/')} class="link-cta">回首页</a>
+        <a href={withBase('/pitfalls')} class="link-cta">浏览避坑库</a>
+        <a href={withBase('/contributing')} class="link-cta">提交新坑</a>
       </div>
     </div>
   </div>

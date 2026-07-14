@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import { withBase, BASE } from '../utils/path';
+import { SITE_CONFIG } from '../utils/site';
 
 interface Props {
   title: string;
@@ -8,15 +10,20 @@ interface Props {
 }
 
 const { title, description = '全网 agent 开发避坑信息整合 — 采集自 GitHub / 博客 / HN / Reddit / 知乎，开源协作。', pathname = Astro.url.pathname } = Astro.props;
-const canonical = new URL(pathname, Astro.site ?? 'https://agent-pitfalls.dev').toString();
+// Astro.url.pathname 已被 Astro 剥掉 base；用 site（Astro.site 含 base 在 v5 不会自动加）拼 canonical
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 
 const navItems = [
-  { href: '/', label: '首页', match: (p: string) => p === '/' },
-  { href: '/pitfalls', label: '避坑库', match: (p: string) => p.startsWith('/pitfalls') },
-  { href: '/advisories', label: '安全公告', match: (p: string) => p.startsWith('/advisories') },
-  { href: '/patterns', label: '应对模式', match: (p: string) => p.startsWith('/patterns') },
-  { href: '/about', label: '关于', match: (p: string) => p === '/about' || p === '/contributing' },
+  { href: withBase('/'), label: '首页', match: (p: string) => p === Astro.url.pathname || p === withBase('/') },
+  { href: withBase('/pitfalls'), label: '避坑库', match: (p: string) => p.startsWith(withBase('/pitfalls')) },
+  { href: withBase('/advisories'), label: '安全公告', match: (p: string) => p.startsWith(withBase('/advisories')) },
+  { href: withBase('/patterns'), label: '应对模式', match: (p: string) => p.startsWith(withBase('/patterns')) },
+  { href: withBase('/about'), label: '关于', match: (p: string) => p === withBase('/about') || p === withBase('/contributing') },
 ];
+
+// 注入到 inline script：vite transform 不会跑在 is:inline 块里
+const PITFALLS_PATH = withBase('/pitfalls');
+const PITFALLS_PREFIX = PITFALLS_PATH;
 ---
 <!doctype html>
 <html lang="zh-CN">
@@ -31,7 +38,7 @@ const navItems = [
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={withBase('/logo.png')} type="image/png" />
 
     <!-- Fonts: Rubik Variable (prose) + IBM Plex Mono (code) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,8 +52,14 @@ const navItems = [
     <!-- Header — sticky single row, brand left, nav center, search + console right -->
     <header class="sticky top-0 z-40 border-b border-lavender-mist bg-paper/85 backdrop-blur-sm">
       <div class="container-page flex h-14 items-center justify-between gap-6">
-        <a href="/" class="flex items-center gap-2 font-semibold text-ink">
-          <span class="inline-flex h-6 w-6 items-center justify-center rounded-md border border-lavender-mist text-[12px] font-bold">⚠</span>
+        <a href={withBase('/')} class="flex items-center gap-2 font-semibold text-ink">
+          <img
+            src={withBase('/logo.png')}
+            alt="Agent Pitfalls"
+            width="24"
+            height="24"
+            class="h-6 w-6 rounded-md"
+          />
           <span class="hidden text-[14px] font-semibold tracking-tight sm:inline">Agent Pitfalls</span>
         </a>
 
@@ -64,7 +77,7 @@ const navItems = [
             );
           })}
           <a
-            href="https://github.com/agent-pitfalls/agent-pitfalls"
+            href={SITE_CONFIG.github}
             rel="noopener"
             class="nav-link"
           >
@@ -78,7 +91,7 @@ const navItems = [
             <span class="placeholder hidden sm:inline">搜索…</span>
             <span class="kbd">⌘K</span>
           </button>
-          <a href="/rss.xml" class="btn-console hidden md:inline-flex" aria-label="订阅 RSS">RSS</a>
+          <a href={withBase('/rss.xml')} class="btn-console hidden md:inline-flex" aria-label="订阅 RSS">RSS</a>
           <button id="mobile-menu-toggle" type="button" aria-label="菜单" class="btn-console md:hidden">☰</button>
         </div>
       </div>
@@ -88,7 +101,7 @@ const navItems = [
           {navItems.map((item) => (
             <a href={item.href} class="nav-link justify-start">{item.label}</a>
           ))}
-          <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="nav-link justify-start">GitHub ↗</a>
+          <a href={SITE_CONFIG.github} rel="noopener" class="nav-link justify-start">GitHub ↗</a>
         </nav>
       </div>
     </header>
@@ -100,13 +113,13 @@ const navItems = [
     <!-- Footer — single row, copyright left, links + social right -->
     <footer class="mt-20 border-t border-lavender-mist py-8">
       <div class="container-page flex flex-col items-center justify-between gap-4 text-[12px] text-fog md:flex-row">
-        <p>© {new Date().getFullYear()} Agent Pitfalls · 内容采用 <a href="/LICENSE" class="underline underline-offset-2">MIT</a> 协议</p>
+        <p>© {new Date().getFullYear()} Agent Pitfalls · 内容采用 <a href={withBase('/LICENSE')} class="underline underline-offset-2">MIT</a> 协议</p>
         <div class="flex items-center gap-5">
-          <a href="/about" class="hover:text-ink">关于</a>
-          <a href="/contributing" class="hover:text-ink">贡献</a>
-          <a href="/schema" class="hover:text-ink">Schema</a>
-          <a href="https://github.com/agent-pitfalls/agent-pitfalls" rel="noopener" class="hover:text-ink">GitHub ↗</a>
-          <a href="/rss.xml" class="hover:text-ink">RSS ↗</a>
+          <a href={withBase('/about')} class="hover:text-ink">关于</a>
+          <a href={withBase('/contributing')} class="hover:text-ink">贡献</a>
+          <a href={withBase('/schema')} class="hover:text-ink">Schema</a>
+          <a href={SITE_CONFIG.github} rel="noopener" class="hover:text-ink">GitHub ↗</a>
+          <a href={withBase('/rss.xml')} class="hover:text-ink">RSS ↗</a>
         </div>
       </div>
     </footer>
@@ -118,12 +131,14 @@ const navItems = [
       });
 
       // Search shortcut — focus search box on /pitfalls, otherwise go there
+      const PITFALLS_HREF = {PITFALLS_PATH};
+      const PITFALLS_AT = {PITFALLS_PREFIX};
       document.getElementById('search-shortcut')?.addEventListener('click', () => {
-        if (window.location.pathname.startsWith('/pitfalls')) {
+        if (window.location.pathname.startsWith(PITFALLS_AT)) {
           const s = document.getElementById('search');
           if (s) { s.focus(); s.select(); }
         } else {
-          window.location.href = '/pitfalls';
+          window.location.href = PITFALLS_HREF;
         }
       });
       document.addEventListener('keydown', (e) => {
@@ -131,7 +146,7 @@ const navItems = [
           e.preventDefault();
           const s = document.getElementById('search');
           if (s) { s.focus(); s.select(); }
-          else { window.location.href = '/pitfalls'; }
+          else { window.location.href = PITFALLS_HREF; }
         }
       });
     </script>

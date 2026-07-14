@@ -8,6 +8,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:gh-pages": "astro build && node scripts/mirror-dist.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "echo 'lint placeholder'",

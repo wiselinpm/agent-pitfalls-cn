@@ -48,9 +48,13 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown));
   <header class="sticky top-0 z-40 border-b border-ink-100/80 bg-white/70 backdrop-blur-md dark:border-ink-800 dark:bg-ink-900/70">
     <div class="container-page flex h-16 items-center justify-between">
       <router-link to="/" class="group flex items-center gap-2.5 font-semibold tracking-tight">
-        <span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-white shadow-sm transition-transform group-hover:rotate-3">
-          <span class="text-sm font-bold">⚠</span>
-        </span>
+        <img
+          src="/logo.png"
+          alt="Agent Pitfalls"
+          width="28"
+          height="28"
+          class="h-7 w-7 rounded-lg shadow-sm transition-transform group-hover:rotate-3"
+        />
         <span class="hidden sm:inline">Agent Pitfalls</span>
       </router-link>
       <nav class="hidden gap-1 text-sm md:flex">

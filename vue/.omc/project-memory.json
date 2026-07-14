@@ -29,7 +29,7 @@
     "runtime": null
   },
   "build": {
-    "buildCommand": "npm run build",
+    "buildCommand": "cd /Users/linxiaobin/Downloads/agent避坑/vue && rtk npm run build 2>&1 | tail -30",
     "testCommand": null,
     "lintCommand": null,
     "devCommand": "npm run dev",
