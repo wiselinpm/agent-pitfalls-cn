@@ -63,7 +63,7 @@ def all_collectors() -> list[BaseCollector]:
         LobstersTagsCollector,
         DevToLatestCollector,
     )
-    # Round 4 — 新增源（学术分类/国内工程博客/GitHub/AI Research/newsletter/HN）
+    # Round 4
     from .round4_sources import (
         ArxivCategoriesCollector,
         CnEngBlogCollector,
@@ -77,7 +77,7 @@ def all_collectors() -> list[BaseCollector]:
         RedditProxyCollector,
         DiscourseCollector,
     )
-    # Round 5 — 学术 / 趋势 / Kaggle / HN 评论 / Tech news
+    # Round 5
     from .round5_sources import (
         SemanticScholarCollector,
         GithubTrendingCollector,
@@ -85,7 +85,7 @@ def all_collectors() -> list[BaseCollector]:
         HnCommentsCollector,
         TechNewsCollector,
     )
-    # Round 6 — DBLP/ACL/KOL/政府安全/Twitter镜像/Podcast/HF Trending
+    # Round 6
     from .round6_sources import (
         DblpCollector,
         AclAnthologyCollector,
@@ -94,6 +94,40 @@ def all_collectors() -> list[BaseCollector]:
         TwitterMirrorCollector,
         PodcastCollector,
         HfTrendingCollector,
+    )
+    # Round 7
+    from .round7_sources import (
+        StackExchangeMultiCollector,
+        V2EXCollector,
+        NodeSeekCollector,
+        TdsCollector,
+        AcmEngCollector,
+        TopVenuesCollector,
+        IeeeAcmCollector,
+        VendorCommunityCollector,
+        QuoraCollector,
+        MastodonTimelineCollector,
+        WechatRsshubCollector,
+    )
+    # Round 8
+    from .round8_sources import (
+        BaiduTiebaCollector,
+        ZhihuColumnCollector,
+        CsdnBlogCollector,
+        CnblogsRssCollector,
+        TencentCloudCollector,
+        AliyunCollector,
+        HuaweiCloudCollector,
+        MediumTagCollector,
+        SubstackCollectorV2,
+        GithubDiscussionsV2Collector,
+        TechNewsRssCollector,
+        AcmRssCollector,
+        UsenixLoginCollector,
+        ConferencePapersCollector,
+        YoutubeAiCollector,
+        BilibiliAiCollector,
+        RedditAiCollector,
     )
 
     return [
@@ -174,6 +208,36 @@ def all_collectors() -> list[BaseCollector]:
         TwitterMirrorCollector(),
         PodcastCollector(),
         HfTrendingCollector(),
+        # Round 7
+        StackExchangeMultiCollector(),
+        V2EXCollector(),
+        NodeSeekCollector(),
+        TdsCollector(),
+        AcmEngCollector(),
+        TopVenuesCollector(),
+        IeeeAcmCollector(),
+        VendorCommunityCollector(),
+        QuoraCollector(),
+        MastodonTimelineCollector(),
+        WechatRsshubCollector(),
+        # Round 8
+        BaiduTiebaCollector(),
+        ZhihuColumnCollector(),
+        CsdnBlogCollector(),
+        CnblogsRssCollector(),
+        TencentCloudCollector(),
+        AliyunCollector(),
+        HuaweiCloudCollector(),
+        MediumTagCollector(),
+        SubstackCollectorV2(),
+        GithubDiscussionsV2Collector(),
+        TechNewsRssCollector(),
+        AcmRssCollector(),
+        UsenixLoginCollector(),
+        ConferencePapersCollector(),
+        YoutubeAiCollector(),
+        BilibiliAiCollector(),
+        RedditAiCollector(),
     ]
 
 
