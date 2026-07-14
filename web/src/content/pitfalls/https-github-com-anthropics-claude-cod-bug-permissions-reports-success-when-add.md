@@ -1,5 +1,5 @@
 ---
-title: "[BUG] `/permissions` reports success when adding new Allow rules and writeable workspace dirs that managed policy fo..."
+title: "[BUG] `/permissions` reports success when adding new Allow rules and writeable workspace dirs that managed pol..."
 summary: '### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn''t been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x]'
 severity: critical
 platforms:

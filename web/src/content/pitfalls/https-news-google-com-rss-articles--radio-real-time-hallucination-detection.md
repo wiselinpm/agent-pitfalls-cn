@@ -1,5 +1,5 @@
 ---
-title: "RaDIO: Real-Time Hallucination Detection with Contextual Index Optimized Query Formulation for Dynamic Retrieval Aug..."
+title: "RaDIO: Real-Time Hallucination Detection with Contextual Index Optimized Query Formulation for Dynamic Retriev..."
 summary: 'RaDIO: Real-Time Hallucination Detection with Contextual Index Optimized Query Formulation for Dynamic Retrieval Augmented Generation &nbsp;&nbsp; The Association for the Advancement of Artificial Intelligence'
 severity: medium
 platforms:

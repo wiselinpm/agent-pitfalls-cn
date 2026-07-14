@@ -1,6 +1,6 @@
 ---
 title: 'FRAG: Toward Federated Vector Database Management for Collaborative and Secure Retrieval-Augmented Generation'
-summary: 'This paper introduces \textit{Federated Retrieval-Augmented Generation (FRAG)}, a novel database management paradigm tailored for the growing needs of retrieval-augmented generation (RAG) systems, which are increasingly powered by large-language models (LLMs). FRAG enables mutual'
+summary: 'This paper introduces 	extit{Federated Retrieval-Augmented Generation (FRAG)}, a novel database management paradigm tailored for the growing needs of retrieval-augmented generation (RAG) systems, which are increasingly powered by large-language models (LLMs). FRAG enables mutual'
 severity: critical
 platforms:
 - generic
@@ -25,6 +25,6 @@ verified: false
 
 ## 摘要
 
-This paper introduces \textit{Federated Retrieval-Augmented Generation (FRAG)}, a novel database management paradigm tailored for the growing needs of retrieval-augmented generation (RAG) systems, which are increasingly powered by large-language models (LLMs). FRAG enables mutual
+This paper introduces 	extit{Federated Retrieval-Augmented Generation (FRAG)}, a novel database management paradigm tailored for the growing needs of retrieval-augmented generation (RAG) systems, which are increasingly powered by large-language models (LLMs). FRAG enables mutual
 
 _来源热度：14_

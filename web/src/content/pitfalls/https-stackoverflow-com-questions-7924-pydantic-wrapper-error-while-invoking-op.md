@@ -1,5 +1,5 @@
 ---
-title: "Pydantic wrapper error while invoking openai client on streamlit. Got an unexpected keyword argument &#39;proxies&#39;"
+title: "Pydantic wrapper error while invoking openai client on streamlit. Got an unexpected keyword argument &#39;prox..."
 summary: Pydantic wrapper error while invoking openai client on streamlit. Got an unexpected keyword argument &#39;proxies&#39;
 severity: medium
 platforms:

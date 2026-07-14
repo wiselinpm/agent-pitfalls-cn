@@ -1,5 +1,5 @@
 ---
-title: "The Sequence Engineering #508: AGNTCY, the Agentic Framework that Brought LangChain and LlamaIndex Together - TheSeq..."
+title: "The Sequence Engineering #508: AGNTCY, the Agentic Framework that Brought LangChain and LlamaIndex Together - ..."
 summary: 'The Sequence Engineering #508: AGNTCY, the Agentic Framework that Brought LangChain and LlamaIndex Together &nbsp;&nbsp; TheSequence'
 severity: medium
 platforms:

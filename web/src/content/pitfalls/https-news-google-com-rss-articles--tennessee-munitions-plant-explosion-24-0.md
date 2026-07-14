@@ -1,5 +1,5 @@
 ---
-title: "Tennessee munitions plant explosion: 24,000 pounds of explosives detonate—more powerful than the “Mother of All Bomb..."
+title: "Tennessee munitions plant explosion: 24,000 pounds of explosives detonate—more powerful than the “Mother of Al..."
 summary: 'Tennessee munitions plant explosion: 24,000 pounds of explosives detonate—more powerful than the “Mother of All Bombs” &nbsp;&nbsp; World Socialist Web Site'
 severity: medium
 platforms:

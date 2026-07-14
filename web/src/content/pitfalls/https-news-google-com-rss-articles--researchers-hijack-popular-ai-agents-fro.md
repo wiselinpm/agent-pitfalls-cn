@@ -1,5 +1,5 @@
 ---
-title: "Researchers hijack popular AI agents from Anthropic, Google, and Microsoft: vendors choose to stay silent - Cybernews"
+title: "Researchers hijack popular AI agents from Anthropic, Google, and Microsoft: vendors choose to stay silent - Cy..."
 summary: 'Researchers hijack popular AI agents from Anthropic, Google, and Microsoft: vendors choose to stay silent &nbsp;&nbsp; Cybernews'
 severity: medium
 platforms:

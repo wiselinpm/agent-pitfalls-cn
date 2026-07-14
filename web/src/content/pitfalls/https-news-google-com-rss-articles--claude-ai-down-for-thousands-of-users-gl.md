@@ -1,5 +1,5 @@
 ---
-title: "Claude AI down for thousands of users globally: Here are the issues users are facing and some alternatives... - Mone..."
+title: "Claude AI down for thousands of users globally: Here are the issues users are facing and some alternatives... ..."
 summary: 'Claude AI down for thousands of users globally: Here are the issues users are facing and some alternatives... &nbsp;&nbsp; Moneycontrol.com'
 severity: medium
 platforms:

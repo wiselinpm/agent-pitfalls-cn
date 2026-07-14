@@ -1,5 +1,5 @@
 ---
-title: "[BUG] AskUserQuestion preview pane renders blank when content starts with an HTML-block tag (XML / HTML / SVG / Vue ..."
+title: "[BUG] AskUserQuestion preview pane renders blank when content starts with an HTML-block tag (XML / HTML / SVG ..."
 summary: '## Preflight Checklist - [x] I have searched existing issues and this hasn''t been reported (only adjacent/different bugs exist — see References) - [x] This is a single bug report - [x] I am using the latest version of Claude Code ## What''s Wrong? When `AskUserQuestion` is invo'
 severity: critical
 platforms:

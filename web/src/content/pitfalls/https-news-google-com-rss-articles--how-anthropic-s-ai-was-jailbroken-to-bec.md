@@ -1,5 +1,5 @@
 ---
-title: How Anthropic\'s AI was jailbroken to become a weapon - VentureBeat
+title: How Anthropic's AI was jailbroken to become a weapon - VentureBeat
 summary: How Anthropic's AI was jailbroken to become a weapon &nbsp;&nbsp; VentureBeat
 severity: high
 platforms:

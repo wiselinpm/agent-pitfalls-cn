@@ -1,5 +1,5 @@
 ---
-title: "‘A failure to communicate’: Senate resources chair says confidence in LNG developer is lost - Alaska''s News Source"
+title: "‘A failure to communicate’: Senate resources chair says confidence in LNG developer is lost - Alaska''s News S..."
 summary: '‘A failure to communicate’: Senate resources chair says confidence in LNG developer is lost &nbsp;&nbsp; Alaska''s News Source'
 severity: critical
 platforms:

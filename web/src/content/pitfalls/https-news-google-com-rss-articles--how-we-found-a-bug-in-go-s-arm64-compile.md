@@ -1,5 +1,5 @@
 ---
-title: How we found a bug in Go\'s arm64 compiler - The Cloudflare Blog
+title: How we found a bug in Go's arm64 compiler - The Cloudflare Blog
 summary: How we found a bug in Go's arm64 compiler &nbsp;&nbsp; The Cloudflare Blog
 severity: medium
 platforms:

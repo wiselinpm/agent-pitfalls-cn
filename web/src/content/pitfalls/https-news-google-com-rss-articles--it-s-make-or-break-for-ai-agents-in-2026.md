@@ -1,5 +1,5 @@
 ---
-title: It\'s make-or-break for AI agents in 2026 – failure now could set adoption back years - IT Pro
+title: It's make-or-break for AI agents in 2026 – failure now could set adoption back years - IT Pro
 summary: It's make-or-break for AI agents in 2026 – failure now could set adoption back years &nbsp;&nbsp; IT Pro
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: AI Agents Don\'t Fail Because of the LLM. They Fail Because of the System Around It. - HackerNoon
+title: AI Agents Don't Fail Because of the LLM. They Fail Because of the System Around It. - HackerNoon
 summary: AI Agents Don't Fail Because of the LLM. They Fail Because of the System Around It. &nbsp;&nbsp; HackerNoon
 severity: medium
 platforms:

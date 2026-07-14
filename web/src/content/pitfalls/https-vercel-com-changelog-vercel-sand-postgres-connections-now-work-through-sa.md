@@ -1,6 +1,6 @@
 ---
 title: Postgres connections now work through Sandbox firewall
-summary: '<p><a href="https://vercel.com/docs/vercel-sandbox">Vercel Sandbox</a> can now connect to hosted Postgres databases, including <a href="https://www.vercel.com/marketplace/neon">Neon</a>, <a href="https://www.vercel.com/marketplace/supabase">Supabase</a>, <a href="https://www.verc'
+summary: <p><a href="https://vercel.com/docs/vercel-sandbox">Vercel Sandbox</a> can now connect to hosted Postgres databases, including <a href="https://www.vercel.com/marketplace/neon">Neon</a>, <a href="https://www.vercel.com/marketplace/supabase">Supabase</a>, <a href="https://www.verc
 severity: critical
 platforms:
 - generic
@@ -21,6 +21,7 @@ contributor: Brandon Tuttle
 discovered_at: '2026-05-01'
 verified: false
 ---
+
 - [Postgres connections now work through Sandbox firewall](https://vercel.com/changelog/vercel-sandbox-firewall-now-supports-postgres-connections) — vercel-blog
 
 ## 摘要

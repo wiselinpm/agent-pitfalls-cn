@@ -1,5 +1,5 @@
 ---
-title: "Nvidia\\'s new open weights Nemotron 3 super combines three different architectures to beat gpt-oss and Qwen in throug..."
+title: "Nvidia's new open weights Nemotron 3 super combines three different architectures to beat gpt-oss and Qwen in ..."
 summary: Nvidia's new open weights Nemotron 3 super combines three different architectures to beat gpt-oss and Qwen in throughput &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

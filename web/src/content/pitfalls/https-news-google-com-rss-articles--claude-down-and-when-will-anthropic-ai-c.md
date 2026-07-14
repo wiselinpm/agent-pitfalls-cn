@@ -1,5 +1,5 @@
 ---
-title: "Claude down and when will Anthropic AI chatbot be back up? Claude outage reported by users worldwide. Here - The Economi"
+title: "Claude down and when will Anthropic AI chatbot be back up? Claude outage reported by users worldwide. Here - T..."
 summary: Claude down and when will Anthropic AI chatbot be back up? Claude outage reported by users worldwide. Here &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

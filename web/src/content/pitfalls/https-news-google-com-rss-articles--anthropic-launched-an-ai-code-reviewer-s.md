@@ -1,5 +1,5 @@
 ---
-title: "Anthropic launched an AI code reviewer. Some developers say it\\'s expensive and undermines senior engineers. - Busine..."
+title: "Anthropic launched an AI code reviewer. Some developers say it's expensive and undermines senior engineers. - ..."
 summary: Anthropic launched an AI code reviewer. Some developers say it's expensive and undermines senior engineers. &nbsp;&nbsp; Business Insider
 severity: medium
 platforms:

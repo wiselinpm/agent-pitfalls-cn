@@ -1,5 +1,5 @@
 ---
-title: Fable\'s judgement
+title: Fable's judgement
 summary: One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example the
 severity: high
 platforms:

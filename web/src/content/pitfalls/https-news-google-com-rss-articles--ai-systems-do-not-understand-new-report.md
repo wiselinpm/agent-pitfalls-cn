@@ -1,5 +1,5 @@
 ---
-title: "AI systems do not understand\": New report flags systemic failures in AI coding - The New Stack"
+title: "AI systems do not understand: New report flags systemic failures in AI coding - The New Stack"
 summary: '"AI systems do not understand": New report flags systemic failures in AI coding &nbsp;&nbsp; The New Stack'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Anthropic leaks part of Claude Code\'s internal source code - CNBC
+title: Anthropic leaks part of Claude Code's internal source code - CNBC
 summary: Anthropic leaks part of Claude Code's internal source code &nbsp;&nbsp; CNBC
 severity: critical
 platforms:

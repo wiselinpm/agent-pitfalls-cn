@@ -1,5 +1,5 @@
 ---
-title: "Model behavior: /goal Stop-hook directive cited as authorization for unrequested actions; absence-from-search treate..."
+title: "Model behavior: /goal Stop-hook directive cited as authorization for unrequested actions; absence-from-search ..."
 summary: '## Summary Single-session observations of three repeating Claude Code model behaviors that user-side rules in `~/.claude/CLAUDE.md` did not catch. Reporting because the patterns appear to be model-side and likely generalize beyond one user''s setup. Filed at the user''s explicit d'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: We\'re building a different kind of AI newsroom
+title: We're building a different kind of AI newsroom
 summary: Your subscription dollars now directly support Kai Williams.
 severity: high
 platforms:

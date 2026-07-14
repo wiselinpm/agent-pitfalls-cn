@@ -1,5 +1,5 @@
 ---
-title: Claude Code refuses requests or charges extra if your commits mention "OpenClaw
+title: Claude Code refuses requests or charges extra if your commits mention "OpenClaw"
 summary: <a href="https:&#x2F;&#x2F;xcancel.com&#x2F;theo&#x2F;status&#x2F;2049645973350363168" rel="nofollow">https:&#x2F;&#x2F;xcancel.com&#x2F;theo&#x2F;status&#x2F;2049645973350363168</a>
 severity: low
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Hello MG\": control your infotainment system with voice commands - MG Motor Europe"
+title: "Hello MG: control your infotainment system with voice commands - MG Motor Europe"
 summary: '"Hello MG": control your infotainment system with voice commands &nbsp;&nbsp; MG Motor Europe'
 severity: medium
 platforms:

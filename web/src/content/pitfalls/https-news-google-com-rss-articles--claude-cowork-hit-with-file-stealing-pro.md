@@ -1,5 +1,5 @@
 ---
-title: Claude Cowork hit with file-stealing prompt injection days after Anthropic\'s launch - the-decoder.com
+title: Claude Cowork hit with file-stealing prompt injection days after Anthropic's launch - the-decoder.com
 summary: Claude Cowork hit with file-stealing prompt injection days after Anthropic's launch &nbsp;&nbsp; the-decoder.com
 severity: medium
 platforms:

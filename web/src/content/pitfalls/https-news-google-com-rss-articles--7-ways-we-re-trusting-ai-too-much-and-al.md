@@ -1,5 +1,5 @@
 ---
-title: 7 ways we\'re trusting AI too much – and already paying for it - BBC Science Focus Magazine
+title: 7 ways we're trusting AI too much – and already paying for it - BBC Science Focus Magazine
 summary: 7 ways we're trusting AI too much – and already paying for it &nbsp;&nbsp; BBC Science Focus Magazine
 severity: medium
 platforms:

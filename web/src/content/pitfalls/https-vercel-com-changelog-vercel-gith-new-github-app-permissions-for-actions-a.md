@@ -20,6 +20,7 @@ contributor: Tom Knickman
 discovered_at: '2026-03-17'
 verified: false
 ---
+
 - [New GitHub App permissions for Actions and Workflows](https://vercel.com/changelog/vercel-github-app-updated-permissions) — vercel-blog
 
 ## 摘要

@@ -1,5 +1,5 @@
 ---
-title: Congressman-elect Ben Cline prepares to take over mentor\'s seat in Congress - WHSV
+title: Congressman-elect Ben Cline prepares to take over mentor's seat in Congress - WHSV
 summary: Congressman-elect Ben Cline prepares to take over mentor's seat in Congress &nbsp;&nbsp; WHSV
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Model refusals with structured output aren\'t handled
+title: Model refusals with structured output aren't handled
 summary: If an API [response is a refusal](https://developers.openai.com/api/docs/guides/structured-outputs#refusals), and structured output has been requested, the agents SDK just tries again and keeps looping until `max_turns` is reached. This is because `ItemHelpers.extract_text()` ig
 severity: critical
 platforms:

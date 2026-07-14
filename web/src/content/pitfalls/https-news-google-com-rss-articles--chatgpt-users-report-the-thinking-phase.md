@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT Users Report the Thinking Phase Has Disappeared by Default and Founders Building on OpenAI\\'s APIs Should Und..."
+title: "ChatGPT Users Report the Thinking Phase Has Disappeared by Default and Founders Building on OpenAI's APIs Shou..."
 summary: ChatGPT Users Report the Thinking Phase Has Disappeared by Default and Founders Building on OpenAI's APIs Should Understand Exactly What Changed and Why &nbsp;&nbsp; Startup Fortune
 severity: high
 platforms:

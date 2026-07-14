@@ -1,5 +1,5 @@
 ---
-title: OpenAI\'s Assistants API shuts down August 26 — but the silent failures hit weeks earlier, when you migrate
+title: OpenAI's Assistants API shuts down August 26 — but the silent failures hit weeks earlier, when you migrate
 summary: On August 26, 2026, OpenAI removes the Assistants API. Calls to /v1/assistants, /v1/threads, and...
 severity: medium
 platforms:

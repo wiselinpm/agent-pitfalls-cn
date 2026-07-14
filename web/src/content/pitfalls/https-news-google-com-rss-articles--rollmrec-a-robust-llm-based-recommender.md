@@ -1,5 +1,5 @@
 ---
-title: "RoLLMRec: a robust LLM-based recommender system for defending against shilling and prompt injection attacks - Fronti..."
+title: "RoLLMRec: a robust LLM-based recommender system for defending against shilling and prompt injection attacks - ..."
 summary: 'RoLLMRec: a robust LLM-based recommender system for defending against shilling and prompt injection attacks &nbsp;&nbsp; Frontiers'
 severity: medium
 platforms:

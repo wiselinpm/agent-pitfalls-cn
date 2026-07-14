@@ -1,5 +1,5 @@
 ---
-title: Watch explosion at border agent\'s gender-reveal party that sparked huge Arizona wildfire - Arizona Daily Star
+title: Watch explosion at border agent's gender-reveal party that sparked huge Arizona wildfire - Arizona Daily Star
 summary: Watch explosion at border agent's gender-reveal party that sparked huge Arizona wildfire &nbsp;&nbsp; Arizona Daily Star
 severity: medium
 platforms:

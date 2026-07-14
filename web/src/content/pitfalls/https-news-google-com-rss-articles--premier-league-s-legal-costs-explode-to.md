@@ -1,5 +1,5 @@
 ---
-title: Premier League\'s Legal Costs Explode To $66 Million - Front Office Sports
+title: Premier League's Legal Costs Explode To $66 Million - Front Office Sports
 summary: Premier League's Legal Costs Explode To $66 Million &nbsp;&nbsp; Front Office Sports
 severity: medium
 platforms:

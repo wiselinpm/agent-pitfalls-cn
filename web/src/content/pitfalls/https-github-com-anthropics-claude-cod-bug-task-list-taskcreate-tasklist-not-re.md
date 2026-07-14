@@ -1,5 +1,5 @@
 ---
-title: "[BUG] Task list (TaskCreate/TaskList) not restored on --resume/--continue — task-list id resolves to a new runtime id"
+title: "[BUG] Task list (TaskCreate/TaskList) not restored on --resume/--continue — task-list id resolves to a new run..."
 summary: '## Environment - Claude Code version: 2.1.207 - Platform: macOS (darwin 25.4.0), zsh - Task system: the current `TaskCreate`/`TaskList`/`TaskUpdate` tools (not the deprecated `TodoWrite`) ## Bug description Tasks created with `TaskCreate` are not restored when a session is res'
 severity: medium
 platforms:

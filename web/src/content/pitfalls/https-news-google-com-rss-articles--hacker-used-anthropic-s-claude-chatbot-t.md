@@ -1,5 +1,5 @@
 ---
-title: Hacker used Anthropic\'s Claude chatbot to attack multiple government agencies in Mexico - Engadget
+title: Hacker used Anthropic's Claude chatbot to attack multiple government agencies in Mexico - Engadget
 summary: Hacker used Anthropic's Claude chatbot to attack multiple government agencies in Mexico &nbsp;&nbsp; Engadget
 severity: medium
 platforms:

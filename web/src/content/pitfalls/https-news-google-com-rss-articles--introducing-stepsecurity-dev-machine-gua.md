@@ -1,5 +1,5 @@
 ---
-title: "Introducing StepSecurity Dev Machine Guard: Protecting Developer Machines from Supply Chain Attacks - StepSecurity"
+title: "Introducing StepSecurity Dev Machine Guard: Protecting Developer Machines from Supply Chain Attacks - StepSecu..."
 summary: 'Introducing StepSecurity Dev Machine Guard: Protecting Developer Machines from Supply Chain Attacks &nbsp;&nbsp; StepSecurity'
 severity: critical
 platforms:

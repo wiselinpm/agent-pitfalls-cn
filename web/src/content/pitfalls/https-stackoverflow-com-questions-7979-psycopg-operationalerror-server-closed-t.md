@@ -1,5 +1,5 @@
 ---
-title: "psycopg.OperationalError: server closed the connection unexpectedly when using LangGraph AsyncPostgresSaver with Fas..."
+title: "psycopg.OperationalError: server closed the connection unexpectedly when using LangGraph AsyncPostgresSaver wi..."
 summary: 'psycopg.OperationalError: server closed the connection unexpectedly when using LangGraph AsyncPostgresSaver with FastAPI and SQLAlchemy'
 severity: medium
 platforms:

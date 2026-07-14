@@ -1,5 +1,5 @@
 ---
-title: "Claude, Yahoo down? How to solve API 500 error amid massive outage; company responds | Hindustan Times - Hindustan Times"
+title: "Claude, Yahoo down? How to solve API 500 error amid massive outage; company responds | Hindustan Times - Hindu..."
 summary: Claude, Yahoo down? How to solve API 500 error amid massive outage; company responds | Hindustan Times &nbsp;&nbsp; Hindustan Times
 severity: medium
 platforms:

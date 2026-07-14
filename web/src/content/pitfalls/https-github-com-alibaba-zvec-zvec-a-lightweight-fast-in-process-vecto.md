@@ -1,6 +1,6 @@
 ---
 title: 'Zvec: A lightweight, fast, in-process vector database'
-summary: '<a href="https:&#x2F;&#x2F;zvec.org&#x2F;en&#x2F;" rel="nofollow">https:&#x2F;&#x2F;zvec.org&#x2F;en&#x2F;</a>'
+summary: <a href="https:&#x2F;&#x2F;zvec.org&#x2F;en&#x2F;" rel="nofollow">https:&#x2F;&#x2F;zvec.org&#x2F;en&#x2F;</a>
 severity: low
 platforms:
 - generic
@@ -16,6 +16,7 @@ tags:
 - hackernews
 verified: false
 ---
+
 - [Zvec: A lightweight, fast, in-process vector database](https://github.com/alibaba/zvec) — hn-algolia-ext:story
 
 ## 摘要

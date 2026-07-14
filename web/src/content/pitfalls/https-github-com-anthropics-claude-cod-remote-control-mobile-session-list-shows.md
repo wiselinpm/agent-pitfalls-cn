@@ -1,5 +1,5 @@
 ---
-title: "Remote Control: mobile session list shows stale content while a CLI session is actively running (recurring — see #31..."
+title: "Remote Control: mobile session list shows stale content while a CLI session is actively running (recurring — s..."
 summary: '### Preflight Checklist - [x] I have searched existing issues and found no *open, unresolved* match — this exact bug has been filed at least twice before and both times auto-closed as a duplicate of the other, then auto-closed again for inactivity, with no actual fix landing. Se'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Trump\'s credit card rate cap plan has unclear path, \'devastating\' risks, bank insiders say - CNBC
+title: Trump's credit card rate cap plan has unclear path, 'devastating' risks, bank insiders say - CNBC
 summary: Trump's credit card rate cap plan has unclear path, 'devastating' risks, bank insiders say &nbsp;&nbsp; CNBC
 severity: medium
 platforms:

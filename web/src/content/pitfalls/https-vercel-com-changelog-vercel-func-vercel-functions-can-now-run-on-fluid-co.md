@@ -1,6 +1,6 @@
 ---
 title: Vercel Functions can now run on Fluid compute
-summary: '<p>Vercel Functions can now run on <a href="https://vercel.com/fluid">Fluid compute</a>, bringing improvements in efficiency, scalability, and cost effectiveness. <a href="https://vercel.com/blog/introducing-fluid-compute">Fluid is now available for all plans</a>. </p><h3><b>What'
+summary: <p>Vercel Functions can now run on <a href="https://vercel.com/fluid">Fluid compute</a>, bringing improvements in efficiency, scalability, and cost effectiveness. <a href="https://vercel.com/blog/introducing-fluid-compute">Fluid is now available for all plans</a>. </p><h3><b>What
 severity: critical
 platforms:
 - generic
@@ -20,6 +20,7 @@ contributor: Nanda Syahrasyad
 discovered_at: '2025-02-04'
 verified: false
 ---
+
 - [Vercel Functions can now run on Fluid compute](https://vercel.com/changelog/vercel-functions-can-now-run-on-fluid-compute) — vercel-blog
 
 ## 摘要

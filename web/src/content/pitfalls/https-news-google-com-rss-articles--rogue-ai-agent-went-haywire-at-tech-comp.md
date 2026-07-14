@@ -1,5 +1,5 @@
 ---
-title: "\\'\\'\\'Rogue\\'\\' AI agent went haywire at tech company. The CEO is still \\'\\'bullish\\'\\' on the technology - ABC News ..."
+title: "'''Rogue'' AI agent went haywire at tech company. The CEO is still ''bullish'' on the technology - ..."
 summary: '''Rogue'' AI agent went haywire at tech company. The CEO is still ''bullish'' on the technology &nbsp;&nbsp; ABC News - Breaking News, Latest News and Videos'
 severity: medium
 platforms:

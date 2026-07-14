@@ -1,5 +1,5 @@
 ---
-title: "Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments - Towards Data ..."
+title: "Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments - Towards..."
 summary: 'Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments &nbsp;&nbsp; Towards Data Science'
 severity: critical
 platforms:

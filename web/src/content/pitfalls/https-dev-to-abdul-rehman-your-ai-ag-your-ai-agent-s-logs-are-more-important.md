@@ -1,5 +1,5 @@
 ---
-title: Your AI Agent\'s Logs Are More Important Than Its Prompt
+title: Your AI Agent's Logs Are More Important Than Its Prompt
 summary: Why observability beats prompt engineering for production LLM systems. Real lessons from a 1M+ listing AI pipeline.
 severity: critical
 platforms:

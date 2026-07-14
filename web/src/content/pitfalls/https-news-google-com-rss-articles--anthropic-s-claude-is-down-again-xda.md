@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude is down... again - XDA
+title: Anthropic's Claude is down... again - XDA
 summary: Anthropic's Claude is down... again &nbsp;&nbsp; XDA
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude goes offline in major outage due to \'capacity constraints\' - thenationalnews.com
+title: Anthropic's Claude goes offline in major outage due to 'capacity constraints' - thenationalnews.com
 summary: Anthropic's Claude goes offline in major outage due to 'capacity constraints' &nbsp;&nbsp; thenationalnews.com
 severity: medium
 platforms:

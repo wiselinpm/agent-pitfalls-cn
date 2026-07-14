@@ -1,5 +1,5 @@
 ---
-title: "\\\\'\\\\'\\\\'I talked confidentially to your agent\\\\'\\\\': Correa\\\\'\\\\'s explosive allegation against ICE rocks DHS hearin..."
+title: "'''I talked confidentially to your agent'': Correa''s explosive allegation against ICE ro..."
 summary: '''I talked confidentially to your agent'': Correa''s explosive allegation against ICE rocks DHS hearing &nbsp;&nbsp; The Economic Times'
 severity: medium
 platforms:

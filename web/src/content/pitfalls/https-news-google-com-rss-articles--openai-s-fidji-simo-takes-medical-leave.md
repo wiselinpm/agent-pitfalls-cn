@@ -1,5 +1,5 @@
 ---
-title: OpenAI\'s Fidji Simo takes medical leave, announces leadership changes - CNBC
+title: OpenAI's Fidji Simo takes medical leave, announces leadership changes - CNBC
 summary: OpenAI's Fidji Simo takes medical leave, announces leadership changes &nbsp;&nbsp; CNBC
 severity: high
 platforms:

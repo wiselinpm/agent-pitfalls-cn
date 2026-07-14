@@ -1,5 +1,5 @@
 ---
-title: "What is the meaning of the last letter &quot;a&quot;, &quot;b&quot;, or &quot;s&quot; in Azure DevOps&#39; C:\\\\agent\\..."
+title: What is the meaning of the last letter &quot;a&quot;, &quot;b&quot;, or &quot;s&quot; in Azure DevOps&#39; C:\agent\_wor
 summary: What is the meaning of the last letter &quot;a&quot;, &quot;b&quot;, or &quot;s&quot; in Azure DevOps&#39; C:\agent\_work\1\a? Anyone know what that last letter stands for?
 severity: medium
 platforms:

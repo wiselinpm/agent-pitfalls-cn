@@ -1,5 +1,5 @@
 ---
-title: "What you need to know about Amazon Nova Act: the new AI agent SDK challenging OpenAI, Microsoft, Salesforce - Ventur..."
+title: "What you need to know about Amazon Nova Act: the new AI agent SDK challenging OpenAI, Microsoft, Salesforce - ..."
 summary: 'What you need to know about Amazon Nova Act: the new AI agent SDK challenging OpenAI, Microsoft, Salesforce &nbsp;&nbsp; VentureBeat'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Google Cloud\'s AI Agent Builder gets new observability dashboard, faster build-and-deploy tools - VentureBeat
+title: Google Cloud's AI Agent Builder gets new observability dashboard, faster build-and-deploy tools - VentureBeat
 summary: Google Cloud's AI Agent Builder gets new observability dashboard, faster build-and-deploy tools &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

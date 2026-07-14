@@ -1,5 +1,5 @@
 ---
-title: "Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora - Time..."
+title: "Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora ..."
 summary: 'Luigi Mangione Jailbreak: Who Is Mark Anderson? Minnesota Man Arrested For Impersonating FBI Agent In Elabora &nbsp;&nbsp; Times Now'
 severity: medium
 platforms:

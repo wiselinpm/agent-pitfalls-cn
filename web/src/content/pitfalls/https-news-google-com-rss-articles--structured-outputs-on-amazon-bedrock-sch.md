@@ -1,5 +1,5 @@
 ---
-title: "Structured outputs on Amazon Bedrock: Schema-compliant AI responses | Amazon Web Services - Amazon Web Services (AWS)"
+title: "Structured outputs on Amazon Bedrock: Schema-compliant AI responses | Amazon Web Services - Amazon Web Service..."
 summary: 'Structured outputs on Amazon Bedrock: Schema-compliant AI responses | Amazon Web Services &nbsp;&nbsp; Amazon Web Services (AWS)'
 severity: medium
 platforms:

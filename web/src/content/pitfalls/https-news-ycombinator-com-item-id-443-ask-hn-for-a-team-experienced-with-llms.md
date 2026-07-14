@@ -1,6 +1,6 @@
 ---
 title: 'Ask HN: For a team experienced with LLMs – Any concrete reason to use LangGraph?'
-summary: Never used LangChain\LangGraph , saw the bad reviews about LangChain (albeit they are 1+ year old) - has anything changed? What can we do easier\faster with the framework rather than building our own pipeline? What unexpected things pop up, especially during maintenance, debuggin
+summary: Never used LangChainLangGraph , saw the bad reviews about LangChain (albeit they are 1+ year old) - has anything changed? What can we do easierfaster with the framework rather than building our own pipeline? What unexpected things pop up, especially during maintenance, debuggin
 severity: high
 platforms:
 - langchain
@@ -24,6 +24,6 @@ verified: false
 
 ## 摘要
 
-Never used LangChain\LangGraph , saw the bad reviews about LangChain (albeit they are 1+ year old) - has anything changed? What can we do easier\faster with the framework rather than building our own pipeline? What unexpected things pop up, especially during maintenance, debuggin
+Never used LangChainLangGraph , saw the bad reviews about LangChain (albeit they are 1+ year old) - has anything changed? What can we do easierfaster with the framework rather than building our own pipeline? What unexpected things pop up, especially during maintenance, debuggin
 
 _来源热度：4_

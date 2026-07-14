@@ -1,5 +1,5 @@
 ---
-title: "The Thermodynamic Reckoning: OpenAI Is Spending $3.30 to Make $1.00 While Google Pays Nothing - Shanaka Anslem Perer..."
+title: "The Thermodynamic Reckoning: OpenAI Is Spending $3.30 to Make $1.00 While Google Pays Nothing - Shanaka Anslem..."
 summary: 'The Thermodynamic Reckoning: OpenAI Is Spending $3.30 to Make $1.00 While Google Pays Nothing &nbsp;&nbsp; Shanaka Anslem Perera | Substack'
 severity: medium
 platforms:

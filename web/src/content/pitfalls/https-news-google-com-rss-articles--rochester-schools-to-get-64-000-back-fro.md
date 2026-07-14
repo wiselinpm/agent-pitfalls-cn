@@ -1,5 +1,5 @@
 ---
-title: Rochester schools to get $64,000 back from state, NH board chair says - Foster\'s Daily Democrat
+title: Rochester schools to get $64,000 back from state, NH board chair says - Foster's Daily Democrat
 summary: Rochester schools to get $64,000 back from state, NH board chair says &nbsp;&nbsp; Foster's Daily Democrat
 severity: medium
 platforms:

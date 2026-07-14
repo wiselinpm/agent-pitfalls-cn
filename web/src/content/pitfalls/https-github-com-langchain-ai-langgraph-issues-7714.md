@@ -1,5 +1,5 @@
 ---
-title: "LangGraph checkpoint serialization produces 85% storage bloat and 37.8% token overhead with no opt-out path - reproducib"
+title: "LangGraph checkpoint serialization produces 85% storage bloat and 37.8% token overhead with no opt-out path - ..."
 summary: '### Checked other resources - [x] This is a bug, not a usage question. - [x] I added a clear and descriptive title that summarizes this issue. - [x] I used the GitHub search to find a similar question and didn''t find it. - [x] I am sure that this is a bug in LangGraph rather tha'
 severity: critical
 platforms:

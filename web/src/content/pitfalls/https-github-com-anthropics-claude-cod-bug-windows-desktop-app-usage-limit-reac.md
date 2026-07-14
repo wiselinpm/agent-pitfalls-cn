@@ -1,5 +1,5 @@
 ---
-title: "\\\\'[BUG] Windows desktop app: \\\\'\\\\'Usage limit reached\\\\'\\\\' persists ~18h while Usage page shows 0% session / 27% w..."
+title: "'[BUG] Windows desktop app: ''Usage limit reached'' persists ~18h while Usage page shows 0% sessi..."
 summary: '## Environment - Claude desktop app on Windows 10 Home (10.0.19045), entrypoint `claude-desktop` - Claude Agent SDK 0.3.205 - Plan: Max 20x - Occurred: evening of July 11 → July 12, 2026 (UTC+8), ~18 hours and counting ## Description Since the evening of July 11 (UTC+8), multipl'
 severity: critical
 platforms:

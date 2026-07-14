@@ -1,5 +1,5 @@
 ---
-title: "Drivers’ behavior confronting fixed and point-to-point speed enforcement camera: agent-based simulation and translat..."
+title: "Drivers’ behavior confronting fixed and point-to-point speed enforcement camera: agent-based simulation and tr..."
 summary: 'Drivers’ behavior confronting fixed and point-to-point speed enforcement camera: agent-based simulation and translation to crash relative risk change &nbsp;&nbsp; Nature'
 severity: critical
 platforms:

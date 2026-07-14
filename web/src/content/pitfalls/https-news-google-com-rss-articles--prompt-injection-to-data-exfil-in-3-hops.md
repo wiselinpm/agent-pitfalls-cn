@@ -1,5 +1,5 @@
 ---
-title: Prompt Injection to Data Exfil in 3 Hops - O\'Reilly Media
+title: Prompt Injection to Data Exfil in 3 Hops - O'Reilly Media
 summary: Prompt Injection to Data Exfil in 3 Hops &nbsp;&nbsp; O'Reilly Media
 severity: medium
 platforms:

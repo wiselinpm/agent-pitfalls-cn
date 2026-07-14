@@ -1,5 +1,5 @@
 ---
-title: "Show HN: Global Issue Memory MCP – Stack Overflow for Your Coding Assistant"
+title: 'Show HN: Global Issue Memory MCP – Stack Overflow for Your Coding Assistant'
 summary: 'Hey HN, I built Global Issue Memory (GIM), an open-source MCP server that lets AI coding assistants look up and share solutions to errors they encounter.<p>GitHub: <a href="https:&#x2F;&#x2F;github.com&#x2F;timho102003&#x2F;global-issue-memory" rel="nofollow">https:&#x2F;&#x2F;gi'
 severity: critical
 platforms:

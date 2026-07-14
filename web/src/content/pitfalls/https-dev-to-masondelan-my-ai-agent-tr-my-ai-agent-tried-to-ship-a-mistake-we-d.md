@@ -1,5 +1,5 @@
 ---
-title: My AI agent tried to ship a mistake we\'d already reverted
+title: My AI agent tried to ship a mistake we'd already reverted
 summary: A month ago we added a card_token column to the users table so a background job could retry failed...
 severity: medium
 platforms:

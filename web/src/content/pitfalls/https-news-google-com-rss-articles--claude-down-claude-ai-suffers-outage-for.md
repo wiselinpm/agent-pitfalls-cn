@@ -1,5 +1,5 @@
 ---
-title: "Claude down: Claude AI suffers outage for second time in 3 days, what the company has to say - The Times of India"
+title: "Claude down: Claude AI suffers outage for second time in 3 days, what the company has to say - The Times of In..."
 summary: 'Claude down: Claude AI suffers outage for second time in 3 days, what the company has to say &nbsp;&nbsp; The Times of India'
 severity: medium
 platforms:

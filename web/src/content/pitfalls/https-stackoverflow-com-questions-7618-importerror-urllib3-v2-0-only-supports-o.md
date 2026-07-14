@@ -1,5 +1,5 @@
 ---
-title: "ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the &#39;ssl&#39; module is compiled with LibreSSL..."
+title: "ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the &#39;ssl&#39; module is compiled with Li..."
 summary: 'ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the &#39;ssl&#39; module is compiled with LibreSSL 2.8.3'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "The future is now: AI assistant tech can now book movie tickets, holidays & more in Australia - Time Out Worldwide"
+title: "The future is now: AI assistant tech can now book movie tickets, holidays & more in Australia - Time Out World..."
 summary: 'The future is now: AI assistant tech can now book movie tickets, holidays & more in Australia &nbsp;&nbsp; Time Out Worldwide'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Chat Completions API error: &quot;InvalidRequestError: Unrecognized request argument supplied: messages&quot;"
+title: "OpenAI Chat Completions API error: &quot;InvalidRequestError: Unrecognized request argument supplied: messages..."
 summary: 'OpenAI Chat Completions API error: &quot;InvalidRequestError: Unrecognized request argument supplied: messages&quot;'
 severity: medium
 platforms:

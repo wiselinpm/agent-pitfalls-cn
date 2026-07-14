@@ -1,5 +1,5 @@
 ---
-title: "\\'[MODEL] session token utilization causing me to open new sessions every 2 hours and I\\'\\'m on the max plan, happeni..."
+title: "'[MODEL] session token utilization causing me to open new sessions every 2 hours and I''m on the max plan, hap..."
 summary: '### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Amodel) for similar behavior reports - [x] This report does NOT contain sensitive information (API keys, passwords, etc.) ### Ty'
 severity: critical
 platforms:

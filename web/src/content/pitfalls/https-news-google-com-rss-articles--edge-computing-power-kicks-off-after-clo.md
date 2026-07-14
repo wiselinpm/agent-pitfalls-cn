@@ -1,5 +1,5 @@
 ---
-title: "Edge Computing Power Kicks Off After Cloud Tokens Explosion: Intelligent Agent All-in-One Machine Welcomes Six Types..."
+title: "Edge Computing Power Kicks Off After Cloud Tokens Explosion: Intelligent Agent All-in-One Machine Welcomes Six..."
 summary: 'Edge Computing Power Kicks Off After Cloud Tokens Explosion: Intelligent Agent All-in-One Machine Welcomes Six Types of Players &nbsp;&nbsp; 36 Kr'
 severity: medium
 platforms:

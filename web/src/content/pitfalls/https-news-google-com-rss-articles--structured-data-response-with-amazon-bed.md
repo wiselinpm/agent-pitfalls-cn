@@ -1,5 +1,5 @@
 ---
-title: "Structured data response with Amazon Bedrock: Prompt Engineering and Tool Use | Artificial Intelligence - Amazon Web..."
+title: "Structured data response with Amazon Bedrock: Prompt Engineering and Tool Use | Artificial Intelligence - Amaz..."
 summary: 'Structured data response with Amazon Bedrock: Prompt Engineering and Tool Use | Artificial Intelligence &nbsp;&nbsp; Amazon Web Services (AWS)'
 severity: medium
 platforms:

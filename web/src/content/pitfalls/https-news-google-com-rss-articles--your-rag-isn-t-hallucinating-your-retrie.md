@@ -1,5 +1,5 @@
 ---
-title: Your RAG Isn\'t Hallucinating. Your Retrieval Is Lying. - HackerNoon
+title: Your RAG Isn't Hallucinating. Your Retrieval Is Lying. - HackerNoon
 summary: Your RAG Isn't Hallucinating. Your Retrieval Is Lying. &nbsp;&nbsp; HackerNoon
 severity: medium
 platforms:

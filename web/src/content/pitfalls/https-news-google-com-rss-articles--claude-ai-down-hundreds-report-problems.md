@@ -1,5 +1,5 @@
 ---
-title: "Claude AI down: Hundreds report problems accessing Anthropic’s AI chatbot worldwide; company... - Moneycontrol.com"
+title: "Claude AI down: Hundreds report problems accessing Anthropic’s AI chatbot worldwide; company... - Moneycontrol..."
 summary: 'Claude AI down: Hundreds report problems accessing Anthropic’s AI chatbot worldwide; company... &nbsp;&nbsp; Moneycontrol.com'
 severity: medium
 platforms:

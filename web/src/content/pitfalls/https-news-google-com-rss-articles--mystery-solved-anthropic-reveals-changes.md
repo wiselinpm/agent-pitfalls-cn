@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Mystery solved: Anthropic reveals changes to Claude\\\\'\\\\'s harnesses and operating instructions likely caused degr..."
+title: "'Mystery solved: Anthropic reveals changes to Claude''s harnesses and operating instructions likely cause..."
 summary: 'Mystery solved: Anthropic reveals changes to Claude''s harnesses and operating instructions likely caused degradation &nbsp;&nbsp; VentureBeat'
 severity: high
 platforms:

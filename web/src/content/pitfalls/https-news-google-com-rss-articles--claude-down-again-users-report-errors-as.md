@@ -1,5 +1,5 @@
 ---
-title: "Claude down again? Users report errors as Anthropic confirms “elevated error rate” and investigates servic - The Economi"
+title: "Claude down again? Users report errors as Anthropic confirms “elevated error rate” and investigates servic - T..."
 summary: Claude down again? Users report errors as Anthropic confirms “elevated error rate” and investigates servic &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

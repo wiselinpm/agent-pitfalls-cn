@@ -1,5 +1,5 @@
 ---
-title: Hackers Using Claude and OpenAI\'s Codex for Exploitation, and Data Exfiltration Activities - CyberSecurityNews
+title: Hackers Using Claude and OpenAI's Codex for Exploitation, and Data Exfiltration Activities - CyberSecurityNews
 summary: Hackers Using Claude and OpenAI's Codex for Exploitation, and Data Exfiltration Activities &nbsp;&nbsp; CyberSecurityNews
 severity: critical
 platforms:

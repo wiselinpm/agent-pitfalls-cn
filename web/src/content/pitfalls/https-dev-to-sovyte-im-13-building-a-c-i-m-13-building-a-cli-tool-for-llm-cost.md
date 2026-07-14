@@ -1,5 +1,5 @@
 ---
-title: I\'m 13, Building a CLI Tool for LLM Cost Tracking, and Shipping It in 10 Days
+title: I'm 13, Building a CLI Tool for LLM Cost Tracking, and Shipping It in 10 Days
 summary: 'The problem A few weeks ago I read a Reddit comment that stuck with me: "I lost my house...'
 severity: medium
 platforms:

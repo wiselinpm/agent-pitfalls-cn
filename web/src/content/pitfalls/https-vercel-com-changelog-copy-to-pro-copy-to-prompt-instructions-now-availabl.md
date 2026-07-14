@@ -1,6 +1,6 @@
 ---
 title: Copy-to-Prompt instructions now available for Flags
-summary: '<p>The feature flags details page now includes copy-to-prompt instructions in the instructions pane. </p><p>\uFEFFYou or your agent can install the Flags SDK, link the project using the <a href=\"https://vercel.com/docs/cli\">Vercel CLI</a>, and add the required flag definitions to the'
+summary: '<p>The feature flags details page now includes copy-to-prompt instructions in the instructions pane. </p><p>uFEFFYou or your agent can install the Flags SDK, link the project using the <a href=\"https://vercel.com/docs/cli\">Vercel CLI</a>, and add the required flag definitions to the'
 severity: critical
 platforms:
 - generic

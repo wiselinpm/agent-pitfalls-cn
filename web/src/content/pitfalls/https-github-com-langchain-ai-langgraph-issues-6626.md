@@ -12,7 +12,7 @@ categories:
 symptoms:
 - unique_ids = set(intr.id for intr in all_interrupts)
 root_causes:
-- print("\n--- Attempting Resume ---")
+- 'print("=== Attempting Resume ===")'
 fixes:
 - 'Include the interrupt index in the ID generation:'
 references:

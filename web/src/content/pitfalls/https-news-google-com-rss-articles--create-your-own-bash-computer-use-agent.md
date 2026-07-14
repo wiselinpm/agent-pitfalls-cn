@@ -1,5 +1,5 @@
 ---
-title: "Create Your Own Bash Computer Use Agent with NVIDIA Nemotron in One Hour | NVIDIA Technical Blog - NVIDIA Developer"
+title: "Create Your Own Bash Computer Use Agent with NVIDIA Nemotron in One Hour | NVIDIA Technical Blog - NVIDIA Deve..."
 summary: Create Your Own Bash Computer Use Agent with NVIDIA Nemotron in One Hour | NVIDIA Technical Blog &nbsp;&nbsp; NVIDIA Developer
 severity: medium
 platforms:

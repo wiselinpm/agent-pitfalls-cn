@@ -1,5 +1,5 @@
 ---
-title: "`wrap_model_call` middleware ToolStrategy narrowing has no effect — model still sees all structured output tools"
+title: "`wrap_model_call` middleware ToolStrategy narrowing has no effect — model still sees all structured output too..."
 summary: '### Checked other resources - [x] This is a bug, not a usage question. - [x] I added a clear and descriptive title that summarizes this issue. - [x] I used the GitHub search to find a similar question and didn''t find it. - [x] I am sure that this is a bug in LangChain rather tha'
 severity: critical
 platforms:

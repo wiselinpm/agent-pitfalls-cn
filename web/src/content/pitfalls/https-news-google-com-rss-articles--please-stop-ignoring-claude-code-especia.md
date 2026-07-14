@@ -1,5 +1,5 @@
 ---
-title: Please stop ignoring Claude Code (especially if you\'re a developer) - XDA
+title: Please stop ignoring Claude Code (especially if you're a developer) - XDA
 summary: Please stop ignoring Claude Code (especially if you're a developer) &nbsp;&nbsp; XDA
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Why Anthropic's Claude AI suffered a global outage? Here's what the company said | World News - Hindustan Times"
+title: "Why Anthropic's Claude AI suffered a global outage? Here's what the company said | World News - Hindustan Time..."
 summary: Why Anthropic's Claude AI suffered a global outage? Here's what the company said | World News &nbsp;&nbsp; Hindustan Times
 severity: medium
 platforms:

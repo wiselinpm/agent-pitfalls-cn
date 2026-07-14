@@ -1,5 +1,5 @@
 ---
-title: Why OpenAI\'s new AI agent tools could change how you code - ZDNET
+title: Why OpenAI's new AI agent tools could change how you code - ZDNET
 summary: Why OpenAI's new AI agent tools could change how you code &nbsp;&nbsp; ZDNET
 severity: high
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "[BUG] Scroll-wheel SGR mouse report split across stdin reads leaks into prompt input (50ms incomplete-escape flush t..."
+title: "[BUG] Scroll-wheel SGR mouse report split across stdin reads leaks into prompt input (50ms incomplete-escape f..."
 summary: '## Summary While scrolling the conversation with a mouse wheel / two-finger trackpad, fragments of the terminal''s SGR mouse reports get inserted into the prompt **as literal text** (e.g. `<65;92;34M5;92;34M;34M`). It''s intermittent, and it fires most often right after a large bl'
 severity: critical
 platforms:

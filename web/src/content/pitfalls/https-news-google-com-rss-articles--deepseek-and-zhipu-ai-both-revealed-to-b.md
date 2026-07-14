@@ -1,5 +1,5 @@
 ---
-title: "DeepSeek and Zhipu AI Both Revealed to Be Developing In-House Inference Chips, as China\\'s AI Models Launch an All-Ou..."
+title: "DeepSeek and Zhipu AI Both Revealed to Be Developing In-House Inference Chips, as China's AI Models Launch an ..."
 summary: DeepSeek and Zhipu AI Both Revealed to Be Developing In-House Inference Chips, as China's AI Models Launch an All-Out Assault on the Computing Power Bottleneck &nbsp;&nbsp; finance.biggo.com
 severity: medium
 platforms:

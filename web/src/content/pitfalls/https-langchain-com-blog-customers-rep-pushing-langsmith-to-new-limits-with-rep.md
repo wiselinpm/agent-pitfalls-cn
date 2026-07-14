@@ -1,5 +1,5 @@
 ---
-title: Pushing LangSmith to new limits with Replit Agent\'s complex workflows
+title: Pushing LangSmith to new limits with Replit Agent's complex workflows
 summary: See how Replit built their agents atop LangGraph and integrated LangSmith to pinpoint issues, improve the performance of their agents, and enable human-in-the-loop workflows.
 severity: medium
 platforms:

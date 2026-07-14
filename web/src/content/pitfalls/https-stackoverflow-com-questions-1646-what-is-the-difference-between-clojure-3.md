@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between Clojure&#39;s &quot;send&quot; and &quot;send-off&quot; functions with respect to dispatc"
+title: "What is the difference between Clojure&#39;s &quot;send&quot; and &quot;send-off&quot; functions with respect ..."
 summary: What is the difference between Clojure&#39;s &quot;send&quot; and &quot;send-off&quot; functions with respect to dispatching an action to an agent?
 severity: medium
 platforms:

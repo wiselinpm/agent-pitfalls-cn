@@ -1,5 +1,5 @@
 ---
-title: "Claude down: Thousands of users face issues with Anthropic ‘code’ amid outage; how to fix API error 500 | Hindustan ..."
+title: "Claude down: Thousands of users face issues with Anthropic ‘code’ amid outage; how to fix API error 500 | Hind..."
 summary: 'Claude down: Thousands of users face issues with Anthropic ‘code’ amid outage; how to fix API error 500 | Hindustan Times &nbsp;&nbsp; Hindustan Times'
 severity: medium
 platforms:

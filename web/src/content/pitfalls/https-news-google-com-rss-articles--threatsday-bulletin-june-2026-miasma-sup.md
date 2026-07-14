@@ -1,5 +1,5 @@
 ---
-title: "ThreatsDay Bulletin June 2026: Miasma Supply Chain Worm Leak, Claude Code GitHub Action Vulnerability, AI Agent Phis..."
+title: "ThreatsDay Bulletin June 2026: Miasma Supply Chain Worm Leak, Claude Code GitHub Action Vulnerability, AI Agen..."
 summary: 'ThreatsDay Bulletin June 2026: Miasma Supply Chain Worm Leak, Claude Code GitHub Action Vulnerability, AI Agent Phishing & Top Cyber Incidents &nbsp;&nbsp; Rescana'
 severity: critical
 platforms:

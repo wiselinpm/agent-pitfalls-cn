@@ -1,5 +1,5 @@
 ---
-title: "Danelo Cavalcante manhunt: How border agents finally captured escaped killer alive after 14-day jailbreak - Fox News"
+title: "Danelo Cavalcante manhunt: How border agents finally captured escaped killer alive after 14-day jailbreak - Fo..."
 summary: 'Danelo Cavalcante manhunt: How border agents finally captured escaped killer alive after 14-day jailbreak &nbsp;&nbsp; Fox News'
 severity: medium
 platforms:

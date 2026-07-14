@@ -19,6 +19,7 @@ contributor: Tom Lienard
 discovered_at: '2025-10-02'
 verified: false
 ---
+
 - [Deployment-level configuration for Fluid compute](https://vercel.com/changelog/deployment-level-configuration-for-fluid-compute) — vercel-blog
 
 ## 摘要

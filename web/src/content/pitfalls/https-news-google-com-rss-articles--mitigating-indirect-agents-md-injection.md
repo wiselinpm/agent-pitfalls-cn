@@ -1,5 +1,5 @@
 ---
-title: "Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments | NVIDIA Technical Blog - NVIDIA Developer"
+title: "Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments | NVIDIA Technical Blog - NVIDIA Devel..."
 summary: Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments | NVIDIA Technical Blog &nbsp;&nbsp; NVIDIA Developer
 severity: medium
 platforms:

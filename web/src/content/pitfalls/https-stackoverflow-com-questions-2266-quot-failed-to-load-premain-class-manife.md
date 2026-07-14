@@ -1,5 +1,5 @@
 ---
-title: "&quot;Failed to load Premain-Class manifest attribute&quot; while trying to get the size of an object using java agent"
+title: "&quot;Failed to load Premain-Class manifest attribute&quot; while trying to get the size of an object using ja..."
 summary: '&quot;Failed to load Premain-Class manifest attribute&quot; while trying to get the size of an object using java agent'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Meta unleashes Llama API running 18x faster than OpenAI: Cerebras partnership delivers 2,600 tokens per second - Ven..."
+title: "Meta unleashes Llama API running 18x faster than OpenAI: Cerebras partnership delivers 2,600 tokens per second..."
 summary: 'Meta unleashes Llama API running 18x faster than OpenAI: Cerebras partnership delivers 2,600 tokens per second &nbsp;&nbsp; VentureBeat'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Claude outages lay bare software developers\\\\'\\\\' growing reliance on AI: \\\\'\\\\'I guess I\\\\'\\\\'ll write code like ..."
+title: "'Claude outages lay bare software developers'' growing reliance on AI: ''I guess I''ll wr..."
 summary: 'Claude outages lay bare software developers'' growing reliance on AI: ''I guess I''ll write code like a caveman'' &nbsp;&nbsp; Business Insider'
 severity: medium
 platforms:

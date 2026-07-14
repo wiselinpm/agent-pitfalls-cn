@@ -1,6 +1,6 @@
 ---
 title: Vercel launches partner certification
-summary: '<p>We''''re proud to introduce the inaugural cohort of Vercel Certified Solution Partners. These eleven industry-leading teams share our commitment to create a faster, more accessible, and more innovative web.\uFEFF</p><p>This program is designed not only to validate partner expertise, b'
+summary: '<p>We''''re proud to introduce the inaugural cohort of Vercel Certified Solution Partners. These eleven industry-leading teams share our commitment to create a faster, more accessible, and more innovative web.uFEFF</p><p>This program is designed not only to validate partner expertise, b'
 severity: critical
 platforms:
 - generic

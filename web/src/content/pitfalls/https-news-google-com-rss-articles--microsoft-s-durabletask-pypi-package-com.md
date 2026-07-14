@@ -1,5 +1,5 @@
 ---
-title: Microsoft\'s durabletask PyPI Package Compromised in Supply Chain Attack - StepSecurity
+title: Microsoft's durabletask PyPI Package Compromised in Supply Chain Attack - StepSecurity
 summary: Microsoft's durabletask PyPI Package Compromised in Supply Chain Attack &nbsp;&nbsp; StepSecurity
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: The \'I Know What You Did Last Summer’ Reboot Was Cooked Right From the Beginning - Collider
+title: The 'I Know What You Did Last Summer’ Reboot Was Cooked Right From the Beginning - Collider
 summary: The 'I Know What You Did Last Summer’ Reboot Was Cooked Right From the Beginning &nbsp;&nbsp; Collider
 severity: medium
 platforms:

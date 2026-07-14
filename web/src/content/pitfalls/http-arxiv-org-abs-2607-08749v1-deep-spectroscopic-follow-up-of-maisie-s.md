@@ -1,5 +1,5 @@
 ---
-title: Deep Spectroscopic Follow-Up of Maisie\'s Galaxy -- A Typical Galaxy in the Early Universe
+title: Deep Spectroscopic Follow-Up of Maisie's Galaxy -- A Typical Galaxy in the Early Universe
 summary: The first several years of JWST observations have yielded surprisingly large numbers of bright $z>10$ galaxies, with follow-up spectroscopy of many of these sources implying extreme star formation activity and/or AGN content. Here, we present a combination of two deep Cycle 3 NIR
 severity: critical
 platforms:

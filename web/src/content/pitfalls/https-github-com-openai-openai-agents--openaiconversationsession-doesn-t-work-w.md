@@ -1,5 +1,5 @@
 ---
-title: OpenAIConversationSession doesn\'t work with reasoning models
+title: OpenAIConversationSession doesn't work with reasoning models
 summary: '### Please read this first - **Have you read the docs?** Yes, although of minimal use as they point to a nonexistent doc page that it seems like codex just invented, the link at https://openai.github.io/openai-agents-python/sessions/#openai-conversations-api-memory points to htt'
 severity: medium
 platforms:

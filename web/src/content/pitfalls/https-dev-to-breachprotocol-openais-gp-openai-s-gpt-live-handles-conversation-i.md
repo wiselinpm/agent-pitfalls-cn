@@ -1,5 +1,5 @@
 ---
-title: OpenAI\'s GPT-Live handles conversation in real time and delegates the hard thinking to GPT-5.5
+title: OpenAI's GPT-Live handles conversation in real time and delegates the hard thinking to GPT-5.5
 summary: 'OpenAI launched GPT-Live, a voice system built around a simple architectural bet: separate the part that talks from the part that thinks. GPT-Live is a lightweight, full-duplex conversational layer that makes decisions -- speak, listen, pause, interrupt -- multiple times per seco'
 severity: critical
 platforms:

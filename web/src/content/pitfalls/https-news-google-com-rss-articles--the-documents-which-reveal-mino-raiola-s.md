@@ -1,5 +1,5 @@
 ---
-title: The documents which reveal Mino Raiola\'s extraordinary earning power - The Independent
+title: The documents which reveal Mino Raiola's extraordinary earning power - The Independent
 summary: The documents which reveal Mino Raiola's extraordinary earning power &nbsp;&nbsp; The Independent
 severity: medium
 platforms:

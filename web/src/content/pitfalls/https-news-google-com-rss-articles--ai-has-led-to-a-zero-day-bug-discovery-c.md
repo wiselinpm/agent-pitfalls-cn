@@ -1,5 +1,5 @@
 ---
-title: AI has led to a zero-day bug discovery crisis, and it\'s getting worse - Mashable
+title: AI has led to a zero-day bug discovery crisis, and it's getting worse - Mashable
 summary: AI has led to a zero-day bug discovery crisis, and it's getting worse &nbsp;&nbsp; Mashable
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet - Microsoft"
+title: "From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet - Microso..."
 summary: 'From package to postinstall payload: Inside the Mastra npm supply chain compromise by Sapphire Sleet &nbsp;&nbsp; Microsoft'
 severity: medium
 platforms:

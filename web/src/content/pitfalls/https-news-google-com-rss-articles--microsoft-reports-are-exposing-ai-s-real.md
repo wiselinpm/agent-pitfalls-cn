@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Microsoft reports are exposing AI\\\\'\\\\'s real cost problem: Using the tech is more expensive than paying human emp..."
+title: "'Microsoft reports are exposing AI''s real cost problem: Using the tech is more expensive than paying hum..."
 summary: 'Microsoft reports are exposing AI''s real cost problem: Using the tech is more expensive than paying human employees &nbsp;&nbsp; Fortune'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Everyone Is Hoping AI Fails. I\'m Building the Net Anyway.
+title: Everyone Is Hoping AI Fails. I'm Building the Net Anyway.
 summary: An AI agent deleted a company's production database — and the backups tied to that production volume,...
 severity: critical
 platforms:

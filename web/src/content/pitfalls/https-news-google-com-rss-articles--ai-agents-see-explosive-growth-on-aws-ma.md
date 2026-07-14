@@ -1,5 +1,5 @@
 ---
-title: AI agents see explosive growth on AWS Marketplace - over 40x the team\'s initial targets - ZDNET
+title: AI agents see explosive growth on AWS Marketplace - over 40x the team's initial targets - ZDNET
 summary: AI agents see explosive growth on AWS Marketplace - over 40x the team's initial targets &nbsp;&nbsp; ZDNET
 severity: medium
 platforms:

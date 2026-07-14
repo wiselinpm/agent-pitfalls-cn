@@ -1,5 +1,5 @@
 ---
-title: "We take a look at Google''s Antigravity: Agentic AI development but some frustrations for early adopters - DevClass"
+title: "We take a look at Google''s Antigravity: Agentic AI development but some frustrations for early adopters - Dev..."
 summary: 'We take a look at Google''s Antigravity: Agentic AI development but some frustrations for early adopters &nbsp;&nbsp; DevClass'
 severity: medium
 platforms:

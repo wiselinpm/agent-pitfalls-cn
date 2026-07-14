@@ -1,5 +1,5 @@
 ---
-title: "OpenAIConversationsSession persists empty reasoning item {\\\"type\\\":\\\"reasoning\\\",\\\"summary\\\":[]} and Conversations AP..."
+title: OpenAIConversationsSession persists empty reasoning item {"type":"reasoning","summary":[]} and Conversations API rejects
 summary: '### Please read this first - **Have you read the docs?**[Agents SDK docs](https://openai.github.io/openai-agents-python/) - **Have you searched for related issues?** Others may have faced similar issues. Body: ```md ## Summary When using `OpenAIConversationsSession` with: -'
 severity: low
 platforms:

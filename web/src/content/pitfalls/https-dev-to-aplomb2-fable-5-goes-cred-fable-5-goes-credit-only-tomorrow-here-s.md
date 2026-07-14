@@ -1,5 +1,5 @@
 ---
-title: Fable 5 Goes Credit-Only Tomorrow — Here\'s How to Not Go Broke
+title: Fable 5 Goes Credit-Only Tomorrow — Here's How to Not Go Broke
 summary: Tomorrow (July 7, 2026), Anthropic pulls Fable 5 out of subscription plans. Every Fable 5 call moves...
 severity: medium
 platforms:

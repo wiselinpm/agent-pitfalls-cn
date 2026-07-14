@@ -20,6 +20,7 @@ contributor: Timo Lins
 discovered_at: '2025-01-07'
 verified: false
 ---
+
 - [Runtime logs can now be filtered by request type and Vercel resource](https://vercel.com/changelog/runtime-logs-can-now-be-filtered-by-request-type-and-vercel-resource) — vercel-blog
 
 ## 摘要

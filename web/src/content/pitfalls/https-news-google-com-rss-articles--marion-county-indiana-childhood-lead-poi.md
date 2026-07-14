@@ -1,5 +1,5 @@
 ---
-title: "Marion County, Indiana | Childhood Lead Poisoning Prevention - Centers for Disease Control and Prevention | CDC (.gov)"
+title: "Marion County, Indiana | Childhood Lead Poisoning Prevention - Centers for Disease Control and Prevention | CD..."
 summary: Marion County, Indiana | Childhood Lead Poisoning Prevention &nbsp;&nbsp; Centers for Disease Control and Prevention | CDC (.gov)
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "AI bubble warning signs? Microsoft, Uber face unexpected coding agent cost surge in 2026 - The News International"
+title: "AI bubble warning signs? Microsoft, Uber face unexpected coding agent cost surge in 2026 - The News Internatio..."
 summary: AI bubble warning signs? Microsoft, Uber face unexpected coding agent cost surge in 2026 &nbsp;&nbsp; The News International
 severity: medium
 platforms:

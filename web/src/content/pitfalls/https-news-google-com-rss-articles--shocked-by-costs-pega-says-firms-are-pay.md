@@ -1,5 +1,5 @@
 ---
-title: "\\\\'\\\\'\\\\'Shocked by costs\\\\'\\\\': Pega says firms are paying too much for AI thinking; reveals outcome-based pricing a..."
+title: "'''Shocked by costs'': Pega says firms are paying too much for AI thinking; reveals outcome-based..."
 summary: '''Shocked by costs'': Pega says firms are paying too much for AI thinking; reveals outcome-based pricing as agent costs explode; Tokenmaxxing is ridiculous, says CEO Alan Trefler &nbsp;&nbsp; Mi-3.com.au.'
 severity: medium
 platforms:

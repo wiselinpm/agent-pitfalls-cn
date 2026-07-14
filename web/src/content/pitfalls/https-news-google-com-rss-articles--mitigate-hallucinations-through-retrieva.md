@@ -1,5 +1,5 @@
 ---
-title: "Mitigate hallucinations through Retrieval Augmented Generation using Pinecone vector database & Llama-2 from Amazon Sage"
+title: "Mitigate hallucinations through Retrieval Augmented Generation using Pinecone vector database & Llama-2 from A..."
 summary: Mitigate hallucinations through Retrieval Augmented Generation using Pinecone vector database & Llama-2 from Amazon SageMaker JumpStart | Amazon Web Services &nbsp;&nbsp; Amazon Web Services (AWS)
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "PydanticUserError: If you use `@root_validator` with pre=False (the default) you MUST specify `skip_on_failure=True`"
+title: "PydanticUserError: If you use `@root_validator` with pre=False (the default) you MUST specify `skip_on_failure..."
 summary: 'PydanticUserError: If you use `@root_validator` with pre=False (the default) you MUST specify `skip_on_failure=True`'
 severity: medium
 platforms:

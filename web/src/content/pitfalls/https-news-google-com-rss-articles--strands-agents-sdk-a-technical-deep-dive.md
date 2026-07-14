@@ -1,5 +1,5 @@
 ---
-title: "Strands Agents SDK: A technical deep dive into agent architectures and observability - Amazon Web Services (AWS)"
+title: "Strands Agents SDK: A technical deep dive into agent architectures and observability - Amazon Web Services (AW..."
 summary: 'Strands Agents SDK: A technical deep dive into agent architectures and observability &nbsp;&nbsp; Amazon Web Services (AWS)'
 severity: medium
 platforms:

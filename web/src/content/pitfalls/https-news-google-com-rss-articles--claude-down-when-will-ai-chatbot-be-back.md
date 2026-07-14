@@ -1,5 +1,5 @@
 ---
-title: "Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected - The Economi"
+title: "Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected - T..."
 summary: Claude down, when will AI chatbot be back up, and how to fix API error 500 message? Claude outage affected &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

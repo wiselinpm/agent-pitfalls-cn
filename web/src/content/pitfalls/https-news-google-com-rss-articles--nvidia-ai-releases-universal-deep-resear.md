@@ -1,5 +1,5 @@
 ---
-title: "NVIDIA AI Releases Universal Deep Research (UDR): A Prototype Framework for Scalable and Auditable Deep Research Age..."
+title: "NVIDIA AI Releases Universal Deep Research (UDR): A Prototype Framework for Scalable and Auditable Deep Resear..."
 summary: 'NVIDIA AI Releases Universal Deep Research (UDR): A Prototype Framework for Scalable and Auditable Deep Research Agents &nbsp;&nbsp; MarkTechPost'
 severity: medium
 platforms:

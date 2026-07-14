@@ -1,5 +1,5 @@
 ---
-title: Claude Suffered a \'Major Outage.\' Anthropic Says It\'s Fixed. - Business Insider
+title: Claude Suffered a 'Major Outage.' Anthropic Says It's Fixed. - Business Insider
 summary: Claude Suffered a 'Major Outage.' Anthropic Says It's Fixed. &nbsp;&nbsp; Business Insider
 severity: medium
 platforms:

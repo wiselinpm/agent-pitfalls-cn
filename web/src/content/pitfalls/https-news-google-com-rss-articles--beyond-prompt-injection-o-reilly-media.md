@@ -1,5 +1,5 @@
 ---
-title: Beyond Prompt Injection - O\'Reilly Media
+title: Beyond Prompt Injection - O'Reilly Media
 summary: Beyond Prompt Injection &nbsp;&nbsp; O'Reilly Media
 severity: medium
 platforms:

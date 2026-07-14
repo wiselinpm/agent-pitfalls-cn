@@ -1,5 +1,5 @@
 ---
-title: "Driver who crashed into American Pickers\\' Mike Wolfe and Leticia Cline charged with DUI and \\'vehicular assault\\' - ..."
+title: "Driver who crashed into American Pickers' Mike Wolfe and Leticia Cline charged with DUI and 'vehicular assault..."
 summary: Driver who crashed into American Pickers' Mike Wolfe and Leticia Cline charged with DUI and 'vehicular assault' &nbsp;&nbsp; the-sun.com
 severity: high
 platforms:

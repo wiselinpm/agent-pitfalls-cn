@@ -1,5 +1,5 @@
 ---
-title: "Claude Code down: Thousands complain of outage; how to fix issue as company shares update | Hindustan Times - Hindus..."
+title: "Claude Code down: Thousands complain of outage; how to fix issue as company shares update | Hindustan Times - ..."
 summary: 'Claude Code down: Thousands complain of outage; how to fix issue as company shares update | Hindustan Times &nbsp;&nbsp; Hindustan Times'
 severity: medium
 platforms:

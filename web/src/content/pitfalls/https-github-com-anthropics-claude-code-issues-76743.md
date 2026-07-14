@@ -1,5 +1,5 @@
 ---
-title: "Windows: click-to-focus activates pending permission dialog option (click-through), submitting an unintended answer"
+title: "Windows: click-to-focus activates pending permission dialog option (click-through), submitting an unintended a..."
 summary: '## Bug description When Claude Code is running with a **permission prompt pending** and the window does **not** have focus, the user''s *first click* on the window — intended only to give the window focus — lands on the permission dialog and **submits an answer** (approve/reject)'
 severity: medium
 platforms:

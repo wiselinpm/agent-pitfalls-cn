@@ -1,5 +1,5 @@
 ---
-title: "Tokenomics | Wenn die KI teurer wird als das Personal: Die stille Kostenexplosion der KI und was Managed AI dagegen ..."
+title: "Tokenomics | Wenn die KI teurer wird als das Personal: Die stille Kostenexplosion der KI und was Managed AI da..."
 summary: 'Tokenomics | Wenn die KI teurer wird als das Personal: Die stille Kostenexplosion der KI und was Managed AI dagegen tun kann &nbsp;&nbsp; Xpert.Digital - Konrad Wolfenstein'
 severity: medium
 platforms:

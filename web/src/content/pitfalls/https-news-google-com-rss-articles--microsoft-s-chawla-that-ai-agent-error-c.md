@@ -1,5 +1,5 @@
 ---
-title: "Microsoft''s Chawla: That AI Agent Error Cost $190,000 — and Temperature Zero Won''t Reproduce It - finance.biggo.com"
+title: "Microsoft''s Chawla: That AI Agent Error Cost $190,000 — and Temperature Zero Won''t Reproduce It - finance.bi..."
 summary: 'Microsoft''s Chawla: That AI Agent Error Cost $190,000 — and Temperature Zero Won''t Reproduce It &nbsp;&nbsp; finance.biggo.com'
 severity: medium
 platforms:

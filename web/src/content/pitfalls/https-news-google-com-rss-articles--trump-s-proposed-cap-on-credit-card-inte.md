@@ -1,5 +1,5 @@
 ---
-title: Trump\'s proposed cap on credit card interest sparks industry concerns - Travel Weekly
+title: Trump's proposed cap on credit card interest sparks industry concerns - Travel Weekly
 summary: Trump's proposed cap on credit card interest sparks industry concerns &nbsp;&nbsp; Travel Weekly
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Micro Case Study: How American Express is underwriting AI agent error to unlock trust in $trillion-scale agentic com..."
+title: "Micro Case Study: How American Express is underwriting AI agent error to unlock trust in $trillion-scale agent..."
 summary: 'Micro Case Study: How American Express is underwriting AI agent error to unlock trust in $trillion-scale agentic commerce &nbsp;&nbsp; Tearsheet'
 severity: critical
 platforms:

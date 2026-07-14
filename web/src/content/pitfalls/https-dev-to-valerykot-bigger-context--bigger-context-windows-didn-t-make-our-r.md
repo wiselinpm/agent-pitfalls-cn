@@ -1,5 +1,5 @@
 ---
-title: Bigger Context Windows Didn\'t Make Our RAG Smarter
+title: Bigger Context Windows Didn't Make Our RAG Smarter
 summary: We stopped measuring retrieval quality by how many tokens we could fit into the prompt. When...
 severity: medium
 platforms:

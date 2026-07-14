@@ -1,5 +1,5 @@
 ---
-title: "What\\'s New in Cursor — Latest Updates & Release Notes - Cursor"
+title: "What's New in Cursor — Latest Updates & Release Notes - Cursor"
 summary: What's New in Cursor — Latest Updates & Release Notes &nbsp;&nbsp; Cursor
 severity: medium
 platforms:

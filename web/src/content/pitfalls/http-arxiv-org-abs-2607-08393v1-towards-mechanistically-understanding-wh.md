@@ -1,6 +1,6 @@
 ---
 title: Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning
-summary: 'Fine-tuning LLMs to inject new knowledge faces a critical challenge: LLMs can quickly memorize new facts, yet fail to use them for downstream reasoning tasks. We formalize this failure as the \textit{\textbf{Knowing--Using Gap}}, characterized by an accuracy gap and a temporal la'
+summary: 'Fine-tuning LLMs to inject new knowledge faces a critical challenge: LLMs can quickly memorize new facts, yet fail to use them for downstream reasoning tasks. We formalize this failure as the 	extit{	extbf{Knowing--Using Gap}}, characterized by an accuracy gap and a temporal la'
 severity: critical
 platforms:
 - generic
@@ -25,6 +25,6 @@ verified: false
 
 ## 摘要
 
-Fine-tuning LLMs to inject new knowledge faces a critical challenge: LLMs can quickly memorize new facts, yet fail to use them for downstream reasoning tasks. We formalize this failure as the \textit{\textbf{Knowing--Using Gap}}, characterized by an accuracy gap and a temporal la
+Fine-tuning LLMs to inject new knowledge faces a critical challenge: LLMs can quickly memorize new facts, yet fail to use them for downstream reasoning tasks. We formalize this failure as the 	extit{	extbf{Knowing--Using Gap}}, characterized by an accuracy gap and a temporal la
 
 _来源热度：4_

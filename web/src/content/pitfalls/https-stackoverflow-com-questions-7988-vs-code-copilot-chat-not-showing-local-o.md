@@ -1,5 +1,5 @@
 ---
-title: "VS Code Copilot Chat not showing local Ollama models in selection menu despite being detected in &quot;Language Models&q"
+title: "VS Code Copilot Chat not showing local Ollama models in selection menu despite being detected in &quot;Languag..."
 summary: VS Code Copilot Chat not showing local Ollama models in selection menu despite being detected in &quot;Language Models&quot; tab
 severity: medium
 platforms:

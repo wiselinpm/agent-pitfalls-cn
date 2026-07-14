@@ -1,5 +1,5 @@
 ---
-title: OpenAI\'s API tools boost enterprise AI adoption - VentureBeat
+title: OpenAI's API tools boost enterprise AI adoption - VentureBeat
 summary: OpenAI's API tools boost enterprise AI adoption &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

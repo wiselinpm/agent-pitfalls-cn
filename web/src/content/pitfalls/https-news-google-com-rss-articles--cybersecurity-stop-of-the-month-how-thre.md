@@ -1,5 +1,5 @@
 ---
-title: "Cybersecurity stop of the month: how threat actors weaponize AI assistants with indirect prompt injection - Proofpoint"
+title: "Cybersecurity stop of the month: how threat actors weaponize AI assistants with indirect prompt injection - Pr..."
 summary: 'Cybersecurity stop of the month: how threat actors weaponize AI assistants with indirect prompt injection &nbsp;&nbsp; Proofpoint'
 severity: critical
 platforms:

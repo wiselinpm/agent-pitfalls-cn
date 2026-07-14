@@ -1,5 +1,5 @@
 ---
-title: "Three AI coding agents leaked secrets through a single prompt injection. One vendor\\'s system card predicted it - Ven..."
+title: "Three AI coding agents leaked secrets through a single prompt injection. One vendor's system card predicted it..."
 summary: Three AI coding agents leaked secrets through a single prompt injection. One vendor's system card predicted it &nbsp;&nbsp; VentureBeat
 severity: critical
 platforms:

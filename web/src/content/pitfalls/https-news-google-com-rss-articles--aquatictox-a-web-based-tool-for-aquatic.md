@@ -1,5 +1,5 @@
 ---
-title: "AquaticTox: A Web-Based Tool for Aquatic Toxicity Evaluation Based on Ensemble Learning to Facilitate the Screening ..."
+title: "AquaticTox: A Web-Based Tool for Aquatic Toxicity Evaluation Based on Ensemble Learning to Facilitate the Scre..."
 summary: 'AquaticTox: A Web-Based Tool for Aquatic Toxicity Evaluation Based on Ensemble Learning to Facilitate the Screening of Green Chemicals &nbsp;&nbsp; ACS Publications'
 severity: medium
 platforms:

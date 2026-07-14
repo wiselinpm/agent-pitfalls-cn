@@ -1,5 +1,5 @@
 ---
-title: "Want to keep using Fable 5? Teach Opus and Sonnet to \"behave\" like it."
+title: Want to keep using Fable 5? Teach Opus and Sonnet to "behave" like it.
 summary: My Fable 5 access ends July 7. Before it goes, I documented how it works — as skills — and handed them down to my Opus/Sonnet agent team. Here's exactly what I wrote and how I make sure it actually reaches the subagents.
 severity: medium
 platforms:

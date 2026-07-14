@@ -1,5 +1,5 @@
 ---
-title: "[BUG] TUI renderer + stdin die mid-session while the engine keeps running (macOS, 2.1.207) — idle CPU, no SIGWINCH r..."
+title: "[BUG] TUI renderer + stdin die mid-session while the engine keeps running (macOS, 2.1.207) — idle CPU, no SIGW..."
 summary: '## Environment - Claude Code **2.1.207** - macOS **26.5.1**, Apple Silicon (arm64) - Reproduced under **both Ghostty 1.3.1 and tmux 3.7b** → terminal-independent - Interactive TUI, `/tui fullscreen` mode ## Summary Mid-session, Claude Code''s **terminal UI dies completely** —'
 severity: critical
 platforms:

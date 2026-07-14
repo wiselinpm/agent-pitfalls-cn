@@ -1,5 +1,5 @@
 ---
-title: I designed a Harness to fix my agent\'s quality problem — then found 6 flaws in my own design
+title: I designed a Harness to fix my agent's quality problem — then found 6 flaws in my own design
 summary: 'In my previous article (I tested 3 models as AI agent quality inspectors: the stronger the model, the...'
 severity: medium
 platforms:

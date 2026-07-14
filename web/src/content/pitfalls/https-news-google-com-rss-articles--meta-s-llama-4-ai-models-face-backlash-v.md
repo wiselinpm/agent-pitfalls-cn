@@ -1,5 +1,5 @@
 ---
-title: Meta\'s Llama 4 AI models face backlash - VentureBeat
+title: Meta's Llama 4 AI models face backlash - VentureBeat
 summary: Meta's Llama 4 AI models face backlash &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

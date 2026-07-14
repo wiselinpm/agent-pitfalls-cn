@@ -1,5 +1,5 @@
 ---
-title: Claude Code runs a GitHub repo\'s hidden malware without verification, giving attackers full control - the-decoder.com
+title: Claude Code runs a GitHub repo's hidden malware without verification, giving attackers full control - the-decoder.com
 summary: Claude Code runs a GitHub repo's hidden malware without verification, giving attackers full control &nbsp;&nbsp; the-decoder.com
 severity: medium
 platforms:

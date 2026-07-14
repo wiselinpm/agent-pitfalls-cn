@@ -1,5 +1,5 @@
 ---
-title: "Does Bielik Know What It Doesn\\\\'t Know? Activation Dispersion Separates Entity Familiarity from Factual Reliability ..."
+title: "Does Bielik Know What It Doesn't Know? Activation Dispersion Separates Entity Familiarity from Factual Reliabi..."
 summary: Large language models hallucinate most about entities they have never seen. We ask whether a model's activations betray entity familiarity before a single answer token is generated, and whether that signal predicts the factual reliability of the answers. On four Polish Bielik mod
 severity: medium
 platforms:

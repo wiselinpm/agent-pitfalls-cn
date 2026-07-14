@@ -1,5 +1,5 @@
 ---
-title: "Security companies have pointed out that Microsoft 365 Copilot\\'s AI agent feature, \\'Cowork,\\' could potentially lea..."
+title: "Security companies have pointed out that Microsoft 365 Copilot's AI agent feature, 'Cowork,' could potentially..."
 summary: Security companies have pointed out that Microsoft 365 Copilot's AI agent feature, 'Cowork,' could potentially leak files without permission. &nbsp;&nbsp; gigazine.net
 severity: critical
 platforms:

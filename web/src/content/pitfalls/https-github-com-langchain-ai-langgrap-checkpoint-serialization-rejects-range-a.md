@@ -1,5 +1,5 @@
 ---
-title: "Checkpoint serialization rejects range and PurePath variants (TypeError) -- same gap as Fraction/complex in #8185"
+title: "Checkpoint serialization rejects range and PurePath variants (TypeError) -- same gap as Fraction/complex in #8..."
 summary: '### Checked other resources - [x] This is a bug, not a usage question. - [x] I added a clear and descriptive title that summarizes this issue. - [x] I used the GitHub search to find a similar question and didn''t find it. - [x] I am sure that this is a bug in LangGraph rather tha'
 severity: critical
 platforms:

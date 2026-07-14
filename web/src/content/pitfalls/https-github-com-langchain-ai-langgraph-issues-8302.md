@@ -1,5 +1,5 @@
 ---
-title: "Event streaming v3 `stream.abort()` doesn\\'t stop subgraphs when called from cancelled FastAPI handler"
+title: "Event streaming v3 `stream.abort()` doesn't stop subgraphs when called from cancelled FastAPI handler"
 summary: '### Checked other resources - [x] This is a bug, not a usage question. - [x] I added a clear and descriptive title that summarizes this issue. - [x] I used the GitHub search to find a similar question and didn''t find it. - [x] I am sure that this is a bug in LangGraph rather tha'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Meta\'s AI Chatbot Tricked Into Hijacking Instagram Accounts - The Tech Buzz
+title: Meta's AI Chatbot Tricked Into Hijacking Instagram Accounts - The Tech Buzz
 summary: Meta's AI Chatbot Tricked Into Hijacking Instagram Accounts &nbsp;&nbsp; The Tech Buzz
 severity: medium
 platforms:

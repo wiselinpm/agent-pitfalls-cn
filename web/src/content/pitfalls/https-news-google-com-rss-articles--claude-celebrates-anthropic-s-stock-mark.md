@@ -1,5 +1,5 @@
 ---
-title: Claude celebrates Anthropic\'s stock market float with blockbuster ... outage - The Register
+title: Claude celebrates Anthropic's stock market float with blockbuster ... outage - The Register
 summary: Claude celebrates Anthropic's stock market float with blockbuster ... outage &nbsp;&nbsp; The Register
 severity: medium
 platforms:

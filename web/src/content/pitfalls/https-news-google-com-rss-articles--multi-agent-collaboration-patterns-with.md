@@ -1,5 +1,5 @@
 ---
-title: "Multi-Agent collaboration patterns with Strands Agents and Amazon Nova | Amazon Web Services - Amazon Web Services (AWS)"
+title: "Multi-Agent collaboration patterns with Strands Agents and Amazon Nova | Amazon Web Services - Amazon Web Serv..."
 summary: Multi-Agent collaboration patterns with Strands Agents and Amazon Nova | Amazon Web Services &nbsp;&nbsp; Amazon Web Services (AWS)
 severity: medium
 platforms:

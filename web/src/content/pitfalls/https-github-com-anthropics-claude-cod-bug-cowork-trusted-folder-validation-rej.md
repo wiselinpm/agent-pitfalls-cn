@@ -1,5 +1,5 @@
 ---
-title: "[BUG] Cowork: trusted-folder validation rejects Shared Drive root AND first-level folders after app update; depth-2 ..."
+title: "[BUG] Cowork: trusted-folder validation rejects Shared Drive root AND first-level folders after app update; de..."
 summary: '### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn''t been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x]'
 severity: high
 platforms:

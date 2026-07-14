@@ -1,5 +1,5 @@
 ---
-title: "MetaCipher: A Time-Persistent and Universal Multi-Agent Framework for Cipher-Based Jailbreak Attacks for LLMs - The ..."
+title: "MetaCipher: A Time-Persistent and Universal Multi-Agent Framework for Cipher-Based Jailbreak Attacks for LLMs ..."
 summary: 'MetaCipher: A Time-Persistent and Universal Multi-Agent Framework for Cipher-Based Jailbreak Attacks for LLMs &nbsp;&nbsp; The Association for the Advancement of Artificial Intelligence'
 severity: medium
 platforms:

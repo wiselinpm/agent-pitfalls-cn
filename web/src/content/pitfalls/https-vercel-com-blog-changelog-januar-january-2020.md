@@ -1,6 +1,6 @@
 ---
 title: January 2020
-summary: '<p> </p> <p class="more"> <a href="https://vercel.com/blog/changelog-january-2020">Read more</a> </p>'
+summary: <p> </p> <p class="more"> <a href="https://vercel.com/blog/changelog-january-2020">Read more</a> </p>
 severity: critical
 platforms:
 - generic
@@ -18,6 +18,7 @@ tags:
 discovered_at: '2020-01-01'
 verified: false
 ---
+
 - [January 2020](https://vercel.com/blog/changelog-january-2020) — vercel-blog
 
 ## 摘要

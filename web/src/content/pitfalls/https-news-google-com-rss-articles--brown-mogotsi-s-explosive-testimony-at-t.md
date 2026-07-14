@@ -1,5 +1,5 @@
 ---
-title: "Brown Mogotsi\\'s explosive testimony at the Madlanga Commission exposes police corruption and information leaks - the..."
+title: "Brown Mogotsi's explosive testimony at the Madlanga Commission exposes police corruption and information leaks..."
 summary: Brown Mogotsi's explosive testimony at the Madlanga Commission exposes police corruption and information leaks &nbsp;&nbsp; thestar.co.za
 severity: critical
 platforms:

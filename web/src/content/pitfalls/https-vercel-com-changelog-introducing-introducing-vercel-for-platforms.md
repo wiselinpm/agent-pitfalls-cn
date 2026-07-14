@@ -19,6 +19,7 @@ contributor: Kim Neuwirth
 discovered_at: '2025-12-05'
 verified: false
 ---
+
 - [Introducing Vercel for Platforms](https://vercel.com/changelog/introducing-vercel-for-platforms) — vercel-blog
 
 ## 摘要

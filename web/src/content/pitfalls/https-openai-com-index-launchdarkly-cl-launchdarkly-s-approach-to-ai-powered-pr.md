@@ -1,5 +1,5 @@
 ---
-title: LaunchDarkly\'s approach to AI-powered product management
+title: LaunchDarkly's approach to AI-powered product management
 summary: A conversation with Claire Vo, Chief Product Officer of LaunchDarkly, about the changing role of product managers, her anti-to-do list, and building AI-native teams.
 severity: high
 platforms:

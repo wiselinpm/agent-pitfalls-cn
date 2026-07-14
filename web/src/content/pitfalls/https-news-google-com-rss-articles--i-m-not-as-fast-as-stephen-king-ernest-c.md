@@ -1,5 +1,5 @@
 ---
-title: "‘I’m not as fast as Stephen King’: Ernest Cline explains why Ready Player Two comes after a decade-long wait - The H..."
+title: "‘I’m not as fast as Stephen King’: Ernest Cline explains why Ready Player Two comes after a decade-long wait -..."
 summary: '‘I’m not as fast as Stephen King’: Ernest Cline explains why Ready Player Two comes after a decade-long wait &nbsp;&nbsp; The Hindu'
 severity: medium
 platforms:

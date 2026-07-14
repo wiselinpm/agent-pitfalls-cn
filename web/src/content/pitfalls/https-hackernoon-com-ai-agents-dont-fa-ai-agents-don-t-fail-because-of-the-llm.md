@@ -1,5 +1,5 @@
 ---
-title: AI Agents Don\'t Fail Because of the LLM. They Fail Because of the System Around It.
+title: AI Agents Don't Fail Because of the LLM. They Fail Because of the System Around It.
 summary: AI Agents Don't Fail Because of the LLM. They Fail Because of the System Around It.
 severity: medium
 platforms:

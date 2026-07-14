@@ -1,5 +1,5 @@
 ---
-title: Astryx is not for everyone. That\'s the point.
+title: Astryx is not for everyone. That's the point.
 summary: I migrated two web projects to find out what a agent-ready design system shines, where it doesn&apos;t, and what it means to work with it. Continue reading on Medium »
 severity: critical
 platforms:

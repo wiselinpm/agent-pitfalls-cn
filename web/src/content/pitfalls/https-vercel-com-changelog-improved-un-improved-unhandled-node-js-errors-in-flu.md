@@ -1,6 +1,6 @@
 ---
 title: Improved unhandled Node.js errors in Fluid compute
-summary: '<p>Fluid compute now gracefully handles <a href="https://nodejs.org/api/process.html#event-uncaughtexception">uncaught exceptions</a> and <a href="https://nodejs.org/api/process.html#event-unhandledrejection">unhandled rejections</a> in Node.js by logging the error, allowing infl'
+summary: <p>Fluid compute now gracefully handles <a href="https://nodejs.org/api/process.html#event-uncaughtexception">uncaught exceptions</a> and <a href="https://nodejs.org/api/process.html#event-unhandledrejection">unhandled rejections</a> in Node.js by logging the error, allowing infl
 severity: critical
 platforms:
 - generic
@@ -19,6 +19,7 @@ contributor: Tom Lienard
 discovered_at: '2025-06-12'
 verified: false
 ---
+
 - [Improved unhandled Node.js errors in Fluid compute](https://vercel.com/changelog/improved-unhandled-node-js-errors-in-fluid-compute) — vercel-blog
 
 ## 摘要

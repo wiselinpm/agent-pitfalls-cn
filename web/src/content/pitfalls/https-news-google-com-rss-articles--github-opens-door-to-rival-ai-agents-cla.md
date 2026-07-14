@@ -1,5 +1,5 @@
 ---
-title: "GitHub Opens Door to Rival AI Agents: Claude and OpenAI Codex Now Live in Public Preview for Copilot Users - Interna..."
+title: "GitHub Opens Door to Rival AI Agents: Claude and OpenAI Codex Now Live in Public Preview for Copilot Users - I..."
 summary: 'GitHub Opens Door to Rival AI Agents: Claude and OpenAI Codex Now Live in Public Preview for Copilot Users &nbsp;&nbsp; International Business Times Australia'
 severity: medium
 platforms:

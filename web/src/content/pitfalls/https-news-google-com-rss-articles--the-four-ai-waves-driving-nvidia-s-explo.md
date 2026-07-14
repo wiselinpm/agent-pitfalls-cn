@@ -1,5 +1,5 @@
 ---
-title: The “Four AI Waves” Driving NVIDIA\'s Explosive Growth (the 2nd One Will Change Everything) - AI Marketing Institute
+title: The “Four AI Waves” Driving NVIDIA's Explosive Growth (the 2nd One Will Change Everything) - AI Marketing Institute
 summary: The “Four AI Waves” Driving NVIDIA's Explosive Growth (the 2nd One Will Change Everything) &nbsp;&nbsp; AI Marketing Institute
 severity: high
 platforms:

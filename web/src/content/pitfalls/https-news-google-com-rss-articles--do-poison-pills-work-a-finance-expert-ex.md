@@ -1,5 +1,5 @@
 ---
-title: "Do poison pills work? A finance expert explains the anti-takeover tool that Twitter hopes will keep Elon Musk at bay - T"
+title: "Do poison pills work? A finance expert explains the anti-takeover tool that Twitter hopes will keep Elon Musk ..."
 summary: Do poison pills work? A finance expert explains the anti-takeover tool that Twitter hopes will keep Elon Musk at bay &nbsp;&nbsp; The Conversation
 severity: medium
 platforms:

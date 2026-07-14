@@ -1,5 +1,5 @@
 ---
-title: The Three Failures Your AI Coding Tool Won\'t Tell You About
+title: The Three Failures Your AI Coding Tool Won't Tell You About
 summary: The Three Failures Your AI Coding Tool Won't Tell You About
 severity: medium
 platforms:

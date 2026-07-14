@@ -1,5 +1,5 @@
 ---
-title: "Claude AI down today for users: List of alternate AI apps you can use for best coding experience - The Economic Times"
+title: "Claude AI down today for users: List of alternate AI apps you can use for best coding experience - The Economi..."
 summary: 'Claude AI down today for users: List of alternate AI apps you can use for best coding experience &nbsp;&nbsp; The Economic Times'
 severity: medium
 platforms:

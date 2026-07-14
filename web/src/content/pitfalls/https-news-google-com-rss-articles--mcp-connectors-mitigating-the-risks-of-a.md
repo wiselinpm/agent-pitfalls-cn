@@ -1,5 +1,5 @@
 ---
-title: "MCP Connectors: Mitigating the Risks of AI Agents in a Connected Architecture | Pillsbury - Global Sourcing Practice..."
+title: "MCP Connectors: Mitigating the Risks of AI Agents in a Connected Architecture | Pillsbury - Global Sourcing Pr..."
 summary: 'MCP Connectors: Mitigating the Risks of AI Agents in a Connected Architecture | Pillsbury - Global Sourcing Practice &nbsp;&nbsp; JD Supra'
 severity: medium
 platforms:

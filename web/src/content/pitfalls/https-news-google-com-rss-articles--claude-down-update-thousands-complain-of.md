@@ -1,5 +1,5 @@
 ---
-title: "Claude down update: Thousands complain of outage; how to fix ‘server down’, Claude chat issues | Hindustan Times - H..."
+title: "Claude down update: Thousands complain of outage; how to fix ‘server down’, Claude chat issues | Hindustan Tim..."
 summary: 'Claude down update: Thousands complain of outage; how to fix ‘server down’, Claude chat issues | Hindustan Times &nbsp;&nbsp; Hindustan Times'
 severity: medium
 platforms:

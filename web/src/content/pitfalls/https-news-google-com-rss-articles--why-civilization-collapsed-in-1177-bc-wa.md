@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Why Civilization Collapsed in 1177 BC: Watch Classicist Eric Cline\\\\'\\\\'s Lecture That Has Already Garnered 7.6 Mi..."
+title: "'Why Civilization Collapsed in 1177 BC: Watch Classicist Eric Cline''s Lecture That Has Already Garnered ..."
 summary: 'Why Civilization Collapsed in 1177 BC: Watch Classicist Eric Cline''s Lecture That Has Already Garnered 7.6 Million Views &nbsp;&nbsp; Open Culture'
 severity: medium
 platforms:

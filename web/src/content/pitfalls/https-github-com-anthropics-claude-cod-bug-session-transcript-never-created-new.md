@@ -1,5 +1,5 @@
 ---
-title: "[BUG] Session transcript never created: new interactive sessions run for hours writing no JSONL and no history.jsonl..."
+title: "[BUG] Session transcript never created: new interactive sessions run for hours writing no JSONL and no history..."
 summary: '## Summary Two interactive sessions (started ~10h apart, same folder) ran normally for hours but **never created a session transcript at all**. The session directory `~/.claude/projects/<project>/<session-id>/` was created and written to (tool-result externalisation landed there'
 severity: high
 platforms:

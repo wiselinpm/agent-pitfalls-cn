@@ -1,5 +1,5 @@
 ---
-title: "OpenAI announces 80% price drop for o3, it\\'s most powerful reasoning model - VentureBeat"
+title: "OpenAI announces 80% price drop for o3, it's most powerful reasoning model - VentureBeat"
 summary: OpenAI announces 80% price drop for o3, it's most powerful reasoning model &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

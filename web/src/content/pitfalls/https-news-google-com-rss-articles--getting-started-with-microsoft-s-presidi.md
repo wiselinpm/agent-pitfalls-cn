@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Getting Started with Microsoft\\\\'\\\\'s Presidio: A Step-by-Step Guide to Detecting and Anonymizing Personally Ident..."
+title: "'Getting Started with Microsoft''s Presidio: A Step-by-Step Guide to Detecting and Anonymizing Personally..."
 summary: 'Getting Started with Microsoft''s Presidio: A Step-by-Step Guide to Detecting and Anonymizing Personally Identifiable Information PII in Text &nbsp;&nbsp; MarkTechPost'
 severity: medium
 platforms:

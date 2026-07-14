@@ -1,6 +1,6 @@
 ---
 title: The skills.sh API is now available
-summary: '<p>The <a href="https://skills.sh/">skills.sh</a> API is now available. Authenticate with your project''''s <a href="https://vercel.com/docs/oidc">Vercel OIDC token</a> and start querying more than 600,000 skills from across the open-source ecosystem.</p><p>Search for skills, pull d'
+summary: <p>The <a href="https://skills.sh/">skills.sh</a> API is now available. Authenticate with your project's <a href="https://vercel.com/docs/oidc">Vercel OIDC token</a> and start querying more than 600,000 skills from across the open-source ecosystem.</p><p>Search for skills, pull d
 severity: critical
 platforms:
 - generic
@@ -20,6 +20,7 @@ contributor: Andrew Qu
 discovered_at: '2026-06-05'
 verified: false
 ---
+
 - [The skills.sh API is now available](https://vercel.com/changelog/the-skills-sh-api-is-now-available) — vercel-blog
 
 ## 摘要

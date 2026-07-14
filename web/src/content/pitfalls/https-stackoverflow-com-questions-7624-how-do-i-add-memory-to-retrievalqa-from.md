@@ -1,5 +1,5 @@
 ---
-title: "How do i add memory to RetrievalQA.from_chain_type? or, how do I add a custom prompt to ConversationalRetrievalChain?"
+title: "How do i add memory to RetrievalQA.from_chain_type? or, how do I add a custom prompt to ConversationalRetrieva..."
 summary: How do i add memory to RetrievalQA.from_chain_type? or, how do I add a custom prompt to ConversationalRetrievalChain?
 severity: medium
 platforms:

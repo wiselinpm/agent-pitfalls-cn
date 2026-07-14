@@ -1,5 +1,5 @@
 ---
-title: AI Agents Still Can\'t Stop Prompt Injection Attacks, Researchers Warn - Yahoo Tech
+title: AI Agents Still Can't Stop Prompt Injection Attacks, Researchers Warn - Yahoo Tech
 summary: AI Agents Still Can't Stop Prompt Injection Attacks, Researchers Warn &nbsp;&nbsp; Yahoo Tech
 severity: medium
 platforms:

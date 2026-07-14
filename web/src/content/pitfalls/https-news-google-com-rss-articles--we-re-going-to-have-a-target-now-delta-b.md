@@ -1,5 +1,5 @@
 ---
-title: "\\\\'\\\\'\\\\'We\\\\'\\\\'re going to have a target now\\\\'\\\\': Delta baseball ousted in semi-state to end another deep playoff..."
+title: "'''We''re going to have a target now'': Delta baseball ousted in semi-state to end anothe..."
 summary: '''We''re going to have a target now'': Delta baseball ousted in semi-state to end another deep playoff run &nbsp;&nbsp; The Star Press'
 severity: medium
 platforms:

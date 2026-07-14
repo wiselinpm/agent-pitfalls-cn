@@ -1,5 +1,5 @@
 ---
-title: "Border Patrol agent recalls moment DC sandwich slinger’s sub ‘exploded all over’ him: ‘You could smell the onions’ -..."
+title: "Border Patrol agent recalls moment DC sandwich slinger’s sub ‘exploded all over’ him: ‘You could smell the oni..."
 summary: 'Border Patrol agent recalls moment DC sandwich slinger’s sub ‘exploded all over’ him: ‘You could smell the onions’ &nbsp;&nbsp; AOL.com'
 severity: medium
 platforms:

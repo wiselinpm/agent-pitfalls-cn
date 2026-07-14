@@ -1,5 +1,5 @@
 ---
-title: "THE TWIN TOWERS: The Investigation; Insistence on Refund for a Truck Results in an Arrest in Explosion - The New Yor..."
+title: "THE TWIN TOWERS: The Investigation; Insistence on Refund for a Truck Results in an Arrest in Explosion - The N..."
 summary: 'THE TWIN TOWERS: The Investigation; Insistence on Refund for a Truck Results in an Arrest in Explosion &nbsp;&nbsp; The New York Times'
 severity: medium
 platforms:

@@ -1,6 +1,6 @@
 ---
 title: One-click linking from Usage to Vercel Observability dashboards
-summary: '<p>Metrics on the <a href="https://vercel.com/docs/pricing/manage-and-optimize-usage">Usage dashboard</a> now offer one-click access to corresponding <a href="https://vercel.com/docs/observability">Vercel Observability</a> dashboards, making it easier to dive deeper into team and'
+summary: <p>Metrics on the <a href="https://vercel.com/docs/pricing/manage-and-optimize-usage">Usage dashboard</a> now offer one-click access to corresponding <a href="https://vercel.com/docs/observability">Vercel Observability</a> dashboards, making it easier to dive deeper into team and
 severity: critical
 platforms:
 - generic
@@ -19,6 +19,7 @@ contributor: Damien Simonin Feugas
 discovered_at: '2025-02-25'
 verified: false
 ---
+
 - [One-click linking from Usage to Vercel Observability dashboards](https://vercel.com/changelog/one-click-linking-from-usage-to-vercel-observability-dashboards) — vercel-blog
 
 ## 摘要

@@ -1,5 +1,5 @@
 ---
-title: Using DSPy to evaluate and improve Datasette Agent\'s SQL system prompts
+title: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts
 summary: 'Research: Using DSPy to evaluate and improve Datasette Agent&#x27;s SQL system prompts One of this morning''s AIE keynotes covered dspy, which reminded me I''ve been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asy'
 severity: medium
 platforms:

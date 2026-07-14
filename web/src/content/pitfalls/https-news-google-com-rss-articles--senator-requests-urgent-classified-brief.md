@@ -1,5 +1,5 @@
 ---
-title: Senator requests \"urgent\" classified briefing on CISA\'s internal credential leaks - Axios
+title: Senator requests \"urgent\" classified briefing on CISA's internal credential leaks - Axios
 summary: Senator requests "urgent" classified briefing on CISA's internal credential leaks &nbsp;&nbsp; Axios
 severity: critical
 platforms:

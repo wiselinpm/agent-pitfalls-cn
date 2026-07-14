@@ -1,5 +1,5 @@
 ---
-title: "AI Agent Security Hits Its Reckoning: Prompt Injection May Be a Permanent Flaw, Not a Patchable Bug - Tech Times"
+title: "AI Agent Security Hits Its Reckoning: Prompt Injection May Be a Permanent Flaw, Not a Patchable Bug - Tech Tim..."
 summary: 'AI Agent Security Hits Its Reckoning: Prompt Injection May Be a Permanent Flaw, Not a Patchable Bug &nbsp;&nbsp; Tech Times'
 severity: critical
 platforms:

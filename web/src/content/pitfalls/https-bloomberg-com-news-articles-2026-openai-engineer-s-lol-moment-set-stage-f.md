@@ -1,5 +1,5 @@
 ---
-title: OpenAI Engineer\'s \'LOL\' Moment Set Stage for Legal Fight with Apple
+title: OpenAI Engineer's 'LOL' Moment Set Stage for Legal Fight with Apple
 summary: 'Article URL: https://www.bloomberg.com/news/articles/2026-07-11/openai-engineer-s-lol-moment-set-stage-for-legal-fight-with-apple Comments URL: https://news.ycombinator.com/item?id=48877830 Points: 3 # Comments: 1'
 severity: high
 platforms:

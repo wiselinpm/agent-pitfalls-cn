@@ -1,5 +1,5 @@
 ---
-title: "Claude: Not an Illusion - Self - Giving Instructions, Blaming Humans, and the Diminished Intelligence in Million - C..."
+title: "Claude: Not an Illusion - Self - Giving Instructions, Blaming Humans, and the Diminished Intelligence in Milli..."
 summary: 'Claude: Not an Illusion - Self - Giving Instructions, Blaming Humans, and the Diminished Intelligence in Million - Context Feature &nbsp;&nbsp; 36 Kr'
 severity: medium
 platforms:

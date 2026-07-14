@@ -1,5 +1,5 @@
 ---
-title: "Cloud routine environments silently changed AWS_* env handling twice (stripped, then platform-injected), breaking produc"
+title: "Cloud routine environments silently changed AWS_* env handling twice (stripped, then platform-injected), break..."
 summary: '## Summary The session environment that Claude Code **scheduled routines** (cloud environments, kind `anthropic_cloud`) provide to tasks has changed its handling of standard AWS credential variables **twice in five days, with no announcement, changelog entry, or documentation**'
 severity: critical
 platforms:

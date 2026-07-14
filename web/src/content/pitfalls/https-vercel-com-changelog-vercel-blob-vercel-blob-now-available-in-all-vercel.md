@@ -1,6 +1,6 @@
 ---
 title: Vercel Blob now available in all Vercel Regions
-summary: '<p>You can now create Vercel Blob stores in any of the <a href="https://vercel.com/docs/edge-network/regions">19 Vercel Regions</a>.</p><p>Selecting a region closer to your <a href="https://vercel.com/docs/functions">Functions</a> and users allows you to optimize upload speed and'
+summary: <p>You can now create Vercel Blob stores in any of the <a href="https://vercel.com/docs/edge-network/regions">19 Vercel Regions</a>.</p><p>Selecting a region closer to your <a href="https://vercel.com/docs/functions">Functions</a> and users allows you to optimize upload speed and
 severity: critical
 platforms:
 - generic
@@ -20,6 +20,7 @@ contributor: Vincent Voyer
 discovered_at: '2025-07-10'
 verified: false
 ---
+
 - [Vercel Blob now available in all Vercel Regions](https://vercel.com/changelog/vercel-blob-now-available-in-all-vercel-regions) — vercel-blog
 
 ## 摘要

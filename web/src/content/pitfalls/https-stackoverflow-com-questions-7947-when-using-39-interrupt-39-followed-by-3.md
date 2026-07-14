@@ -1,5 +1,5 @@
 ---
-title: "When using &#39;interrupt&#39; followed by &#39;new Command({ resume: ...})&#39;, get an undefined message error fro..."
+title: "When using &#39;interrupt&#39; followed by &#39;new Command({ resume: ...})&#39;, get an undefined message err..."
 summary: 'When using &#39;interrupt&#39; followed by &#39;new Command({ resume: ...})&#39;, get an undefined message error from LangChain + LangGraph'
 severity: low
 platforms:

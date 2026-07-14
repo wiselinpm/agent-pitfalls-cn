@@ -1,5 +1,5 @@
 ---
-title: Asynchronous Execution Accelerates Snowflake\'s SQL Stored Procedures - Snowflake
+title: Asynchronous Execution Accelerates Snowflake's SQL Stored Procedures - Snowflake
 summary: Asynchronous Execution Accelerates Snowflake's SQL Stored Procedures &nbsp;&nbsp; Snowflake
 severity: medium
 platforms:

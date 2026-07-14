@@ -1,5 +1,5 @@
 ---
-title: you stopped reading the docs. now you don\'t understand the systems.
+title: you stopped reading the docs. now you don't understand the systems.
 summary: I didn't go to a university for computer science. I have a B.Tech in Geophysics. What I know about...
 severity: medium
 platforms:

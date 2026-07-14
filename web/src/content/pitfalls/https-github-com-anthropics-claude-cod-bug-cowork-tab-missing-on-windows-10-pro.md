@@ -1,5 +1,5 @@
 ---
-title: "[BUG] Cowork tab missing on Windows 10 Pro 22H2 — CoworkVMService running, logs folder never created, clean reinstal..."
+title: "[BUG] Cowork tab missing on Windows 10 Pro 22H2 — CoworkVMService running, logs folder never created, clean re..."
 summary: '### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn''t been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x]'
 severity: medium
 platforms:

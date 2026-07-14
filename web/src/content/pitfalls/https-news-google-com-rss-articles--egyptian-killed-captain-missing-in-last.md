@@ -1,5 +1,5 @@
 ---
-title: "Egyptian killed, captain missing in last week’s cargo ship explosion in Turkey: Foreign ministry - Foreign Affairs -..."
+title: "Egyptian killed, captain missing in last week’s cargo ship explosion in Turkey: Foreign ministry - Foreign Aff..."
 summary: 'Egyptian killed, captain missing in last week’s cargo ship explosion in Turkey: Foreign ministry - Foreign Affairs - Egypt &nbsp;&nbsp; Ahram Online'
 severity: medium
 platforms:

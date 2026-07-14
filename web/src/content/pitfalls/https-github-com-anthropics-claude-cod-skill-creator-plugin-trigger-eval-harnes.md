@@ -1,5 +1,5 @@
 ---
-title: "skill-creator plugin: trigger-eval harness false-negatives (shared probe-root contamination, first-tool-only detecti..."
+title: "skill-creator plugin: trigger-eval harness false-negatives (shared probe-root contamination, first-tool-only d..."
 summary: '## Component The `skill-creator` skill shipped in the `anthropic-skills` plugin (creatorType: anthropic, Claude Desktop local agent mode) — specifically its description-triggering eval harness, `scripts/run_eval.py`. ## Summary Evaluating a previously optimized skill descripti'
 severity: medium
 platforms:

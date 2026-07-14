@@ -1,5 +1,5 @@
 ---
-title: "Interview: Discussing agents'' tracing, observability, and debugging with Ismail Pelaseyed, the founder of Superagent"
+title: "Interview: Discussing agents'' tracing, observability, and debugging with Ismail Pelaseyed, the founder of Sup..."
 summary: 'Interview: Discussing agents'' tracing, observability, and debugging with Ismail Pelaseyed, the founder of Superagent'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Debuts Agent Builder and AgentKit: A Visual-First Stack for Building, Deploying, and Evaluating AI Agents - M..."
+title: "OpenAI Debuts Agent Builder and AgentKit: A Visual-First Stack for Building, Deploying, and Evaluating AI Agen..."
 summary: 'OpenAI Debuts Agent Builder and AgentKit: A Visual-First Stack for Building, Deploying, and Evaluating AI Agents &nbsp;&nbsp; MarkTechPost'
 severity: medium
 platforms:

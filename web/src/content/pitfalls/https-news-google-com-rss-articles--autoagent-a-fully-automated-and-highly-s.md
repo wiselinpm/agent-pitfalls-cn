@@ -1,5 +1,5 @@
 ---
-title: "AutoAgent: A Fully-Automated and Highly Self-Developing Framework that Enables Users to Create and Deploy LLM Agents..."
+title: "AutoAgent: A Fully-Automated and Highly Self-Developing Framework that Enables Users to Create and Deploy LLM ..."
 summary: 'AutoAgent: A Fully-Automated and Highly Self-Developing Framework that Enables Users to Create and Deploy LLM Agents through Natural Language Alone &nbsp;&nbsp; MarkTechPost'
 severity: high
 platforms:

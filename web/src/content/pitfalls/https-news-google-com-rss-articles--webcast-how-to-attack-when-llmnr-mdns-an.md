@@ -1,5 +1,5 @@
 ---
-title: "Webcast: How to attack when LLMNR, mDNS, and WPAD attacks fail - eavesarp (Tool Overview) - Black Hills Information ..."
+title: "Webcast: How to attack when LLMNR, mDNS, and WPAD attacks fail - eavesarp (Tool Overview) - Black Hills Inform..."
 summary: 'Webcast: How to attack when LLMNR, mDNS, and WPAD attacks fail - eavesarp (Tool Overview) &nbsp;&nbsp; Black Hills Information Security, Inc.'
 severity: critical
 platforms:

@@ -1,6 +1,6 @@
 ---
 title: Advanced Remix integration with streaming SSR and multi-runtime support
-summary: '<blockquote><p><b>Note:</b> This changelog entry is historical. Edge Functions are deprecated for new projects. Use <a href="https://vercel.com/docs/functions">Vercel Functions</a> with the Node.js runtime and <a href="https://vercel.com/docs/fluid-compute">Fluid compute</a>. Use'
+summary: <blockquote><p><b>Note:</b> This changelog entry is historical. Edge Functions are deprecated for new projects. Use <a href="https://vercel.com/docs/functions">Vercel Functions</a> with the Node.js runtime and <a href="https://vercel.com/docs/fluid-compute">Fluid compute</a>. Use
 severity: critical
 platforms:
 - generic
@@ -20,6 +20,7 @@ contributor: Ethan Arrowood
 discovered_at: '2023-03-22'
 verified: false
 ---
+
 - [Advanced Remix integration with streaming SSR and multi-runtime support](https://vercel.com/changelog/advanced-remix-integration-with-streaming-ssr-and-multi-runtime-support) — vercel-blog
 
 ## 摘要

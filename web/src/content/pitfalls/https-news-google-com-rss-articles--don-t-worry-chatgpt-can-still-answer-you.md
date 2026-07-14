@@ -1,5 +1,5 @@
 ---
-title: Don\'t worry, ChatGPT can still answer your health questions - Business Insider
+title: Don't worry, ChatGPT can still answer your health questions - Business Insider
 summary: Don't worry, ChatGPT can still answer your health questions &nbsp;&nbsp; Business Insider
 severity: medium
 platforms:

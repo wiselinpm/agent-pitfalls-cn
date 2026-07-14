@@ -1,5 +1,5 @@
 ---
-title: "Claude AI Down: Anthropic’s Claude AI suffers disruption: What caused the outage and why user quotas were reset - St..."
+title: "Claude AI Down: Anthropic’s Claude AI suffers disruption: What caused the outage and why user quotas were rese..."
 summary: 'Claude AI Down: Anthropic’s Claude AI suffers disruption: What caused the outage and why user quotas were reset &nbsp;&nbsp; Storyboard18'
 severity: medium
 platforms:

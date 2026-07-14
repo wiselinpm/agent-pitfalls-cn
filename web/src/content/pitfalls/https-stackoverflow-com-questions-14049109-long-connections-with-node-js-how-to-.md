@@ -1,5 +1,5 @@
 ---
-title: "Long connections with Node.js, how to reduce memory usage and prevent memory leak? Also related with V8 and webkit-devto"
+title: "Long connections with Node.js, how to reduce memory usage and prevent memory leak? Also related with V8 and we..."
 summary: Long connections with Node.js, how to reduce memory usage and prevent memory leak? Also related with V8 and webkit-devtools
 severity: critical
 platforms:

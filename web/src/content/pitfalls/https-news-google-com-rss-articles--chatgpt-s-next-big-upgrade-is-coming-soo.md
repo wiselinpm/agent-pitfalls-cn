@@ -1,5 +1,5 @@
 ---
-title: ChatGPT\'s Next Big Upgrade Is Coming Soon - Here Are The Latest GPT-5 Leaks And Teasers - bgr.com
+title: ChatGPT's Next Big Upgrade Is Coming Soon - Here Are The Latest GPT-5 Leaks And Teasers - bgr.com
 summary: ChatGPT's Next Big Upgrade Is Coming Soon - Here Are The Latest GPT-5 Leaks And Teasers &nbsp;&nbsp; bgr.com
 severity: critical
 platforms:

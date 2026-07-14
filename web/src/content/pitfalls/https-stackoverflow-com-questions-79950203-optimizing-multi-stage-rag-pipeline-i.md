@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Multi-Stage RAG Pipeline in Spring Boot: Extremely Slow &amp; Poor Performance (Open to Changing AI Models)"
+title: "Optimizing Multi-Stage RAG Pipeline in Spring Boot: Extremely Slow &amp; Poor Performance (Open to Changing AI..."
 summary: 'Optimizing Multi-Stage RAG Pipeline in Spring Boot: Extremely Slow &amp; Poor Performance (Open to Changing AI Models)'
 severity: high
 platforms:

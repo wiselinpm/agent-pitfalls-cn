@@ -1,5 +1,5 @@
 ---
-title: "Why AI coding agents aren’t production-ready: Brittle context windows, broken refactors, missing operational awarene..."
+title: "Why AI coding agents aren’t production-ready: Brittle context windows, broken refactors, missing operational a..."
 summary: 'Why AI coding agents aren’t production-ready: Brittle context windows, broken refactors, missing operational awareness &nbsp;&nbsp; VentureBeat'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Data poisoning tool lets artists fight back against AI scraping. Here\'s how - ZDNET
+title: Data poisoning tool lets artists fight back against AI scraping. Here's how - ZDNET
 summary: Data poisoning tool lets artists fight back against AI scraping. Here's how &nbsp;&nbsp; ZDNET
 severity: medium
 platforms:

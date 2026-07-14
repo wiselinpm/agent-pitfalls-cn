@@ -1,5 +1,5 @@
 ---
-title: "What\\\\'s New Halcyon? Data Exfiltration Protection (DXP), Log/SSH Key Monitoring plus Linux Agent Early Access - Halc..."
+title: "What's New Halcyon? Data Exfiltration Protection (DXP), Log/SSH Key Monitoring plus Linux Agent Early Access -..."
 summary: What's New Halcyon? Data Exfiltration Protection (DXP), Log/SSH Key Monitoring plus Linux Agent Early Access &nbsp;&nbsp; Halcyon Anti Ransomware
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude Fable 5 Alleged Jailbreak to Generate Stack Exploits - CyberSecurityNews
+title: Anthropic's Claude Fable 5 Alleged Jailbreak to Generate Stack Exploits - CyberSecurityNews
 summary: Anthropic's Claude Fable 5 Alleged Jailbreak to Generate Stack Exploits &nbsp;&nbsp; CyberSecurityNews
 severity: critical
 platforms:

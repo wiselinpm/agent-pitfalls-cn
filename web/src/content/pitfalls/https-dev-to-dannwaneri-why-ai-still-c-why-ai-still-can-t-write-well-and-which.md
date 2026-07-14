@@ -1,5 +1,5 @@
 ---
-title: Why AI Still Can\'t Write Well and Which Half of That Problem Is Actually Yours
+title: Why AI Still Can't Write Well and Which Half of That Problem Is Actually Yours
 summary: I built a 36-pattern checklist to catch AI writing tells in my own drafts, calibrated against...
 severity: medium
 platforms:

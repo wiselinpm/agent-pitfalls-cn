@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Back in 2017 we gave you Unmetered DDoS Mitigation, here\\\\'\\\\'s a birthday gift: Unmetered Rate Limiting for Self ..."
+title: "'Back in 2017 we gave you Unmetered DDoS Mitigation, here''s a birthday gift: Unmetered Rate Limiting for..."
 summary: 'Back in 2017 we gave you Unmetered DDoS Mitigation, here''s a birthday gift: Unmetered Rate Limiting for Self Serve customers &nbsp;&nbsp; The Cloudflare Blog'
 severity: medium
 platforms:

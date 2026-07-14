@@ -1,6 +1,6 @@
 ---
 title: December 2019
-summary: '<p> </p> <p class="more"> <a href="https://vercel.com/blog/changelog-december-2019">Read more</a> </p>'
+summary: <p> </p> <p class="more"> <a href="https://vercel.com/blog/changelog-december-2019">Read more</a> </p>
 severity: critical
 platforms:
 - generic
@@ -18,6 +18,7 @@ tags:
 discovered_at: '2019-12-01'
 verified: false
 ---
+
 - [December 2019](https://vercel.com/blog/changelog-december-2019) — vercel-blog
 
 ## 摘要

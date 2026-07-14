@@ -1,5 +1,5 @@
 ---
-title: "Agent Provocateur | Shopping in Chaussée-d\\'Antin, Paris - Time Out Worldwide"
+title: "Agent Provocateur | Shopping in Chaussée-d'Antin, Paris - Time Out Worldwide"
 summary: Agent Provocateur | Shopping in Chaussée-d'Antin, Paris &nbsp;&nbsp; Time Out Worldwide
 severity: medium
 platforms:

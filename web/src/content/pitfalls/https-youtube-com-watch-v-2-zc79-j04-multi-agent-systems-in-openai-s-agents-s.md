@@ -1,5 +1,5 @@
 ---
-title: Multi-Agent Systems in OpenAI\'s Agents SDK [video]
+title: Multi-Agent Systems in OpenAI's Agents SDK [video]
 summary: Multi-Agent Systems in OpenAI's Agents SDK [video]
 severity: medium
 platforms:

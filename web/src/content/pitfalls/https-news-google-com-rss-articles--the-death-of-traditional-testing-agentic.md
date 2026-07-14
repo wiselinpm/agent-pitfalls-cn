@@ -1,5 +1,5 @@
 ---
-title: "The Death of Traditional Testing: Agentic Development Broke a 50-Year-Old Field, JiTTesting Can Revive It - Engineer..."
+title: "The Death of Traditional Testing: Agentic Development Broke a 50-Year-Old Field, JiTTesting Can Revive It - En..."
 summary: 'The Death of Traditional Testing: Agentic Development Broke a 50-Year-Old Field, JiTTesting Can Revive It &nbsp;&nbsp; Engineering at Meta'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "NTSB: Pilot error caused fatal helicopter crash in Bahamas that killed coal billionaire Chris Cline, 6 others - WPTV"
+title: "NTSB: Pilot error caused fatal helicopter crash in Bahamas that killed coal billionaire Chris Cline, 6 others ..."
 summary: 'NTSB: Pilot error caused fatal helicopter crash in Bahamas that killed coal billionaire Chris Cline, 6 others &nbsp;&nbsp; WPTV'
 severity: high
 platforms:

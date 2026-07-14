@@ -1,5 +1,5 @@
 ---
-title: The spend cap worked. The risk budget didn\'t compose.
+title: The spend cap worked. The risk budget didn't compose.
 summary: Spending limits are becoming the foundational guardrail for agentic payments. AWS Bedrock AgentCore Payments enforces them per payment session . Google's AP2 expresses limits through mandates that bind amount, merchant, and intent. Wallet and custody platforms add their own polic
 severity: critical
 platforms:

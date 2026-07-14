@@ -1,5 +1,5 @@
 ---
-title: "What I Learned Cutting Claude Code\\'s Token Bill by 77%"
+title: "What I Learned Cutting Claude Code's Token Bill by 77%"
 summary: What building a profiler for AI coding agents taught me about the hidden river of data flowing to Claude on every turn, and how to cut most of it without changing a single result. Dashboard live demo · Source (The live dashboard profiles a real DeepSeek session — the plumbing is
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Government, experts repeatedly warned of issue that caused Telstra outage - ABC News & Headlines – Australian Broadcasti"
+title: "Government, experts repeatedly warned of issue that caused Telstra outage - ABC News & Headlines – Australian ..."
 summary: Government, experts repeatedly warned of issue that caused Telstra outage &nbsp;&nbsp; ABC News & Headlines – Australian Broadcasting Corporation
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: Retired FBI agent warns New Orleans prison escape \'should get everyone\'s attention\' - Fox News
+title: Retired FBI agent warns New Orleans prison escape 'should get everyone's attention' - Fox News
 summary: Retired FBI agent warns New Orleans prison escape 'should get everyone's attention' &nbsp;&nbsp; Fox News
 severity: medium
 platforms:

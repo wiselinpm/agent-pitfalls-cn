@@ -1,5 +1,5 @@
 ---
-title: How I use Google\'s new Antigravity IDE without hitting rate limits - How-To Geek
+title: How I use Google's new Antigravity IDE without hitting rate limits - How-To Geek
 summary: How I use Google's new Antigravity IDE without hitting rate limits &nbsp;&nbsp; How-To Geek
 severity: medium
 platforms:

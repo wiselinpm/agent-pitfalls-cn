@@ -1,5 +1,5 @@
 ---
-title: "Claude Down: Anthropic Says Issue Affecting Claude.ai And Claude Code Logins Identified, Working To Apply Fix - NDTV..."
+title: "Claude Down: Anthropic Says Issue Affecting Claude.ai And Claude Code Logins Identified, Working To Apply Fix ..."
 summary: 'Claude Down: Anthropic Says Issue Affecting Claude.ai And Claude Code Logins Identified, Working To Apply Fix &nbsp;&nbsp; NDTV Profit'
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Meta AI agent’s instruction causes large sensitive data leak to employees | AI (artificial intelligence) - The Guardian"
+title: "Meta AI agent’s instruction causes large sensitive data leak to employees | AI (artificial intelligence) - The..."
 summary: Meta AI agent’s instruction causes large sensitive data leak to employees | AI (artificial intelligence) &nbsp;&nbsp; The Guardian
 severity: critical
 platforms:

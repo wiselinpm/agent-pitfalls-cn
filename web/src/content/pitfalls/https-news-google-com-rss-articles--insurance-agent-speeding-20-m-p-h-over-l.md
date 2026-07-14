@@ -1,5 +1,5 @@
 ---
-title: "Insurance agent: Speeding 20+ m.p.h. over limit could add $5,300 to insurance rate over three years - TMJ4 News"
+title: "Insurance agent: Speeding 20+ m.p.h. over limit could add $5,300 to insurance rate over three years - TMJ4 New..."
 summary: 'Insurance agent: Speeding 20+ m.p.h. over limit could add $5,300 to insurance rate over three years &nbsp;&nbsp; TMJ4 News'
 severity: medium
 platforms:

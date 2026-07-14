@@ -1,5 +1,5 @@
 ---
-title: "Claude down worldwide? Check the reason behind the latest outage affecting users across the globe - The Economic Times"
+title: "Claude down worldwide? Check the reason behind the latest outage affecting users across the globe - The Econom..."
 summary: Claude down worldwide? Check the reason behind the latest outage affecting users across the globe &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

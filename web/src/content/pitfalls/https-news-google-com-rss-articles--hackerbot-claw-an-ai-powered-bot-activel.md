@@ -1,5 +1,5 @@
 ---
-title: "hackerbot-claw: An AI-Powered Bot Actively Exploiting GitHub Actions - Microsoft, DataDog, and CNCF Projects Hit So ..."
+title: "hackerbot-claw: An AI-Powered Bot Actively Exploiting GitHub Actions - Microsoft, DataDog, and CNCF Projects H..."
 summary: 'hackerbot-claw: An AI-Powered Bot Actively Exploiting GitHub Actions - Microsoft, DataDog, and CNCF Projects Hit So Far &nbsp;&nbsp; StepSecurity'
 severity: critical
 platforms:

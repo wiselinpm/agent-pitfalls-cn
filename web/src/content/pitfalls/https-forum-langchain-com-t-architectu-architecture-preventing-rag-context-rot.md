@@ -1,5 +1,5 @@
 ---
-title: "[Architecture] Preventing RAG \"Context Rot\" : A Deterministic Temporal Decay Proxy for LangChain Agents"
+title: '[Architecture] Preventing RAG "Context Rot" : A Deterministic Temporal Decay Proxy for LangChain Agents'
 summary: 'Hey everyone, I wanted to share an architectural pattern we’ve been using to solve a critical failure mode in enterprise LangChain agents: “Context Rot.” Standard vector stores retrieve perfectly on semantic similarity, but they are blind to temporal validity. If a compliance rul'
 severity: critical
 platforms:

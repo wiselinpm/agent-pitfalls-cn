@@ -1,5 +1,5 @@
 ---
-title: "Miasma Worm Hits Microsoft Again: Azure Functions Action and 72 Other Repositories Disabled After Supply Chain Attac..."
+title: "Miasma Worm Hits Microsoft Again: Azure Functions Action and 72 Other Repositories Disabled After Supply Chain..."
 summary: 'Miasma Worm Hits Microsoft Again: Azure Functions Action and 72 Other Repositories Disabled After Supply Chain Attack Targeting AI Coding Agents &nbsp;&nbsp; StepSecurity'
 severity: critical
 platforms:

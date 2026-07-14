@@ -1,5 +1,5 @@
 ---
-title: "Enterprise AI''s adoption gap: investment is up, but security, data, and accountability are lagging - MarketScale"
+title: "Enterprise AI''s adoption gap: investment is up, but security, data, and accountability are lagging - MarketSc..."
 summary: 'Enterprise AI''s adoption gap: investment is up, but security, data, and accountability are lagging &nbsp;&nbsp; MarketScale'
 severity: critical
 platforms:

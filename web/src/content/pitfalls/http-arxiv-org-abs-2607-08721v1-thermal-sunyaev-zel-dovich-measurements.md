@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Thermal Sunyaev-Zel\\\\'\\\\'dovich Measurements of Locally Bright Galaxies with ACT DR6: Radio Source Contamination a..."
+title: "'Thermal Sunyaev-Zel''dovich Measurements of Locally Bright Galaxies with ACT DR6: Radio Source Contamina..."
 summary: The Planck collaboration found a remarkable power-law relation between stellar mass and the thermal Sunyaev-Zeldovich (tSZ) signal for the Locally Bright Galaxy (LBG) sample, spanning over a decade in stellar mass. We re-examine this measurement using the Atacama Cosmology Telesc
 severity: critical
 platforms:

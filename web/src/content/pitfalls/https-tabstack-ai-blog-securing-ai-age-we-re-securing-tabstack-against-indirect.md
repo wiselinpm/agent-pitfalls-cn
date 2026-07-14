@@ -1,5 +1,5 @@
 ---
-title: We\'re securing Tabstack against indirect prompt injection
+title: We're securing Tabstack against indirect prompt injection
 summary: We're securing Tabstack against indirect prompt injection
 severity: medium
 platforms:

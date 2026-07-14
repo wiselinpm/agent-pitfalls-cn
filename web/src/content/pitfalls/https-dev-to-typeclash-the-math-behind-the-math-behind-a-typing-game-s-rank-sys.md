@@ -1,5 +1,5 @@
 ---
-title: The Math Behind a Typing Game\'s Rank System
+title: The Math Behind a Typing Game's Rank System
 summary: 'Designing a ranking system sounds simple until you actually sit down to build one: reward speed, but not so much that accuracy stops mattering; let people climb, but not so easily that rank means nothing; punish quitting, but not so harshly that a bad match ruins your week. TypeC'
 severity: high
 platforms:

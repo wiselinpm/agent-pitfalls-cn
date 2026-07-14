@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude Services Down — claude.ai, Claude Code, and Cowork Affected [Updated] - CyberSecurityNews
+title: Anthropic's Claude Services Down — claude.ai, Claude Code, and Cowork Affected [Updated] - CyberSecurityNews
 summary: Anthropic's Claude Services Down — claude.ai, Claude Code, and Cowork Affected [Updated] &nbsp;&nbsp; CyberSecurityNews
 severity: critical
 platforms:

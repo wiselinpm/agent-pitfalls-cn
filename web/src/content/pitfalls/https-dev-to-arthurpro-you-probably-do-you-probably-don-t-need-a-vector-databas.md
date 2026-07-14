@@ -1,5 +1,5 @@
 ---
-title: You Probably Don\'t Need a Vector Database for RAG
+title: You Probably Don't Need a Vector Database for RAG
 summary: 'RAG retrieval strategies without a vector database: BM25, keyword indices, knowledge-in-bundle — and when embeddings earn their cost.'
 severity: medium
 platforms:

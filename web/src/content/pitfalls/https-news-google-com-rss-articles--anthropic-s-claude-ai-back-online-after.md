@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude AI Back Online After 90-Minute Global Outage - CyberSecurityNews
+title: Anthropic's Claude AI Back Online After 90-Minute Global Outage - CyberSecurityNews
 summary: Anthropic's Claude AI Back Online After 90-Minute Global Outage &nbsp;&nbsp; CyberSecurityNews
 severity: critical
 platforms:

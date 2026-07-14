@@ -1,5 +1,5 @@
 ---
-title: "Claude AI down: Hundreds of users are facing issues accessing the chatbot on Android, iOS and web - Moneycontrol.com"
+title: "Claude AI down: Hundreds of users are facing issues accessing the chatbot on Android, iOS and web - Moneycontr..."
 summary: 'Claude AI down: Hundreds of users are facing issues accessing the chatbot on Android, iOS and web &nbsp;&nbsp; Moneycontrol.com'
 severity: medium
 platforms:

@@ -1,6 +1,6 @@
 ---
 title: 'Show HN: R2R – Open-source framework for production-grade RAG'
-summary: 'Hello HN, I&#x27;m Owen from SciPhi (<a href="https:&#x2F;&#x2F;www.sciphi.ai&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.sciphi.ai&#x2F;</a>), a startup working on simplifying˛Retrieval-Augmented Generation (RAG). Today we’re excited to share R2R (<a href="https:&#x2F;&#x2F;gith'
+summary: Hello HN, I&#x27;m Owen from SciPhi (<a href="https:&#x2F;&#x2F;www.sciphi.ai&#x2F;" rel="nofollow">https:&#x2F;&#x2F;www.sciphi.ai&#x2F;</a>), a startup working on simplifying˛Retrieval-Augmented Generation (RAG). Today we’re excited to share R2R (<a href="https:&#x2F;&#x2F;gith
 severity: critical
 platforms:
 - generic
@@ -19,6 +19,7 @@ tags:
 - hackernews
 verified: false
 ---
+
 - [Show HN: R2R – Open-source framework for production-grade RAG](https://github.com/SciPhi-AI/R2R) — hn-algolia-ext:story
 
 ## 摘要

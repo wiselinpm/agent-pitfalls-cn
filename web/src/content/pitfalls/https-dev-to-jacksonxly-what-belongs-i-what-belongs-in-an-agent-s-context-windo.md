@@ -1,5 +1,5 @@
 ---
-title: What belongs in an agent\'s context window (and what to evict)
+title: What belongs in an agent's context window (and what to evict)
 summary: 'Agent memory is mostly an eviction problem, not a retrieval one. Treat the context window as a working set: what to keep exact, what to compress, what to page out.'
 severity: medium
 platforms:

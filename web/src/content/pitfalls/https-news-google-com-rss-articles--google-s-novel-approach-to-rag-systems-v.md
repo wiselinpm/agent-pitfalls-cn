@@ -1,5 +1,5 @@
 ---
-title: Google\'s novel approach to RAG systems - VentureBeat
+title: Google's novel approach to RAG systems - VentureBeat
 summary: Google's novel approach to RAG systems &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

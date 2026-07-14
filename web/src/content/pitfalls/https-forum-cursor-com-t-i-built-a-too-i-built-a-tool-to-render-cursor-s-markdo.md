@@ -1,5 +1,5 @@
 ---
-title: I built a tool to render Cursor\'s Markdown plans into live, interactive web UIs
+title: I built a tool to render Cursor's Markdown plans into live, interactive web UIs
 summary: Hey everyone, I love using Cursor for complex refactors and architecture planning, but I found myself getting constantly frustrated trying to read thousands of lines of Markdown in the narrow chat window. It’s especially tough when the agent proposes complex architectural changes
 severity: critical
 platforms:

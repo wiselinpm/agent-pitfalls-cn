@@ -1,5 +1,5 @@
 ---
-title: "\\\\'IRDAI\\\\'\\\\'s commission crackdown: Insurers start work on new agent fee framework under new insurance act - The Ec..."
+title: "'IRDAI''s commission crackdown: Insurers start work on new agent fee framework under new insurance act - ..."
 summary: 'IRDAI''s commission crackdown: Insurers start work on new agent fee framework under new insurance act &nbsp;&nbsp; The Economic Times'
 severity: medium
 platforms:

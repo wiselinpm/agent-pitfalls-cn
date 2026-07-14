@@ -1,5 +1,5 @@
 ---
-title: "Cline CLI 2.3.0 Supply Chain Attack: OpenClaw Unauthorized Installation on Developer and CI/CD Systems - Rescana"
+title: "Cline CLI 2.3.0 Supply Chain Attack: OpenClaw Unauthorized Installation on Developer and CI/CD Systems - Resca..."
 summary: 'Cline CLI 2.3.0 Supply Chain Attack: OpenClaw Unauthorized Installation on Developer and CI/CD Systems &nbsp;&nbsp; Rescana'
 severity: medium
 platforms:

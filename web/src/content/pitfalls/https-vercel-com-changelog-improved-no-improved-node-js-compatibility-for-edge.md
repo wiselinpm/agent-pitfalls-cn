@@ -1,6 +1,6 @@
 ---
 title: Improved Node.js compatibility for Edge Middleware and Edge Functions
-summary: '<blockquote><p><b>Note:</b> This changelog entry is historical. Edge Functions are deprecated for new projects. Use <a href="https://vercel.com/docs/functions">Vercel Functions</a> with the Node.js runtime and <a href="https://vercel.com/docs/fluid-compute">Fluid compute</a>. Use'
+summary: <blockquote><p><b>Note:</b> This changelog entry is historical. Edge Functions are deprecated for new projects. Use <a href="https://vercel.com/docs/functions">Vercel Functions</a> with the Node.js runtime and <a href="https://vercel.com/docs/fluid-compute">Fluid compute</a>. Use
 severity: critical
 platforms:
 - generic
@@ -21,6 +21,7 @@ contributor: Gal Schlezinger
 discovered_at: '2023-04-03'
 verified: false
 ---
+
 - [Improved Node.js compatibility for Edge Middleware and Edge Functions](https://vercel.com/changelog/improved-node-js-compatibility-for-edge-middleware-and-edge-functions) — vercel-blog
 
 ## 摘要

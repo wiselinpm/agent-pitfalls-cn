@@ -1,5 +1,5 @@
 ---
-title: Twitter down as NHL\'s free agent frenzy begins - Vancouver Is Awesome
+title: Twitter down as NHL's free agent frenzy begins - Vancouver Is Awesome
 summary: Twitter down as NHL's free agent frenzy begins &nbsp;&nbsp; Vancouver Is Awesome
 severity: medium
 platforms:

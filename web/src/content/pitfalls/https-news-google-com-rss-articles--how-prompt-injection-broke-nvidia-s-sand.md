@@ -1,5 +1,5 @@
 ---
-title: How prompt injection broke Nvidia\'s sandboxed OpenClaw agent - Substack
+title: How prompt injection broke Nvidia's sandboxed OpenClaw agent - Substack
 summary: How prompt injection broke Nvidia's sandboxed OpenClaw agent &nbsp;&nbsp; Substack
 severity: medium
 platforms:

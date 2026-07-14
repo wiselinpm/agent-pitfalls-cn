@@ -36,8 +36,8 @@ import re, logging
 
 _PATTERNS = [
     (re.compile(r"sk-[A-Za-z0-9_-]{20,}"), "[REDACTED_KEY]"),
-    (re.compile(r"Bearer\s+[A-Za-z0-9._-]+"), "Bearer [REDACTED]"),
-    (re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"), "[REDACTED_EMAIL]"),
+    (re.compile(r"Bearers+[A-Za-z0-9._-]+"), "Bearer [REDACTED]"),
+    (re.compile(r"[w.+-]+@[w-]+.[w.-]+"), "[REDACTED_EMAIL]"),
 ]
 
 class RedactingFilter(logging.Filter):

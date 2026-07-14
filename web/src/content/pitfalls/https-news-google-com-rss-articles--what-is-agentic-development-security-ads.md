@@ -1,5 +1,5 @@
 ---
-title: "What Is Agentic Development Security (ADS)? Forrester\\'s New AppSec Framework - Augment Code"
+title: "What Is Agentic Development Security (ADS)? Forrester's New AppSec Framework - Augment Code"
 summary: What Is Agentic Development Security (ADS)? Forrester's New AppSec Framework &nbsp;&nbsp; Augment Code
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "RAGMail: a cloud-based retrieval-augmented framework for reducing hallucinations in LLM text generation - Nature"
+title: "RAGMail: a cloud-based retrieval-augmented framework for reducing hallucinations in LLM text generation - Natu..."
 summary: 'RAGMail: a cloud-based retrieval-augmented framework for reducing hallucinations in LLM text generation &nbsp;&nbsp; Nature'
 severity: medium
 platforms:

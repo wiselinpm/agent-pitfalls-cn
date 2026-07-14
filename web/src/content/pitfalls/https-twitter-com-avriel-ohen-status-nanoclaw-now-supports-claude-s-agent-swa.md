@@ -1,5 +1,5 @@
 ---
-title: NanoClaw now supports Claude\'s Agent Swarms in containers
+title: NanoClaw now supports Claude's Agent Swarms in containers
 summary: NanoClaw now supports Claude's Agent Swarms in containers
 severity: medium
 platforms:

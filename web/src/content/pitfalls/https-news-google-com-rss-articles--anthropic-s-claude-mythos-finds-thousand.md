@@ -1,5 +1,5 @@
 ---
-title: Anthropic\'s Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems - The Hacker News
+title: Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems - The Hacker News
 summary: Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems &nbsp;&nbsp; The Hacker News
 severity: medium
 platforms:

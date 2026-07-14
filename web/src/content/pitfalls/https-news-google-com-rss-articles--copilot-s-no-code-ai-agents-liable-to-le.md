@@ -1,5 +1,5 @@
 ---
-title: Copilot\'s No Code AI Agents Liable to Leak Company Data - Dark Reading
+title: Copilot's No Code AI Agents Liable to Leak Company Data - Dark Reading
 summary: Copilot's No Code AI Agents Liable to Leak Company Data &nbsp;&nbsp; Dark Reading
 severity: critical
 platforms:

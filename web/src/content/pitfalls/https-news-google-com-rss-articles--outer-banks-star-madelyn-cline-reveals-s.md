@@ -1,5 +1,5 @@
 ---
-title: "Outer Banks'' Star Madelyn Cline Reveals She Lost Out On This Major Film Role: ''There Have Been a Lot of Almosts'..."
+title: "Outer Banks'' Star Madelyn Cline Reveals She Lost Out On This Major Film Role: ''There Have Been a Lot of Almo..."
 summary: '''Outer Banks'' Star Madelyn Cline Reveals She Lost Out On This Major Film Role: ''There Have Been a Lot of Almosts'' &nbsp;&nbsp; Showbiz Cheat Sheet'
 severity: medium
 platforms:

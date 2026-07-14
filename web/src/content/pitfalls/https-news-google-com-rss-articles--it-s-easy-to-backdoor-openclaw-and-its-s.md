@@ -1,5 +1,5 @@
 ---
-title: It\'s easy to backdoor OpenClaw, and its skills leak API keys - The Register
+title: It's easy to backdoor OpenClaw, and its skills leak API keys - The Register
 summary: It's easy to backdoor OpenClaw, and its skills leak API keys &nbsp;&nbsp; The Register
 severity: critical
 platforms:

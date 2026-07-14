@@ -1,5 +1,5 @@
 ---
-title: "AI’s engine room: How Retrieval-Augmented Generation (RAG) is transforming the future of trustworthy intelligence - ..."
+title: "AI’s engine room: How Retrieval-Augmented Generation (RAG) is transforming the future of trustworthy intellige..."
 summary: 'AI’s engine room: How Retrieval-Augmented Generation (RAG) is transforming the future of trustworthy intelligence &nbsp;&nbsp; Business & Financial Times'
 severity: high
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "Debugging production agents with Amazon Bedrock AgentCore Observability | Artificial Intelligence - Amazon Web Services"
+title: "Debugging production agents with Amazon Bedrock AgentCore Observability | Artificial Intelligence - Amazon Web..."
 summary: Debugging production agents with Amazon Bedrock AgentCore Observability | Artificial Intelligence &nbsp;&nbsp; Amazon Web Services (AWS)
 severity: critical
 platforms:

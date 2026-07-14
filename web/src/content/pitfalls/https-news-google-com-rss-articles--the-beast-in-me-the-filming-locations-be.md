@@ -1,5 +1,5 @@
 ---
-title: "‘The Beast in Me’: The filming locations behind Claire Danes’ gripping new Netflix thriller - Time Out Worldwide"
+title: "‘The Beast in Me’: The filming locations behind Claire Danes’ gripping new Netflix thriller - Time Out Worldwi..."
 summary: '‘The Beast in Me’: The filming locations behind Claire Danes’ gripping new Netflix thriller &nbsp;&nbsp; Time Out Worldwide'
 severity: medium
 platforms:

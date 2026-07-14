@@ -1,5 +1,5 @@
 ---
-title: "Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he - The Economi"
+title: "Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he - T..."
 summary: Is Claude down today? Anthropic investigates Claude AI outage as users report errors on Down Detector – he &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

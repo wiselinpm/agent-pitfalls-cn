@@ -1,5 +1,5 @@
 ---
-title: "Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working - The Economic"
+title: "Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working - Th..."
 summary: Claude down and when will it be back up? Claude outage affected regions, services, AI chatbot not working &nbsp;&nbsp; The Economic Times
 severity: medium
 platforms:

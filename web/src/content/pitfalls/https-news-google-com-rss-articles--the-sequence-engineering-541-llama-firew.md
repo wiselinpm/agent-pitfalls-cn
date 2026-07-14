@@ -1,5 +1,5 @@
 ---
-title: "The Sequence Engineering #541: Llama Firewall is the LLM Security Framework We Should All be Using - TheSequence"
+title: "The Sequence Engineering #541: Llama Firewall is the LLM Security Framework We Should All be Using - TheSequen..."
 summary: 'The Sequence Engineering #541: Llama Firewall is the LLM Security Framework We Should All be Using &nbsp;&nbsp; TheSequence'
 severity: critical
 platforms:

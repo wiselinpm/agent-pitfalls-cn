@@ -1,5 +1,5 @@
 ---
-title: "Assessing the Vulnerabilities of LLM Agents: The AgentHarm Benchmark for Robustness Against Jailbreak Attacks - Mark..."
+title: "Assessing the Vulnerabilities of LLM Agents: The AgentHarm Benchmark for Robustness Against Jailbreak Attacks ..."
 summary: 'Assessing the Vulnerabilities of LLM Agents: The AgentHarm Benchmark for Robustness Against Jailbreak Attacks &nbsp;&nbsp; MarkTechPost'
 severity: medium
 platforms:

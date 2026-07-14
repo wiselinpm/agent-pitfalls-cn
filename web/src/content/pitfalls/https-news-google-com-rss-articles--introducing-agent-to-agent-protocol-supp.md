@@ -1,5 +1,5 @@
 ---
-title: "Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore Runtime | Artificial Intelligence - Amazon Web S"
+title: "Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore Runtime | Artificial Intelligence - Am..."
 summary: Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore Runtime | Artificial Intelligence &nbsp;&nbsp; Amazon Web Services (AWS)
 severity: medium
 platforms:

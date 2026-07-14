@@ -1,5 +1,5 @@
 ---
-title: "Fertility fraud: People conceived through errors, misdeeds in the industry are pressing for justice - The Washington..."
+title: "Fertility fraud: People conceived through errors, misdeeds in the industry are pressing for justice - The Wash..."
 summary: 'Fertility fraud: People conceived through errors, misdeeds in the industry are pressing for justice &nbsp;&nbsp; The Washington Post'
 severity: medium
 platforms:

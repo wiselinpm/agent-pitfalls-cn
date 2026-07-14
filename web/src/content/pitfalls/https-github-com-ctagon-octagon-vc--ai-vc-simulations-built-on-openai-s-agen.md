@@ -1,5 +1,5 @@
 ---
-title: AI VC Simulations Built on OpenAI\'s Agents SDK – Open-Source MCP Server
+title: AI VC Simulations Built on OpenAI's Agents SDK – Open-Source MCP Server
 summary: AI VC Simulations Built on OpenAI's Agents SDK – Open-Source MCP Server
 severity: critical
 platforms:

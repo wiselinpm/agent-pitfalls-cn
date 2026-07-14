@@ -1,5 +1,5 @@
 ---
-title: "[BUG] [Claude Desktop] Cowork fails to create local agent mode sessions — ENOENT mkdir with pinned parent UUIDs (MSI..."
+title: "[BUG] [Claude Desktop] Cowork fails to create local agent mode sessions — ENOENT mkdir with pinned parent UUID..."
 summary: '### Preflight Checklist - [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn''t been reported yet - [x] This is a single bug report (please file separate reports for different bugs) - [x]'
 severity: high
 platforms:

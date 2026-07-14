@@ -1,5 +1,5 @@
 ---
-title: "Can We Trust LLM\\'s Logic? Quantifying Uncertainty, Coherence, and Robustness via a Graph-Based Framework"
+title: "Can We Trust LLM's Logic? Quantifying Uncertainty, Coherence, and Robustness via a Graph-Based Framework"
 summary: Large-Language Models (LLMs) can be prone to flawed and unfaithful reasoning that decoding strategies like Self-Consistency (SC) fail to detect as they evaluate only final-answer agreement while ignoring the logical validity of intermediate steps. This raises three fundamental qu
 severity: medium
 platforms:

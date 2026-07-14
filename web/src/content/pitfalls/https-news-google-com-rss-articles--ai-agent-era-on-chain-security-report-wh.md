@@ -1,5 +1,5 @@
 ---
-title: "AI Agent Era On-Chain Security Report: When Transactions, Payments, and Signatories Shift from Humans to Agents, Whe..."
+title: "AI Agent Era On-Chain Security Report: When Transactions, Payments, and Signatories Shift from Humans to Agent..."
 summary: 'AI Agent Era On-Chain Security Report: When Transactions, Payments, and Signatories Shift from Humans to Agents, Where Lies the Web3 Security Boundary? &nbsp;&nbsp; odaily.news'
 severity: critical
 platforms:

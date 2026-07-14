@@ -1,5 +1,5 @@
 ---
-title: "Defense at AI speed: Microsoft’s new multi-model agentic security system tops leading industry benchmark - Microsoft"
+title: "Defense at AI speed: Microsoft’s new multi-model agentic security system tops leading industry benchmark - Mic..."
 summary: 'Defense at AI speed: Microsoft’s new multi-model agentic security system tops leading industry benchmark &nbsp;&nbsp; Microsoft'
 severity: critical
 platforms:

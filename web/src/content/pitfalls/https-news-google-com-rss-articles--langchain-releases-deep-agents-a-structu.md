@@ -1,5 +1,5 @@
 ---
-title: "LangChain Releases Deep Agents: A Structured Runtime for Planning, Memory, and Context Isolation in Multi-Step AI Ag..."
+title: "LangChain Releases Deep Agents: A Structured Runtime for Planning, Memory, and Context Isolation in Multi-Step..."
 summary: 'LangChain Releases Deep Agents: A Structured Runtime for Planning, Memory, and Context Isolation in Multi-Step AI Agents &nbsp;&nbsp; MarkTechPost'
 severity: medium
 platforms:

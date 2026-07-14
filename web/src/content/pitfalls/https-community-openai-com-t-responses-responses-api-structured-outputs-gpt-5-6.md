@@ -1,5 +1,5 @@
 ---
-title: "Responses API + Structured Outputs (gpt-5.6-luna): garbage tokens (foreign scripts / leaked reasoning) inside string..."
+title: "Responses API + Structured Outputs (gpt-5.6-luna): garbage tokens (foreign scripts / leaked reasoning) inside ..."
 summary: 'Summary Since migrating structured-output calls from Chat Completions to the Responses API, gpt-5.6-luna intermittently emits degenerate tokens inside string values, immediately before the closing quote. The JSON is always schema-valid (strict: true), so the garbage flows straigh'
 severity: critical
 platforms:

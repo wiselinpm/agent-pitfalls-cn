@@ -1,5 +1,5 @@
 ---
-title: Four AI supply-chain attacks in 50 days exposed the release pipeline red teams aren\'t covering - VentureBeat
+title: Four AI supply-chain attacks in 50 days exposed the release pipeline red teams aren't covering - VentureBeat
 summary: Four AI supply-chain attacks in 50 days exposed the release pipeline red teams aren't covering &nbsp;&nbsp; VentureBeat
 severity: medium
 platforms:

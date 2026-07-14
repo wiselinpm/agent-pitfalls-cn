@@ -1,5 +1,5 @@
 ---
-title: "[AI in Action] Refining a macOS Meeting Translation App with Claude Code: Auto-reconnect, Floating Captions, and Mee..."
+title: "[AI in Action] Refining a macOS Meeting Translation App with Claude Code: Auto-reconnect, Floating Captions, a..."
 summary: 'Foreword: Round Two, Switching to a Sharper Tool In the previous article, we used AGY...'
 severity: medium
 platforms:

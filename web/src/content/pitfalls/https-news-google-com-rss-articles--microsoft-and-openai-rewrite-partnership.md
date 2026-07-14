@@ -1,5 +1,5 @@
 ---
-title: "Microsoft and OpenAI rewrite partnership ending cloud exclusivity through 2032 | ETIH EdTech News - EdTech Innovation Hu"
+title: "Microsoft and OpenAI rewrite partnership ending cloud exclusivity through 2032 | ETIH EdTech News - EdTech Inn..."
 summary: Microsoft and OpenAI rewrite partnership ending cloud exclusivity through 2032 | ETIH EdTech News &nbsp;&nbsp; EdTech Innovation Hub
 severity: medium
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "\\\\'Remote Control: SessionStart hook sessionTitle output is delivered to the bridge but never applied to the session\\..."
+title: "'Remote Control: SessionStart hook sessionTitle output is delivered to the bridge but never applied to the ses..."
 summary: '## Environment Claude Code 2.1.207, Windows 11, `claude remote-control` server mode; SessionStart hook emitting the documented `sessionTitle` output field. ## Problem For Remote-Control-spawned sessions (including the server''s pre-created session), the SessionStart hook runs nor'
 severity: critical
 platforms:

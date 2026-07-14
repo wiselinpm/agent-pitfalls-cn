@@ -1,6 +1,6 @@
 ---
 title: Prompt Injection as Role Confusion
-summary: '<a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2603.12277" rel="nofollow">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2603.12277</a>'
+summary: <a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2603.12277" rel="nofollow">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2603.12277</a>
 severity: low
 platforms:
 - generic
@@ -17,6 +17,7 @@ tags:
 - hackernews
 verified: false
 ---
+
 - [Prompt Injection as Role Confusion](https://role-confusion.github.io) — hn-algolia-ext:story
 
 ## 摘要

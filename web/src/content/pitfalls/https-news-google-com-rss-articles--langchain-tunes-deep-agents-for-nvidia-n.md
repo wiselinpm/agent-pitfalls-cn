@@ -1,5 +1,5 @@
 ---
-title: "LangChain tunes Deep Agents for NVIDIA Nemotron 3 Ultra: top open-model accuracy at 10x lower cost with Nebius Agent..."
+title: "LangChain tunes Deep Agents for NVIDIA Nemotron 3 Ultra: top open-model accuracy at 10x lower cost with Nebius..."
 summary: 'LangChain tunes Deep Agents for NVIDIA Nemotron 3 Ultra: top open-model accuracy at 10x lower cost with Nebius Agents Blueprint &nbsp;&nbsp; Nebius AI'
 severity: low
 platforms:

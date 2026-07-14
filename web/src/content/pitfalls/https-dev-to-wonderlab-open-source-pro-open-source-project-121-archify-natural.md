@@ -1,5 +1,5 @@
 ---
-title: "Open Source Project #121: archify — Natural Language to Architecture Diagrams with Theme Toggle and 4 Export"
+title: 'Open Source Project #121: archify — Natural Language to Architecture Diagrams with Theme Toggle and 4 Export'
 summary: 'Introduction "Generate beautiful architecture, technical workflow, sequence, data-flow, and lifecycle diagrams in chat." This is article #121 in the "One Open Source Project a Day" series. Today''s project is archify — an agent skill that converts natural language descriptions int'
 severity: critical
 platforms:

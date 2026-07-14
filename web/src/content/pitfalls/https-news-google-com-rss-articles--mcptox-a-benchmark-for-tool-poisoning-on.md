@@ -1,5 +1,5 @@
 ---
-title: "MCPTox: A Benchmark for Tool Poisoning on Real-World MCP Servers - The Association for the Advancement of Artificial..."
+title: "MCPTox: A Benchmark for Tool Poisoning on Real-World MCP Servers - The Association for the Advancement of Arti..."
 summary: 'MCPTox: A Benchmark for Tool Poisoning on Real-World MCP Servers &nbsp;&nbsp; The Association for the Advancement of Artificial Intelligence'
 severity: medium
 platforms:

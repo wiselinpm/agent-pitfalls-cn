@@ -1,5 +1,5 @@
 ---
-title: Companies That Adopted AI Agents Alarmed to Discover They\'re Botching Incredibly Important Tasks - Futurism
+title: Companies That Adopted AI Agents Alarmed to Discover They're Botching Incredibly Important Tasks - Futurism
 summary: Companies That Adopted AI Agents Alarmed to Discover They're Botching Incredibly Important Tasks &nbsp;&nbsp; Futurism
 severity: medium
 platforms:

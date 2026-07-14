@@ -1,5 +1,5 @@
 ---
-title: "Micro-Specs: The Pattern That Significantly Improves AI Agent Test Coverage in High-Risk Modules - Augment Code"
+title: "Micro-Specs: The Pattern That Significantly Improves AI Agent Test Coverage in High-Risk Modules - Augment Cod..."
 summary: 'Micro-Specs: The Pattern That Significantly Improves AI Agent Test Coverage in High-Risk Modules &nbsp;&nbsp; Augment Code'
 severity: high
 platforms:

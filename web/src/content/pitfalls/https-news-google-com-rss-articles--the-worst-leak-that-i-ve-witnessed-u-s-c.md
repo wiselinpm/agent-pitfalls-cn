@@ -1,5 +1,5 @@
 ---
-title: "‘The Worst Leak That I’ve Witnessed’: U.S. Cybersecurity Agency Leaves Its Digital Keys Out in Public on GitHub - Gi..."
+title: "‘The Worst Leak That I’ve Witnessed’: U.S. Cybersecurity Agency Leaves Its Digital Keys Out in Public on GitHu..."
 summary: '‘The Worst Leak That I’ve Witnessed’: U.S. Cybersecurity Agency Leaves Its Digital Keys Out in Public on GitHub &nbsp;&nbsp; Gizmodo'
 severity: critical
 platforms:

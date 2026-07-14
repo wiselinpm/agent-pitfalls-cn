@@ -1,5 +1,5 @@
 ---
-title: AWS Plugs Coinbase\'s x402 Into CloudFront, Letting Publishers Charge AI Agents in USDC - The Defiant
+title: AWS Plugs Coinbase's x402 Into CloudFront, Letting Publishers Charge AI Agents in USDC - The Defiant
 summary: AWS Plugs Coinbase's x402 Into CloudFront, Letting Publishers Charge AI Agents in USDC &nbsp;&nbsp; The Defiant
 severity: medium
 platforms:

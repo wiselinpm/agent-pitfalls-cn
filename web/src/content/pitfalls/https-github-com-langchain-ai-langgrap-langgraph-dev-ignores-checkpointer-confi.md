@@ -1,5 +1,5 @@
 ---
-title: "`langgraph dev` Ignores Checkpointer Configuration, Forcing In-Memory Storage and Preventing State Persistence**"
+title: "`langgraph dev` Ignores Checkpointer Configuration, Forcing In-Memory Storage and Preventing State Persistence..."
 summary: '### Checked other resources - [x] This is a bug, not a usage question. For questions, please use the LangChain Forum (https://forum.langchain.com/). - [x] I added a clear and detailed title that summarizes the issue. - [x] I read what a minimal reproducible example is (https://s'
 severity: critical
 platforms:

@@ -1,5 +1,5 @@
 ---
-title: "How can I parallelize nodes in LangGraph without having to wait for the slowest one to finish if it&#39;s not needed?"
+title: "How can I parallelize nodes in LangGraph without having to wait for the slowest one to finish if it&#39;s not ..."
 summary: How can I parallelize nodes in LangGraph without having to wait for the slowest one to finish if it&#39;s not needed?
 severity: medium
 platforms:

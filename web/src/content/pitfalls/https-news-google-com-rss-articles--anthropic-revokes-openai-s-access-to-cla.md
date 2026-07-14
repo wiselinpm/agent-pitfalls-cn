@@ -1,5 +1,5 @@
 ---
-title: Anthropic Revokes OpenAI\'s Access to Claude - WIRED
+title: Anthropic Revokes OpenAI's Access to Claude - WIRED
 summary: Anthropic Revokes OpenAI's Access to Claude &nbsp;&nbsp; WIRED
 severity: medium
 platforms:

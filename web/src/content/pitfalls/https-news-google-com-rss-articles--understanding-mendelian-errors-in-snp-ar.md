@@ -1,5 +1,5 @@
 ---
-title: "Understanding Mendelian errors in SNP arrays data using a Gochu Asturcelta pig pedigree: genomic alterations, family..."
+title: "Understanding Mendelian errors in SNP arrays data using a Gochu Asturcelta pig pedigree: genomic alterations, ..."
 summary: 'Understanding Mendelian errors in SNP arrays data using a Gochu Asturcelta pig pedigree: genomic alterations, family size and calling errors &nbsp;&nbsp; Nature'
 severity: critical
 platforms:

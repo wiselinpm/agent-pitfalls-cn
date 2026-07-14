@@ -1,5 +1,5 @@
 ---
-title: "Show HN: MCP-Compatible OpenAI Agents SDK"
+title: 'Show HN: MCP-Compatible OpenAI Agents SDK'
 summary: 'Hey HN,<p>OpenAI released the Agents SDK yesterday, which is great because of its simplicity. I just added MCP support for it, which is currently available as a fork here: <a href="https:&#x2F;&#x2F;github.com&#x2F;lastmile-ai&#x2F;openai-agents-mcp" rel="nofollow">https:&#x2F;&#'
 severity: low
 platforms:

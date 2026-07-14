@@ -1,5 +1,5 @@
 ---
-title: "Codex VS Code extension is stuck on about:blank#blocked and never shows the authentication page on Ubuntu 22.04"
+title: "Codex VS Code extension is stuck on about:blank#blocked and never shows the authentication page on Ubuntu 22.0..."
 summary: 'Summary The Codex sidebar never loads the authentication page in VS Code. Instead, it gets stuck on the loading spinner and eventually shows about:blank#blocked. Environment OS: Ubuntu 22.04 LTS Desktop: GNOME Session: Wayland (also reproduced when launching VS Code with X11) VS'
 severity: medium
 platforms:

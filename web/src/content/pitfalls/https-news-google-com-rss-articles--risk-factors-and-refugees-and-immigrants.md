@@ -1,5 +1,5 @@
 ---
-title: "Risk Factors and Refugees and Immigrants | Childhood Lead Poisoning Prevention - Centers for Disease Control and Prevent"
+title: "Risk Factors and Refugees and Immigrants | Childhood Lead Poisoning Prevention - Centers for Disease Control a..."
 summary: Risk Factors and Refugees and Immigrants | Childhood Lead Poisoning Prevention &nbsp;&nbsp; Centers for Disease Control and Prevention | CDC (.gov)
 severity: medium
 platforms:

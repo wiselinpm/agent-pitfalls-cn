@@ -1,5 +1,5 @@
 ---
-title: "Typo in create_react_agent docstring: \"GraphRecusionError\" should be \"GraphRecursionError"
+title: 'Typo in create_react_agent docstring: "GraphRecusionError" should be "GraphRecursionError"'
 summary: '### Checked other resources - [x] This is a bug, not a usage question. - [x] I added a clear and descriptive title that summarizes this issue. - [x] I used the GitHub search to find a similar question and didn''t find it. - [x] I am sure that this is a bug in LangGraph rather tha'
 severity: critical
 platforms:
