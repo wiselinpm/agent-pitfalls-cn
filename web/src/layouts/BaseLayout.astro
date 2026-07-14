@@ -50,7 +50,7 @@ const PITFALLS_PREFIX = PITFALLS_PATH;
       jsonLd={jsonLd}
       ogType={ogType}
       breadcrumbs={breadcrumbs}
-      noindex={Astro.url.pathname === '/404' || Astro.url.pathname.endsWith('/404')}
+      noindex={Astro.url.pathname === '/404' || /\/404\/?$/.test(Astro.url.pathname)}
     />
     <link rel="icon" href={withBase('/logo.png')} type="image/png" />
 

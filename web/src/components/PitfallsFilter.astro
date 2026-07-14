@@ -1,0 +1,424 @@
+---
+/**
+ * PitfallsFilter — Astro component that renders the filter UI shell.
+ * The interactive client logic lives in the inline script below.
+ *
+ * Why a component + inline script (not a .ts module)?
+ * ---------------------------------------------------------
+ * Astro 5 with `output: 'static'` ships zero JS by default. Pulling in a
+ * compiled .ts module would force a hydration island. For a single
+ * 4-KB IIFE across one page, an inline <script> keeps the artifact
+ * truly static and CDN-cacheable.
+ *
+ * To DRY the categorical labels we JSON-encode them here from the
+ * shared `utils/labels.ts` (single source of truth), and inject as
+ * a `window.__AP_LABELS__` constant. The same approach could be
+ * reused for any other shared lookup table.
+ */
+import { CATEGORY_LABELS, PLATFORM_LABELS, SEVERITY_LABELS } from '../utils/labels';
+
+interface Props {
+  categories: string[];
+  platforms: string[];
+  severityCounts: { critical: number; high: number; medium: number; low: number };
+  total: number;
+  totalPages: number;
+  pageItems: { id: string; data: { title: string; summary: string; severity: string; platforms: string[]; categories: string[]; discovered_at?: string; verified?: boolean } }[];
+}
+
+const { categories, platforms, severityCounts, total, totalPages, pageItems } = Astro.props;
+
+const severityBadge = {
+  critical: 'badge-critical',
+  high: 'badge-high',
+  medium: 'badge-medium',
+  low: 'badge-low',
+} as const;
+
+// JSON-encoded for the inline script — single source of truth lives in utils/labels.ts
+const labelsJson = JSON.stringify({
+  severity: SEVERITY_LABELS,
+  category: CATEGORY_LABELS,
+  platform: PLATFORM_LABELS,
+});
+---
+
+<header class="mb-8 flex flex-wrap items-end justify-between gap-4">
+  <div>
+    <h1 class="display text-[36px]">避坑库</h1>
+    <p class="mt-2 text-[14px] text-slate">
+      <span id="result-count" class="font-mono font-semibold text-ink">{total}</span>
+      <span> 条 · </span>
+      <span id="result-meta">{totalPages === 1 ? '共 1 页' : `共 ${totalPages} 页 · 已显示第 1 页`}</span>
+    </p>
+  </div>
+  <div class="hidden items-center gap-2 text-[12px] text-fog md:flex">
+    <kbd class="font-mono text-[11px] text-mist">⌘</kbd>
+    <kbd class="font-mono text-[11px] text-mist">K</kbd>
+    <span>聚焦搜索</span>
+  </div>
+</header>
+
+<!-- Filter bar -->
+<div class="card mb-6">
+  <div class="relative">
+    <svg class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-mist" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="search" type="search" placeholder="按标题、症状、根因搜索…（输入时懒加载全量索引）"
+           class="input-plain pl-9" />
+  </div>
+  <div class="mt-5 grid gap-5 md:grid-cols-2">
+    <div>
+      <p class="eyebrow mb-2">严重程度</p>
+      <div class="flex flex-wrap gap-1.5">
+        <button class="chip filter-severity" data-value="" aria-pressed="true">
+          全部 <span class="font-mono text-fog">{total}</span>
+        </button>
+        {(['critical', 'high', 'medium', 'low'] as const).map((s) => (
+          <button class={`chip filter-severity ${severityBadge[s]}`} data-value={s} aria-pressed="false">
+            {SEVERITY_LABELS[s]} <span class="font-mono opacity-70">{severityCounts[s]}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow mb-2">平台</p>
+      <select id="filter-platform" class="input-plain">
+        <option value="">全部平台</option>
+        {platforms.map((p) => <option value={p}>{PLATFORM_LABELS[p] ?? p}</option>)}
+      </select>
+    </div>
+  </div>
+  <div class="mt-5">
+    <p class="eyebrow mb-2">分类（可多选）</p>
+    <div class="flex flex-wrap gap-1.5">
+      {categories.map((c) => (
+        <button class="chip filter-category" data-value={c} aria-pressed="false">#{CATEGORY_LABELS[c] ?? c}</button>
+      ))}
+    </div>
+  </div>
+  <!-- Active filter chips -->
+  <div id="active-filters" class="mt-5 hidden flex-wrap items-center gap-2 border-t border-lavender-mist pt-4 text-[12px]">
+    <span class="text-fog">已应用：</span>
+    <div id="active-filter-list" class="flex flex-wrap gap-1.5"></div>
+    <button id="clear-filters" class="ml-auto text-fog underline underline-offset-2 hover:text-ink">清空全部</button>
+  </div>
+</div>
+
+<!-- Result list — SSR first 50 items; client lazy-loads manifest after first filter -->
+<ul id="pitfall-list" class="grid gap-3">
+  {pageItems.map((p) => (
+    <li data-id={p.id} class="card card-hover group">
+      <a href={`/agent-pitfalls-cn/pitfalls/${p.id}`} class="block">
+        <div class="flex flex-wrap items-start gap-4">
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class={`badge ${severityBadge[p.data.severity]}`}>{SEVERITY_LABELS[p.data.severity] ?? p.data.severity}</span>
+              {p.data.platforms.slice(0, 2).map((pl) => <span class="badge">{PLATFORM_LABELS[pl] ?? pl}</span>)}
+              {p.data.verified && <span class="badge badge-low">已验证</span>}
+            </div>
+            <h2 class="mt-2.5 text-[16px] font-semibold leading-snug text-ink">
+              {p.data.title}
+            </h2>
+            <p class="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-slate">
+              {p.data.summary}
+            </p>
+            <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] text-fog">
+              {p.data.categories.slice(0, 3).map((c) => <span>#{CATEGORY_LABELS[c] ?? c}</span>)}
+              <span class="ml-auto font-mono tabular-nums">{p.data.discovered_at ?? '—'}</span>
+            </div>
+          </div>
+          <span aria-hidden="true" class="hidden self-center font-mono text-[14px] text-mist transition-transform group-hover:translate-x-1 group-hover:text-ink md:block">→</span>
+        </div>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<!-- Initial pagination (SSR) — visible until client takes over after first search/filter -->
+<nav id="initial-pagination" class="mt-10 flex items-center justify-between gap-4 border-t border-lavender-mist pt-6 text-[13px]">
+  <span class="text-fog">← 上一页</span>
+  <span class="font-mono text-fog tabular-nums">1 / {totalPages}</span>
+  {totalPages > 1 ? (
+    <a href="/agent-pitfalls-cn/pitfalls/page/2" class="link-cta">下一页 →</a>
+  ) : (
+    <span class="text-fog">下一页 →</span>
+  )}
+</nav>
+
+<!-- Empty state -->
+<div id="empty-state" class="mt-10 hidden">
+  <div class="card mx-auto max-w-md text-center">
+    <div class="mx-auto flex h-10 w-10 items-center justify-center rounded-md border border-lavender-mist font-mono text-[14px] text-fog">404</div>
+    <h3 class="mt-4 text-[14px] font-semibold text-ink">没有匹配的条目</h3>
+    <p class="mt-1.5 text-[12px] text-fog">
+      试试放宽筛选条件，或者 <button id="empty-clear" class="text-ink underline underline-offset-2">清空全部筛选</button>。
+    </p>
+  </div>
+</div>
+
+<!-- Inject labels once, consumed by inline script below -->
+<script is:inline set:html={`window.__AP_LABELS__ = ${labelsJson};`} />
+
+<script is:inline>
+  (function () {
+    const LABELS = window.__AP_LABELS__ || { severity: {}, category: {}, platform: {} };
+    const SEVERITY_LABELS = LABELS.severity;
+    const CATEGORY_LABELS = LABELS.category;
+    const PLATFORM_LABELS = LABELS.platform;
+    const SEVERITY_BADGE = {
+      critical: 'badge-critical', high: 'badge-high', medium: 'badge-medium', low: 'badge-low',
+    };
+
+    const search = document.getElementById('search');
+    const platform = document.getElementById('filter-platform');
+    const list = document.getElementById('pitfall-list');
+    const initialPaginator = document.getElementById('initial-pagination');
+    const empty = document.getElementById('empty-state');
+    const resultCount = document.getElementById('result-count');
+    const resultMeta = document.getElementById('result-meta');
+    const activeWrap = document.getElementById('active-filters');
+    const activeList = document.getElementById('active-filter-list');
+    const clearBtn = document.getElementById('clear-filters');
+    const emptyClear = document.getElementById('empty-clear');
+    if (!search || !platform || !list) return;
+
+    // manifest: lazy-loaded on first filter/search, memoized
+    let manifest = null;
+    let manifestPromise = null;
+    async function loadManifest() {
+      if (manifest) return manifest;
+      if (manifestPromise) return manifestPromise;
+      manifestPromise = fetch(withBase('/search-index.json'))
+        .then((r) => { if (!r.ok) throw new Error('manifest ' + r.status); return r.json(); })
+        .then((d) => { manifest = d; return d; });
+      return manifestPromise;
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+      ));
+    }
+    function withBase(p) {
+      // Fallback chain: <meta name=astro-base> → derive from location.pathname
+      let base = document.querySelector('meta[name="astro-base"]')?.content || '';
+      if (!base) {
+        const m = location.pathname.match(/^(\/[A-Za-z0-9_-]+)(\/|$)/);
+        if (m && !/^(pitfalls|about|schema|rss\.xml|contributing|patterns|advisories|logo|og|favicon|search-index)/.test(m[1])) {
+          base = m[1];
+        }
+      }
+      return base + (p.startsWith('/') ? p : '/' + p);
+    }
+
+    let activeSeverity = '';
+    let activeCategories = new Set();
+    let clientMode = false;
+
+    function renderItem(it) {
+      const sev = SEVERITY_LABELS[it.severity] || it.severity;
+      const platformsHtml = (it.platforms || []).slice(0, 2)
+        .map((p) => '<span class="badge">' + escapeHtml(PLATFORM_LABELS[p] || p) + '</span>').join('');
+      const categoriesHtml = (it.categories || []).slice(0, 3)
+        .map((c) => '<span>#' + escapeHtml(CATEGORY_LABELS[c] || c) + '</span>').join('');
+      const verified = it.verified ? '<span class="badge badge-low">已验证</span>' : '';
+      return (
+        '<li data-id="' + escapeHtml(it.id) + '" class="card card-hover group">' +
+          '<a href="' + withBase('/pitfalls/' + it.id) + '" class="block">' +
+            '<div class="flex flex-wrap items-start gap-4">' +
+              '<div class="min-w-0 flex-1">' +
+                '<div class="flex flex-wrap items-center gap-2">' +
+                  '<span class="badge ' + (SEVERITY_BADGE[it.severity] || 'badge-medium') + '">' + escapeHtml(sev) + '</span>' +
+                  platformsHtml + verified +
+                '</div>' +
+                '<h2 class="mt-2.5 text-[16px] font-semibold leading-snug text-ink">' + escapeHtml(it.title) + '</h2>' +
+                '<p class="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-slate">' + escapeHtml(it.summary) + '</p>' +
+                '<div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] text-fog">' +
+                  categoriesHtml +
+                  '<span class="ml-auto font-mono tabular-nums">' + escapeHtml(it.date || '—') + '</span>' +
+                '</div>' +
+              '</div>' +
+              '<span aria-hidden="true" class="hidden self-center font-mono text-[14px] text-mist transition-transform group-hover:translate-x-1 group-hover:text-ink md:block">→</span>' +
+            '</div>' +
+          '</a>' +
+        '</li>'
+      );
+    }
+
+    function readStateFromUrl() {
+      const sp = new URLSearchParams(location.search);
+      search.value = sp.get('q') || '';
+      platform.value = sp.get('platform') || '';
+      activeSeverity = sp.get('severity') || '';
+      activeCategories = new Set((sp.get('category') || '').split(',').filter(Boolean));
+      document.querySelectorAll('.filter-severity').forEach((b) => {
+        b.setAttribute('aria-pressed', b.dataset.value === activeSeverity || (!activeSeverity && b.dataset.value === '') ? 'true' : 'false');
+      });
+      document.querySelectorAll('.filter-category').forEach((b) => {
+        b.setAttribute('aria-pressed', activeCategories.has(b.dataset.value) ? 'true' : 'false');
+      });
+    }
+    function writeStateToUrl() {
+      const sp = new URLSearchParams();
+      if (search.value.trim()) sp.set('q', search.value.trim());
+      if (platform.value) sp.set('platform', platform.value);
+      if (activeSeverity) sp.set('severity', activeSeverity);
+      if (activeCategories.size) sp.set('category', [...activeCategories].join(','));
+      const qs = sp.toString();
+      const url = location.pathname + (qs ? '?' + qs : '');
+      history.replaceState(null, '', url);
+    }
+
+    async function apply() {
+      writeStateToUrl();
+      const q = search.value.trim().toLowerCase();
+      const hasAnyFilter = q || activeSeverity || platform.value || activeCategories.size;
+
+      if (!clientMode && !hasAnyFilter) {
+        resultCount.textContent = String(total);
+        resultMeta.textContent = totalPages === 1 ? '共 1 页' : '共 ' + totalPages + ' 页 · 已显示第 1 页';
+        empty.classList.add('hidden');
+        activeWrap.classList.add('hidden');
+        if (initialPaginator) initialPaginator.classList.remove('hidden');
+        return;
+      }
+
+      const data = await loadManifest();
+      clientMode = true;
+      if (initialPaginator) initialPaginator.classList.add('hidden');
+
+      let visible = 0;
+      const html = [];
+      for (let i = 0; i < data.length; i++) {
+        const it = data[i];
+        const title = it.title || '';
+        const summary = it.summary || '';
+        const cats = it.categories || [];
+        const plats = it.platforms || [];
+        const matchQ = !q || title.toLowerCase().includes(q) || summary.toLowerCase().includes(q);
+        const matchS = !activeSeverity || it.severity === activeSeverity;
+        const matchP = !platform.value || plats.includes(platform.value);
+        const matchC = activeCategories.size === 0 || cats.some((c) => activeCategories.has(c));
+        if (matchQ && matchS && matchP && matchC) {
+          html.push(renderItem(it));
+          visible++;
+        }
+      }
+      list.innerHTML = html.join('');
+      resultCount.textContent = String(visible);
+      resultMeta.textContent = visible === 0
+        ? '无匹配'
+        : (hasAnyFilter ? '已按筛选 / 搜索过滤' : '共 ' + data.length + ' 条');
+      empty.classList.toggle('hidden', visible !== 0);
+
+      const chips = [];
+      if (activeSeverity) chips.push({ kind: 'severity', value: activeSeverity, label: SEVERITY_LABELS[activeSeverity] || activeSeverity });
+      if (platform.value) chips.push({ kind: 'platform', value: platform.value, label: PLATFORM_LABELS[platform.value] || platform.value });
+      for (const c of activeCategories) chips.push({ kind: 'category', value: c, label: '#' + (CATEGORY_LABELS[c] || c) });
+      if (q) chips.push({ kind: 'search', value: q, label: '「' + q + '」' });
+      if (chips.length === 0) {
+        activeWrap.classList.add('hidden');
+      } else {
+        activeWrap.classList.remove('hidden');
+        activeList.innerHTML = chips.map((c) =>
+          '<button data-kind="' + c.kind + '" data-value="' + escapeHtml(c.value) +
+          '" class="chip is-active">' + escapeHtml(c.label) + ' <span aria-hidden="true" class="font-mono">×</span></button>'
+        ).join('');
+        activeList.querySelectorAll('button').forEach((btn) => {
+          btn.addEventListener('click', () => removeChip(btn.dataset.kind, btn.dataset.value));
+        });
+      }
+    }
+
+    function removeChip(kind, value) {
+      if (kind === 'severity') {
+        activeSeverity = '';
+        document.querySelectorAll('.filter-severity').forEach((b) => {
+          b.setAttribute('aria-pressed', b.dataset.value === '' ? 'true' : 'false');
+        });
+      } else if (kind === 'platform') {
+        platform.value = '';
+      } else if (kind === 'category') {
+        activeCategories.delete(value);
+        document.querySelectorAll('.filter-category').forEach((b) => {
+          b.setAttribute('aria-pressed', activeCategories.has(b.dataset.value) ? 'true' : 'false');
+        });
+      } else if (kind === 'search') {
+        search.value = '';
+      }
+      apply();
+    }
+
+    function clearAll() {
+      search.value = '';
+      platform.value = '';
+      activeSeverity = '';
+      activeCategories.clear();
+      document.querySelectorAll('.filter-severity').forEach((b) => {
+        b.setAttribute('aria-pressed', b.dataset.value === '' ? 'true' : 'false');
+      });
+      document.querySelectorAll('.filter-category').forEach((b) => {
+        b.setAttribute('aria-pressed', 'false');
+      });
+      apply();
+    }
+
+    const total = parseInt(resultCount.textContent || '0', 10);
+    resultCount.textContent = String(total);
+    resultMeta.textContent = totalPages === 1 ? '共 1 页' : '共 ' + totalPages + ' 页 · 已显示第 1 页';
+
+    readStateFromUrl();
+    if (search.value || platform.value || activeSeverity || activeCategories.size) {
+      apply();
+    }
+
+    let inputTimer = 0;
+    search.addEventListener('input', () => {
+      clearTimeout(inputTimer);
+      inputTimer = setTimeout(apply, 120);
+    });
+    platform.addEventListener('change', apply);
+
+    document.querySelectorAll('.filter-severity').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeSeverity = btn.dataset.value || '';
+        document.querySelectorAll('.filter-severity').forEach((b) => {
+          const isMine = b === btn && b.dataset.value;
+          const isAll = b.dataset.value === '' && !activeSeverity;
+          b.setAttribute('aria-pressed', (isMine || isAll) ? 'true' : 'false');
+        });
+        apply();
+      });
+    });
+
+    document.querySelectorAll('.filter-category').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const v = btn.dataset.value;
+        if (activeCategories.has(v)) {
+          activeCategories.delete(v);
+          btn.setAttribute('aria-pressed', 'false');
+        } else {
+          activeCategories.add(v);
+          btn.setAttribute('aria-pressed', 'true');
+        }
+        apply();
+      });
+    });
+
+    clearBtn.addEventListener('click', clearAll);
+    if (emptyClear) emptyClear.addEventListener('click', clearAll);
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        search.focus();
+        search.select();
+      }
+      if (e.key === 'Escape' && document.activeElement === search) {
+        search.value = '';
+        apply();
+        search.blur();
+      }
+    });
+  })();
+</script>
