@@ -110,8 +110,7 @@ const faqLd = hasFaq
           {entry.data.platforms.map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
           {entry.data.verified && <span class="badge badge-low">已验证</span>}
         </div>
-        {/* H1 lives in BaseLayout <title>; avoid double-h1 on this page */}
-        <p class="mt-4 text-[20px] font-semibold leading-snug text-ink">{entry.data.title}</p>
+        <h1 class="mt-4 text-[20px] font-semibold leading-snug text-ink">{entry.data.title}</h1>
         <p class="mt-3 text-[16px] leading-relaxed text-slate">{entry.data.summary}</p>
       </header>
 
