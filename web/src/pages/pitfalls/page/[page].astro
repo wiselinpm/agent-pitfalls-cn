@@ -1,0 +1,112 @@
+---
+/**
+ * 分页路由 — /pitfalls/page/2/, /pitfalls/page/3/, ...
+ *
+ * 与 /pitfalls/index.astro 共用 paginate()，每页 50 条。
+ * 客户端搜索请走 /pitfalls 首页（懒加载 search-index.json）。
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { categoryLabel, platformLabel, severityLabel } from '../../../utils/labels';
+import { withBase } from '../../../utils/path';
+import { paginate, DEFAULT_PER_PAGE } from '../../../utils/paginate';
+
+export async function getStaticPaths() {
+  const all = (await getCollection('pitfalls')).sort(
+    (a, b) => +new Date(b.data.discovered_at ?? 0) - +new Date(a.data.discovered_at ?? 0),
+  );
+  const info = paginate(all, 1, DEFAULT_PER_PAGE);
+  return Array.from({ length: info.totalPages }, (_, i) => {
+    const p = paginate(all, i + 1, DEFAULT_PER_PAGE);
+    return {
+      params: { page: String(p.page) },
+      props: { ...p, allCount: all.length },
+    };
+  });
+}
+
+const { page, totalPages, items, hasPrev, hasNext, allCount } = Astro.props;
+const PER_PAGE = DEFAULT_PER_PAGE;
+
+const severityBadge = {
+  critical: 'badge-critical',
+  high: 'badge-high',
+  medium: 'badge-medium',
+  low: 'badge-low',
+} as const;
+
+const categories = Array.from(new Set(items.flatMap((p) => p.data.categories))).sort();
+const platforms = Array.from(new Set(items.flatMap((p) => p.data.platforms))).sort();
+const severityCounts = {
+  critical: items.filter((p) => p.data.severity === 'critical').length,
+  high: items.filter((p) => p.data.severity === 'high').length,
+  medium: items.filter((p) => p.data.severity === 'medium').length,
+  low: items.filter((p) => p.data.severity === 'low').length,
+};
+
+const prevHref = hasPrev ? (page === 2 ? withBase('/pitfalls') : withBase(`/pitfalls/page/${page - 1}`)) : null;
+const nextHref = hasNext ? withBase(`/pitfalls/page/${page + 1}`) : null;
+---
+<BaseLayout
+  title={`避坑库 · 第 ${page} 页 · Agent Pitfalls`}
+  description={`所有已收录的 agent 开发避坑条目，第 ${page}/${totalPages} 页，支持搜索、筛选、分类`}
+>
+  <header class="mb-8 flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h1 class="display text-[36px]">避坑库</h1>
+      <p class="mt-2 text-[14px] text-slate">
+        <span class="font-mono font-semibold text-ink">{allCount}</span>
+        <span> 条 · 第 </span>
+        <span class="font-mono font-semibold text-ink">{page}</span>
+        <span> / </span>
+        <span class="font-mono font-semibold text-ink">{totalPages}</span>
+        <span> 页 · 每页 {PER_PAGE} 条</span>
+      </p>
+    </div>
+    <a href={withBase('/pitfalls')} class="text-[13px] text-ink underline underline-offset-2">← 返回第 1 页（带搜索）</a>
+  </header>
+
+  <ul class="grid gap-3">
+    {items.map((p) => (
+      <li class="card card-hover group">
+        <a href={withBase(`/pitfalls/${p.id}`)} class="block">
+          <div class="flex flex-wrap items-start gap-4">
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class={`badge ${severityBadge[p.data.severity]}`}>{severityLabel(p.data.severity)}</span>
+                {p.data.platforms.slice(0, 2).map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
+                {p.data.verified && <span class="badge badge-low">已验证</span>}
+              </div>
+              <h2 class="mt-2.5 text-[16px] font-semibold leading-snug text-ink">
+                {p.data.title}
+              </h2>
+              <p class="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-slate">
+                {p.data.summary}
+              </p>
+              <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[12px] text-fog">
+                {p.data.categories.slice(0, 3).map((c) => <span>#{categoryLabel(c)}</span>)}
+                <span class="ml-auto font-mono tabular-nums">{p.data.discovered_at ?? '—'}</span>
+              </div>
+            </div>
+            <span aria-hidden="true" class="hidden self-center font-mono text-[14px] text-mist transition-transform group-hover:translate-x-1 group-hover:text-ink md:block">→</span>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <!-- Pagination -->
+  <nav class="mt-10 flex items-center justify-between gap-4 border-t border-lavender-mist pt-6 text-[13px]">
+    {prevHref ? (
+      <a href={prevHref} class="link-cta">← 上一页</a>
+    ) : (
+      <span class="text-fog">← 上一页</span>
+    )}
+    <span class="font-mono text-fog tabular-nums">{page} / {totalPages}</span>
+    {nextHref ? (
+      <a href={nextHref} class="link-cta">下一页 →</a>
+    ) : (
+      <span class="text-fog">下一页 →</span>
+    )}
+  </nav>
+</BaseLayout>

@@ -5,6 +5,9 @@
   "description": "全网 agent 开发避坑信息整合 — 采集 / 整理 / 开源",
   "type": "module",
   "scripts": {
+    "index:build": "node scripts/build-search-index.mjs",
+    "predev": "node scripts/build-search-index.mjs",
+    "prebuild": "node scripts/build-search-index.mjs",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
