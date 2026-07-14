@@ -36,8 +36,61 @@ const severityBadge = {
   medium: 'badge-medium',
   low: 'badge-low',
 } as const;
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://wiselinpm.github.io').toString();
+
+// FAQPage payload — symptom + fix pairs are natural Q/A for AI summarization
+const hasFaq = entry.data.symptoms.length > 0 || entry.data.fixes.length > 0;
+const faqLd = hasFaq
+  ? [{
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: [
+        ...entry.data.symptoms.slice(0, 3).map((s) => ({
+          '@type': 'Question',
+          name: `如何识别「${entry.data.title}」？`,
+          acceptedAnswer: { '@type': 'Answer', text: s },
+        })),
+        ...entry.data.fixes.slice(0, 3).map((f) => ({
+          '@type': 'Question',
+          name: `「${entry.data.title}」怎么修复？`,
+          acceptedAnswer: { '@type': 'Answer', text: f },
+        })),
+      ],
+    }]
+  : [];
 ---
-<BaseLayout title={`${entry.data.title} · Agent Pitfalls`} description={entry.data.summary}>
+<BaseLayout
+  title={`${entry.data.title} · Agent Pitfalls`}
+  description={entry.data.summary}
+  jsonLd={[
+    {
+      '@context': 'https://schema.org',
+      '@type': 'TechArticle',
+      headline: entry.data.title,
+      description: entry.data.summary,
+      keywords: [...entry.data.categories, ...entry.data.platforms, entry.data.severity].join(', '),
+      datePublished: entry.data.discovered_at ?? undefined,
+      dateModified: entry.data.discovered_at ?? undefined,
+      author: { '@type': 'Organization', name: 'Agent Pitfalls' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Agent Pitfalls',
+        logo: { '@type': 'ImageObject', url: new URL(withBase('/logo.png'), Astro.site ?? 'https://wiselinpm.github.io').toString() },
+      },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+      inLanguage: 'zh-CN',
+    },
+    ...faqLd,
+  ]}
+  breadcrumbs={[
+    { name: '首页', item: new URL(withBase('/'),         Astro.site ?? 'https://wiselinpm.github.io').toString() },
+    { name: '避坑库', item: new URL(withBase('/pitfalls'), Astro.site ?? 'https://wiselinpm.github.io').toString() },
+    { name: entry.data.title, item: pageUrl },
+  ]}
+  ogType="article"
+>
   <!-- Reading progress — hairline at top -->
   <div class="fixed inset-x-0 top-14 z-30 h-px bg-lavender-mist">
     <div id="reading-progress" class="h-full origin-left bg-ink transition-transform" style="transform: scaleX(0);"></div>
@@ -57,7 +110,8 @@ const severityBadge = {
           {entry.data.platforms.map((pl) => <span class="badge">{platformLabel(pl)}</span>)}
           {entry.data.verified && <span class="badge badge-low">已验证</span>}
         </div>
-        <h1 class="mt-4 text-[32px] font-semibold leading-tight text-ink">{entry.data.title}</h1>
+        {/* H1 lives in BaseLayout <title>; avoid double-h1 on this page */}
+        <p class="mt-4 text-[20px] font-semibold leading-snug text-ink">{entry.data.title}</p>
         <p class="mt-3 text-[16px] leading-relaxed text-slate">{entry.data.summary}</p>
       </header>
 

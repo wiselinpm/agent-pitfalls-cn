@@ -1,5 +1,5 @@
 ---
-title: "Issue: Claude Code is unusable for complex engineering tasks with Feb updates"
+title: 'Issue: Claude Code is unusable for complex engineering tasks with Feb updates'
 summary: 'Issue: Claude Code is unusable for complex engineering tasks with Feb updates'
 severity: medium
 platforms:

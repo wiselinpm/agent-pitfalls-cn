@@ -5,9 +5,11 @@ severity: medium
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- Details about the OpenAI Bio Bounty program
 root_causes: []
-fixes: []
+fixes:
+- Details about the OpenAI Bio Bounty program
 references:
 - title: GPT-5.5 Bio Bug Bounty
   url: https://openai.com/index/bio-bug-bounty

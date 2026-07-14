@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - streaming
-symptoms: []
+symptoms:
+- Axios COO Allison Murphy explains how the company uses AI to support local reporters, streamline newsroom workflows, and deliver high-impact local journalism at scale.
 root_causes: []
-fixes: []
+fixes:
+- Axios COO Allison Murphy explains how the company uses AI to support local reporters, streamline newsroom workflows, and deliver high-impact local journalism at scale.
 references:
 - title: How Axios uses AI to help deliver high-impact local journalism
   url: https://openai.com/index/axios-allison-murphy

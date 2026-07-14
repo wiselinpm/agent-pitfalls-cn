@@ -5,9 +5,11 @@ severity: high
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.
 references:
 - title: Helping K–12 educators build practical AI skills
   url: https://openai.com/index/k-12-educators-practical-skills

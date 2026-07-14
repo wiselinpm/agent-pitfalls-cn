@@ -1,14 +1,16 @@
 ---
-title: "Codex Security: now in research preview"
+title: 'Codex Security: now in research preview'
 summary: Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise.
 severity: critical
 platforms:
 - generic
 categories:
 - security
-symptoms: []
+symptoms:
+- Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise.
 root_causes: []
-fixes: []
+fixes:
+- Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise.
 references:
 - title: 'Codex Security: now in research preview'
   url: https://openai.com/index/codex-security-now-in-research-preview

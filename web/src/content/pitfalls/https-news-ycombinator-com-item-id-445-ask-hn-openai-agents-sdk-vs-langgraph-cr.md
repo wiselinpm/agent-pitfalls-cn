@@ -1,5 +1,5 @@
 ---
-title: "Ask HN: OpenAI Agents SDK vs. LangGraph, CrewAI, etc."
+title: 'Ask HN: OpenAI Agents SDK vs. LangGraph, CrewAI, etc.'
 summary: Those building with OpenAI&#x27;s Agents SDK, how would you describe your experience with the tech so far? LangGraph has recently been giving me trouble with debugging behind the scenes of their abstractions in some more complex multi-agent workflows, does Agents SDK solve this p
 severity: low
 platforms:
@@ -8,9 +8,11 @@ platforms:
 - crewai
 categories:
 - multi-agent
-symptoms: []
+symptoms:
+- Those building with OpenAI&#x27;s Agents SDK, how would you describe your experience with the tech so far? LangGraph has recently been giving me trouble with debugging behind the scenes of their abstractions in some more complex multi-agent workflows, does Agents SDK solve this p
 root_causes: []
-fixes: []
+fixes:
+- Those building with OpenAI&#x27;s Agents SDK, how would you describe your experience with the tech so far? LangGraph has recently been giving me trouble with debugging behind the scenes of their abstractions in some more complex multi-agent workflows, does Agents SDK solve this p
 references:
 - title: 'Ask HN: OpenAI Agents SDK vs. LangGraph, CrewAI, etc.'
   url: https://news.ycombinator.com/item?id=44571730

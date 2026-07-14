@@ -1,14 +1,16 @@
 ---
-title: "Show HN: HoneyHive – An unified evaluation and monitoring platform for LLM apps"
+title: 'Show HN: HoneyHive – An unified evaluation and monitoring platform for LLM apps'
 summary: Hey HN! We’re Mohak and Dhruv from HoneyHive (https:&#x2F;&#x2F;honeyhive.ai). HoneyHive is a set of tools built around evaluating, monitoring, and iteratively improving LLM systems to make them production-ready and reliable.<p>We’re sure everyone has seen the general bugginess L
 severity: critical
 platforms:
 - generic
 categories:
 - observability
-symptoms: []
+symptoms:
+- Hey HN! We’re Mohak and Dhruv from HoneyHive (https:&#x2F;&#x2F;honeyhive.ai). HoneyHive is a set of tools built around evaluating, monitoring, and iteratively improving LLM systems to make them production-ready and reliable.<p>We’re sure everyone has seen the general bugginess L
 root_causes: []
-fixes: []
+fixes:
+- Hey HN! We’re Mohak and Dhruv from HoneyHive (https:&#x2F;&#x2F;honeyhive.ai). HoneyHive is a set of tools built around evaluating, monitoring, and iteratively improving LLM systems to make them production-ready and reliable.<p>We’re sure everyone has seen the general bugginess L
 references:
 - title: 'Show HN: HoneyHive – An unified evaluation and monitoring platform for LLM apps'
   url: https://news.ycombinator.com/item?id=37777683

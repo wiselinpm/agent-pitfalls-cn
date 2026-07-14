@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - security
-symptoms: []
+symptoms:
+- OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure.
 references:
 - title: Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber
   url: https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber

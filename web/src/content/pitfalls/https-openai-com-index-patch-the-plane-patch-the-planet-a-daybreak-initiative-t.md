@@ -1,13 +1,15 @@
 ---
-title: "Patch the Planet: a Daybreak initiative to support open source maintainers"
+title: 'Patch the Planet: a Daybreak initiative to support open source maintainers'
 summary: OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.
 severity: critical
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.
 references:
 - title: 'Patch the Planet: a Daybreak initiative to support open source maintainers'
   url: https://openai.com/index/patch-the-planet

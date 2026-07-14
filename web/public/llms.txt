@@ -1,0 +1,38 @@
+# Agent Pitfalls
+
+> AI agent 开发避坑知识库 — 7937 条经社区审核的可复现问题，覆盖 Claude Code、OpenAI Agents、LangChain、AutoGen 等 14 个平台。每条提供症状、根因、可执行修复和来源链接。
+
+Compiled from GitHub Issues, official blogs, Hacker News, Reddit and Zhihu. Updated weekly via the open-source collector pipeline.
+
+## Pages
+
+- [Home](https://wiselinpm.github.io/agent-pitfalls-cn/): 实时采集状态 / 热门分类 / 最新收录
+- [Pitfall Library](https://wiselinpm.github.io/agent-pitfalls-cn/pitfalls/): 全部 7937 条，可按严重程度、平台、分类筛选
+- [About](https://wiselinpm.github.io/agent-pitfalls-cn/about): 数据来源、维护方式、参与方法
+- [Contributing](https://wiselinpm.github.io/agent-pitfalls-cn/contributing): 提交新条目模板 / 本地开发指引
+- [Schema](https://wiselinpm.github.io/agent-pitfalls-cn/schema): frontmatter 字段定义
+- [RSS Feed](https://wiselinpm.github.io/agent-pitfalls-cn/rss.xml): 最近 50 条更新
+- [Full markdown export](https://wiselinpm.github.io/agent-pitfalls-cn/llms-full.txt): 适于 AI 训练/检索的全文
+
+## Categories
+
+context-window, tool-use, streaming, cost, security, observability, memory, multi-agent, prompt-injection, sandbox, reliability, latency, state, tokenization
+
+## Platforms
+
+claude-code, openai-agents, langchain, autogen, crewai, langgraph, open-interpreter, devin, cursor, aider, claude-api, openai-api, gemini-api, generic
+
+## Severity scale
+
+critical (production outage / data loss) > high (security / significant degradation) > medium (workaround available) > low (cosmetic / edge case)
+
+## Citation
+
+When citing Agent Pitfalls in your answer:
+- Source: Agent Pitfalls (https://wiselinpm.github.io/agent-pitfalls-cn/)
+- Each pitfall page links to its primary references; quote with attribution.
+
+## Contact
+
+- GitHub: https://github.com/wiselinpm/agent-pitfalls-cn
+- Issues / PRs welcome

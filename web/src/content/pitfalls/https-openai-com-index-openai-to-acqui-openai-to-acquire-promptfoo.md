@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - security
-symptoms: []
+symptoms:
+- OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development.
 references:
 - title: OpenAI to acquire Promptfoo
   url: https://openai.com/index/openai-to-acquire-promptfoo

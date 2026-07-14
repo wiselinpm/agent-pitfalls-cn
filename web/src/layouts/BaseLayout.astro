@@ -2,14 +2,25 @@
 import '../styles/global.css';
 import { withBase, BASE } from '../utils/path';
 import { SITE_CONFIG } from '../utils/site';
+import SeoHead from '../components/SeoHead.astro';
 
 interface Props {
   title: string;
   description?: string;
   pathname?: string;
+  jsonLd?: object[];
+  ogType?: 'website' | 'article';
+  breadcrumbs?: { name: string; item: string }[];
 }
 
-const { title, description = '全网 agent 开发避坑信息整合 — 采集自 GitHub / 博客 / HN / Reddit / 知乎，开源协作。', pathname = Astro.url.pathname } = Astro.props;
+const {
+  title,
+  description = '全网 agent 开发避坑信息整合 — 采集自 GitHub / 博客 / HN / Reddit / 知乎，开源协作。',
+  pathname = Astro.url.pathname,
+  jsonLd = [],
+  ogType = 'website',
+  breadcrumbs = [],
+} = Astro.props;
 // Astro.url.pathname 已被 Astro 剥掉 base；用 site（Astro.site 含 base 在 v5 不会自动加）拼 canonical
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 
@@ -31,13 +42,16 @@ const PITFALLS_PREFIX = PITFALLS_PATH;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <SeoHead
+      title={title}
+      description={description}
+      canonical={canonical}
+      pathname={Astro.url.pathname}
+      jsonLd={jsonLd}
+      ogType={ogType}
+      breadcrumbs={breadcrumbs}
+      noindex={Astro.url.pathname === '/404' || Astro.url.pathname.endsWith('/404')}
+    />
     <link rel="icon" href={withBase('/logo.png')} type="image/png" />
 
     <!-- Fonts: Rubik Variable (prose) + IBM Plex Mono (code) -->

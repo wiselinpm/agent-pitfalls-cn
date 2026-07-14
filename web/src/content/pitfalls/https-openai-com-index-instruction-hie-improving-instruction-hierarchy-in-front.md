@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - prompt-injection
-symptoms: []
+symptoms:
+- IH-Challenge trains models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt injection attacks.
 root_causes: []
-fixes: []
+fixes:
+- IH-Challenge trains models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt injection attacks.
 references:
 - title: Improving instruction hierarchy in frontier LLMs
   url: https://openai.com/index/instruction-hierarchy-challenge

@@ -11,9 +11,9 @@ categories:
 symptoms:
 - Intermittent forced logouts of interactive sessions (and, historically,
 root_causes:
-- '`claude setup-token` / `CLAUDE_CODE_OAUTH_TOKEN` isolates headless jobs from'
+- claude setup-token` / `CLAUDE_CODE_OAUTH_TOKEN` isolates headless jobs from
 fixes:
-- '`claude setup-token` / `CLAUDE_CODE_OAUTH_TOKEN` isolates headless jobs from'
+- claude setup-token` / `CLAUDE_CODE_OAUTH_TOKEN` isolates headless jobs from
 references:
 - title: 'macOS Keychain: concurrent sessions race on OAuth refresh; setup-token workaround strips claude.ai connectors, leaving no viable headless pattern'
   url: https://github.com/anthropics/claude-code/issues/76905
@@ -39,4 +39,4 @@ On macOS, multiple concurrent Claude Code processes sharing the Keychain item
 other logged out. The v2.1.133 / v2.1.136 fixes for the credential-refresh race
 ("parallel sessions all dead-endi
 
-_来源热度：1_
+_来源热度：2_

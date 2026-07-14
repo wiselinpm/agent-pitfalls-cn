@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - tool-use
-symptoms: []
+symptoms:
+- GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.
 root_causes: []
-fixes: []
+fixes:
+- GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads.
 references:
 - title: Introducing GPT-5.4 mini and nano
   url: https://openai.com/index/introducing-gpt-5-4-mini-and-nano

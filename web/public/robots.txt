@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://agent-pitfalls.dev/sitemap-index.xml
+Disallow: /agent-pitfalls-cn/agent-pitfalls-cn/
+Sitemap: https://wiselinpm.github.io/agent-pitfalls-cn/sitemap-index.xml

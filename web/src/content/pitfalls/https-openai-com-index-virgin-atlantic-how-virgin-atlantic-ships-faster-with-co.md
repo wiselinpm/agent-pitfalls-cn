@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - memory
-symptoms: []
+symptoms:
+- How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.
 root_causes: []
-fixes: []
+fixes:
+- How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.
 references:
 - title: How Virgin Atlantic ships faster with Codex
   url: https://openai.com/index/virgin-atlantic

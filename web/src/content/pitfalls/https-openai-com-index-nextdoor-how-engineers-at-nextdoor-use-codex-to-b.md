@@ -5,9 +5,11 @@ severity: medium
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.
 root_causes: []
-fixes: []
+fixes:
+- How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.
 references:
 - title: How engineers at Nextdoor use Codex to build without limits
   url: https://openai.com/index/nextdoor

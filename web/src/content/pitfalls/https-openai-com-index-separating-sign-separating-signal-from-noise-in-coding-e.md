@@ -5,9 +5,11 @@ severity: medium
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.
 root_causes: []
-fixes: []
+fixes:
+- A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.
 references:
 - title: Separating signal from noise in coding evaluations
   url: https://openai.com/index/separating-signal-from-noise-coding-evaluations

@@ -49,7 +49,24 @@ const lastUpdatedRel = lastDiscovered
 // Hero sample — pick the most recent critical/high for the code demo
 const heroSample = featured[0];
 ---
-<BaseLayout title="Agent Pitfalls — 全网 agent 开发避坑整合" description="采集全网 agent 开发避坑信息，社区维护、开源协作">
+<BaseLayout
+  title="Agent Pitfalls — 全网 agent 开发避坑整合"
+  description="7,937 条 AI agent 开发踩坑案例，覆盖 Claude Code / OpenAI Agents / LangChain 等 14 个平台。症状 / 根因 / 可执行修复 + 来源，每周自动更新。"
+  jsonLd={[{
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: '最新收录的 agent 开发避坑案例',
+    itemListOrder: 'https://schema.org/ItemListOrderDescending',
+    numberOfItems: featured.length,
+    itemListElement: featured.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: new URL(withBase(`/pitfalls/${p.id}`), Astro.site ?? 'https://wiselinpm.github.io').toString(),
+      name: p.data.title,
+      description: p.data.summary,
+    })),
+  }]}
+>
 
   <!-- HERO — two-column: code block left, headline + CTA right -->
   <section class="grid items-start gap-12 py-8 md:grid-cols-12">

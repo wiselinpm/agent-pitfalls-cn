@@ -5,9 +5,11 @@ severity: medium
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- 'How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior.'
 root_causes: []
-fixes: []
+fixes:
+- 'How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior.'
 references:
 - title: Where the goblins came from
   url: https://openai.com/index/where-the-goblins-came-from

@@ -5,9 +5,11 @@ severity: high
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.
 references:
 - title: Introducing EVMbench
   url: https://openai.com/index/introducing-evmbench

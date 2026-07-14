@@ -5,9 +5,11 @@ severity: critical
 platforms:
 - claude-code
 categories: []
-symptoms: []
+symptoms:
+- 'Related ongoing thread: <i>Claude Code&#x27;s source code has been leaked via a map file in their NPM registry</i> - <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47584540">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47584540</a><p>Also related: <a href="ht'
 root_causes: []
-fixes: []
+fixes:
+- 'Related ongoing thread: <i>Claude Code&#x27;s source code has been leaked via a map file in their NPM registry</i> - <a href="https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47584540">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=47584540</a><p>Also related: <a href="ht'
 references:
 - title: 'The Claude Code Source Leak: fake tools, frustration regexes, undercover mode'
   url: https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/

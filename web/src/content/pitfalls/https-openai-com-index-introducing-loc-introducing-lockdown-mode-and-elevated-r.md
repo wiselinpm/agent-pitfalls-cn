@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - prompt-injection
-symptoms: []
+symptoms:
+- Introducing Lockdown Mode and Elevated Risk labels in ChatGPT to help organizations defend against prompt injection and AI-driven data exfiltration.
 root_causes: []
-fixes: []
+fixes:
+- Introducing Lockdown Mode and Elevated Risk labels in ChatGPT to help organizations defend against prompt injection and AI-driven data exfiltration.
 references:
 - title: Introducing Lockdown Mode and Elevated Risk labels in ChatGPT
   url: https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt

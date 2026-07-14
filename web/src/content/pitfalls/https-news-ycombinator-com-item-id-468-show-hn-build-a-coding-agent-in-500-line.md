@@ -1,14 +1,16 @@
 ---
-title: "Show HN: Build a coding agent in 500 lines (Pure Python, No Vector DBs)"
+title: 'Show HN: Build a coding agent in 500 lines (Pure Python, No Vector DBs)'
 summary: I maintain jq (jqlang). I tend to like tools that are simple, composable, and transparent.<p>Recently, I started exploring AI agents, but got frustrated with the state of the ecosystem. Most tutorials and frameworks (LangChain, AutoGPT, etc.) felt like black boxes that added unne
 severity: medium
 platforms:
 - langchain
 categories:
 - state
-symptoms: []
+symptoms:
+- I maintain jq (jqlang). I tend to like tools that are simple, composable, and transparent.<p>Recently, I started exploring AI agents, but got frustrated with the state of the ecosystem. Most tutorials and frameworks (LangChain, AutoGPT, etc.) felt like black boxes that added unne
 root_causes: []
-fixes: []
+fixes:
+- I maintain jq (jqlang). I tend to like tools that are simple, composable, and transparent.<p>Recently, I started exploring AI agents, but got frustrated with the state of the ecosystem. Most tutorials and frameworks (LangChain, AutoGPT, etc.) felt like black boxes that added unne
 references:
 - title: 'Show HN: Build a coding agent in 500 lines (Pure Python, No Vector DBs)'
   url: https://news.ycombinator.com/item?id=46872087

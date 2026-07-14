@@ -15,7 +15,9 @@
     "collect": "python -m collectors.run_all",
     "collect:github": "python -m collectors.sources.github_issues",
     "collect:rss": "python -m collectors.sources.rss",
-    "test": "python -m pytest collectors/tests -q"
+    "test": "python -m pytest --rootdir=. -c /dev/null collectors/tests -q",
+    "test:cli": "python -m pytest --rootdir=. -c /dev/null agent_pitfalls_cli/tests -q",
+    "test:all": "python -m pytest --rootdir=. -c /dev/null collectors/tests agent_pitfalls_cli/tests -q"
   },
   "license": "MIT",
   "engines": {

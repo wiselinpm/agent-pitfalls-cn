@@ -5,9 +5,11 @@ severity: high
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.
 references:
 - title: Introducing the OpenAI Economic Research Exchange
   url: https://openai.com/index/economic-research-exchange

@@ -1,14 +1,16 @@
 ---
-title: "Core dump epidemiology: fixing an 18-year-old bug"
+title: 'Core dump epidemiology: fixing an 18-year-old bug'
 summary: OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.
 severity: high
 platforms:
 - generic
 categories:
 - observability
-symptoms: []
+symptoms:
+- OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.
 references:
 - title: 'Core dump epidemiology: fixing an 18-year-old bug'
   url: https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug

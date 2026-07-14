@@ -1,5 +1,5 @@
 ---
-title: "Show HN: Agent Memory DB – Episodic memory for agents (97.5% vs. 85% recall)"
+title: 'Show HN: Agent Memory DB – Episodic memory for agents (97.5% vs. 85% recall)'
 summary: Most LLM apps only keep the last N tokens after a context window is exceeded, so when the user said the important thing 50 turns ago, it&#x27;s gone and the model can&#x27;t answer.<p>This repo adds episodic memory to store experiences as vectors and retrieve by similarity when a
 severity: medium
 platforms:
@@ -7,9 +7,11 @@ platforms:
 categories:
 - context-window
 - memory
-symptoms: []
+symptoms:
+- Most LLM apps only keep the last N tokens after a context window is exceeded, so when the user said the important thing 50 turns ago, it&#x27;s gone and the model can&#x27;t answer.<p>This repo adds episodic memory to store experiences as vectors and retrieve by similarity when a
 root_causes: []
-fixes: []
+fixes:
+- Most LLM apps only keep the last N tokens after a context window is exceeded, so when the user said the important thing 50 turns ago, it&#x27;s gone and the model can&#x27;t answer.<p>This repo adds episodic memory to store experiences as vectors and retrieve by similarity when a
 references:
 - title: 'Show HN: Agent Memory DB – Episodic memory for agents (97.5% vs. 85% recall)'
   url: https://github.com/sathvikkurap/agenticmemory

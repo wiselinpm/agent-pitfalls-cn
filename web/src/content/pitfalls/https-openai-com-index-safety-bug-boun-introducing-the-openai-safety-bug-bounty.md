@@ -6,9 +6,11 @@ platforms:
 - generic
 categories:
 - prompt-injection
-symptoms: []
+symptoms:
+- OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 root_causes: []
-fixes: []
+fixes:
+- OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration.
 references:
 - title: Introducing the OpenAI Safety Bug Bounty program
   url: https://openai.com/index/safety-bug-bounty

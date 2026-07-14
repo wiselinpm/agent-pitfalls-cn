@@ -5,9 +5,11 @@ severity: critical
 platforms:
 - langchain
 categories: []
-symptoms: []
+symptoms:
+- I&#x27;ve been working with Langchain to develop a POC and when I try to understand the bugs in my code I feel like I am going down this huge rabbit hole of code. Every time I click into a piece of code there are 10 more places that I have to look that MIGHT be the source of the
 root_causes: []
-fixes: []
+fixes:
+- I&#x27;ve been working with Langchain to develop a POC and when I try to understand the bugs in my code I feel like I am going down this huge rabbit hole of code. Every time I click into a piece of code there are 10 more places that I have to look that MIGHT be the source of the
 references:
 - title: LangChain Is a Black Box
   url: https://news.ycombinator.com/item?id=41192069

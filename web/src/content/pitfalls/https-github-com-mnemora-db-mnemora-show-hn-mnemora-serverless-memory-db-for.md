@@ -1,5 +1,5 @@
 ---
-title: "Show HN: Mnemora – Serverless memory DB for AI agents (no LLM in your CRUD path)"
+title: 'Show HN: Mnemora – Serverless memory DB for AI agents (no LLM in your CRUD path)'
 summary: Hi HN,<p>I built Mnemora because every AI agent memory solution I evaluated (Mem0, Zep, Letta) routes data through an LLM on every read and write. At scale, that means 200-500ms latency per operation, token costs on your memory layer, and a runtime dependency you don&#x27;t contr
 severity: medium
 platforms:
@@ -8,9 +8,11 @@ categories:
 - cost
 - memory
 - latency
-symptoms: []
+symptoms:
+- Hi HN,<p>I built Mnemora because every AI agent memory solution I evaluated (Mem0, Zep, Letta) routes data through an LLM on every read and write. At scale, that means 200-500ms latency per operation, token costs on your memory layer, and a runtime dependency you don&#x27;t contr
 root_causes: []
-fixes: []
+fixes:
+- Hi HN,<p>I built Mnemora because every AI agent memory solution I evaluated (Mem0, Zep, Letta) routes data through an LLM on every read and write. At scale, that means 200-500ms latency per operation, token costs on your memory layer, and a runtime dependency you don&#x27;t contr
 references:
 - title: 'Show HN: Mnemora – Serverless memory DB for AI agents (no LLM in your CRUD path)'
   url: https://github.com/mnemora-db/mnemora

@@ -5,9 +5,11 @@ severity: critical
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.
 root_causes: []
-fixes: []
+fixes:
+- A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.
 references:
 - title: Mapping Europe’s AI Workforce Opportunity
   url: https://openai.com/index/mapping-ai-jobs-transition-eu

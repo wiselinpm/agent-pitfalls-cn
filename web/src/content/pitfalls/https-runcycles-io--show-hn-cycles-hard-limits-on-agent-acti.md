@@ -1,13 +1,19 @@
 ---
-title: "Show HN: Cycles – hard limits on agent actions before execution"
+title: 'Show HN: Cycles – hard limits on agent actions before execution'
 summary: Rate limits control velocity. They say nothing about what an agent is allowed to do next. An agent can pass every rate-limit check and still delete 400 records, send 200 emails, or place orders before anyone notices. The damage isn&#x27;t always in the bill — it&#x27;s in the con
 severity: medium
 platforms:
 - generic
 categories: []
-symptoms: []
+symptoms:
+- 'Rate limits control velocity. They say nothing about what an agent is allowed to do next.
+
+  An agent can pass every rate-limit check and still delete 400 records, send 200 emails, or place orders before anyone notices. The damage isn&#x27;t always in the bill — it&#x27;s in the con'
 root_causes: []
-fixes: []
+fixes:
+- 'Rate limits control velocity. They say nothing about what an agent is allowed to do next.
+
+  An agent can pass every rate-limit check and still delete 400 records, send 200 emails, or place orders before anyone notices. The damage isn&#x27;t always in the bill — it&#x27;s in the con'
 references:
 - title: 'Show HN: Cycles – hard limits on agent actions before execution'
   url: https://runcycles.io/

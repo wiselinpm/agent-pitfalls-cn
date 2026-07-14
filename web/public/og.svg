@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f4f8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#3b61b0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- decorative hairline frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="16"
+        fill="none" stroke="#e8e8f2" stroke-width="1"/>
+
+  <!-- logo block (uses the existing logo by linking it) -->
+  <g transform="translate(80,140)">
+    <rect width="80" height="80" rx="14" fill="url(#accent)"/>
+    <text x="40" y="56" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+          font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">⚠</text>
+    <!-- subtitle path logo -->
+    <text x="100" y="38" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+          font-size="34" font-weight="700" fill="#303055">Agent</text>
+    <text x="218" y="38" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+          font-size="34" font-weight="700" fill="#7c5cff">Pitfalls</text>
+    <text x="100" y="74" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="18" fill="#767682" letter-spacing="0.5">7,000+ crowdsourced footguns · open source</text>
+  </g>
+
+  <!-- hero headline -->
+  <text x="80" y="340" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+        font-size="76" font-weight="700" fill="#111122"
+        style="letter-spacing:-2px;">Stop stepping in</text>
+  <text x="80" y="420" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+        font-size="76" font-weight="700" fill="#7c5cff"
+        style="letter-spacing:-2px;">the same trap.</text>
+
+  <!-- pills / tag chips -->
+  <g transform="translate(80,490)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#5e5e7d">
+    <g><rect width="160" height="38" rx="6" fill="#ffffff" stroke="#e8e8f2"/><text x="80" y="25" text-anchor="middle">claude-code</text></g>
+    <g transform="translate(176,0)"><rect width="170" height="38" rx="6" fill="#ffffff" stroke="#e8e8f2"/><text x="85" y="25" text-anchor="middle">openai-agents</text></g>
+    <g transform="translate(362,0)"><rect width="150" height="38" rx="6" fill="#ffffff" stroke="#e8e8f2"/><text x="75" y="25" text-anchor="middle">langchain</text></g>
+    <g transform="translate(528,0)"><rect width="100" height="38" rx="6" fill="#ffffff" stroke="#e8e8f2"/><text x="50" y="25" text-anchor="middle">+ more</text></g>
+  </g>
+
+  <!-- footer URL -->
+  <text x="80" y="585" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="16" fill="#767682">wiselinpm.github.io/agent-pitfalls-cn</text>
+</svg>
