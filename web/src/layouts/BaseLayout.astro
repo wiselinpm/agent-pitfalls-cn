@@ -138,15 +138,17 @@ const PITFALLS_PREFIX = PITFALLS_PATH;
       </div>
     </footer>
 
-    <script is:inline>
+    <script is:inline set:html={`
       // Mobile menu
       document.getElementById('mobile-menu-toggle')?.addEventListener('click', () => {
         document.getElementById('mobile-menu')?.classList.toggle('hidden');
       });
 
-      // Search shortcut — focus search box on /pitfalls, otherwise go there
-      const PITFALLS_HREF = {PITFALLS_PATH};
-      const PITFALLS_AT = {PITFALLS_PREFIX};
+      // Search shortcut — focus search box on /pitfalls, otherwise go there.
+      // 走 set:html 而不是裸 {PITFALLS_PATH}，因为 is:inline 不会处理模板表达式，
+      // 直接写会变成 ReferenceError 让整段脚本挂掉。
+      const PITFALLS_HREF = ${JSON.stringify(PITFALLS_PATH)};
+      const PITFALLS_AT   = ${JSON.stringify(PITFALLS_PREFIX)};
       document.getElementById('search-shortcut')?.addEventListener('click', () => {
         if (window.location.pathname.startsWith(PITFALLS_AT)) {
           const s = document.getElementById('search');
@@ -163,6 +165,6 @@ const PITFALLS_PREFIX = PITFALLS_PATH;
           else { window.location.href = PITFALLS_HREF; }
         }
       });
-    </script>
+    `} />
   </body>
 </html>
